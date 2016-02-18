@@ -1,0 +1,10 @@
+#Custom
+output
+pelicanconf_local.py
+pelican-themes
+pelican-plugins
+milome.github.io
+
+#Python
+*.py[cod]
+
