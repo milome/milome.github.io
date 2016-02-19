@@ -1,347 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Hualin" />
-        <meta name="keywords" content="feeling,life" />
-        <meta name="description" content="写在前面 我这个人很懒，也很普通，在社交媒体上基本就是潜水+看客。但今天，我决定做一些改变，这么年的经历，是时候迈出一步，做更好的积累和沉淀了。 用正确的方式，让自己变得更好。" />
+		<title>Hualin's Geek way</title>
+		<meta name="description" content="">
+		<meta name="author" content="Hualin">
+
+		<link rel="stylesheet" href="../../../../../theme/css/foundation.css" />
+		<link rel="stylesheet" href="../../../../../theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="../../../../../theme/css/custom.css" />
 
 
-    <title>Say Hello - Hualin's Geek way</title>
+		<script src="../../../../../theme/js/modernizr.js"></script>
 
-        <link rel="stylesheet" href="../../../../../theme/css/bootstrap.min.css" type="text/css" />
+		<!-- Feeds -->
+		<link href="http://www.hualinluan.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hualin's Geek way Atom Feed" />
+		<link href="http://www.hualinluan.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Hualin's Geek way RSS Feed" />
 
-    <link href="../../../../../theme/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../../../../../theme/css/pygments/native.css" rel="stylesheet" />
-    
-    <link href="../../../../../theme/css/pelican-twitchy.min.css" rel="stylesheet" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <!-- Feeds -->
-        <link href="../../../../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Hualin's Geek way ATOM Feed" />
-        <link href="../../../../../feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
-              title="Hualin's Geek way RSS Feed" />
-</head>
-<body data-spy="scroll" data-target="#scrollspy">
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper-small" class="twitchy-background">
-            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
-                <li>
-        <a href="../../../../.." title="Hualin's Geek way" class="collapsed">
-            <span class="glyphicon glyphicon-home"></span>
-        </a>
-    </li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="../../../../../archives.html" title="Recent Articles" class="collapsed">
-            <span class="glyphicon glyphicon-th-list"></span>
-        </a>
-    </li>
-                
-                <li class="nav-divider"></li>
-                <li id="share-small">
-                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-share-small" title="Share" class="collapsed">
-                        <i class="fa fa-share-alt padding-small"></i>
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-share-small" class="collapse ">
-                    <li>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=../../../../../articles/2016/02/17/sayhello/" title="Share via Facebook" target="popup">
-                            <i class="fa fa-facebook-square padding-small"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/share?url=../../../../../articles/2016/02/17/sayhello/" title="Share via Google+" target="popup">
-                            <i class="fa fa-google-plus padding-small"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" title="Share via Twitter" target="popup">
-                            <i class="fa fa-twitter-square padding-small"></i>
-                        </a>
-                    </li>
-                </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
-                        <i class="fa fa-users padding-small"></i>
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
-                    <li>
-                        <a href="https://github.com/milome" title="GitHub"><i class="fa fa-github-square fa-lg padding-small"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/hualinlu" title="Twitter"><i class="fa fa-twitter-square fa-lg padding-small"></i></a>
-                    </li>
-                </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="#" title="Back to top" class="collapsed">
-            <span class="fa fa-arrow-up"></span>
-        </a>
-    </li>
-            </ul>
-        </div>
-        <div id="sidebar-wrapper" class="twitchy-background">
-            <ul id="accordion" class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="../../../../../">
-                            <span class="glyphicon glyphicon-home padding-small"></span>
-                            Hualin's Geek way
-                    </a>
-                </li>
-                    <li class="nav-divider"></li>
-                    <li>
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-latest">
-                            <span class="glyphicon glyphicon-th-list padding-small"></span>
-                            Recent Articles
-                        </a>
-                    </li>
-                    <li class="panel anti-panel"><ul id="collapse-latest" class="sidebar_submenu collapse in">
-                        <li class="active">
-                            <a class="hide-overflow" href="../../../../../articles/2016/02/17/sayhello/" title="Say Hello">
-                                <i class="fa fa-file-text padding-small"></i>
-                                Say Hello
-                            </a>
-                        </li>
-                    <li>
-                        <a href="../../../../../archives.html">
-                            <i class="fa fa-arrow-right padding-small"></i>
-                            More
-                        </a>
-                    </li>
-                    </ul></li>
-                <li class="nav-divider"></li>
-                <li id="share">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-share" title="Share" class="collapsed">
-                        <i class="fa fa-share-alt padding-small"></i>
-                        Share
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-share" class="sidebar_submenu collapse ">
-                    <li>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=../../../../../articles/2016/02/17/sayhello/" target="popup">
-                            <i class="fa fa-facebook-square padding-small"></i>
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/share?url=../../../../../articles/2016/02/17/sayhello/" target="popup">
-                            <i class="fa fa-google-plus padding-small"></i>
-                            Google+
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" target="popup">
-                            <i class="fa fa-twitter-square padding-small"></i>
-                            Twitter
-                        </a>
-                    </li>
-                </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
-                        <i class="fa fa-users padding-small"></i>
-                        Contact
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
-                    <li>
-                        <a href="https://github.com/milome" title="GitHub">
-                            <i class="fa fa-github-square fa-lg padding-small"></i>
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/hualinlu" title="Twitter">
-                            <i class="fa fa-twitter-square fa-lg padding-small"></i>
-                            Twitter
-                        </a>
-                    </li>
-                </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-                    <a href="/feeds/rss.xml">
-                        RSS
-                    </a>
-                </li>
-                <li>
-                    <a href="/archives.html">
-                        Archives
-                    </a>
-                </li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Pages
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
-                    <li>
-                        <a href="../../../../../pages/about/">
-                            <i class="fa fa-file-text padding-small"></i>
-                            About
-                        </a>
-                    </li>
-                </ul></li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Categories
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li class="active">
-                        <a href="../../../../../category/misc.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            Misc
-                            <span class="badge pull-right categorybadge">1</span>
-                        </a>
-                    </li>
-                </ul></li>
-                
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- open/close sidebar -->
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
-            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
-        </a>
-       <!-- /open/close sidebar -->
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-<section id="content">
-    <article>
-        <div class="row">
-            <div class="col-lg-9">
-                <header class="page-header">
-                    <h1>
-                        <a href="../../../../../articles/2016/02/17/sayhello/"
-                           rel="bookmark"
-                           title="Permalink to Say Hello">
-                            Say Hello
-                        </a>
-                        <small>
-<div class="post-info">
-    <div class="publish-info-block">
-        <small>
-            <span class="published">
-                <i class="fa fa-calendar padding-small"></i><time datetime="2016-02-17T00:00:00+08:00"> 2016-02-17</time>
-            </span>
-            <span class="category">
-                <i class="fa fa-folder-open padding-small"></i><a href="../../../../../category/misc.html">Misc</a>
-            </span>
-            <span class="tags">
-                <i class="fa fa-tags padding-small"></i>
-                <a href="../../../../../tag/feeling.html">feeling</a> /                 <a href="../../../../../tag/life.html">life</a>            </span>
-        </small>
-    </div>
-</div><!-- /.post-info -->                        </small>
-                    </h1>
-                </header>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="entry-content">
-                    <h2 id="_1">写在前面</h2>
+					<section class="middle tab-bar-section">
+						<h1 class="title">Hualin's&nbsp;Geek&nbsp;way</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="../../../../..">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="../../../../../category/misc.html">Misc</a></li>
+
+						<li><label>Links</label></li>
+							<li><a href="http://getpelican.com/">Pelican</a></li>
+							<li><a href="http://python.org/">Python.org</a></li>
+							<li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+							<li><a href="#">You can modify those links in your config file</a></li>
+
+
+						<li><label>Monthly Archives</label></li>
+									<li><a href="/posts/2016/Feb/index.html">February 2016 (1)</a></li>
+
+						<li><label>Social</label></li>
+							<li><a href="https://github.com/milome">GitHub</a></li>
+							<li><a href="https://twitter.com/hualinlu">Twitter</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="../../../../../">Hualin's Geek way</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="../../../../../category/misc.html">Misc</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                          
+····                                                                                                                                       
+                                     <li><a href="../../../../../pages/about/">About</a></li>                                    
+                                                                                                                                          
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+	<h2>Say Hello</h2>
+	<h2 id="_1">写在前面</h2>
 <p>我这个人很懒，也很普通，在社交媒体上基本就是潜水+看客。但今天，我决定做一些改变，这么年的经历，是时候迈出一步，做更好的积累和沉淀了。</p>
 <p>用正确的方式，让自己变得更好。</p>
 <p><img alt="" src="http://i.imgur.com/POdaixf.jpg" /></p>
-                </div>
-                <footer class="text-right">
-                    <p>- Hualin</p>
-                </footer>
-    <div id="show-comments" class="span7 text-center">
-        <a href="../../../../../articles/2016/02/17/sayhello/#disqus_thread" data-disqus-identifier="sayhello" class="btn btn-default">Show Comments</a>
-    </div>
-    <section id="comments" class="comments hidden">
-        <hr/>
-        <h2>Comments</h2>
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </section>
-            </div>
-        </div>
-    </article>
-</section>
-<footer>
-    <hr>
-    <div class="row">
-        <div class="col-lg-9 text-center">
-            <p><small>
-                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
-                &middot;                    &copy; 2016 Hualin
-            </small></p>
-        </div>
-    </div>
-</footer>            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-    <!-- jQuery Version 1.11.2 -->
-    <script src="../../../../../theme/js/jquery-1.11.2.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../../../../../theme/js/bootstrap.min.js"></script>
-    <!-- twitchy Script -->
-    <script src="../../../../../theme/js/pelican_twitchy.min.js"></script>
+	<hr/>
+	<h6>Written by <a href="../../../../../author/hualin.html">Hualin</a> in <a href="../../../../../category/misc.html">Misc</a> on 2016-02-17. Tags: <a href="../../../../../tag/feeling.html">feeling</a>, <a href="../../../../../tag/life.html">life</a>, </h6>
+</article>
 
-<!-- disqus -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'hualinsgeekway'; // required: replace example with your forum shortname
+<hr/>
+<div class="row">
+	<div class="small-12 columns">
+		<h3>Comments</h3>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'hualinsgeekway';
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="http://getpelican.com/">Pelican</a></li>
+									<li><a href="http://python.org/">Python.org</a></li>
+									<li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+									<li><a href="#">You can modify those links in your config file</a></li>
+								</ul>
+							</div>
 
-            var disqus_identifier = 'sayhello';
-        var disqus_url = '../../../../../articles/2016/02/17/sayhello/';
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+									<li><a href="/tag/life.html" class="tag-3">life</a></li>
+									<li><a href="/tag/feeling.html" class="tag-3">feeling</a></li>
+								</ul>
+							</div>
 
-    var disqus_config = function () {
-        this.language = "zh";
-    };
-        /*load script for comment count*/
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    
-        $('#show-comments').click(function () {
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-            $('#show-comments').fadeOut();
-            /*$('#comments').toggleClass('hidden');*/
-            $('#comments').fadeIn().removeClass('hidden');
-        });
-</script>
-<!-- /disqus -->
-</body>
+							<div class="panel">
+								<h5>Monthly Archives</h5>
+								<ul class="side-nav">
+											<li><a href="/posts/2016/Feb/index.html">February 2016 (1)</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/milome">GitHub</a></li>
+									<li><a href="https://twitter.com/hualinlu">Twitter</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="../../../../../theme/js/jquery.js"></script>
+		<script src="../../../../../theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
 </html>
