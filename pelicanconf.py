@@ -25,12 +25,28 @@ LANDING_PAGE_ABOUT = {
 
 #INDEX_SAVE_AS = 'blog_index.html'
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-THEME = 'pelican-themes/gum'
+THEME = 'pelican-themes/pelican-twitchy'
 DISQUS_SITENAME = 'hualinsgeekway'
+
+# add for pelican-twitchy theme
+RECENT_POST_COUNT = 5
+DISQUS_LOAD_LATER = True
+SHARE = True
+#menu
+DISPLAY_RECENT_POSTS_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = True
+#DISPLAY_TAGS_ON_MENU = True
+EXPAND_LATEST_ON_INDEX = True
+
+#tag cloud
+TAG_CLOUD_STEPS = 3
+TAG_CLOUD_MAX_ITEMS = 20
+# End of pelican-twitchy
 
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
@@ -63,7 +79,7 @@ EXTRA_PATH_METADATA = {
 	}
 #DELETE_OUTPUT_DIRECTORY = False
 
-DISPLAY_CATEGORIES_ON_MENU = False 
+#DISPLAY_CATEGORIES_ON_MENU = False 
 
 # Feed generation is usually not desired when developing
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -78,7 +94,7 @@ TRANSLATION_FEED_ATOM = None
 
 MENUITEMS = (
 #    ('About', '/pages/About/about.html'),
-    ('RSS', '/feeds/all.rss.xml'),    
+    ('RSS', '/feeds/rss.xml'),    
     ('Archives', '/archives.html'),    
 )
 
@@ -120,8 +136,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('GitHub', 'https://github.com/milome'),
+          ('Twitter', 'https://twitter.com/hualinlu'),)
 
 RANDOM = 'functions/random.html'
 SITE_LICENSE = 'Hualin\'s Geek way© hualinluan 2016'
