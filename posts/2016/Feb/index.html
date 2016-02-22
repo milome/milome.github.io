@@ -9,6 +9,8 @@
 
     <!-- Le styles -->
     <link rel="stylesheet" href="../../../theme/css/bootstrap.min.css" type="text/css" />
+    <!-- add styles for search -->
+    <link rel="stylesheet" href="../../../theme/tipuesearch/tipuesearch.css">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -75,6 +77,7 @@
 
                           <ul class="nav pull-right">
                                 <li><a href="../../../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                                <li><form class="navbar-search" action="../../../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                           </ul>
 
             </ul>
@@ -97,16 +100,10 @@
 
                 <div class="span3 well sidebar-nav" id="sidebar">
 <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
-    <li><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
-    <li><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
-    <li><a href="#"><i class="icon-external-link"></i>You can modify those links in your config file</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../../../feeds/atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../../../feeds/rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://github.com/milome"><i class="icon-GitHub-sign icon-large"></i>GitHub</a></li>
-    <li><a href="https://twitter.com/hualinlu"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+<li class="nav-header"><h4><i class="icon-external-link"></i>RECENT POSTS</h4></li>
+    <li>
+      <a href="../../../articles/2016/02/17/sayhello/"><i class="icon-external-link"></i>Say Hello</a>
+    </li>
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
@@ -117,15 +114,27 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-3">
-    <a href="../../../tag/life.html">
-        <i class="icon-tag icon-large"></i>life
-    </a>
-</li>
-<li class="tag-3">
     <a href="../../../tag/feeling.html">
         <i class="icon-tag icon-large"></i>feeling
     </a>
 </li>
+<li class="tag-3">
+    <a href="../../../tag/life.html">
+        <i class="icon-tag icon-large"></i>life
+    </a>
+</li>
+
+
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+    <li><a href="#"><i class="icon-external-link"></i>You can modify those links in your config file</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../../../feeds/atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../../../feeds/rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://github.com/milome"><i class="icon-GitHub-sign icon-large"></i>GitHub</a></li>
+    <li><a href="https://twitter.com/hualinlu"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
 
 
 </ul>        </div><!--/.well -->
