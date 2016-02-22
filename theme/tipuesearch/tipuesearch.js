@@ -473,18 +473,19 @@ http://www.tipue.com/search
                          }
                          else
                          {
-                              out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + '</div>'; 
+                              out += '<div id="tipue_search_results_count">' + tipuesearch_string_8 + '</div>'; 
                          }
                     }
                     else
                     {
                          if (show_stop)
                          {
-                              out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + '. ' + tipuesearch_string_9 + '</div>';     
+                              out += '<div id="tipue_search_warning_head">' + tipuesearch_string_8 + '</div>';
+                              out += '<div id="tipue_search_warning">'  + tipuesearch_string_9 + '</div>';     
                          }
                          else
                          {
-                              out += '<div id="tipue_search_warning">' + tipuesearch_string_10 + '</div>';
+                              out += '<div id="tipue_search_warning_head">' + tipuesearch_string_10 + '</div>';
                               if (set.minimumLength == 1)
                               {
                                    out += '<div id="tipue_search_warning">' + tipuesearch_string_11 + '</div>';
