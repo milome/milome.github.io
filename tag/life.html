@@ -1,198 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hualin's Geek way - life</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Hualin">
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <!-- add styles for search -->
-    <link rel="stylesheet" href="../theme/tipuesearch/tipuesearch.css">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
+		<title>Hualin's Geek way</title>
+		<meta name="description" content="">
+		<meta name="author" content="Hualin">
 
-    <link href="../theme/css/pygments.css" rel="stylesheet">
+		<link rel="stylesheet" href="../theme/css/foundation.css" />
+		<link rel="stylesheet" href="../theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="../theme/css/custom.css" />
+                <link rel="stylesheet" type="text/css" href="../theme/tipuesearch/tipuesearch.css" media="screen">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+		<!-- GOOGLE WEB FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../theme/css/alt-fonts.css" />
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+		<script src="../theme/js/modernizr.js"></script>
 
-    <link href="../" type="application/atom+xml" rel="alternate" title="Hualin's Geek way ATOM Feed" />
-    <link href="../feeds/rss.xml" type="application/atom+xml" rel="alternate" title="Hualin's Geek way RSS Feed" />
-
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">Hualin's Geek way  <strong>Keep Going, Keep Shark.</strong></a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                  <li><a href="/feeds/rss.xml">RSS</a></li>
-                <li><a href="../pages/about/">About</a></li>
-                          <li class="divider-vertical"></li>
-                  <li >
-                    <a href="../category/misc.html">
-						<i class="icon-folder-open icon-large"></i>Misc
-					</a>
-                  </li>
-
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                                <li><form class="navbar-search" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="../articles/2016/02/17/sayhello/">Say Hello</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2016-02-17T00:00:00+08:00">
-        <i class="icon-calendar"></i>2016-02-17
-</abbr>
-<span class="label">By</span>
-<a href="../author/hualin.html"><i class="icon-user"></i>Hualin</a>
-<span class="label">Category</span>
-<a href="../category/misc.html"><i class="icon-folder-open"></i>Misc</a>.
+		<!-- Feeds -->
+		<link href="http://www.hualinluan.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hualin's Geek way Atom Feed" />
+		<link href="http://www.hualinluan.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Hualin's Geek way RSS Feed" />
 
 
-<span class="label">Tags</span>
-	<a href="../tag/feeling.html"><i class="icon-tag"></i>feeling</a>
-	<a href="../tag/life.html"><i class="icon-tag"></i>life</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><h2 id="_1">写在前面</h2>
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">Hualin's&nbsp;Geek&nbsp;way</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="..">Home</a></li>
+						<li><label>Categories</label></li>
+							<li ><a href="../category/misc.html">Misc</a></li>
+
+						<li><label>Links</label></li>
+							<li><a href="http://getpelican.com/">Pelican</a></li>
+							<li><a href="http://python.org/">Python.org</a></li>
+							<li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+							<li><a href="#">You can modify those links in your config file</a></li>
+
+
+						<li><label>Monthly Archives</label></li>
+									<li><a href="/posts/2016/Feb/index.html">February 2016 (1)</a></li>
+
+						<li><label>Social</label></li>
+							<li><a href="https://github.com/milome">GitHub</a></li>
+							<li><a href="https://twitter.com/hualinlu">Twitter</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="../">Hualin's Geek way</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li ><a href="../category/misc.html">Misc</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                          
+····                                                                                                                                       
+                                     <li><a href="../pages/about/">About</a></li>                                    
+                                                                                                                                          
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+							<div class="row">
+								<div class="small-12 columns">
+									<h2>Posts Tagged With 'life'</h2>
+								</div>
+							</div>
+
+<article>
+	<h3><a href="../articles/2016/02/17/sayhello/">Say Hello</a></h3>
+	<h6>Written by <a href="../author/hualin.html">Hualin</a> in <a href="../category/misc.html">Misc</a> on 2016-02-17. Tags: <a href="../tag/feeling.html">feeling</a>, <a href="../tag/life.html">life</a>, </h6>
+	<h2 id="_1">写在前面</h2>
 <p>我这个人很懒，也很普通，在社交媒体上基本就是潜水+看客。但今天，我决定做一些改变，这么年的经历，是时候迈出一步，做更好的积累和沉淀了。</p>
 <p>用正确的方式，让自己变得更好。</p>
 <p><img alt="" src="http://i.imgur.com/POdaixf.jpg" /></p>
-                        <a class="btn primary xsmall" href="../articles/2016/02/17/sayhello/">more ...</a>
-                </div>
-        </div>
-        <hr />
-
-                <section id="content" class="body">
-                <h1>Pages</h1>
-                        <li><a href="../pages/about/">About</a></li>
-                </section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-<ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>RECENT POSTS</h4></li>
-    <li>
-      <a href="../articles/2016/02/17/sayhello/"><i class="icon-external-link"></i>Say Hello</a>
-    </li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/misc.html">
-    <i class="icon-folder-open icon-large"></i>Misc
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/feeling.html">
-        <i class="icon-tag icon-large"></i>feeling
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/life.html">
-        <i class="icon-tag icon-large"></i>life
-    </a>
-</li>
+		<p class="continue"><a href="../articles/2016/02/17/sayhello/">Continue reading &raquo;</a></p>
+</article>
+<hr />
 
 
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
-    <li><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
-    <li><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
-    <li><a href="#"><i class="icon-external-link"></i>You can modify those links in your config file</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://github.com/milome"><i class="icon-GitHub-sign icon-large"></i>GitHub</a></li>
-    <li><a href="https://twitter.com/hualinlu"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Categories</h5>
+								<ul class="side-nav">
+                                                        			<li ><a href="../category/misc.html">Misc</a></li>
+								</ul>
+							</div>
 
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+									<li><a href="/tag/life.html" class="tag-3">life</a></li>
+									<li><a href="/tag/feeling.html" class="tag-3">feeling</a></li>
+								</ul>
+							</div>
 
-</ul>        </div><!--/.well -->
+							<div class="panel">
+								<h5>Monthly Archives</h5>
+								<ul class="side-nav">
+											<li><a href="/posts/2016/Feb/index.html">February 2016 (1)</a></li>
+								</ul>
+							</div>
 
-      </div><!--/row-->
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/milome">GitHub</a></li>
+									<li><a href="https://twitter.com/hualinlu">Twitter</a></li>
+								</ul>
+							</div>
+                                                        <div class="panel">
+    <h5>Search</h5>
+    <form class="navbar-search" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="" name="q" id="tipue_search_input"><input type="submit" value="Go!"></form></li>
+                                                        </div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
 
-      <hr>
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
 
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-<script type="text/javascript">
-    var disqus_shortname = 'hualinsgeekway';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+		<script src="../theme/js/jquery.js"></script>
+		<script src="../theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
 </html>
