@@ -8,9 +8,11 @@ SITEURL = 'http://www.hualinluan.com'
 SITESUBTITLE = 'Keep Going, Keep Shark.'
 
 # can be useful in development, but set to False when you're ready to publish
-RELATIVE_URLS = True
+RELATIVE_URLS = False 
 
 REVERSE_CATEGORY_ORDER = True
+
+TRANSLATION_FEED_ATOM = 'feeds/all-%s.atom.xml'
 
 PATH = 'content'
 
@@ -20,27 +22,27 @@ DEFAULT_LANG = u'zh'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 
 LANDING_PAGE_ABOUT = {
-'details': """Landing page description! You can find information about me <a href="http://kdheepak.com">here</a>."""}
+'details': """Welcom to my blog! You can find information about me <a href="http://hualinluan.com/pages/about">here</a>."""}
 
 
 #INDEX_SAVE_AS = 'blog_index.html'
 
 DEFAULT_PAGINATION = 5
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-THEME = 'pelican-themes/pelican-twitchy'
+
+THEME = 'pelican-themes/pelican-elegant-master'
 DISQUS_SITENAME = 'hualinsgeekway'
 
 # add for pelican-twitchy theme
 RECENT_POST_COUNT = 5
-DISQUS_LOAD_LATER = True
+# Must be commented for elegant theme, otherwise will report error "We were unable to load Disqus."
+#DISQUS_LOAD_LATER = True
 SHARE = True
 #menu
 DISPLAY_RECENT_POSTS_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False 
 DISPLAY_PAGES_ON_MENU = True
-#DISPLAY_TAGS_ON_MENU = True
+DISPLAY_TAGS_ON_MENU = True
 EXPAND_LATEST_ON_INDEX = True
 
 #tag cloud
@@ -48,11 +50,13 @@ TAG_CLOUD_STEPS = 3
 TAG_CLOUD_MAX_ITEMS = 20
 # End of pelican-twitchy
 
+# add for four theme
+FOUNDATION_ALTERNATE_FONTS = True
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
-CATEGORIES_URL = 'functions/categories.html'
-CATEGORIES_SAVE_AS = 'functions/categories.html'
+CATEGORIES_URL = 'categories.html'
+CATEGORIES_SAVE_AS = 'categories.html'
 
 TAGS_URL = 'tags.html'
 TAGS_SAVE_AS = 'tags.html'
@@ -77,25 +81,27 @@ EXTRA_PATH_METADATA = {
 	'extra/CNAME': {'path': 'CNAME'},
 	'extra/robots.txt': {'path': 'robots.txt'},
 	}
+
+DIRECT_TEMPLATES = (('index','tags', 'categories', 'archives','search'))
 #DELETE_OUTPUT_DIRECTORY = False
 
 #DISPLAY_CATEGORIES_ON_MENU = False 
 
 # Feed generation is usually not desired when developing
-#FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ATOM = 'feeds/atom.xml'
 FEED_RSS = 'feeds/rss.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
-FEED_ATOM = None
 TAG_FEED_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 MENUITEMS = (
-#    ('About', '/pages/About/about.html'),
+    ('About', '/pages/About/about.html'),
     ('RSS', '/feeds/rss.xml'),    
-    ('Archives', '/archives.html'),    
+   # ('Search','/search.html'),
+   # ('Archives', '/archives.html'),    
 )
 
 # MarkDown extension for code highlight
@@ -112,7 +118,7 @@ MD_EXTENSIONS = [
 
 # plugins
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ['summary','sitemap','random_article','neighbors','global_license','tag_cloud','footer_insert','liquid_tags']
+PLUGINS = ['summary','sitemap','random_article','neighbors','global_license','tag_cloud','footer_insert','liquid_tags','tipue_search']
 # configure the sitemap
 SITEMAP = {
     'format': 'xml',
