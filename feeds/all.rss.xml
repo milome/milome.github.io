@@ -1,5 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hualin's Geek way</title><link>http://www.hualinluan.com/</link><description>Keep Going, Keep Shark.</description><atom:link href="http://www.hualinluan.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 17 Feb 2016 00:00:00 +0800</lastBuildDate><item><title>Say Hello</title><link>http://www.hualinluan.com/articles/2016/02/17/say%20hello/</link><description>&lt;h2 id="_1"&gt;写在前面&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hualin's Geek way</title><link>http://www.hualinluan.com/</link><description>Keep Going, Keep Shark.</description><atom:link href="http://www.hualinluan.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 17 Feb 2016 00:00:00 +0800</lastBuildDate><item><title>Say Hello</title><link>http://www.hualinluan.com/articles/2016/02/17/say%20hello/</link><description>&lt;h2 id="_1"&gt;写在前面&lt;a class="headerlink" href="#_1" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;我这个人很懒，也很普通，在社交媒体上基本就是潜水+看客。但今天，我决定做一些改变，这么年的经历，是时候迈出一步，做更好的积累和沉淀了。&lt;/p&gt;
 &lt;p&gt;用正确的方式，让自己变得更好。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://i.imgur.com/POdaixf.jpg" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hualin</dc:creator><pubDate>Wed, 17 Feb 2016 00:00:00 +0800</pubDate><guid>tag:www.hualinluan.com,2016-02-17:articles/2016/02/17/say hello/</guid><category>feeling</category><category>life</category></item></channel></rss>
+&lt;p&gt;&lt;img alt="" src="http://i.imgur.com/POdaixf.jpg" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hualin</dc:creator><pubDate>Wed, 17 Feb 2016 00:00:00 +0800</pubDate><guid>tag:www.hualinluan.com,2016-02-17:articles/2016/02/17/say hello/</guid><category>feeling</category><category>life</category></item><item><title>Elegant</title><link>http://www.hualinluan.com/articles/2013/08/27/elegant-best-pelican-theme-features/</link><description>&lt;p&gt;[Note] This article is forwared from &lt;a href="http://oncrashreboot.com/elegant-best-pelican-theme-features#table-of-content"&gt;oncrashreboot.com&lt;/a&gt;, just to verify my elegant settings.&lt;/p&gt;
+
+&lt;p&gt;Elegant is a stylish, responsive, and minimal &lt;a href="http://getpelican.com/"&gt;Pelican&lt;/a&gt;
+theme that looks amazing across all screen resolutions and devices.&lt;/p&gt;
+&lt;p&gt;Elegant gives meaning to the expression "sand the under side of the drawer."
+Every feature and style of Elegant is the result of a long thought process.&lt;/p&gt;
+&lt;div style="text-align:center;"&gt;
+&lt;a class="btn btn-large btn-primary" href="https://github.com/talha131/pelican-elegant/archive/V1.3.zip" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download on Github']);" target="_blank"&gt;Get Elegant &lt;small&gt;1.3&lt;/small&gt;&lt;/a&gt;
+&lt;div&gt;&lt;a href="#license" title="License Agreement for using Elegant Theme"&gt;&lt;small&gt;License Agreement&lt;/small&gt;&lt;/a&gt;|&lt;a href="https://github.com/talha131/pelican-elegant/blob/master/RELEASE_NOTES.md#version-13" target="_blank" title="Release notes for Version 1.3"&gt;&lt;small&gt;Release Notes&lt;/small&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;p&gt;&lt;a href="http://gittip.com/talha131" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Leave a Tip']);" style="color:#8B0000" target="_blank"&gt; &lt;i class="fa fa-gittip"&gt;&lt;/i&gt; Show your support. Leave a tip! &lt;i class="fa fa-gittip"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;What makes Elegant so special?&lt;/p&gt;
+&lt;h2 id="search"&gt;Search&lt;a class="headerlink" href="#search" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Static sites usually do not offer search. Elegant uses &lt;a href="http://www.tipue.com/search/"&gt;Tipue
+Search&lt;/a&gt;- an open source jQuery plugin, to offer
+search for your static site.&lt;/p&gt;
+&lt;p&gt;There are two search modes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;JSON Mode&lt;/strong&gt; Your site pages will be stored in JSON at your server. Tipue
+   Search will use AJAX to access it and render search result. You need &lt;a href="https://github.com/getpelican/pelican-plugins"&gt;Tipue
+   Search plugin&lt;/a&gt; to use this
+   mode.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Live Mode Search&lt;/strong&gt; Tipue Search will fetch your site using Sitemap, index
+   it and store it in the visitor's cache. This mode requires &lt;a href="https://github.com/getpelican/pelican-plugins"&gt;Sitemap
+   plugin&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use JSON mode if you value speed, or have a large site, or don't want to
+overwhelm your host server for every search query.&lt;/p&gt;
+&lt;p&gt;Here is how the search result looks like&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Search result for App Store" src="http://www.hualinluan.com/images/elegant-theme_search-result.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Search box is part of main navigation menu so that visitor can search from any
+page.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Search box" src="http://www.hualinluan.com/images/elegant-theme_search-box.png"/&gt;&lt;/p&gt;
+&lt;h2 id="live-filter-for-tags"&gt;Live Filter for Tags&lt;a class="headerlink" href="#live-filter-for-tags" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Elegant is a minimal theme. Instead of creating separate pages for each tag,
+Elegant shows all the tags on a single page. To help visitor find the tags he
+is interested in, Elegant offers live filter.&lt;/p&gt;
+&lt;p&gt;Go to tags page and type your required tag in "Find a tag" search box. Elegant
+will automatically filter the list.&lt;/p&gt;
+&lt;p&gt;For example, this is how my tags page looks like&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tags view
+unfiltered" src="http://www.hualinluan.com/images/elegant-theme_tags-live-filter-default.png"/&gt;&lt;/p&gt;
+&lt;p&gt;As soon as I type "os", all other tags are filtered out&lt;/p&gt;
+&lt;p&gt;&lt;img alt='Tags view filtered for
+"os"' src="http://www.hualinluan.com/images/elegant-theme_tags-live-filter-filtered.png"/&gt;&lt;/p&gt;
+&lt;p&gt;With live filter, your reader will have no difficulty in picking up his desired
+tag from the list, even if your site has hundreds of tags.&lt;/p&gt;
+&lt;h2 id="all-categories-but-with-zero-clutter"&gt;All Categories but with zero clutter&lt;a class="headerlink" href="#all-categories-but-with-zero-clutter" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pelican by default creates a separate page for each category. Themes list all
+the articles filed in that category at its page. Elegant takes a different
+approach.&lt;/p&gt;
+&lt;p&gt;It lists all the categories and their articles on the same page. To reduce
+clutter and utilise space efficiently, each category and its list of articles
+in enclosed in &lt;a href="http://getbootstrap.com/2.3.2/javascript.html#collapse"&gt;collapsible
+accordions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is how categories appear collapsed&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Categories accordions
+collapsed" src="http://www.hualinluan.com/images/elegant-theme_category-accordions-collapsed.png"/&gt;&lt;/p&gt;
+&lt;p&gt;And this is how they appear uncollapsed&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Categories accordions
+uncollapsed" src="http://www.hualinluan.com/images/elegant-theme_category-accordions-uncollapsed.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Did you notice that categories are listed in ascending alphabetical order and
+articles are sorted by their date in descending order?&lt;/p&gt;
+&lt;h2 id="home-page-features"&gt;Home Page Features&lt;a class="headerlink" href="#home-page-features" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is the page that visitors see when they open your website. Your chance to
+make a good and lasting first impression. Most sites just display a list of
+recent posts. Elegant goes the extra mile. Check this out&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home Page Sample" src="http://www.hualinluan.com/images/elegant-theme_home-page-features.png"/&gt;&lt;/p&gt;
+&lt;p&gt;You can see two sections here,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;About me&lt;/li&gt;
+&lt;li&gt;My Projects&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is a third section below these two sections, "Recent articles"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Recent Articles Section" src="http://www.hualinluan.com/images/elegant-theme_recent-posts.png"/&gt;&lt;/p&gt;
+&lt;h3 id="about-me"&gt;About me&lt;a class="headerlink" href="#about-me" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You can write up your own About me section using &lt;code&gt;LANDING_PAGE_ABOUT&lt;/code&gt; variable
+in your configuration. It is a dictionary that has two keys &lt;code&gt;title&lt;/code&gt; and
+&lt;code&gt;details&lt;/code&gt;. Value of &lt;code&gt;title&lt;/code&gt; is displayed in the header of the home page, like
+in the above example it is "I design and build software products for iOS and
+OSX". &lt;code&gt;details&lt;/code&gt; is the text that appears under "About me" heading.&lt;/p&gt;
+&lt;h3 id="projects"&gt;Projects&lt;a class="headerlink" href="#projects" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Projects list is read from &lt;code&gt;PROJECTS&lt;/code&gt;. It is an array of dictionaries. Each
+dictionary has three keys, &lt;code&gt;name&lt;/code&gt; which will have name of your project, &lt;code&gt;url&lt;/code&gt;
+which will have URL of the project, and &lt;code&gt;description&lt;/code&gt; which will have the
+description of the project. You can define as many projects as you want. Here
+is an example,&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PROJECTS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[{&lt;/span&gt;
+    &lt;span class="s1"&gt;'name'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'Logpad + Duration'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;'url'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'https://github.com/talha131/logpad-plus-duration#logpad--duration'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;'description'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'Vim plugin to emulate Windows Notepad logging feature,'&lt;/span&gt;
+    &lt;span class="s1"&gt;' and log duration of each entry'&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;'name'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'Elegant Theme for Pelican'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;'url'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'http://oncrashreboot.com/pelican-elegant'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s1"&gt;'description'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'A clean and distraction free theme, with search and a'&lt;/span&gt;
+    &lt;span class="s1"&gt;' lot more unique features, using Jinja2 and Bootstrap'&lt;/span&gt;&lt;span class="p"&gt;}]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;h3 id="recent-articles"&gt;Recent Articles&lt;a class="headerlink" href="#recent-articles" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Recent articles show last &lt;code&gt;RECENT_ARTICLES_COUNT&lt;/code&gt; whose default value is 10. It
+also has a link to "all posts".&lt;/p&gt;
+&lt;h2 id="mailchimp"&gt;Mailchimp&lt;a class="headerlink" href="#mailchimp" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mailchimp has become the preferred newsletter service. Elegant shows a form to
+subscribe to your newsletter, above the fold, in the right section of every
+article. Increased visibility is said to increase number of subscribers.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mailchimp subscriber
+form" src="http://www.hualinluan.com/images/elegant-theme_subscribe-form.png"/&gt;&lt;/p&gt;
+&lt;p&gt;You need to put your Mailchimp form action URL in &lt;code&gt;MAILCHIMP_FORM_ACTION&lt;/code&gt; in
+your configuration file. You can also define &lt;code&gt;EMAIL_SUBSCRIPTION_LABEL&lt;/code&gt;,
+&lt;code&gt;EMAIL_FIELD_PLACEHOLDER&lt;/code&gt; and &lt;code&gt;SUBSCRIBE_BUTTON_TITLE&lt;/code&gt; to customize user
+experience.&lt;/p&gt;
+&lt;h2 id="collapsible-comments"&gt;Collapsible Comments&lt;a class="headerlink" href="#collapsible-comments" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Readers use scroll bar to track their progress when reading inside their
+browsers. Very often comments take up more space than the actual article. When
+comments take up more space, it throws the scroll bar proportion off and reader
+cannot judge his progress correctly. Hacker News hosted &lt;a href="https://news.ycombinator.com/item?id=6246777"&gt;a
+discussion&lt;/a&gt; on this topic.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;tons of online articles list comments on the same page, so the scroll bar is
+almost a negative incentive to keep reading.  "I've read this much of the
+article and I'm only 1/20th of the way down?" [user stops reading, unaware
+that there's 450 comments and the article is actually pretty short]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Elegant keeps the comments section hidden by default. Reader can hide and
+unhide the section by clicking on the comments section.&lt;/p&gt;
+&lt;p&gt;This is how comments section appear&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Collapsed comments
+section" src="http://www.hualinluan.com/images/elegant-theme_comments-section-collapsed.png"/&gt;&lt;/p&gt;
+&lt;p&gt;It expands when reader clicks on it&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Uncollapsed comments
+section" src="http://www.hualinluan.com/images/elegant-theme_comments-section-uncollapsed.png"/&gt;&lt;/p&gt;
+&lt;h2 id="articles-count-with-every-tag-and-category"&gt;Articles Count with every Tag and Category&lt;a class="headerlink" href="#articles-count-with-every-tag-and-category" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Readers of an article on your site usually look for other articles on the same
+topic. Categories and tags are a way of showing them related articles. Elegant
+displays the count of articles that you have written in a category or tag in a
+non-intrusive manner.&lt;/p&gt;
+&lt;p&gt;Every category and tag has the count of articles in superscript. So if you have
+written three articles in the C++ category or tag, it will have 3 in the
+superscript. This way visitor will know you have written other articles too on
+the same topic.&lt;/p&gt;
+&lt;p&gt;Check out the screenshots,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Count of articles in a category is displayed in
+superscript" src="http://www.hualinluan.com/images/elegant-theme_category-superscript-count.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Count of articles that have been tagged is displayed in
+superscript" src="http://www.hualinluan.com/images/elegant-theme_tag-superscript-count.png"/&gt;&lt;/p&gt;
+&lt;h2 id="custom-404-page"&gt;Custom 404 Page&lt;a class="headerlink" href="#custom-404-page" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Elegant has a custom Error 404 page for your readers.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Error 404 page" src="http://www.hualinluan.com/images/elegant-theme_error-404-page.png"/&gt;&lt;/p&gt;
+&lt;h2 id="page-title"&gt;Page Title&lt;a class="headerlink" href="#page-title" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Elegant follows following format for the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Article title · Site Name
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img alt="Article title is always visible in the
+tab" src="http://www.hualinluan.com/images/elegant-theme_page-title.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Some sites put site title first and article title later in the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag.
+There is a problem with this approach.  When you open too many tabs, browser
+delimits tab's title from the end. In such cases, only the first few words or
+even letters of the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; are left visible.&lt;/p&gt;
+&lt;p&gt;If visitor has opened several tabs from your website, all tabs will have "Site
+Name..." title. User will need to click on each tab to identify his required
+tab from the content. But with Elegant's approach article title will always be
+visible, and reader will have less difficultly in identifying the tab he is
+after.&lt;/p&gt;
+&lt;p&gt;Putting site title before the article title increases your site name
+visibility. Elegant achieves this by putting site name in the top navigation
+bar of every page, where it always stays above the fold.&lt;/p&gt;
+&lt;h2 id="code-style"&gt;Code Style&lt;a class="headerlink" href="#code-style" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Elegant uses &lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized&lt;/a&gt; theme for syntax
+highlighting. Line numbers have a different background color so that they
+appear distinct from the code. Here is an example&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;printf&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"This is a sample function"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;h2 id="article-subtitle"&gt;Article Subtitle&lt;a class="headerlink" href="#article-subtitle" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pelican lets you define title of your article in the meta data. Elegant adds
+subtitle support. Just define &lt;code&gt;subtitle&lt;/code&gt; in your article's meta data and it
+will appear along with your title. Here is an example,&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Article subtitle
+example" src="http://www.hualinluan.com/images/elegant-theme_article-subtitle.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Article subtitle is displayed with the title in every list. To keep it visibly
+separate from title, subtitle is enclosed in &lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt; tag. When visible cue
+cannot be used, like in the title attribute of html anchor tag &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, a hyphen
+is inserted between them.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Article title and subtitle separated with a
+hyphen" src="http://www.hualinluan.com/images/elegant-theme_article-subtitle-hyphen.png"/&gt;&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h2 id="elegant-technical-nitty-gritty"&gt;Elegant - Technical Nitty-Gritty&lt;a class="headerlink" href="#elegant-technical-nitty-gritty" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="license"&gt;License&lt;a class="headerlink" href="#license" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The license requires that you give credit to me, Talha Mansoor, as the author
+of the Elegant theme on every site that uses this theme. I have placed the
+attribution in the footer of every page. Do not remove it. If you need to
+remove or change the style of the attribution, please get in &lt;a href="http://oncrashreboot.com/#about-me"&gt;touch with
+me&lt;/a&gt; first.&lt;/p&gt;
+&lt;p&gt;Along with this attribution clause, Elegant theme is licensed under The MIT
+License.&lt;/p&gt;
+&lt;p&gt;If you use my theme, I would love to hear from you. &lt;a href="http://oncrashreboot.com/#about-me"&gt;Get in
+touch&lt;/a&gt; and let me know about it. I may link
+to your site too.&lt;/p&gt;
+&lt;h3 id="contribute"&gt;Contribute&lt;a class="headerlink" href="#contribute" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Front end design is not my strong suite. I must have made some blunders in this
+design unknowingly. Please don't let me go away with buggy code.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File bugs at &lt;a href="https://github.com/talha131/pelican-elegant/issues"&gt;Github
+  issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Share your ideas about the design in the comments below&lt;/li&gt;
+&lt;li&gt;And most of all contribute improvements to &lt;a href="https://github.com/talha131/pelican-elegant/"&gt;this
+  project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are two problem areas that I can think of,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Internet Explorer support&lt;/li&gt;
+&lt;li&gt;Web safe fonts. I developed this theme on a MacBook Retina. Although I have
+   tried to make sure it looks great on all platforms but it still needs polish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Besides these, there must be other bugs that I haven't noticed yet. I need your
+help to hunt them down and make them behave.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hualin</dc:creator><pubDate>Fri, 11 Oct 2013 23:00:00 +0800</pubDate><guid>tag:www.hualinluan.com,2013-08-27:articles/2013/08/27/elegant-best-pelican-theme-features/</guid><category>jinja2</category><category>bootstrap</category><category>pelican-theme</category><category>font-awesome</category></item></channel></rss>
