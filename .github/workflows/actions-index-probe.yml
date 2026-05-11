@@ -1,0 +1,14 @@
+name: Actions index probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print probe
+        run: echo "actions-index-probe"
