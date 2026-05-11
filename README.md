@@ -2,6 +2,8 @@
 
 This public repository is the GitHub Pages deployment repository for `https://milome.github.io/`.
 
+The repository contains deployment metadata only.
+
 ## Source Repository
 
 The source code and content editing workflow live in the private repository `milome/kbase-content-engine`.
