@@ -1,0 +1,70 @@
+name: Rollback pages-dist from pages-dist-lkg
+
+on:
+  workflow_dispatch:
+    inputs:
+      targetRef:
+        description: "Rollback source ref. Only pages-dist-lkg is accepted."
+        required: true
+        default: "pages-dist-lkg"
+      dryRun:
+        description: "When true, print the rollback plan without changing pages-dist."
+        required: true
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-dist-rollback
+  cancel-in-progress: false
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_REF: ${{ github.event.inputs.targetRef }}
+      DRY_RUN: ${{ github.event.inputs.dryRun }}
+    steps:
+      - name: Validate target ref
+        run: |
+          if [ "$TARGET_REF" != "pages-dist-lkg" ]; then
+            echo "Rejected targetRef: $TARGET_REF"
+            echo "Only pages-dist-lkg is allowed."
+            exit 1
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch pages-dist references
+        run: |
+          git fetch origin refs/heads/pages-dist:refs/remotes/origin/pages-dist || true
+          git fetch origin refs/heads/pages-dist-lkg:refs/remotes/origin/pages-dist-lkg
+
+      - name: Dry-run rollback plan
+        if: env.DRY_RUN == 'true'
+        run: |
+          echo "Dry run enabled."
+          echo "Will reset pages-dist to origin/pages-dist-lkg."
+          echo "Current pages-dist: $(git rev-parse refs/remotes/origin/pages-dist 2>/dev/null || echo '<none>')"
+          echo "Target pages-dist-lkg: $(git rev-parse refs/remotes/origin/pages-dist-lkg)"
+
+      - name: Execute rollback
+        if: env.DRY_RUN != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git push origin refs/remotes/origin/pages-dist-lkg:refs/heads/pages-dist --force-with-lease
+
+      - name: Dispatch deploy
+        if: env.DRY_RUN != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/${{ github.repository }}/dispatches \
+            -f event_type=deploy-pages-dist \
+            -f client_payload[triggeredBy]=rollback-pages-dist \
+            -f client_payload[targetRef]=pages-dist
