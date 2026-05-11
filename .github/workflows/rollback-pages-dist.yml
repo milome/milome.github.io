@@ -1,6 +1,6 @@
 name: Rollback pages-dist from pages-dist-lkg
 
-on:
+"on":
   workflow_dispatch:
     inputs:
       targetRef:

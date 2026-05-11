@@ -1,6 +1,6 @@
 name: Deploy public Pages from pages-dist artifact
 
-on:
+"on":
   repository_dispatch:
     types:
       - deploy-pages-dist
