@@ -6,9 +6,9 @@
   "generatedAt": "2026-06-02T05:28:10.808Z",
   "publicPreviousDistSha": "013ec8081d770d0613386298ddbb94c7ea58b2d5",
   "publicNewDistSha": "b5ecd4127b5433d807a50e35e73b089eeda5ece44c768557ff75555294d262c7",
-  "publicDistCommitSha": null,
+  "publicDistCommitSha": "ecec64e202ce737935b3841852517155441ca315",
   "distSha": "b5ecd4127b5433d807a50e35e73b089eeda5ece44c768557ff75555294d262c7",
-  "manifestHash": "505fd7aa19df9e1ec69575b201d78ae453ba340a544b1fd080503b82b4c857b1",
+  "manifestHash": "f4d435091e2831940dfa0b1344b5789ba2faf3c0c89a811a4c46330a3b66fa7c",
   "distFileCount": 2124,
   "distTotalBytes": 722635084,
   "files": [
