@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="flowchart 风格">
+  <title id="title">speckit artifact flow</title>
+  <desc id="desc">Flowchart showing how business semantics become specification, clarification, plan, implementation and evidence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#60a5fa"/>
+    </marker>
+    <marker id="loopArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#10b981"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="56" y="52" width="1168" height="616" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="92" y="112" fill="#f8fafc" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">speckit artifact flow: cannot jump directly from prompt to code</text>
+  <text x="640" y="144" fill="#cbd5e1" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="144">Business semantics enter auditable</tspan><tspan x="640" dy="17.5">specifications first, then planning,</tspan><tspan x="640" dy="17.5">implementation and acceptance evidence.</tspan></text>
+
+  <g fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M250 328 H348"/>
+    <path d="M498 328 H596"/>
+    <path d="M746 328 H844"/>
+    <path d="M994 328 H1092"/>
+  </g>
+  <path d="M1050 454 C856 574 418 574 230 454" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" marker-end="url(#loopArrow)"/>
+
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="94" y="264" width="156" height="128" rx="22" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <rect x="348" y="264" width="150" height="128" rx="22" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="596" y="264" width="150" height="128" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="844" y="264" width="150" height="128" rx="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="1092" y="264" width="92" height="128" rx="22" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+
+    <text x="172" y="316.72" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="700"><tspan x="172" dy="0">business</tspan><tspan x="172" dy="17.7">semantics</tspan></text>
+    <text x="172" y="352.12" text-anchor="middle" fill="#cbd5e1" font-size="12"><tspan x="172" dy="0">Trading day vesting</tspan></text>
+    <text x="423" y="310" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">Specify</text>
+    <text x="423" y="344" text-anchor="middle" fill="#cbd5e1" font-size="15"><tspan x="423" dy="0">Requirements</tspan><tspan x="423" dy="18.3">and Acceptance</tspan></text>
+    <text x="671" y="310" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">Clarify</text>
+    <text x="671" y="344" text-anchor="middle" fill="#cbd5e1" font-size="15"><tspan x="671" dy="0">Decision</tspan><tspan x="671" dy="18.3">ambiguity</tspan></text>
+    <text x="919" y="314.94" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700"><tspan x="919" dy="0">Plan</tspan></text>
+    <text x="919" y="338.3" text-anchor="middle" fill="#cbd5e1" font-size="18"><tspan x="919" dy="0">Stages and</tspan><tspan x="919" dy="21.24">Risks</tspan></text>
+    <text x="1138" y="325.38" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700"><tspan x="1138" dy="0">Code</tspan></text>
+    <text x="1138" y="348.74" text-anchor="middle" fill="#cbd5e1" font-size="18"><tspan x="1138" dy="0">accomplish</tspan></text>
+
+    <rect x="420" y="462" width="440" height="72" rx="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="640" y="503.04" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="700"><tspan x="640" y="494.5">Checklist/Evidence: testing, construction,</tspan><tspan x="640" dy="17.1">benchmark, manual sign-off</tspan></text>
+    <text x="640" y="610" text-anchor="middle" fill="#a7f3d0" font-size="20">When evidence fails, go back to specs or clarifications instead of continuing to pile on patches.</text>
+  </g>
+</svg>

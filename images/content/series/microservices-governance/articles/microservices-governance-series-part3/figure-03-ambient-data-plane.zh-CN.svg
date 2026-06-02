@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ambient Mesh 数据面分层</title>
+  <desc id="desc">展示 Gateway API、ztunnel、服务、Waypoint 和 eBPF fast path 在 Ambient 数据面中的职责关系。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Ambient Mesh 数据面分层</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Gateway, ztunnel, waypoint and kernel fast path responsibilities</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="88" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="163" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">外部请求</text>
+    <text x="163" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">External Client</text>
+    <rect x="288" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="363" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">标准入口</text>
+    <text x="363" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">Gateway API</text>
+    <rect x="488" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="563" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">四层数据面</text>
+    <text x="563" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">ztunnel L4 Plane</text>
+    <rect x="688" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="763" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">业务服务</text>
+    <text x="763" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">Application Services</text>
+    <rect x="394" y="318" width="150" height="72" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="469" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">按需七层</text>
+    <text x="469" y="370" text-anchor="middle" font-size="12" fill="#e2e8f0">Waypoint Policy</text>
+    <rect x="594" y="318" width="150" height="72" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="669" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">内核加速</text>
+    <text x="669" y="370" text-anchor="middle" font-size="12" fill="#e2e8f0">eBPF Fast Path</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="238" y1="207" x2="278" y2="207"/>
+      <line x1="438" y1="207" x2="478" y2="207"/>
+      <line x1="638" y1="207" x2="678" y2="207"/>
+      <path d="M 563 248 C 552 288 514 304 485 314"/>
+      <path d="M 669 318 C 660 284 628 260 582 248"/>
+    </g>
+    <text x="450" y="454" text-anchor="middle" font-size="12" fill="#94a3b8">默认路径保持 L4 简洁；只有需要 HTTP/gRPC 策略时才进入 Waypoint。</text>
+  </g>
+</svg>

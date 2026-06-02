@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">GitOps release governance closed loop</title>
+  <desc id="desc">Demonstrate the release governance closed loop composed of Git trusted sources, GitOps controllers, reconciliation loops, target environments, and governance feedback.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">GitOps release governance closed loop</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="87.5">Git as desired state, controller as</tspan><tspan x="450" dy="17.1">reconciliation engine</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="96" y="194" width="145" height="86" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="169" y="226" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">Git trusted source</text>
+    <text x="169" y="248" text-anchor="middle" font-size="12" fill="#e2e8f0">Manifests / Helm</text>
+    <rect x="296" y="194" width="145" height="86" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="369" y="226" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">controller</text>
+    <text x="369" y="248" text-anchor="middle" font-size="12" fill="#e2e8f0">ArgoCD / Flux</text>
+    <rect x="496" y="194" width="145" height="86" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="568.5" y="225.9" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd"><tspan x="568.5" dy="0">Reconciliation</tspan><tspan x="568.5" dy="16.52">cycle</tspan></text>
+    <text x="568.5" y="259.94" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="568.5" dy="0">Watch / Diff / Sync</tspan></text>
+    <rect x="696" y="194" width="145" height="86" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="768.5" y="234.16" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0"><tspan x="768.5" dy="0">target env</tspan></text>
+    <text x="768.5" y="251.68" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="768.5" dy="0">Dev / Staging / Prod</tspan></text>
+    <rect x="348" y="356" width="204" height="72" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="386" text-anchor="middle" font-size="14" font-weight="700" fill="#fde68a">Governance feedback</text>
+    <text x="450" y="408" text-anchor="middle" font-size="12" fill="#e2e8f0">Monitor / Audit / Rollback</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="241" y1="237" x2="286" y2="237"/>
+      <line x1="441" y1="237" x2="486" y2="237"/>
+      <line x1="641" y1="237" x2="686" y2="237"/>
+      <path d="M 750 280 C 680 360 585 388 562 392"/>
+      <path d="M 348 392 C 240 386 166 340 168 290"/>
+    </g>
+  </g>
+</svg>

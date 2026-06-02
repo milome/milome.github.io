@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">从交付轨迹到数据资产的路由门控</title>
+  <desc id="desc">展示原始交付轨迹经过安全、许可、污染、可复现、验证和教学价值门控后，被路由到评估集、SFT候选集、偏好数据、团队知识库或丢弃区。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#64748b"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">从交付轨迹到数据资产的路由门控</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">不是所有 AI 协作日志都能训练；门控先决定是否可信，再决定数据用途</text>
+
+  <g filter="url(#shadow)">
+    <rect x="62" y="205" width="158" height="118" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="141" y="241" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#bfdbfe">原始交付轨迹</text>
+    <text x="141" y="268" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1">需求 · Prompt · Diff</text>
+    <text x="141" y="289" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1">工具调用 · 测试 · Review</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="278" y="138" width="220" height="254" rx="18" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="388" y="171" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fde68a">质量门控</text>
+    <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#e2e8f0">
+      <rect x="306" y="194" width="164" height="28" rx="8" fill="#1e293b" stroke="#475569"/>
+      <text x="388" y="213" text-anchor="middle">隐私与安全</text>
+      <rect x="306" y="230" width="164" height="28" rx="8" fill="#1e293b" stroke="#475569"/>
+      <text x="388" y="249" text-anchor="middle">IP 与许可</text>
+      <rect x="306" y="266" width="164" height="28" rx="8" fill="#1e293b" stroke="#475569"/>
+      <text x="388" y="285" text-anchor="middle">数据污染隔离</text>
+      <rect x="306" y="302" width="164" height="28" rx="8" fill="#1e293b" stroke="#475569"/>
+      <text x="388" y="321" text-anchor="middle">可复现与验证</text>
+      <rect x="306" y="338" width="164" height="28" rx="8" fill="#1e293b" stroke="#475569"/>
+      <text x="388" y="357" text-anchor="middle">教学价值与生命周期</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="585" y="125" width="124" height="66" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="647" y="153" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">私有 Eval</text>
+    <text x="647" y="173" text-anchor="middle" font-size="11" fill="#cbd5e1">可复现任务</text>
+
+    <rect x="734" y="125" width="124" height="66" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="796" y="153" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">SFT 候选</text>
+    <text x="796" y="173" text-anchor="middle" font-size="11" fill="#cbd5e1">高质量示范</text>
+
+    <rect x="585" y="232" width="124" height="66" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="647" y="260" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a">偏好数据</text>
+    <text x="647" y="280" text-anchor="middle" font-size="11" fill="#cbd5e1">方案取舍</text>
+
+    <rect x="734" y="232" width="124" height="66" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="796" y="260" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">团队知识库</text>
+    <text x="796" y="280" text-anchor="middle" font-size="11" fill="#cbd5e1">规则与约束</text>
+
+    <rect x="659" y="340" width="124" height="66" rx="14" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+    <text x="721" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#fecdd3">丢弃区</text>
+    <text x="721" y="388" text-anchor="middle" font-size="11" fill="#cbd5e1">敏感或低价值</text>
+  </g>
+
+  <path d="M220 264 L274 264" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M498 264 C536 218, 547 166, 581 158" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M498 264 C564 190, 664 154, 730 158" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M498 264 L581 264" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M498 264 L730 264" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M498 264 C570 324, 608 370, 655 373" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="492" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 2. 路由先于训练：同一条轨迹可能是评估资产、训练候选、知识规则，也可能必须被丢弃。</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Sidecar 模式与 Ambient 模式对比</title>
+  <desc id="desc">对比每个 Pod 注入代理的 Sidecar 模式与共享节点级数据面的 Ambient 模式。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Sidecar 模式与 Ambient 模式对比</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Per-pod proxy versus shared data plane</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="70" y="135" width="340" height="250" rx="18" fill="#111827" stroke="#475569" stroke-width="1.5"/>
+    <text x="240" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#bfdbfe">Sidecar 模式 / Per-Pod Proxy</text>
+    <rect x="100" y="210" width="110" height="74" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="155" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#bfdbfe">服务 A</text>
+    <text x="155" y="260" text-anchor="middle" font-size="11" fill="#e2e8f0">Service A</text>
+    <rect x="245" y="210" width="125" height="74" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="308" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">随 Pod 代理</text>
+    <text x="308" y="260" text-anchor="middle" font-size="11" fill="#e2e8f0">Envoy Sidecar</text>
+    <rect x="490" y="135" width="340" height="250" rx="18" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+    <text x="660" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#a7f3d0">Ambient 模式 / Shared Data Plane</text>
+    <rect x="520" y="210" width="110" height="74" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="575" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#bfdbfe">服务 A</text>
+    <text x="575" y="260" text-anchor="middle" font-size="11" fill="#e2e8f0">Service A</text>
+    <rect x="670" y="210" width="125" height="74" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="733" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#a7f3d0">共享 L4 通道</text>
+    <text x="733" y="260" text-anchor="middle" font-size="11" fill="#e2e8f0">ztunnel</text>
+    <rect x="598" y="310" width="125" height="52" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="661" y="331" text-anchor="middle" font-size="12" font-weight="700" fill="#bae6fd">按需 L7</text>
+    <text x="661" y="349" text-anchor="middle" font-size="11" fill="#e2e8f0">Waypoint</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="210" y1="247" x2="235" y2="247"/>
+      <line x1="630" y1="247" x2="660" y2="247"/>
+      <path d="M 733 284 C 720 300 696 310 676 314"/>
+    </g>
+    <text x="450" y="434" text-anchor="middle" font-size="12" fill="#94a3b8">Ambient 的关键不是“没有代理”，而是把代理从每个工作负载中移到共享数据面并按需启用 L7。</text>
+  </g>
+</svg>

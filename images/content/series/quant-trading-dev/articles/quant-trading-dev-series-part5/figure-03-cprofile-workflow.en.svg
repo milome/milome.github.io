@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-007" data-visual-pattern="flowchart 风格">
+  <title id="title">cProfile workflow for quant trading performance diagnosis</title>
+  <desc id="desc">A flowchart showing how to choose a reproducible action, run cProfile, sort stats, classify bottlenecks, and decide next profiling action.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="48" width="1168" height="624" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">cProfile function profiling flow</text>
+  <text x="640" y="137" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="middle"><tspan x="640" y="137">Turn a reproducible slow action into</tspan><tspan x="640" dy="17.5">sortable function-level evidence.</tspan></text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial">
+    <rect x="90" y="210" width="190" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="105.36" y="248.38" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="105.36" dy="0">1. Select action</tspan></text>
+    <text x="105.36" y="264.78" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="105.36" dy="0">For example, load 10000 roots</tspan></text>
+    <text x="105.36" y="280.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="105.36" dy="0">K line or switching period</tspan></text>
+
+    <rect x="330" y="210" width="190" height="96" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="345.36" y="248.38" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="345.36" dy="0">2. Wrap the boundaries</tspan></text>
+    <text x="345.36" y="280.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="345.36" dy="0">enable / disable</tspan></text>
+    <text x="345.36" y="264.78" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="345.36" dy="0">Cover only target link</tspan></text>
+
+    <rect x="570" y="210" width="190" height="96" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="581.52" y="246.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="581.52" dy="0">3. Sort results</tspan></text>
+    <text x="581.52" y="264.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="581.52" dy="0">Let’s look at cumtime first</tspan></text>
+    <text x="581.52" y="281.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="581.52" dy="0">Look again tottime</tspan></text>
+
+    <rect x="810" y="210" width="190" height="96" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="821.52" y="238.14" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="821.52" dy="0">4. Classification</tspan><tspan x="821.52" dy="17.7">bottleneck</tspan></text>
+    <text x="821.52" y="290.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="821.52" dy="0">Hotspot function/subcall</tspan></text>
+    <text x="821.52" y="273.54" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="821.52" dy="0">High frequency small calls</tspan></text>
+
+    <rect x="1040" y="210" width="150" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="1066" y="244" fill="#f8fafc" font-size="21" font-weight="700">5. Next step</text>
+    <text x="1066" y="274" fill="#cbd5e1" font-size="18">line_profiler</text>
+    <text x="1066" y="298" fill="#cbd5e1" font-size="18">or benchmark</text>
+
+    <path d="M280 258 H320" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M520 258 H560" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M760 258 H800" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M1000 258 H1030" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Arial">
+    <text x="96" y="376" fill="#f8fafc" font-size="24" font-weight="700">Reading the stats</text>
+
+    <rect x="96" y="410" width="332" height="120" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="110.4" y="453.88" fill="#bfdbfe" font-size="15" font-weight="700" text-anchor="start"><tspan x="110.4" y="453.88">high tottime + high ncalls</tspan></text>
+    <text x="110.4" y="469.88" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="110.4" y="469.88">The function itself is the hot spot</tspan></text>
+    <text x="110.4" y="486.38" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="110.4" y="486.38">Prioritize algorithms, caching, and batch</tspan><tspan x="110.4" dy="16.52">processing</tspan></text>
+
+    <rect x="474" y="410" width="332" height="120" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="488.4" y="454.42" fill="#a7f3d0" font-size="15" font-weight="700" text-anchor="start"><tspan x="488.4" y="454.42">high cumtime + low tottime</tspan></text>
+    <text x="488.4" y="500.58" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="488.4" y="500.58">Slow due to subcalls or I/O</tspan></text>
+    <text x="488.4" y="470.42" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="488.4" y="470.42">Continue drilling down call trees and</tspan><tspan x="488.4" dy="14.16">dependency boundaries</tspan></text>
+
+    <rect x="852" y="410" width="332" height="120" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="868" y="460.38" fill="#fde68a" font-size="15" font-weight="700" text-anchor="start"><tspan x="868" dy="0">low percall + high ncalls</tspan></text>
+    <text x="868" y="476.78" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="868" dy="0">Not slow but too many calls at a time</tspan></text>
+    <text x="868" y="492.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="868" dy="0">Merge, window, or deduplicate</tspan></text>
+  </g>
+
+  <rect x="126" y="584" width="1028" height="52" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="154" y="612" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="start"><tspan x="154" y="612">Boundary: cProfile locates direction; changes</tspan><tspan x="154" dy="16.52">still need repro, benchmarks, assertions.</tspan></text>
+</svg>

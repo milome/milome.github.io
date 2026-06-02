@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-004" data-visual-pattern="容器边界图">
+  <title>Chart MVC container boundaries</title>
+  <desc>After splitting the ChartWidget, the responsibilities of the data model, renderer, interaction controller and refresh protocol are demarcated.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Chart component border splitting</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Split the God Object into testable, replaceable,</tspan><tspan x="600" dy="17.5">reviewable container boundaries.</tspan></text>
+
+  <rect x="112" y="212" width="976" height="380" rx="24" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+  <text x="146" y="258" fill="#f8fafc" font-size="26" font-weight="700">Chart Module Container</text>
+
+  <rect x="156" y="310" width="250" height="138" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+  <text x="172" y="369.38" fill="#bfdbfe" font-size="15" font-weight="700" text-anchor="start"><tspan x="172" dy="0">Model</tspan></text>
+  <text x="172" y="385.78" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="172" dy="0">K line / indicator status</tspan></text>
+  <text x="172" y="401.7" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="172" dy="0">Only describe the meaning of data</tspan></text>
+
+  <rect x="475" y="310" width="250" height="138" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+  <text x="491" y="369.38" fill="#a7f3d0" font-size="15" font-weight="700" text-anchor="start"><tspan x="491" dy="0">Renderer</tspan></text>
+  <text x="491" y="385.78" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="491" dy="0">Draw/Cache/Style</tspan></text>
+  <text x="491" y="401.7" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="491" dy="0">Only handles visual expressions</tspan></text>
+
+  <rect x="794" y="310" width="250" height="138" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <text x="810" y="369.38" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="start"><tspan x="810" dy="0">Controller</tspan></text>
+  <text x="810" y="385.78" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="810" dy="0">Drag/zoom/select</tspan></text>
+  <text x="810" y="401.7" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="810" dy="0">Only handle interaction intent</tspan></text>
+
+  <rect x="334" y="498" width="532" height="62" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+  <text x="430" y="538" fill="#fde68a" font-size="23" font-weight="700">Event Bus / Refresh Contract</text>
+  <g stroke="#64748b" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M281 448 L430 498"/>
+    <path d="M600 448 L600 498"/>
+    <path d="M919 448 L770 498"/>
+  </g>
+  <rect x="166" y="626" width="868" height="52" rx="16" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="194" y="654" fill="#94a3b8" font-size="14" text-anchor="start"><tspan x="194" y="654">Benefit: Boundaries can be independently tested; Cost:</tspan><tspan x="194" dy="16.52">Refresh order, event subscription, and state ownership</tspan><tspan x="194" dy="16.52">must be maintained explicitly.</tspan></text>
+</svg>

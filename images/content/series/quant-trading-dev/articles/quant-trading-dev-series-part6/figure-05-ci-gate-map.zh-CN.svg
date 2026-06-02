@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-005" data-visual-pattern="decision tree 风格">
+  <title id="title">CI Gate 决策图</title>
+  <desc id="desc">展示一次提交如何经过快速单测、集成测试、边界时间、属性测试和覆盖率阈值，最终决定阻断或合并。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">CI Gate 决策图</text>
+  <text x="92" y="140" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">CI 的目标是把不同风险放到合适门禁，而不是把所有测试塞进一个阶段。</text>
+  <g fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M250 330 H350"/>
+    <path d="M510 330 H610"/>
+    <path d="M770 330 H870"/>
+    <path d="M960 372 V456"/>
+    <path d="M872 500 H740"/>
+    <path d="M520 500 H394"/>
+    <path d="M640 372 V430"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="110" y="288" width="140" height="84" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="180" y="322" fill="#f8fafc" font-size="20" font-weight="700">提交<tspan x="180" dy="26" fill="#cbd5e1" font-size="18">代码变更</tspan></text>
+    <rect x="350" y="288" width="160" height="84" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="430" y="322" fill="#f8fafc" font-size="20" font-weight="700">快速单测<tspan x="430" dy="26" fill="#cbd5e1" font-size="18">秒级反馈</tspan></text>
+    <rect x="610" y="288" width="160" height="84" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="690" y="322" fill="#f8fafc" font-size="20" font-weight="700">集成测试<tspan x="690" dy="26" fill="#cbd5e1" font-size="18">模块协作</tspan></text>
+    <rect x="870" y="288" width="180" height="84" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="960" y="322" fill="#f8fafc" font-size="20" font-weight="700">边界 / 属性<tspan x="960" dy="26" fill="#cbd5e1" font-size="18">固定 seed</tspan></text>
+    <rect x="872" y="456" width="176" height="88" rx="18" fill="#1e293b" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="960" y="490" fill="#f8fafc" font-size="20" font-weight="700">覆盖率报告<tspan x="960" dy="26" fill="#cbd5e1" font-size="18">核心阈值</tspan></text>
+    <rect x="520" y="456" width="220" height="88" rx="18" fill="#1e293b" stroke="#a7f3d0" stroke-width="2"/>
+    <text x="630" y="490" fill="#f8fafc" font-size="20" font-weight="700">门禁判断<tspan x="630" dy="26" fill="#cbd5e1" font-size="18">失败阻断合并</tspan></text>
+    <rect x="214" y="456" width="180" height="88" rx="18" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="304" y="490" fill="#f8fafc" font-size="20" font-weight="700">合并<tspan x="304" dy="26" fill="#cbd5e1" font-size="18">证据可审查</tspan></text>
+  </g>
+  <text x="352" y="620" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="18">失败测试要能定位风险层；通过结果要能说明哪类缺陷被拦截。</text>
+</svg>

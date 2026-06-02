@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="timeline 风格">
+  <title id="title">Seven part reading map</title>
+  <desc id="desc">A seven-part reading map ordered from Part1 to Part7.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="54" y="50" width="1172" height="620" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="94" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">Seven-part Reading Map</text>
+  <text x="640" y="137" fill="#94a3b8" font-size="14" font-family="Arial" text-anchor="middle"><tspan x="640" y="137">Read Part1 -> Part2 -> Part3 -> Part4 -> Part5 -> Part6 -> Part7 in order,</tspan><tspan x="640" dy="17.5">then refer back to Part2/Part3 when diagnosing specific engineering risks.</tspan></text>
+  <g font-family="Arial">
+    <rect x="72" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="234" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="396" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="558" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="720" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="882" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="1044" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="93" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part1</text>
+    <text x="88" y="300" fill="#94a3b8" font-size="13">Architecture</text>
+    <text x="255" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part2</text>
+    <text x="252" y="300" fill="#94a3b8" font-size="13">Python risks I</text>
+    <text x="417" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part3</text>
+    <text x="414" y="300" fill="#94a3b8" font-size="13">Python risks II</text>
+    <text x="579" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part4</text>
+    <text x="580" y="300" fill="#94a3b8" font-size="13">Testing</text>
+    <text x="741" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part5</text>
+    <text x="742" y="300" fill="#94a3b8" font-size="13">Performance</text>
+    <text x="903" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part6</text>
+    <text x="904" y="300" fill="#94a3b8" font-size="13">Architecture</text>
+    <text x="1065" y="272" fill="#f8fafc" font-size="19" font-weight="700">Part7</text>
+    <text x="1064" y="300" fill="#94a3b8" font-size="13">AI engineering</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M202 284 H234"/>
+    <path d="M364 284 H396"/>
+    <path d="M526 284 H558"/>
+    <path d="M688 284 H720"/>
+    <path d="M850 284 H882"/>
+    <path d="M1012 284 H1044"/>
+  </g>
+  <rect x="108" y="430" width="958" height="104" rx="22" fill="#1e293b" stroke="#334155"/>
+  <text x="140" y="472" fill="#f8fafc" font-family="Arial" font-size="20" font-weight="700">Reading Strategy</text>
+  <text x="140" y="506" fill="#cbd5e1" font-family="Arial" font-size="16">Read the full sequence first; use Part2/Part3 as references when diagnosing specific engineering risks.</text>
+  <rect x="108" y="594" width="958" height="42" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="132" y="622" fill="#cbd5e1" font-family="Arial" font-size="16">Order rule: testing precedes performance, and AI engineering closes the series as an enhancement layer.</text>
+</svg>

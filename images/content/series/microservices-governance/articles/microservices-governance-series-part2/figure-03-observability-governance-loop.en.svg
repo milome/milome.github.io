@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Observability drives governance closed loop</title>
+  <desc id="desc">Demonstrate a governance closed loop composed of unified signals, data quality, governance decisions, execution actions, and feedback learning.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Observability drives governance closed loop</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Observability-driven governance loop</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="90" y="185" width="150" height="92" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="165" y="220" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">unified signal</text>
+    <text x="165" y="243" text-anchor="middle" font-size="12" fill="#e2e8f0">Unified Signals</text>
+    <rect x="290" y="105" width="150" height="92" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="365" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">Data quality</text>
+    <text x="365" y="163" text-anchor="middle" font-size="12" fill="#e2e8f0">Data Quality</text>
+    <rect x="510" y="105" width="150" height="92" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="585" y="139.72" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="585" dy="0">governance</tspan><tspan x="585" dy="17.7">decisions</tspan></text>
+    <text x="585" y="175.12" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="585" dy="0">Policy Decision</tspan></text>
+    <rect x="660" y="285" width="150" height="92" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="735" y="320" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">perform action</text>
+    <text x="735" y="343" text-anchor="middle" font-size="12" fill="#e2e8f0">Policy Action</text>
+    <rect x="320" y="330" width="180" height="92" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="410" y="365" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">feedback learning</text>
+    <text x="410" y="388" text-anchor="middle" font-size="12" fill="#e2e8f0">SLO and Incident Learning</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <path d="M 240 220 C 265 170 280 150 290 150"/>
+      <line x1="440" y1="151" x2="500" y2="151"/>
+      <path d="M 660 166 C 720 190 740 238 738 278"/>
+      <path d="M 680 346 C 610 390 560 394 510 382"/>
+      <path d="M 320 376 C 220 350 155 310 165 285"/>
+    </g>
+    <text x="450" y="461.86" text-anchor="middle" font-size="14" fill="#94a3b8"><tspan x="450" y="444.8">Readers should focus on whether closing the loop</tspan><tspan x="450" dy="17.1">can change governance actions, rather than the</tspan><tspan x="450" dy="17.1">number of dashboards per se.</tspan></text>
+  </g>
+</svg>

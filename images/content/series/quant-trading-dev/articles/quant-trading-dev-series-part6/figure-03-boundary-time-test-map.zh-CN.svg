@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="state diagram 风格">
+  <title id="title">边界时间测试状态图</title>
+  <desc id="desc">把开盘、午休、收盘、夜盘、跨午夜、跨周、半日市和休市作为测试状态，展示交易日语义的迁移边界。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">边界时间测试状态图</text>
+  <text x="92" y="140" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">把日期列表改成状态迁移，才能覆盖交易日归属、跨夜和休市语义。</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="150" y="206" width="160" height="80" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="230" y="240" fill="#f8fafc" font-size="20" font-weight="700">开盘<tspan x="230" dy="26" fill="#cbd5e1" font-size="18">首根 K 线</tspan></text>
+    <rect x="478" y="206" width="186" height="80" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="571" y="240" fill="#f8fafc" font-size="20" font-weight="700">午休 / 恢复<tspan x="571" dy="26" fill="#cbd5e1" font-size="18">事件暂停</tspan></text>
+    <rect x="832" y="206" width="176" height="80" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="920" y="240" fill="#f8fafc" font-size="20" font-weight="700">日盘收盘<tspan x="920" dy="26" fill="#cbd5e1" font-size="18">尾根归属</tspan></text>
+    <rect x="564" y="346" width="160" height="80" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="644" y="380" fill="#f8fafc" font-size="20" font-weight="700">夜盘<tspan x="644" dy="26" fill="#cbd5e1" font-size="18">跨午夜</tspan></text>
+    <rect x="186" y="414" width="176" height="80" rx="18" fill="#1e293b" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="274" y="448" fill="#f8fafc" font-size="20" font-weight="700">跨周归属<tspan x="274" dy="26" fill="#cbd5e1" font-size="18">周五到周一</tspan></text>
+    <rect x="796" y="414" width="184" height="80" rx="18" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="888" y="448" fill="#f8fafc" font-size="20" font-weight="700">半日市 / 休市<tspan x="888" dy="26" fill="#cbd5e1" font-size="18">提前截断</tspan></text>
+  </g>
+  <g fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M310 246 H478"/>
+    <path d="M664 246 H832"/>
+    <path d="M920 286 C920 334 800 386 724 386"/>
+    <path d="M564 386 C494 386 430 454 362 454"/>
+    <path d="M230 286 C168 350 130 440 130 548 H888 V494"/>
+    <path d="M888 414 C888 352 912 322 920 286"/>
+  </g>
+  <text x="330" y="612" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="18">每个状态至少验证边界前、边界点和边界后，避免自然日切分污染指标。</text>
+</svg>

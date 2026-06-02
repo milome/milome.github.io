@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
+  <title>Evolution from TDD to BDD to AI-TDD</title>
+  <desc>Shows how the abstraction layer moves from code-level tests to behavior-level scenarios and then to Manifest-level contracts for AI-assisted delivery.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5a2b"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <style>
+    .bg { fill: #f8f6f3; }
+    .era-box { fill: #ffffff; stroke: #d4a574; stroke-width: 2; filter: url(#shadow); }
+    .era-tdd { fill: #fef3c7; stroke: #d97706; stroke-width: 2; filter: url(#shadow); }
+    .era-bdd { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; filter: url(#shadow); }
+    .era-aitdd { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; filter: url(#shadow); }
+    .text { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; fill: #3d3d3d; text-anchor: middle; }
+    .text-title { font-weight: 600; font-size: 17px; }
+    .text-sub { font-size: 13px; fill: #6b6b6b; }
+    .era-title { font-weight: 700; font-size: 20px; }
+    .year { font-size: 13px; fill: #8b5a2b; font-weight: 500; }
+    .arrow-line { stroke: #8b5a2b; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .step-label { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: #8b5a2b; text-anchor: middle; }
+    .feature-box { fill: #ffffff; stroke: #e5e5e5; stroke-width: 1; }
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 600; fill: #3d3d3d; text-anchor: middle; }
+    .legend-title { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 600; fill: #3d3d3d; text-anchor: start; }
+    .legend-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #6b6b6b; text-anchor: start; }
+  </style>
+  <rect width="960" height="560" class="bg"/>
+  <text x="480" y="40" class="title">Evolution of Test-Driven Development: TDD to BDD to AI-TDD</text>
+
+  <!-- Era 1: TDD -->
+  <rect x="60" y="70" width="220" height="280" rx="8" class="era-tdd"/>
+  <text x="170" y="95" class="text era-title" fill="#92400e">TDD</text>
+  <text x="170" y="115" class="text text-sub">Test-Driven Development</text>
+  <text x="170" y="140" class="year">1999 (Kent Beck)</text>
+
+  <rect x="80" y="165" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="170" y="185" class="text text-sub" style="text-anchor:middle;font-size:12px;">Red-Green-Refactor Cycle</text>
+  <text x="170" y="200" class="text text-sub" style="text-anchor:middle;font-size:12px;">Tests first, implementation after</text>
+
+  <rect x="80" y="220" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="170" y="240" class="text text-sub" style="text-anchor:middle;font-size:11px;">Unit tests as core</text>
+  <text x="170" y="255" class="text text-sub" style="text-anchor:middle;font-size:11px;">Technology-driven</text>
+
+  <rect x="80" y="275" width="180" height="55" rx="4" class="feature-box"/>
+  <text x="170" y="295" class="text text-sub" style="text-anchor:middle;font-size:11px;">Lacks business semantics</text>
+  <text x="170" y="310" class="text text-sub" style="text-anchor:middle;font-size:11px;">High manual maintenance cost</text>
+  <text x="170" y="325" class="text text-sub" style="text-anchor:middle;font-size:11px;">Knowledge transfer relies on docs</text>
+
+  <!-- Era 2: BDD -->
+  <rect x="340" y="70" width="220" height="280" rx="8" class="era-bdd"/>
+  <text x="450" y="95" class="text era-title" fill="#1e40af">BDD</text>
+  <text x="450" y="115" class="text text-sub">Behavior-Driven Development</text>
+  <text x="450" y="140" class="year">2006 (Dan North)</text>
+
+  <rect x="360" y="165" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="450" y="185" class="text text-sub" style="text-anchor:middle;font-size:11px;">Given-When-Then syntax</text>
+  <text x="450" y="200" class="text text-sub" style="text-anchor:middle;font-size:11px;">Natural language descriptions</text>
+
+  <rect x="360" y="220" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="450" y="240" class="text text-sub" style="text-anchor:middle;font-size:11px;">Business-Technology alignment</text>
+  <text x="450" y="255" class="text text-sub" style="text-anchor:middle;font-size:11px;">Executable specifications</text>
+
+  <rect x="360" y="275" width="180" height="55" rx="4" class="feature-box"/>
+  <text x="450" y="295" class="text text-sub" style="text-anchor:middle;font-size:11px;">Still requires manual scenarios</text>
+  <text x="450" y="310" class="text text-sub" style="text-anchor:middle;font-size:11px;">Scenario explosion at scale</text>
+  <text x="450" y="325" class="text text-sub" style="text-anchor:middle;font-size:11px;">Lacks structured contracts for AI</text>
+
+  <!-- Era 3: AI-TDD -->
+  <rect x="620" y="70" width="280" height="280" rx="8" class="era-aitdd"/>
+  <text x="760" y="100" class="text era-title" fill="#166534">AI-TDD</text>
+  <text x="760" y="120" class="text text-sub">AI-Driven Test-Driven Development</text>
+  <text x="760" y="145" class="year">2026</text>
+
+  <rect x="640" y="165" width="240" height="45" rx="4" class="feature-box"/>
+  <text x="760" y="185" class="text text-sub" style="text-anchor:middle;font-size:11px;">YAML Contract Matrix + 5D Trace</text>
+  <text x="760" y="200" class="text text-sub" style="text-anchor:middle;font-size:11px;">Machine-readable semantic kernel</text>
+
+  <rect x="640" y="220" width="240" height="45" rx="4" class="feature-box"/>
+  <text x="760" y="240" class="text text-sub" style="text-anchor:middle;font-size:11px;">Human-AI bidirectional commitment</text>
+  <text x="760" y="255" class="text text-sub" style="text-anchor:middle;font-size:11px;">Multi-Agent critical acceptance</text>
+
+  <rect x="640" y="275" width="240" height="55" rx="4" class="feature-box"/>
+  <text x="760" y="292" class="text text-sub" style="text-anchor:middle;font-size:10px;color:#166534;">Req-Arch-Impl traceability</text>
+  <text x="760" y="307" class="text text-sub" style="text-anchor:middle;font-size:10px;color:#166534;">AI-generated tests and code</text>
+  <text x="760" y="322" class="text text-sub" style="text-anchor:middle;font-size:10px;color:#166534;">Automated acceptance</text>
+
+  <!-- Evolution Arrows -->
+  <line x1="280" y1="210" x2="340" y2="210" class="arrow-line"/>
+  <text x="310" y="205" class="step-label">①</text>
+
+  <line x1="560" y1="210" x2="620" y2="210" class="arrow-line"/>
+  <text x="590" y="205" class="step-label">②</text>
+
+  <!-- Legend Box -->
+  <rect x="60" y="370" width="840" height="80" rx="6" fill="#ffffff" stroke="#e5e5e5" stroke-width="1"/>
+  <text x="80" y="395" class="legend-title">Evolution Steps:</text>
+  <text x="80" y="415" class="legend-text">① Business Semantization: From technology-driven unit tests to business-readable executable specifications</text>
+  <text x="80" y="435" class="legend-text">② AI Structuring: From manual scenario writing to AI-native structured contracts with automated acceptance</text>
+
+  <!-- Timeline at bottom -->
+  <line x1="80" y1="470" x2="880" y2="470" stroke="#d4a574" stroke-width="2"/>
+  <circle cx="170" cy="470" r="6" fill="#d97706"/>
+  <circle cx="450" cy="470" r="6" fill="#2563eb"/>
+  <circle cx="760" cy="470" r="6" fill="#16a34a"/>
+
+  <text x="170" y="500" class="text" style="font-size:12px;">Extreme Programming Era</text>
+  <text x="170" y="518" class="text text-sub" style="font-size:11px;">Agile Manifesto Background</text>
+
+  <text x="450" y="500" class="text" style="font-size:12px;">Agile Maturity</text>
+  <text x="450" y="518" class="text text-sub" style="font-size:11px;">Cucumber/JBehave Tools</text>
+
+  <text x="760" y="500" class="text" style="font-size:12px;">AI-Native Era</text>
+  <text x="760" y="518" class="text text-sub" style="font-size:11px;">LLM Agent Automation</text>
+</svg>

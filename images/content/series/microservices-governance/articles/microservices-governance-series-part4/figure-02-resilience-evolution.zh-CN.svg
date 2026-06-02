@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">弹性治理技术演进</title>
+  <desc id="desc">展示弹性治理从库级熔断、轻量弹性库、网格策略到自适应韧性的演进。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">弹性治理技术演进</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Resilience moves from local libraries to adaptive platform feedback loops</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="74" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="154" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">库级熔断</text>
+    <text x="154" y="237" text-anchor="middle" font-size="12" fill="#e2e8f0">Hystrix Library</text>
+    <text x="154" y="257" text-anchor="middle" font-size="11" fill="#94a3b8">2015-2018</text>
+    <rect x="278" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="358" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">轻量弹性</text>
+    <text x="358" y="237" text-anchor="middle" font-size="12" fill="#e2e8f0">Resilience4j / Sentinel</text>
+    <text x="358" y="257" text-anchor="middle" font-size="11" fill="#94a3b8">2018-2020</text>
+    <rect x="482" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="562" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">网格弹性</text>
+    <text x="562" y="237" text-anchor="middle" font-size="12" fill="#e2e8f0">Mesh Outlier Policy</text>
+    <text x="562" y="257" text-anchor="middle" font-size="11" fill="#94a3b8">2020-2022</text>
+    <rect x="686" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="766" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">自适应韧性</text>
+    <text x="766" y="237" text-anchor="middle" font-size="12" fill="#e2e8f0">eBPF / AI / Chaos</text>
+    <text x="766" y="257" text-anchor="middle" font-size="11" fill="#94a3b8">2023-2026</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="234" y1="232" x2="268" y2="232"/>
+      <line x1="438" y1="232" x2="472" y2="232"/>
+      <line x1="642" y1="232" x2="676" y2="232"/>
+    </g>
+    <rect x="230" y="358" width="440" height="64" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="386" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">核心变化 / Core Shift</text>
+    <text x="450" y="408" text-anchor="middle" font-size="12" fill="#cbd5e1">从静态参数变成运行时反馈驱动的韧性策略。</text>
+  </g>
+</svg>

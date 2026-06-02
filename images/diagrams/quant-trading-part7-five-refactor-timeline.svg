@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Five refactor timeline</title>
+  <desc id="desc">A five step refactor timeline for the quant trading system.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">五次重构时间线 / Five Refactors</text>
+  <line x1="150" y1="360" x2="1130" y2="360" stroke="#64748b" stroke-width="4"/>
+  <g font-family="Arial" text-anchor="middle">
+    <circle cx="220" cy="360" r="28" fill="#60a5fa"/>
+    <circle cx="420" cy="360" r="28" fill="#38bdf8"/>
+    <circle cx="620" cy="360" r="28" fill="#10b981"/>
+    <circle cx="820" cy="360" r="28" fill="#f59e0b"/>
+    <circle cx="1020" cy="360" r="28" fill="#bfdbfe"/>
+    <text x="220" y="312" fill="#f8fafc" font-size="18" font-weight="700">1</text>
+    <text x="420" y="312" fill="#f8fafc" font-size="18" font-weight="700">2</text>
+    <text x="620" y="312" fill="#f8fafc" font-size="18" font-weight="700">3</text>
+    <text x="820" y="312" fill="#f8fafc" font-size="18" font-weight="700">4</text>
+    <text x="1020" y="312" fill="#f8fafc" font-size="18" font-weight="700">5</text>
+    <text x="220" y="430" fill="#cbd5e1" font-size="18">UI / Data 解耦</text>
+    <text x="420" y="430" fill="#cbd5e1" font-size="18">交易日归属</text>
+    <text x="620" y="430" fill="#cbd5e1" font-size="18">指标状态</text>
+    <text x="820" y="430" fill="#cbd5e1" font-size="18">渲染虚拟化</text>
+    <text x="1020" y="430" fill="#cbd5e1" font-size="18">统一协议</text>
+  </g>
+</svg>

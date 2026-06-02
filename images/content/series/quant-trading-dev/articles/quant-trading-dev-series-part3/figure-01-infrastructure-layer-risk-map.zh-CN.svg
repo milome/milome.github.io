@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="架构分层图、容器边界图">
+  <title id="title">Infrastructure layer risk map</title>
+  <desc id="desc">A layered architecture map showing how GUI, runtime, network, security and deployment risks affect a quant trading terminal.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">基础设施分层风险 / Infrastructure Risk Map</text>
+  <text x="96" y="148" fill="#94a3b8" font-family="Arial" font-size="18">外围风险会通过运行边界进入行情、策略、执行和复盘链路</text>
+  <g font-family="Arial">
+    <rect x="108" y="208" width="1064" height="72" rx="22" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="108" y="312" width="1064" height="72" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="108" y="416" width="1064" height="72" rx="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="108" y="520" width="1064" height="72" rx="22" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="142" y="252" fill="#f8fafc" font-size="21" font-weight="700">展示与交互层</text>
+    <text x="382" y="252" fill="#94a3b8" font-size="18">GUI 生命周期、线程亲和性、绘图资源</text>
+    <text x="142" y="356" fill="#f8fafc" font-size="21" font-weight="700">运行时资源层</text>
+    <text x="382" y="356" fill="#94a3b8" font-size="18">共享内存、连接池、事件循环、队列反压</text>
+    <text x="142" y="460" fill="#f8fafc" font-size="21" font-weight="700">网络与数据层</text>
+    <text x="382" y="460" fill="#94a3b8" font-size="18">WebSocket、HTTP、TCP、时区、Pandas/NumPy</text>
+    <text x="142" y="564" fill="#f8fafc" font-size="21" font-weight="700">安全与部署层</text>
+    <text x="382" y="564" fill="#94a3b8" font-size="18">插件、配置、日志脱敏、序列化、本地文件</text>
+  </g>
+  <g stroke="#64748b" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M640 280 V312"/>
+    <path d="M640 384 V416"/>
+    <path d="M640 488 V520"/>
+  </g>
+</svg>

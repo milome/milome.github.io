@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#f1f5f9">TDD 循环：RED → GREEN → REFACTOR</text>
+
+  <!-- RED Circle -->
+  <g>
+    <circle cx="200" cy="180" r="70" fill="#dc2626" stroke="#ef4444" stroke-width="3"/>
+    <text x="200" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#fff">RED</text>
+    <text x="200" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fca5a5">编写失败测试</text>
+    <text x="200" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fecaca">先写测试，明确需求</text>
+  </g>
+
+  <!-- GREEN Circle -->
+  <g>
+    <circle cx="400" cy="180" r="70" fill="#16a34a" stroke="#22c55e" stroke-width="3"/>
+    <text x="400" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#fff">GREEN</text>
+    <text x="400" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#86efac">编写最简实现</text>
+    <text x="400" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#bbf7d0">快速通过测试</text>
+  </g>
+
+  <!-- REFACTOR Circle -->
+  <g>
+    <circle cx="600" cy="180" r="70" fill="#2563eb" stroke="#3b82f6" stroke-width="3"/>
+    <text x="600" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#fff">REFACTOR</text>
+    <text x="600" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#93c5fd">重构代码</text>
+    <text x="600" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#bfdbfe">消除重复，保持测试通过</text>
+  </g>
+
+  <!-- Arrows -->
+  <line x1="270" y1="180" x2="325" y2="180" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="470" y1="180" x2="525" y2="180" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Loop arrow back to RED -->
+  <path d="M 600 250 Q 600 320 400 320 Q 200 320 200 250" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="400" y="345" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">循环往复，小步快跑</text>
+
+  <!-- Code examples -->
+  <rect x="50" y="380" width="700" height="100" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+
+  <!-- RED code -->
+  <text x="70" y="410" font-family="monospace" font-size="11" fill="#fca5a5"># RED: 先写测试</text>
+  <text x="70" y="430" font-family="monospace" font-size="10" fill="#cbd5e1">def test_sma_calculation():</text>
+  <text x="70" y="445" font-family="monospace" font-size="10" fill="#cbd5e1">    assert sma([1,2,3,4,5], 3) == 3.0</text>
+
+  <!-- GREEN code -->
+  <text x="320" y="410" font-family="monospace" font-size="11" fill="#86efac"># GREEN: 最简实现</text>
+  <text x="320" y="430" font-family="monospace" font-size="10" fill="#cbd5e1">def sma(data, period):</text>
+  <text x="320" y="445" font-family="monospace" font-size="10" fill="#cbd5e1">    return sum(data[-period:]) / period</text>
+
+  <!-- REFACTOR code -->
+  <text x="570" y="410" font-family="monospace" font-size="11" fill="#93c5fd"># REFACTOR: 优化</text>
+  <text x="570" y="430" font-family="monospace" font-size="10" fill="#cbd5e1">def sma(data, period):</text>
+  <text x="570" y="445" font-family="monospace" font-size="10" fill="#cbd5e1">    if len(data) &lt; period: return None</text>
+  <text x="570" y="460" font-family="monospace" font-size="10" fill="#cbd5e1">    return sum(data[-period:]) / period</text>
+</svg>

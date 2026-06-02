@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-010" data-visual-pattern="timeline 风格">
+  <title>Quantitative trading system architecture evolution roadmap</title>
+  <desc>Architectural decision-making timeline from prototype stage, growth stage, performance stage, stability stage, expansion stage to maintenance stage.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Architecture evolution roadmap</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Each stage only solves the most</tspan><tspan x="600" dy="17.5">critical current system constraints to</tspan><tspan x="600" dy="17.5">avoid early heap complexity.</tspan></text>
+
+  <g font-size="20" font-weight="700">
+    <rect x="98" y="248" width="150" height="112" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="111.44" y="301.57" fill="#bfdbfe" font-size="15" text-anchor="start"><tspan x="111.44" dy="0">prototype stage</tspan></text>
+    <text x="111.44" y="319.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="111.44" dy="0">Run through first</tspan></text>
+    <rect x="282" y="248" width="150" height="112" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="295.44" y="301.57" fill="#bae6fd" font-size="15" text-anchor="start"><tspan x="295.44" dy="0">growth period</tspan></text>
+    <text x="295.44" y="319.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="295.44" dy="0">data boundaries</tspan></text>
+    <rect x="466" y="248" width="150" height="112" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="479.44" y="292.72" fill="#a7f3d0" font-size="15" text-anchor="start"><tspan x="479.44" dy="0">performance</tspan><tspan x="479.44" dy="17.7">period</tspan></text>
+    <text x="479.44" y="328.12" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="479.44" dy="0">indicator increment</tspan></text>
+    <rect x="650" y="248" width="150" height="112" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="663.44" y="301.57" fill="#bae6fd" font-size="15" text-anchor="start"><tspan x="663.44" dy="0">stable period</tspan></text>
+    <text x="663.44" y="319.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="663.44" dy="0">chart split</tspan></text>
+    <rect x="834" y="248" width="150" height="112" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="847.44" y="301.57" fill="#fde68a" font-size="15" text-anchor="start"><tspan x="847.44" dy="0">extension</tspan></text>
+    <text x="847.44" y="319.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="847.44" dy="0">virtual rendering</tspan></text>
+    <rect x="1018" y="248" width="120" height="112" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="1035.92" y="292.72" fill="#a7f3d0" font-size="15" text-anchor="start"><tspan x="1035.92" dy="0">maintenance</tspan></text>
+    <text x="1031.44" y="328.12" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="1031.44" dy="0">debt governance</tspan></text>
+  </g>
+  <g stroke="#64748b" stroke-width="4" stroke-linecap="round">
+    <line x1="248" y1="304" x2="282" y2="304"/>
+    <line x1="432" y1="304" x2="466" y2="304"/>
+    <line x1="616" y1="304" x2="650" y2="304"/>
+    <line x1="800" y1="304" x2="834" y2="304"/>
+    <line x1="984" y1="304" x2="1018" y2="304"/>
+  </g>
+
+  <rect x="142" y="442" width="916" height="118" rx="22" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="170" y="546.8" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="start"><tspan x="170" y="546.8">How to judge the road map</tspan></text>
+  <text x="170" y="477.24" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="170" y="477.24">Solve the constraints closest to the real risk first,</tspan><tspan x="170" dy="16.52">and then enter the next level of optimization;</tspan><tspan x="170" dy="16.52">otherwise, subsequent governance will be based on the</tspan><tspan x="170" dy="16.52">unstable boundary.</tspan></text>
+  <text x="182" y="604" fill="#94a3b8" font-size="19"><tspan x="182" dy="0">Example: Without DataService boundaries, there is no need to rush to do multiple processes; without</tspan><tspan x="182" dy="23.18">indicator consistency testing, there is no rush to do incremental optimization.</tspan></text>
+</svg>

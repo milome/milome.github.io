@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F8F6F1"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#1A2B4A">
+    时区计算系统分层架构
+  </text>
+
+  <!-- Architecture Stack -->
+  <g transform="translate(150, 70)">
+    <!-- Layer 1: Application -->
+    <rect x="50" y="0" width="400" height="70" fill="#2A4A7A" rx="5" opacity="0.95"/>
+    <text x="250" y="25" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="bold" fill="#FFFFFF">应用层 (Strategy)</text>
+    <text x="250" y="45" text-anchor="middle" font-family="Georgia" font-size="11" fill="#E8E4DC">调用周期计算获取K线数据</text>
+    <text x="250" y="58" text-anchor="middle" font-family="Georgia" font-size="10" fill="#B8C4D4">不关心实现细节</text>
+
+    <!-- Connection -->
+    <line x1="250" y1="70" x2="250" y2="85" stroke="#1A2B4A" stroke-width="2"/>
+    <polygon points="245,85 255,85 250,95" fill="#1A2B4A"/>
+
+    <!-- Layer 2: Aggregation -->
+    <rect x="25" y="95" width="450" height="70" fill="#5A7A9A" rx="5" opacity="0.95"/>
+    <text x="250" y="120" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="bold" fill="#FFFFFF">聚合层 (Aggregation)</text>
+    <text x="250" y="140" text-anchor="middle" font-family="Georgia" font-size="11" fill="#E8E4DC">1分钟数据 → 多周期K线</text>
+    <text x="250" y="153" text-anchor="middle" font-family="Georgia" font-size="10" fill="#B8C4D4">处理跨市场周期合成</text>
+
+    <!-- Connection -->
+    <line x1="250" y1="165" x2="250" y2="180" stroke="#1A2B4A" stroke-width="2"/>
+    <polygon points="245,180 255,180 250,190" fill="#1A2B4A"/>
+
+    <!-- Layer 3: Period Utils -->
+    <rect x="0" y="190" width="500" height="90" fill="#6B8A7A" rx="5" opacity="0.95"/>
+    <text x="250" y="218" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="bold" fill="#FFFFFF">周期计算层 (Period Utils)</text>
+
+    <!-- Functions in this layer -->
+    <g transform="translate(30, 235)">
+      <rect x="0" y="0" width="130" height="30" fill="#FFFFFF" opacity="0.9" rx="3"/>
+      <text x="65" y="20" text-anchor="middle" font-family="monospace" font-size="9" fill="#1A2B4A">get_period_start()</text>
+    </g>
+
+    <g transform="translate="170" y="235">
+      <rect x="0" y="0" width="130" height="30" fill="#FFFFFF" opacity="0.9" rx="3"/>
+      <text x="65" y="20" text-anchor="middle" font-family="monospace" font-size="9" fill="#1A2B4A">get_period_end()</text>
+    </g>
+
+    <g transform="translate(310, 235)">
+      <rect x="0" y="0" width="160" height="30" fill="#FFFFFF" opacity="0.9" rx="3"/>
+      <text x="80" y="20" text-anchor="middle" font-family="monospace" font-size="9" fill="#1A2B4A">is_cross_session()</text>
+    </g>
+
+    <!-- Connection -->
+    <line x1="250" y1="280" x2="250" y2="295" stroke="#1A2B4A" stroke-width="2"/>
+    <polygon points="245,295 255,295 250,305" fill="#1A2B4A"/>
+
+    <!-- Layer 4: Utilities -->
+    <rect x="25" y="305" width="450" height="70" fill="#8A9A8A" rx="5" opacity="0.95"/>
+    <text x="250" y="330" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="bold" fill="#FFFFFF">基础工具层 (Utilities)</text>
+
+    <g transform="translate(50, 345)">
+      <rect x="0" y="0" width="100" height="22" fill="#E8F4EC" rx="3"/>
+      <text x="50" y="15" text-anchor="middle" font-family="Georgia" font-size="9" fill="#1A2B4A">时区转换</text>
+    </g>
+
+    <g transform="translate(170, 345)">
+      <rect x="0" y="0" width="100" height="22" fill="#E8F4EC" rx="3"/>
+      <text x="50" y="15" text-anchor="middle" font-family="Georgia" font-size="9" fill="#1A2B4A">节假日判断</text>
+    </g>
+
+    <g transform="translate(290, 345)">
+      <rect x="0" y="0" width="100" height="22" fill="#E8F4EC" rx="3"/>
+      <text x="50" y="15" text-anchor="middle" font-family="Georgia" font-size="9" fill="#1A2B4A">时间格式化</text>
+    </g>
+  </g>
+
+  <!-- Side notes -->
+  <g transform="translate(570, 150)">
+    <rect x="0" y="0" width="180" height="200" fill="#FFFFFF" stroke="#C4786A" stroke-width="1" rx="5" opacity="0.9"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="bold" fill="#C4786A">设计原则</text>
+
+    <g transform="translate(15, 45)">
+      <circle cx="8" cy="8" r="5" fill="#C4786A"/>
+      <text x="20" y="12" font-family="Georgia" font-size="10" fill="#1A2B4A">分离关注点</text>
+
+      <circle cx="8" cy="35" r="5" fill="#C4786A"/>
+      <text x="20" y="39" font-family="Georgia" font-size="10" fill="#1A2B4A">显式处理边界</text>
+
+      <circle cx="8" cy="62" r="5" fill="#C4786A"/>
+      <text x="20" y="66" font-family="Georgia" font-size="10" fill="#1A2B4A">防御性编程</text>
+
+      <circle cx="8" cy="89" r="5" fill="#C4786A"/>
+      <text x="20" y="93" font-family="Georgia" font-size="10" fill="#1A2B4A">Optional返回</text>
+
+      <circle cx="8" cy="116" r="5" fill="#C4786A"/>
+      <text x="20" y="120" font-family="Georgia" font-size="10" fill="#1A2B4A">单一职责</text>
+
+      <circle cx="8" cy="143" r="5" fill="#C4786A"/>
+      <text x="20" y="147" font-family="Georgia" font-size="10" fill="#1A2B4A">可测试性</text>
+    </g>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1A2B4A"/>
+    </marker>
+  </defs>
+</svg>

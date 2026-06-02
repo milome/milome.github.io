@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Coding Mentor’s value closed loop</title>
+  <desc id="desc">Demonstrate how Coding Mentor forms a closed loop of continuous improvement through judgment, collaborative division of labor, engineering capabilities, and safety boundaries.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Coding Mentor’s value closed loop</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" dy="0">Value comes from reusable, verified human judgment.</tspan></text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <path d="M 450 150 C 585 150 690 230 690 280 C 690 330 585 410 450 410 C 315 410 210 330 210 280 C 210 230 315 150 450 150" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="10 10"/>
+
+    <g filter="url(#shadow)">
+      <rect x="325" y="122" width="250" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+      <text x="450" y="163.42" text-anchor="middle" font-size="17" font-weight="700" fill="#bfdbfe"><tspan x="450" y="163.42">build judgment</tspan></text>
+      <text x="450" y="179.42" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="450" y="179.42">Identify capability boundaries, error</tspan><tspan x="450" dy="14.16">patterns and risk signals</tspan></text>
+
+      <rect x="608" y="232" width="220" height="96" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+      <text x="718" y="269.8" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0"><tspan x="718" dy="0">Optimize collaboration and</tspan><tspan x="718" dy="16.52">division of labor</tspan></text>
+      <text x="718" y="302.28" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="718" dy="0">AI Draft, Execute or Quit by Risk</tspan></text>
+
+      <rect x="325" y="342" width="250" height="96" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+      <text x="450" y="373.66" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd"><tspan x="450" y="373.66">Reversely improve engineering</tspan><tspan x="450" dy="16.52">capabilities</tspan></text>
+      <text x="450" y="406.18" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="450" y="406.18">Writing implicit experiences into rubrics</tspan><tspan x="450" dy="14.16">and feedback protocols</tspan></text>
+
+      <rect x="72" y="232" width="220" height="96" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+      <text x="182" y="271.88" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="182" y="271.88">Establish safe boundaries</tspan></text>
+      <text x="182" y="288.38" text-anchor="middle" font-size="14" fill="#cbd5e1"><tspan x="182" y="288.38">Block high-risk output with tests,</tspan><tspan x="182" dy="16.52">review, and governance</tspan></text>
+    </g>
+
+    <line x1="566" y1="180" x2="624" y2="238" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="664" y1="330" x2="579" y2="376" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="334" y1="390" x2="276" y2="326" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="236" y1="230" x2="321" y2="184" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <circle cx="450" cy="280" r="76" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="267" text-anchor="middle" font-size="17" font-weight="700" fill="#f8fafc">Trusted collaboration</text>
+    <text x="450" y="294" text-anchor="middle" font-size="13" fill="#cbd5e1">Judgment·Feedback·Evidence</text>
+    <text x="450" y="316" text-anchor="middle" font-size="13" fill="#cbd5e1">Continue to enter a closed loop</text>
+  </g>
+
+
+</svg>

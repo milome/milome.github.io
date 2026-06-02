@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-002" data-visual-pattern="单进程事件协作拓扑">
+  <title id="title">Micang Trader single-process event collaboration topology</title>
+  <desc id="desc">Single-process vn.py event-driven collaboration topology. Modules connect to the Event Engine through publish/subscribe contracts without direct module-to-module coupling.</desc>
+
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="44" y="44" width="1192" height="632" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="84" y="100" fill="#f8fafc" font-size="33" font-family="Arial" font-weight="700">Micang Trader 单进程事件驱动协作拓扑</text>
+  <text x="84" y="136" fill="#94a3b8" font-size="18" font-family="Arial">重点：模块如何接入事件引擎协作，而不是模块之间的事件流向路径</text>
+  <text x="1146" y="102" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="end">Single Process Runtime</text>
+
+  <g font-family="Arial">
+    <g fill="#1e293b" stroke="#475569" stroke-width="2">
+      <rect x="80" y="180" width="188" height="84" rx="18"/>
+      <rect x="308" y="180" width="188" height="84" rx="18"/>
+      <rect x="536" y="180" width="188" height="84" rx="18"/>
+      <rect x="764" y="180" width="188" height="84" rx="18"/>
+      <rect x="992" y="180" width="188" height="84" rx="18"/>
+    </g>
+    <g fill="#f8fafc" font-size="19" font-weight="700" text-anchor="middle">
+      <text x="174" y="214">行情入口</text>
+      <text x="402" y="214">数据治理 / 时段</text>
+      <text x="630" y="214">K线处理</text>
+      <text x="858" y="214">策略核心</text>
+      <text x="1086" y="214">风控 / 执行</text>
+    </g>
+    <g fill="#94a3b8" font-size="15" text-anchor="middle">
+      <text x="174" y="242">发布为主 · publish-first</text>
+      <text x="402" y="242">发布/订阅 · pub/sub</text>
+      <text x="630" y="242">发布/订阅 · pub/sub</text>
+      <text x="858" y="242">发布/订阅 · pub/sub</text>
+      <text x="1086" y="242">发布/订阅 · pub/sub</text>
+    </g>
+  </g>
+
+  <g stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="174" y1="264" x2="174" y2="306"/>
+    <line x1="402" y1="264" x2="402" y2="306"/>
+    <line x1="630" y1="264" x2="630" y2="306"/>
+    <line x1="858" y1="264" x2="858" y2="306"/>
+    <line x1="1086" y1="264" x2="1086" y2="306"/>
+  </g>
+
+  <rect x="120" y="306" width="1040" height="132" rx="24" fill="#1e293b" stroke="#60a5fa" stroke-width="4"/>
+  <text x="640" y="346" fill="#f8fafc" font-size="29" font-family="Arial" font-weight="700" text-anchor="middle">vn.py Event Engine / Event Bus / Event Contract</text>
+  <text x="640" y="378" fill="#cbd5e1" font-size="18" font-family="Arial" text-anchor="middle">模块接入关系：发布 / 订阅；禁止模块之间直接耦合调用</text>
+  <text x="640" y="406" fill="#94a3b8" font-size="17" font-family="Arial" text-anchor="middle">承载事件：行情、K线、信号、指令、委托、成交、状态</text>
+  <line x1="284" y1="420" x2="996" y2="420" stroke="#334155" stroke-width="2"/>
+  <text x="640" y="431" fill="#94a3b8" font-size="14" font-family="Arial" text-anchor="middle">Bus 内部事件流动  ↔  （仅示意总线内部，不表示模块直连）</text>
+
+  <g stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="215" y1="438" x2="215" y2="476"/>
+    <line x1="495" y1="438" x2="495" y2="476"/>
+    <line x1="775" y1="438" x2="775" y2="476"/>
+    <line x1="1055" y1="438" x2="1055" y2="476"/>
+  </g>
+
+  <g font-family="Arial">
+    <g fill="#1e293b" stroke="#475569" stroke-width="2">
+      <rect x="100" y="476" width="230" height="86" rx="18"/>
+      <rect x="380" y="476" width="230" height="86" rx="18"/>
+      <rect x="660" y="476" width="230" height="86" rx="18"/>
+      <rect x="940" y="476" width="230" height="86" rx="18"/>
+    </g>
+    <g fill="#f8fafc" font-size="19" font-weight="700" text-anchor="middle">
+      <text x="215" y="511">回测适配器</text>
+      <text x="495" y="511">桌面监控</text>
+      <text x="775" y="511">状态诊断</text>
+      <text x="1055" y="511">日志 / 审计</text>
+    </g>
+    <g fill="#94a3b8" font-size="15" text-anchor="middle">
+      <text x="215" y="539">订阅为主 · subscribe-first</text>
+      <text x="495" y="539">订阅为主 · subscribe-first</text>
+      <text x="775" y="539">订阅为主 · subscribe-first</text>
+      <text x="1055" y="539">订阅为主 · subscribe-first</text>
+    </g>
+  </g>
+
+  <rect x="84" y="610" width="1112" height="46" rx="18" fill="#1e293b" stroke="#334155"/>
+  <text x="112" y="639" fill="#cbd5e1" font-family="Arial" font-size="18">图示语义：回答“哪些模块必须通过事件契约协作”，不回答“模块之间如何逐步串联调用”。</text>
+</svg>

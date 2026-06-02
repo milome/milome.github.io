@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-008" data-visual-pattern="flowchart 风格">
+  <title id="title">line_profiler workflow for line-level bottleneck diagnosis</title>
+  <desc id="desc">A flowchart showing how to pick a hot function from cProfile, add profile annotation, run kernprof, read line-level metrics, and choose an optimization action.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="48" width="1168" height="624" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">line_profiler 使用流程 / Line-Level Diagnosis Flow</text>
+  <text x="96" y="144" fill="#cbd5e1" font-size="19" font-family="Arial">当 cProfile 已经定位到候选函数，再用 line_profiler 判断慢在循环、函数调用、分配还是分支。</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial">
+    <rect x="92" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="120" y="234" fill="#f8fafc" font-size="21" font-weight="700">1. 选择候选函数</text>
+    <text x="120" y="264" fill="#cbd5e1" font-size="18">来自 cProfile</text>
+
+    <rect x="338" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="358" y="230" fill="#f8fafc" font-size="21" font-weight="700">2. 标注边界</text>
+    <text x="358" y="258" fill="#cbd5e1" font-size="18">@profile</text>
+    <text x="358" y="282" fill="#cbd5e1" font-size="18">只包目标函数</text>
+
+    <rect x="584" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="612" y="234" fill="#f8fafc" font-size="21" font-weight="700">3. 运行 kernprof</text>
+    <text x="612" y="264" fill="#cbd5e1" font-size="18">固定输入与场景</text>
+
+    <rect x="830" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="850" y="230" fill="#f8fafc" font-size="21" font-weight="700">4. 阅读行级数据</text>
+    <text x="850" y="258" fill="#cbd5e1" font-size="18">Time / Per Hit</text>
+    <text x="850" y="282" fill="#cbd5e1" font-size="18">% Time</text>
+
+    <path d="M292 246 H328" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M538 246 H574" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M784 246 H820" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Arial">
+    <text x="96" y="360" fill="#f8fafc" font-size="24" font-weight="700">行级结果怎么转成行动 / Mapping Rows to Actions</text>
+
+    <rect x="96" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="122" y="430" fill="#bfdbfe" font-size="21" font-weight="700">循环行占比最高</text>
+    <text x="122" y="462" fill="#e2e8f0" font-size="18">检查重复扫描</text>
+    <text x="122" y="488" fill="#cbd5e1" font-size="18">向量化 / Numba</text>
+    <text x="122" y="514" fill="#cbd5e1" font-size="18">或滑动窗口</text>
+
+    <rect x="384" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="410" y="430" fill="#a7f3d0" font-size="21" font-weight="700">函数调用行最慢</text>
+    <text x="410" y="462" fill="#e2e8f0" font-size="18">下钻被调用函数</text>
+    <text x="410" y="488" fill="#cbd5e1" font-size="18">批量调用 / 缓存</text>
+    <text x="410" y="514" fill="#cbd5e1" font-size="18">减少边界穿越</text>
+
+    <rect x="672" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="698" y="430" fill="#fde68a" font-size="21" font-weight="700">分配行频繁增长</text>
+    <text x="698" y="462" fill="#e2e8f0" font-size="18">对象或数组反复创建</text>
+    <text x="698" y="488" fill="#cbd5e1" font-size="18">预分配 / 复用</text>
+    <text x="698" y="514" fill="#cbd5e1" font-size="18">降低 GC 压力</text>
+
+    <rect x="960" y="394" width="224" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="986" y="430" fill="#bae6fd" font-size="21" font-weight="700">分支行占比高</text>
+    <text x="986" y="462" fill="#e2e8f0" font-size="18">状态机或条件复杂</text>
+    <text x="986" y="488" fill="#cbd5e1" font-size="18">拆状态 / 预计算</text>
+    <text x="986" y="514" fill="#cbd5e1" font-size="18">保留回归测试</text>
+  </g>
+
+  <rect x="118" y="584" width="1044" height="52" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="146" y="617" fill="#cbd5e1" font-size="19" font-family="Arial">边界原则：line_profiler 只适合小范围热点函数；它的插桩开销不能作为最终线上延迟证据。</text>
+</svg>

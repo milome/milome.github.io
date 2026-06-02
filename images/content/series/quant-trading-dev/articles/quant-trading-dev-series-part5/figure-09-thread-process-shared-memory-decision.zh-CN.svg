@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="decision tree 风格">
+  <title id="title">Thread process shared memory decision</title>
+  <desc id="desc">Decision map for choosing threads, processes, or shared memory in Python quant systems.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">并发模型决策 / Concurrency Decision</text>
+  <g font-family="Arial">
+    <rect x="500" y="160" width="280" height="88" rx="22" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="536" y="214" fill="#f8fafc" font-size="22" font-weight="700">瓶颈类型是什么？</text>
+    <rect x="124" y="360" width="270" height="122" rx="24" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="505" y="360" width="270" height="122" rx="24" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="886" y="360" width="270" height="122" rx="24" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="170" y="414" fill="#f8fafc" font-size="22" font-weight="700">I/O 等待</text>
+    <text x="170" y="448" fill="#94a3b8" font-size="18">线程 / async</text>
+    <text x="552" y="414" fill="#f8fafc" font-size="22" font-weight="700">CPU 计算</text>
+    <text x="552" y="448" fill="#94a3b8" font-size="18">进程 / 向量化</text>
+    <text x="932" y="414" fill="#f8fafc" font-size="22" font-weight="700">大数组复用</text>
+    <text x="932" y="448" fill="#94a3b8" font-size="18">共享内存</text>
+  </g>
+  <g stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M590 248 C470 298 370 320 260 360" stroke="#38bdf8"/>
+    <path d="M640 248 V360" stroke="#10b981"/>
+    <path d="M690 248 C810 298 910 320 1020 360" stroke="#f59e0b"/>
+  </g>
+  <g>
+    <polygon points="260,360 277,346 281,366" fill="#38bdf8"/>
+    <polygon points="640,360 630,344 650,344" fill="#10b981"/>
+    <polygon points="1020,360 999,356 1013,340" fill="#f59e0b"/>
+  </g>
+  <rect x="206" y="560" width="868" height="52" rx="18" fill="#1e293b" stroke="#334155"/>
+  <text x="238" y="594" fill="#cbd5e1" font-family="Arial" font-size="18">错误信号：为了“统一架构”把所有任务都塞进同一种并发模型。</text>
+</svg>

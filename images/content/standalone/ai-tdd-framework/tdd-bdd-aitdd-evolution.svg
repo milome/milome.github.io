@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5a2b"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <style>
+    .bg { fill: #f8f6f3; }
+    .era-box { fill: #ffffff; stroke: #d4a574; stroke-width: 2; filter: url(#shadow); }
+    .era-tdd { fill: #fef3c7; stroke: #d97706; stroke-width: 2; filter: url(#shadow); }
+    .era-bdd { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; filter: url(#shadow); }
+    .era-aitdd { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; filter: url(#shadow); }
+    .text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #3d3d3d; text-anchor: middle; }
+    .text-title { font-weight: 600; font-size: 16px; }
+    .text-sub { font-size: 12px; fill: #6b6b6b; }
+    .era-title { font-weight: 700; font-size: 18px; }
+    .year { font-size: 13px; fill: #8b5a2b; font-weight: 500; }
+    .arrow-line { stroke: #8b5a2b; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .evolution-label { font-size: 11px; fill: #6b6b6b; text-anchor: middle; }
+    .feature-box { fill: #ffffff; stroke: #e5e5e5; stroke-width: 1; }
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 600; fill: #3d3d3d; text-anchor: middle; }
+  </style>
+  <rect width="960" height="520" class="bg"/>
+  <text x="480" y="40" class="title">测试驱动开发的演进：TDD → BDD → AI-TDD</text>
+
+  <!-- Era 1: TDD -->
+  <rect x="60" y="80" width="220" height="280" rx="8" class="era-tdd"/>
+  <text x="170" y="110" class="text era-title" fill="#92400e">TDD</text>
+  <text x="170" y="130" class="text text-sub">Test-Driven Development</text>
+  <text x="170" y="155" class="year">1999 (Kent Beck)</text>
+
+  <rect x="80" y="175" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="170" y="195" class="text text-sub" style="text-anchor:middle;font-size:11px;">红-绿-重构循环</text>
+  <text x="170" y="210" class="text text-sub" style="text-anchor:middle;font-size:11px;">先写测试，后写实现</text>
+
+  <rect x="80" y="230" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="170" y="250" class="text text-sub" style="text-anchor:middle;font-size:11px;">单元测试为核心</text>
+  <text x="170" y="265" class="text text-sub" style="text-anchor:middle;font-size:11px;">技术视角驱动</text>
+
+  <rect x="80" y="285" width="180" height="55" rx="4" class="feature-box"/>
+  <text x="170" y="305" class="text text-sub" style="text-anchor:middle;font-size:11px;">⚠️ 缺乏业务语义链接</text>
+  <text x="170" y="320" class="text text-sub" style="text-anchor:middle;font-size:11px;">⚠️ 人工维护成本高</text>
+  <text x="170" y="335" class="text text-sub" style="text-anchor:middle;font-size:11px;">⚠️ 知识传递依赖文档</text>
+
+  <!-- Era 2: BDD -->
+  <rect x="340" y="80" width="220" height="280" rx="8" class="era-bdd"/>
+  <text x="450" y="110" class="text era-title" fill="#1e40af">BDD</text>
+  <text x="450" y="130" class="text text-sub">Behavior-Driven Development</text>
+  <text x="450" y="155" class="year">2006 (Dan North)</text>
+
+  <rect x="360" y="175" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="450" y="195" class="text text-sub" style="text-anchor:middle;font-size:11px;">Given-When-Then 语法</text>
+  <text x="450" y="210" class="text text-sub" style="text-anchor:middle;font-size:11px;">自然语言描述行为</text>
+
+  <rect x="360" y="230" width="180" height="45" rx="4" class="feature-box"/>
+  <text x="450" y="250" class="text text-sub" style="text-anchor:middle;font-size:11px;">业务-技术对齐</text>
+  <text x="450" y="265" class="text text-sub" style="text-anchor:middle;font-size:11px;">可执行规格说明</text>
+
+  <rect x="360" y="285" width="180" height="55" rx="4" class="feature-box"/>
+  <text x="450" y="305" class="text text-sub" style="text-anchor:middle;font-size:11px;">⚠️ 仍需人工编写场景</text>
+  <text x="450" y="320" class="text text-sub" style="text-anchor:middle;font-size:11px;">⚠️ 大规模场景爆炸</text>
+  <text x="450" y="335" class="text text-sub" style="text-anchor:middle;font-size:11px;">⚠️ AI时代缺乏结构化契约</text>
+
+  <!-- Era 3: AI-TDD -->
+  <rect x="620" y="80" width="280" height="280" rx="8" class="era-aitdd"/>
+  <text x="760" y="110" class="text era-title" fill="#166534">AI-TDD</text>
+  <text x="760" y="130" class="text text-sub">AI-Driven Test-Driven Development</text>
+  <text x="760" y="155" class="year">2026</text>
+
+  <rect x="640" y="175" width="240" height="45" rx="4" class="feature-box"/>
+  <text x="760" y="195" class="text text-sub" style="text-anchor:middle;font-size:11px;">YAML契约矩阵 + 五维追溯</text>
+  <text x="760" y="210" class="text text-sub" style="text-anchor:middle;font-size:11px;">机器可读语义内核</text>
+
+  <rect x="640" y="230" width="240" height="45" rx="4" class="feature-box"/>
+  <text x="760" y="250" class="text text-sub" style="text-anchor:middle;font-size:11px;">人机双向承诺 + 审计门禁</text>
+  <text x="760" y="265" class="text text-sub" style="text-anchor:middle;font-size:11px;">多Agent批判验收</text>
+
+  <rect x="640" y="285" width="240" height="55" rx="4" class="feature-box"/>
+  <text x="760" y="305" class="text text-sub" style="text-anchor:middle;font-size:11px;color:#166534;">✓ 需求-架构-实现全链路追溯</text>
+  <text x="760" y="320" class="text text-sub" style="text-anchor:middle;font-size:11px;color:#166534;">✓ AI生成测试与实现</text>
+  <text x="760" y="335" class="text text-sub" style="text-anchor:middle;font-size:11px;color:#166534;">✓ 自动化验收与审计</text>
+
+  <!-- Evolution Arrows -->
+  <line x1="280" y1="220" x2="340" y2="220" class="arrow-line"/>
+  <text x="310" y="210" class="evolution-label">业务语义化</text>
+
+  <line x1="560" y1="220" x2="620" y2="220" class="arrow-line"/>
+  <text x="590" y="210" class="evolution-label">AI结构化</text>
+
+  <!-- Timeline at bottom -->
+  <line x1="80" y1="420" x2="880" y2="420" stroke="#d4a574" stroke-width="2"/>
+  <circle cx="170" cy="420" r="6" fill="#d97706"/>
+  <circle cx="450" cy="420" r="6" fill="#2563eb"/>
+  <circle cx="760" cy="420" r="6" fill="#16a34a"/>
+
+  <text x="170" y="450" class="text" style="font-size:12px;">极限编程时代</text>
+  <text x="170" y="468" class="text text-sub" style="font-size:11px;">敏捷宣言背景</text>
+
+  <text x="450" y="450" class="text" style="font-size:12px;">敏捷成熟期</text>
+  <text x="450" y="468" class="text text-sub" style="font-size:11px;">Cucumber/JBehave工具</text>
+
+  <text x="760" y="450" class="text" style="font-size:12px;">AI原生时代</text>
+  <text x="760" y="468" class="text text-sub" style="font-size:11px;">LLM Agent自动化</text>
+</svg>

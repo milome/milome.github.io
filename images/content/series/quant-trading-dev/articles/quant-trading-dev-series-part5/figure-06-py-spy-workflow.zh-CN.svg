@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-010" data-visual-pattern="flowchart 风格">
+  <title id="title">py-spy workflow for production-safe sampling diagnosis</title>
+  <desc id="desc">A flowchart showing how to use py-spy to attach to a running process, observe top stacks, record a flame graph, interpret wide stacks, and return to benchmark validation.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="48" width="1168" height="624" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">py-spy 使用流程 / Production Sampling Flow</text>
+  <text x="96" y="144" fill="#cbd5e1" font-size="19" font-family="Arial">当进程已经运行、不能随意插桩或重启时，用采样方式观察调用栈，再回到可复现 benchmark 验证。</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial">
+    <rect x="92" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="120" y="232" fill="#f8fafc" font-size="21" font-weight="700">1. 确认进程</text>
+    <text x="120" y="262" fill="#cbd5e1" font-size="18">运行中 PID</text>
+    <text x="120" y="286" fill="#cbd5e1" font-size="18">不修改代码</text>
+
+    <rect x="328" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="356" y="232" fill="#f8fafc" font-size="21" font-weight="700">2. 先看 top</text>
+    <text x="356" y="262" fill="#cbd5e1" font-size="18">观察热点栈</text>
+    <text x="356" y="286" fill="#cbd5e1" font-size="18">确认是否稳定</text>
+
+    <rect x="564" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="592" y="232" fill="#f8fafc" font-size="21" font-weight="700">3. 录制火焰图</text>
+    <text x="592" y="262" fill="#cbd5e1" font-size="18">record -o svg</text>
+    <text x="592" y="286" fill="#cbd5e1" font-size="18">覆盖典型窗口</text>
+
+    <rect x="800" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="828" y="232" fill="#f8fafc" font-size="21" font-weight="700">4. 解读宽栈</text>
+    <text x="828" y="262" fill="#cbd5e1" font-size="18">宽度代表样本占比</text>
+    <text x="828" y="286" fill="#cbd5e1" font-size="18">不是单次耗时</text>
+
+    <rect x="1036" y="198" width="154" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="1062" y="232" fill="#f8fafc" font-size="21" font-weight="700">5. 回到验证</text>
+    <text x="1062" y="262" fill="#cbd5e1" font-size="18">复现用例</text>
+    <text x="1062" y="286" fill="#cbd5e1" font-size="18">benchmark</text>
+
+    <path d="M288 246 H318" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M524 246 H554" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M760 246 H790" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M996 246 H1026" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Arial">
+    <text x="96" y="360" fill="#f8fafc" font-size="24" font-weight="700">火焰图怎么转成判断 / Reading Flame Graphs</text>
+
+    <rect x="96" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="122" y="430" fill="#bfdbfe" font-size="21" font-weight="700">宽栈集中在计算</text>
+    <text x="122" y="462" fill="#e2e8f0" font-size="18">CPU 热点明确</text>
+    <text x="122" y="488" fill="#cbd5e1" font-size="18">考虑算法 / Numba</text>
+    <text x="122" y="514" fill="#cbd5e1" font-size="18">或多进程</text>
+
+    <rect x="384" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="410" y="430" fill="#a7f3d0" font-size="21" font-weight="700">宽栈集中在 I/O</text>
+    <text x="410" y="462" fill="#e2e8f0" font-size="18">等待或查询边界</text>
+    <text x="410" y="488" fill="#cbd5e1" font-size="18">批量查询 / 缓存</text>
+    <text x="410" y="514" fill="#cbd5e1" font-size="18">或异步化</text>
+
+    <rect x="672" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="698" y="430" fill="#fde68a" font-size="21" font-weight="700">热点随时间漂移</text>
+    <text x="698" y="462" fill="#e2e8f0" font-size="18">负载不稳定</text>
+    <text x="698" y="488" fill="#cbd5e1" font-size="18">延长采样窗口</text>
+    <text x="698" y="514" fill="#cbd5e1" font-size="18">拆分场景复测</text>
+
+    <rect x="960" y="394" width="224" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="986" y="430" fill="#bae6fd" font-size="21" font-weight="700">栈宽但无复现</text>
+    <text x="986" y="462" fill="#e2e8f0" font-size="18">只能作为线索</text>
+    <text x="986" y="488" fill="#cbd5e1" font-size="18">补最小复现</text>
+    <text x="986" y="514" fill="#cbd5e1" font-size="18">再做改动</text>
+  </g>
+
+  <rect x="118" y="584" width="1044" height="52" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="146" y="617" fill="#cbd5e1" font-size="19" font-family="Arial">边界原则：py-spy 是低侵入采样工具，适合定位方向；优化是否成立仍要回到可复现 benchmark。</text>
+</svg>

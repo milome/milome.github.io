@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="title desc">
+  <title id="title">Java 核心技术深度解析系列封面</title>
+  <desc id="desc">以 JMM、GC、Loom、Valhalla、Panama、云原生、Spring AI、JIT/AOT 和生态演进为主线的 Java 核心技术路线图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="45%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#ecfeff"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="38%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#7c2d12" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="#7c2d12" opacity="0.10"/>
+    </pattern>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M 0 0 L 14 7 L 0 14 Z" fill="#14532d"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" rx="34" fill="url(#bg)"/>
+  <rect width="1200" height="675" rx="34" fill="url(#dots)"/>
+  <circle cx="1045" cy="105" r="130" fill="#38bdf8" opacity="0.14"/>
+  <circle cx="116" cy="565" r="155" fill="#f97316" opacity="0.13"/>
+
+  <text x="70" y="78" fill="#111827" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="800">Java 核心技术深度解析</text>
+  <text x="72" y="116" fill="#7c2d12" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="700">从内存模型到 AI 工程化：建立现代 Java 架构判断框架</text>
+
+  <g transform="translate(890 52)">
+    <rect width="230" height="112" rx="24" fill="#111827" opacity="0.94" filter="url(#shadow)"/>
+    <text x="115" y="42" text-anchor="middle" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="17" font-weight="800">版本基线</text>
+    <text x="115" y="72" text-anchor="middle" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15">JDK 25 LTS · JDK 26 GA</text>
+    <text x="115" y="96" text-anchor="middle" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="15">JDK 27 EA</text>
+  </g>
+
+  <line x1="112" y1="346" x2="1088" y2="346" stroke="url(#spine)" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="112" y1="346" x2="1088" y2="346" stroke="#ffffff" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="10 14"/>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" filter="url(#shadow)">
+    <g transform="translate(68 202)">
+      <rect width="128" height="142" rx="22" fill="#fff7ed" stroke="#dc2626" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#991b1b" font-size="28" font-weight="900">JMM</text>
+      <text x="64" y="74" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">线程可见性</text>
+      <text x="64" y="96" text-anchor="middle" fill="#7c2d12" font-size="12">happens-before</text>
+      <text x="64" y="116" text-anchor="middle" fill="#7c2d12" font-size="12">安全发布</text>
+    </g>
+    <g transform="translate(206 372)">
+      <rect width="128" height="142" rx="22" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#92400e" font-size="28" font-weight="900">GC</text>
+      <text x="64" y="74" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">延迟与吞吐</text>
+      <text x="64" y="96" text-anchor="middle" fill="#854d0e" font-size="12">G1 / ZGC</text>
+      <text x="64" y="116" text-anchor="middle" fill="#854d0e" font-size="12">Shenandoah</text>
+    </g>
+    <g transform="translate(344 202)">
+      <rect width="128" height="142" rx="22" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#166534" font-size="26" font-weight="900">Loom</text>
+      <text x="64" y="74" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">并发范式</text>
+      <text x="64" y="96" text-anchor="middle" fill="#14532d" font-size="12">虚拟线程</text>
+      <text x="64" y="116" text-anchor="middle" fill="#14532d" font-size="12">结构化并发</text>
+    </g>
+    <g transform="translate(482 372)">
+      <rect width="128" height="142" rx="22" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+      <text x="64" y="38" text-anchor="middle" fill="#3730a3" font-size="20" font-weight="900">Valhalla</text>
+      <text x="64" y="62" text-anchor="middle" fill="#3730a3" font-size="20" font-weight="900">Panama</text>
+      <text x="64" y="92" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">性能边界</text>
+      <text x="64" y="116" text-anchor="middle" fill="#4338ca" font-size="12">值类型 · FFM</text>
+    </g>
+    <g transform="translate(620 202)">
+      <rect width="128" height="142" rx="22" fill="#ecfeff" stroke="#0ea5e9" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#0369a1" font-size="24" font-weight="900">Cloud</text>
+      <text x="64" y="74" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">运行时裁剪</text>
+      <text x="64" y="96" text-anchor="middle" fill="#075985" font-size="12">JPMS / jlink</text>
+      <text x="64" y="116" text-anchor="middle" fill="#075985" font-size="12">Native Image</text>
+    </g>
+    <g transform="translate(758 372)">
+      <rect width="128" height="142" rx="22" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#9d174d" font-size="26" font-weight="900">AI</text>
+      <text x="64" y="74" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">企业集成</text>
+      <text x="64" y="96" text-anchor="middle" fill="#831843" font-size="12">Spring AI</text>
+      <text x="64" y="116" text-anchor="middle" fill="#831843" font-size="12">LangChain4j</text>
+    </g>
+    <g transform="translate(896 202)">
+      <rect width="128" height="142" rx="22" fill="#faf5ff" stroke="#9333ea" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#6b21a8" font-size="24" font-weight="900">JIT</text>
+      <text x="64" y="64" text-anchor="middle" fill="#6b21a8" font-size="24" font-weight="900">AOT</text>
+      <text x="64" y="94" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">证据驱动</text>
+      <text x="64" y="116" text-anchor="middle" fill="#581c87" font-size="12">JFR · Graal</text>
+    </g>
+    <g transform="translate(1034 372)">
+      <rect width="128" height="142" rx="22" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+      <text x="64" y="40" text-anchor="middle" fill="#0f172a" font-size="24" font-weight="900">生态</text>
+      <text x="64" y="74" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">升级路线</text>
+      <text x="64" y="96" text-anchor="middle" fill="#334155" font-size="12">LTS 策略</text>
+      <text x="64" y="116" text-anchor="middle" fill="#334155" font-size="12">风险评估</text>
+    </g>
+  </g>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="72" y="552" width="1056" height="72" rx="24" fill="#111827" opacity="0.92"/>
+    <text x="100" y="586" fill="#fef3c7" font-size="17" font-weight="800">核心问题</text>
+    <text x="200" y="586" fill="#f8fafc" font-size="16">对象何时对其他线程可见？GC 如何换取低延迟？虚拟线程改变了什么？Native Image 与 AI 集成的生产边界在哪里？</text>
+    <text x="100" y="612" fill="#93c5fd" font-size="15">目标：不是背 API，而是把 JVM、语言特性、运行时、部署和工程治理连成可判断的技术地图。</text>
+  </g>
+</svg>

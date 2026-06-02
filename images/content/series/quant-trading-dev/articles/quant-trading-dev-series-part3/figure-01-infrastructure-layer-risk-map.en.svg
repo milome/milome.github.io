@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="架构分层图、容器边界图">
+  <title id="title">Infrastructure layer risk map</title>
+  <desc id="desc">A layered architecture map showing how GUI, runtime, network, security and deployment risks affect a quant trading terminal.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Infrastructure Risk Map</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">Peripheral risks cross runtime boundaries</tspan><tspan x="640" dy="17.5">into market, strategy, execution, and review.</tspan></text>
+  <g font-family="Arial">
+    <rect x="108" y="208" width="1064" height="72" rx="22" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="108" y="312" width="1064" height="72" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="108" y="416" width="1064" height="72" rx="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="108" y="520" width="1064" height="72" rx="22" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="142" y="252" fill="#f8fafc" font-size="21" font-weight="700">Display and interaction layer</text>
+    <text x="442" y="252" fill="#94a3b8" font-size="18">GUI lifecycle, threads, rendering</text>
+    <text x="136" y="339" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="start"><tspan x="136" y="339">runtime resource layer</tspan></text>
+    <text x="136" y="362" fill="#94a3b8" font-size="16" text-anchor="start"><tspan x="136" y="362">Shared memory, pools, event loop, queues</tspan></text>
+    <text x="142" y="460" fill="#f8fafc" font-size="21" font-weight="700">Network and data layer</text>
+    <text x="382" y="460" fill="#94a3b8" font-size="18">WebSocket, HTTP, TCP, TZ, Pandas</text>
+    <text x="136" y="547" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="start"><tspan x="136" y="547">Security and deployment layer</tspan></text>
+    <text x="136" y="568" fill="#94a3b8" font-size="14" text-anchor="start"><tspan x="136" y="568">Plugins, config, log masking, serialization,</tspan><tspan x="136" dy="16.52">local files</tspan></text>
+  </g>
+  <g stroke="#64748b" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M640 280 V312"/>
+    <path d="M640 384 V416"/>
+    <path d="M640 488 V520"/>
+  </g>
+</svg>

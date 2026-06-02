@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-006" data-visual-pattern="waterfall / benchmark chart 风格">
+  <title id="title">Benchmark results</title>
+  <desc id="desc">Benchmark comparison showing P95 latency reduction across optimization rounds.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="58" y="54" width="1164" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Benchmark 结果 / Results</text>
+  <line x1="150" y1="570" x2="1100" y2="570" stroke="#64748b" stroke-width="3"/>
+  <g font-family="Arial">
+    <rect x="190" y="190" width="120" height="380" rx="14" fill="#60a5fa"/>
+    <rect x="420" y="350" width="120" height="220" rx="14" fill="#38bdf8"/>
+    <rect x="650" y="500" width="120" height="70" rx="14" fill="#10b981"/>
+    <rect x="880" y="548" width="120" height="22" rx="11" fill="#f59e0b"/>
+    <text x="194" y="176" fill="#f8fafc" font-size="20" font-weight="700">3000ms</text>
+    <text x="430" y="336" fill="#f8fafc" font-size="20" font-weight="700">800ms</text>
+    <text x="664" y="486" fill="#f8fafc" font-size="20" font-weight="700">100ms</text>
+    <text x="898" y="534" fill="#f8fafc" font-size="20" font-weight="700">30ms</text>
+    <text x="186" y="616" fill="#cbd5e1" font-size="18">初始</text>
+    <text x="400" y="616" fill="#cbd5e1" font-size="18">查询优化</text>
+    <text x="630" y="616" fill="#cbd5e1" font-size="18">增量计算</text>
+    <text x="850" y="616" fill="#cbd5e1" font-size="18">虚拟化渲染</text>
+  </g>
+  <rect x="834" y="164" width="266" height="116" rx="20" fill="#1e293b" stroke="#334155"/>
+  <text x="864" y="210" fill="#f8fafc" font-family="Arial" font-size="22" font-weight="700">验收口径</text>
+  <text x="864" y="244" fill="#94a3b8" font-family="Arial" font-size="18">P50 / P95 / Max</text>
+  <text x="864" y="270" fill="#94a3b8" font-family="Arial" font-size="18">+ 正确性断言</text>
+</svg>

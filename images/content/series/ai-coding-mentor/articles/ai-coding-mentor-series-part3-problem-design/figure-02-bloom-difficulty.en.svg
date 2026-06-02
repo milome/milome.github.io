@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Bloom level and AI assessment difficulty mapping</title>
+  <desc id="desc">Demonstrate evidence of competency in programming assessments for Bloom's six cognitive levels, AI difficulty ranges, and Mentor intervention methods.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Bloom level and AI assessment difficulty mapping</text>
+  <text x="450" y="88" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="88">Bloom levels determine assessment evidence:</tspan><tspan x="450" dy="17.5">unit tests for basics, rubrics for judgment,</tspan><tspan x="450" dy="17.5">and trace or human review for open choices.</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="84" y="150" width="120" height="82" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="144" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">memory</text>
+    <text x="144" y="204" text-anchor="middle" font-size="12" fill="#cbd5e1">Syntax · API</text>
+
+    <rect x="220" y="150" width="120" height="82" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="280" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">understand</text>
+    <text x="280" y="195.36" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="280" dy="0">conceptual</tspan><tspan x="280" dy="14.64">differences</tspan></text>
+
+    <rect x="356" y="150" width="120" height="82" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="416" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">application</text>
+    <text x="416" y="204" text-anchor="middle" font-size="12" fill="#cbd5e1">Implement logic</text>
+
+    <rect x="492" y="150" width="120" height="82" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="552" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">analyze</text>
+    <text x="552" y="195.36" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="552" dy="0">dismantling</tspan><tspan x="552" dy="14.64">boundaries</tspan></text>
+
+    <rect x="628" y="150" width="120" height="82" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="688" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">evaluate</text>
+    <text x="688" y="204" text-anchor="middle" font-size="12" fill="#cbd5e1">Plan choice</text>
+
+    <rect x="764" y="150" width="72" height="82" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="800" y="189.34" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="800" dy="0">create</tspan></text>
+    <text x="800" y="205.74" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="800" dy="0">New design</tspan></text>
+
+    <rect x="92" y="276" width="218" height="108" rx="18" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <text x="201" y="321.22" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0"><tspan x="201" dy="0">low difficulty area</tspan></text>
+    <text x="201" y="337.94" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="201" dy="0">Suitable for baseline screening</tspan></text>
+    <text x="201" y="353.86" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="201" dy="0">Mainly scored with unit tests</tspan></text>
+
+    <rect x="342" y="276" width="168" height="108" rx="18" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+    <text x="426" y="305.72" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="426" dy="0">Medium difficulty</tspan><tspan x="426" dy="17.7">area</tspan></text>
+    <text x="426" y="339.62" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="426" dy="0">Long-term eval</tspan></text>
+    <text x="426" y="355" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="426" dy="0">Test plus failure</tspan><tspan x="426" dy="12.39">classification</tspan></text>
+
+    <rect x="542" y="276" width="190" height="108" rx="18" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="637" y="311.91" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="637" dy="0">Difficulty area</tspan></text>
+    <text x="637" y="330" text-anchor="middle" font-size="12" fill="#cbd5e1">Expose judgment boundaries</text>
+    <text x="637" y="356" text-anchor="middle" font-size="12" fill="#cbd5e1">Requires rubric + evidence</text>
+
+    <rect x="752" y="276" width="84" height="108" rx="18" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="794" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#fde68a">Artificial</text>
+    <text x="794" y="336" text-anchor="middle" font-size="12" fill="#cbd5e1">Review</text>
+    <text x="794" y="358" text-anchor="middle" font-size="12" fill="#cbd5e1">governance</text>
+  </g>
+
+  <path d="M204 191 L216 191" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <path d="M340 191 L352 191" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <path d="M476 191 L488 191" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <path d="M612 191 L624 191" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <path d="M748 191 L760 191" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+
+  <path d="M144 232 C150 250, 170 260, 194 272" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M280 232 C272 250, 242 260, 214 272" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M416 232 C416 250, 420 260, 424 272" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M552 232 C568 250, 596 260, 626 272" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M688 232 C681 250, 660 260, 642 272" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M800 232 C800 250, 798 260, 796 272" fill="none" stroke="#64748b" stroke-width="2"/>
+
+  <text x="450" y="434" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#cbd5e1"><tspan x="450" y="408.4">When designing questions, first determine the</tspan><tspan x="450" dy="17.1">level of ability,</tspan><tspan x="450" dy="17.1">and then select test, rubric,</tspan><tspan x="450" dy="17.1">and review methods.</tspan></text>
+
+</svg>

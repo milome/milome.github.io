@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI编程评估的风险-治理闭环</title>
+  <desc id="desc">展示指标幻觉、数据污染、规则过期、责任漂移和噪音失控五类风险及对应治理动作。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI 编程评估的风险-治理闭环</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">未来失败更常来自系统变形，而不是模型单点退化</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <circle cx="450" cy="292" r="88" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="#f8fafc">治理中枢</text>
+    <text x="450" y="306" text-anchor="middle" font-size="12" fill="#cbd5e1">门控 · 路由 · 生命周期</text>
+
+    <rect x="110" y="150" width="190" height="88" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="205" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">指标幻觉</text>
+    <text x="205" y="202" text-anchor="middle" font-size="12" fill="#94a3b8">分数升、交付不升</text>
+
+    <rect x="600" y="150" width="190" height="88" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="695" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">数据污染</text>
+    <text x="695" y="202" text-anchor="middle" font-size="12" fill="#94a3b8">train / eval 混用</text>
+
+    <rect x="110" y="356" width="190" height="88" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="205" y="386" text-anchor="middle" font-size="14" font-weight="700" fill="#fde68a">规则过期</text>
+    <text x="205" y="408" text-anchor="middle" font-size="12" fill="#94a3b8">旧样本固化旧约束</text>
+
+    <rect x="600" y="356" width="190" height="88" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="695" y="386" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">责任漂移</text>
+    <text x="695" y="408" text-anchor="middle" font-size="12" fill="#94a3b8">默认让AI先做完</text>
+
+    <rect x="355" y="438" width="190" height="70" rx="14" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="450" y="466" text-anchor="middle" font-size="14" font-weight="700" fill="#e2e8f0">噪音失控</text>
+    <text x="450" y="486" text-anchor="middle" font-size="12" fill="#94a3b8">review信任坍塌</text>
+  </g>
+
+  <line x1="300" y1="194" x2="362" y2="252" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="194" x2="538" y2="252" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="300" y1="400" x2="362" y2="334" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="400" x2="538" y2="334" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="450" y1="438" x2="450" y2="380" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+  <text x="450" y="520" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 3. 组织要治理的不是“单次错误”，而是会重复放大的系统性偏差。</text>
+</svg>

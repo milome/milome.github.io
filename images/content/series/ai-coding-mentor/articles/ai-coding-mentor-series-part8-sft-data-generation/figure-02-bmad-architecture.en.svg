@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">BMAD-Speckit-SDD-Flow to SFT architecture mapping</title>
+  <desc id="desc">Shows how standard-driven development products enter the scoring system and then enter the SFT extraction and export module.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">BMAD-Speckit-SDD-Flow to SFT architecture mapping</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">Convert development stage products</tspan><tspan x="450" dy="17.5">into unified samples that can be</tspan><tspan x="450" dy="17.5">evaluated, trained, and exported</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="78" y="132" width="744" height="104" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="104.04" y="163.72" text-anchor="start" font-size="13" font-weight="700" fill="#bfdbfe"><tspan x="104.04" y="163.72">Spec-Driven Development layer</tspan></text>
+    <text x="104.04" y="184.72" text-anchor="start" font-size="14" fill="#cbd5e1"><tspan x="104.04" y="184.72">Specify · Plan · GAPS · Tasks · Implement · Audit</tspan></text>
+    <text x="104.04" y="205.72" text-anchor="start" font-size="14" fill="#94a3b8"><tspan x="104.04" y="205.72">Output: task contract, plan, code changes, test</tspan><tspan x="104.04" dy="16.52">results, audit conclusions</tspan></text>
+
+    <rect x="78" y="270" width="230" height="142" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="193" y="316.46" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="193" dy="0">Scoring System</tspan></text>
+    <text x="193" y="332.86" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="193" dy="0">Parse / Score / Coach</tspan></text>
+    <text x="193" y="348.78" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="193" dy="0">Transform the collaborative process</tspan><tspan x="193" dy="14.16">into</tspan></text>
+    <text x="193" y="378.62" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="193" dy="0">Error type and quality score</tspan></text>
+
+    <rect x="336" y="270" width="230" height="142" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="451" y="302" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">SFT Extraction</text>
+    <text x="451" y="326" text-anchor="middle" font-size="12" fill="#cbd5e1">Candidate / Gate / Redaction</text>
+    <text x="451" y="350" text-anchor="middle" font-size="12" fill="#94a3b8">Unified Canonical</text>
+    <text x="451" y="368" text-anchor="middle" font-size="12" fill="#94a3b8">SFT Sample Data Contract</text>
+
+    <rect x="594" y="270" width="228" height="142" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="708" y="323.42" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="708" dy="0">Export Layer</tspan></text>
+    <text x="708" y="339.82" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="708" dy="0">OpenAI / Hugging Face</tspan></text>
+    <text x="708" y="355.74" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="708" dy="0">Training data package, version index,</tspan></text>
+    <text x="708" y="371.66" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="708" dy="0">Regression evaluation input</tspan></text>
+  </g>
+
+  <line x1="450" y1="236" x2="193" y2="270" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="236" x2="451" y2="270" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="236" x2="708" y2="270" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="308" y1="341" x2="336" y2="341" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="566" y1="341" x2="594" y2="341" stroke="#64748b" stroke-width="2.5"/>
+
+
+</svg>

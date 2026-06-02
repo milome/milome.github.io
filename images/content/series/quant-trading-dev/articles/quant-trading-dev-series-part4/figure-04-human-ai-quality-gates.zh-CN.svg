@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="swimlane 风格">
+  <title id="title">Human AI quality gates swimlane</title>
+  <desc id="desc">Swimlane diagram separating AI candidate output, human semantic signoff and CI evidence gates.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#10b981"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="56" y="52" width="1168" height="616" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="92" y="112" fill="#f8fafc" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">人机质量门禁：AI 产出候选，人负责签收</text>
+  <text x="92" y="152" fill="#cbd5e1" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="20">业务语义、架构代价和上线风险不能由生成器独立决定。</text>
+
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="96" y="214" width="1088" height="104" rx="20" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="96" y="334" width="1088" height="104" rx="20" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="96" y="454" width="1088" height="104" rx="20" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+    <text x="164" y="274" fill="#f8fafc" font-size="21" font-weight="700">AI 候选</text>
+    <text x="164" y="394" fill="#f8fafc" font-size="21" font-weight="700">人工签收</text>
+    <text x="164" y="514" fill="#f8fafc" font-size="21" font-weight="700">CI 证据</text>
+
+    <rect x="332" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="552" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="772" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="992" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="408" y="273" text-anchor="middle" fill="#f8fafc" font-size="18">规格草案</text>
+    <text x="628" y="273" text-anchor="middle" fill="#f8fafc" font-size="18">候选实现</text>
+    <text x="848" y="273" text-anchor="middle" fill="#f8fafc" font-size="18">测试草案</text>
+    <text x="1068" y="273" text-anchor="middle" fill="#f8fafc" font-size="18">文档初稿</text>
+
+    <rect x="332" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="552" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="772" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="992" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="408" y="393" text-anchor="middle" fill="#f8fafc" font-size="18">语义确认</text>
+    <text x="628" y="393" text-anchor="middle" fill="#f8fafc" font-size="18">架构取舍</text>
+    <text x="848" y="393" text-anchor="middle" fill="#f8fafc" font-size="18">风险接受</text>
+    <text x="1068" y="393" text-anchor="middle" fill="#f8fafc" font-size="18">合并批准</text>
+
+    <rect x="332" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="552" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="772" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="992" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="408" y="513" text-anchor="middle" fill="#f8fafc" font-size="18">类型检查</text>
+    <text x="628" y="513" text-anchor="middle" fill="#f8fafc" font-size="18">单元测试</text>
+    <text x="848" y="513" text-anchor="middle" fill="#f8fafc" font-size="18">benchmark</text>
+    <text x="1068" y="513" text-anchor="middle" fill="#f8fafc" font-size="18">验收记录</text>
+
+    <g fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+      <path d="M408 294 V352"/>
+      <path d="M628 294 V352"/>
+      <path d="M848 294 V352"/>
+      <path d="M1068 294 V352"/>
+      <path d="M408 414 V472"/>
+      <path d="M628 414 V472"/>
+      <path d="M848 414 V472"/>
+      <path d="M1068 414 V472"/>
+    </g>
+
+    <text x="640" y="626" text-anchor="middle" fill="#fde68a" font-size="20">AI 负责提出候选；人负责判断候选是否能进入真实交易系统。</text>
+  </g>
+</svg>

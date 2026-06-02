@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="state diagram 风格">
+  <title id="title">HKFE session ownership model</title>
+  <desc id="desc">A timeline diagram showing how physical time maps to trading day ownership.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="52" y="54" width="1176" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="112" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">交易时段归属 / Session Ownership</text>
+  <text x="92" y="148" fill="#94a3b8" font-size="18" font-family="Arial">先把物理时间映射为交易日语义，再进入 K 线和指标计算</text>
+  <line x1="128" y1="270" x2="1138" y2="270" stroke="#64748b" stroke-width="4"/>
+  <g font-family="Arial">
+    <rect x="128" y="214" width="226" height="112" rx="20" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="158" y="258" fill="#f8fafc" font-size="21" font-weight="700">日盘 / Day</text>
+    <text x="158" y="290" fill="#cbd5e1" font-size="18">09:15 - 16:30</text>
+    <rect x="392" y="214" width="226" height="112" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="422" y="258" fill="#f8fafc" font-size="21" font-weight="700">夜盘 / Night</text>
+    <text x="422" y="290" fill="#cbd5e1" font-size="18">17:15 - 03:00</text>
+    <rect x="656" y="214" width="226" height="112" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="686" y="248" fill="#f8fafc" font-size="21" font-weight="700">交易日</text>
+    <text x="686" y="278" fill="#cbd5e1" font-size="18" font-weight="700">Trading Day</text>
+    <text x="686" y="306" fill="#94a3b8" font-size="18">业务归属，不按自然日</text>
+    <rect x="920" y="214" width="218" height="112" rx="20" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="950" y="258" fill="#f8fafc" font-size="21" font-weight="700">例外 / Exceptions</text>
+    <text x="950" y="290" fill="#cbd5e1" font-size="18">假期、半日市、强平</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M354 270 H392"/>
+    <path d="M618 270 H656"/>
+    <path d="M882 270 H920"/>
+  </g>
+  <rect x="128" y="430" width="1010" height="112" rx="24" fill="#1e293b" stroke="#475569"/>
+  <text x="164" y="476" fill="#f8fafc" font-size="22" font-family="Arial" font-weight="700">输出给策略的不是时间戳，而是带交易日、阶段和强制收盘点的稳定事件</text>
+  <text x="164" y="518" fill="#94a3b8" font-size="18" font-family="Arial">Stable Event = timestamp + trading_day + session_phase + force_close_at</text>
+</svg>

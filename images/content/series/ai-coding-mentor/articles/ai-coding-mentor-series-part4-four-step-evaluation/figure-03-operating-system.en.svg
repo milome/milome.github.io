@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Continuously evaluate operational systems</title>
+  <desc id="desc">Demonstrate data flow and governance closed loops between fixed assessment sets, real project feedback, operational records, failure classification, quality gates, and ad hoc improvements.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow-cyan" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#f59e0b"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Continuously evaluate operational systems</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">Continuous evaluation should trigger</tspan><tspan x="450" dy="17.5">decisions: upgrade, rollback,</tspan><tspan x="450" dy="17.5">throttling, special improvements, or data routing</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="74" y="136" width="160" height="82" rx="15" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="154" y="167.49" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="154" dy="0">Eval set</tspan></text>
+    <text x="154" y="185.19" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="154" dy="0">Version · Difficulty ·</tspan><tspan x="154" dy="14.16">Contamination</tspan></text>
+
+    <rect x="74" y="330" width="160" height="82" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="154" y="359.72" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="154" dy="0">Real project</tspan><tspan x="154" dy="17.7">feedback</tspan></text>
+    <text x="154" y="395.12" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="154" dy="0">PR · issue · review</tspan></text>
+
+    <rect x="330" y="136" width="160" height="82" rx="15" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="410" y="167" text-anchor="middle" font-size="16" font-weight="700" fill="#bfdbfe">Evaluation run</text>
+    <text x="410" y="191" text-anchor="middle" font-size="12" fill="#cbd5e1">Models · Tools · Budget</text>
+
+    <rect x="330" y="330" width="160" height="82" rx="15" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="410" y="361.54" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a"><tspan x="410" dy="0">Failure classification</tspan></text>
+    <text x="410" y="377.62" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="410" dy="0">Contract layer · Root</tspan><tspan x="410" dy="14.16">cause · Evidence</tspan></text>
+
+    <rect x="604" y="136" width="180" height="82" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="694" y="167.49" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="694" dy="0">Quality gate</tspan></text>
+    <text x="694" y="185.19" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="694" dy="0">Upgrade · Rollback ·</tspan><tspan x="694" dy="14.16">Grayscale</tspan></text>
+
+    <rect x="604" y="330" width="180" height="82" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="694" y="359.9" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0"><tspan x="694" dy="0">Special improvement</tspan><tspan x="694" dy="16.52">queue</tspan></text>
+    <text x="694" y="393.94" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="694" dy="0">rubric · test · protocol</tspan></text>
+
+    <circle cx="510" cy="274" r="58" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="510" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#f8fafc">Result warehouse</text>
+    <text x="510" y="288" text-anchor="middle" font-size="12" fill="#cbd5e1">Score · Log</text>
+    <text x="510" y="308" text-anchor="middle" font-size="12" fill="#cbd5e1">Track · Version</text>
+  </g>
+
+  <path d="M234 177 L326 177" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <path d="M490 177 L600 177" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <path d="M234 371 L326 371" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+  <path d="M490 371 L600 371" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <path d="M410 218 C430 230, 452 235, 470 232" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+  <path d="M410 330 C432 318, 452 316, 470 316" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrow-orange)"/>
+  <path d="M558 306 C574 326, 586 342, 600 356" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <path d="M696 222 C716 258, 716 294, 694 326" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+
+
+</svg>

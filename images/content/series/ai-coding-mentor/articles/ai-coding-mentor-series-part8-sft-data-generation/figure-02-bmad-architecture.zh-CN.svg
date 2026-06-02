@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">BMAD-Speckit-SDD-Flow 到 SFT 的架构映射</title>
+  <desc id="desc">展示规范驱动开发产物如何进入评分系统，再进入SFT提取与导出模块。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">BMAD-Speckit-SDD-Flow 到 SFT 的架构映射</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">把开发阶段产物转成可评估、可训练、可导出的统一样本</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="78" y="132" width="744" height="104" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="450" y="162" text-anchor="middle" font-size="18" font-weight="700" fill="#bfdbfe">Spec-Driven Development 层</text>
+    <text x="450" y="188" text-anchor="middle" font-size="13" fill="#cbd5e1">Specify · Plan · GAPS · Tasks · Implement · Audit</text>
+    <text x="450" y="210" text-anchor="middle" font-size="12" fill="#94a3b8">产出：任务契约、计划、代码变更、测试结果、审计结论</text>
+
+    <rect x="78" y="270" width="230" height="142" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="193" y="302" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0">Scoring System</text>
+    <text x="193" y="326" text-anchor="middle" font-size="12" fill="#cbd5e1">Parse / Score / Coach</text>
+    <text x="193" y="350" text-anchor="middle" font-size="12" fill="#94a3b8">把协作过程转成</text>
+    <text x="193" y="368" text-anchor="middle" font-size="12" fill="#94a3b8">错误类型与质量分</text>
+
+    <rect x="336" y="270" width="230" height="142" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="451" y="302" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">SFT Extraction</text>
+    <text x="451" y="326" text-anchor="middle" font-size="12" fill="#cbd5e1">Candidate / Gate / Redaction</text>
+    <text x="451" y="350" text-anchor="middle" font-size="12" fill="#94a3b8">统一 Canonical</text>
+    <text x="451" y="368" text-anchor="middle" font-size="12" fill="#94a3b8">SFT Sample 数据契约</text>
+
+    <rect x="594" y="270" width="228" height="142" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="708" y="302" text-anchor="middle" font-size="17" font-weight="700" fill="#bae6fd">Export Layer</text>
+    <text x="708" y="326" text-anchor="middle" font-size="12" fill="#cbd5e1">OpenAI / Hugging Face</text>
+    <text x="708" y="350" text-anchor="middle" font-size="12" fill="#94a3b8">训练数据包、版本索引、</text>
+    <text x="708" y="368" text-anchor="middle" font-size="12" fill="#94a3b8">回归评估输入</text>
+  </g>
+
+  <line x1="450" y1="236" x2="193" y2="270" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="236" x2="451" y2="270" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="236" x2="708" y2="270" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="308" y1="341" x2="336" y2="341" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="566" y1="341" x2="594" y2="341" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="470" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 2. 设计重点不是“多收集日志”，而是保证每个阶段都能产出可路由、可验证、可追溯的样本证据。</text>
+</svg>

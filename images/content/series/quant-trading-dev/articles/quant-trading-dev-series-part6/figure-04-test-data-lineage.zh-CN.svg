@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="flowchart 风格">
+  <title id="title">测试数据血缘图</title>
+  <desc id="desc">追踪测试数据从原始行情到清洗、交易日归属、聚合、fixture、断言和回归记录的完整路径。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">测试数据血缘</text>
+  <text x="92" y="140" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">测试失败时必须能追溯数据来源、清洗规则、交易日归属和断言目的。</text>
+  <g fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M240 278 H348"/>
+    <path d="M506 278 H614"/>
+    <path d="M772 278 H880"/>
+    <path d="M970 326 V396"/>
+    <path d="M880 438 H772"/>
+    <path d="M614 438 H506"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="96" y="236" width="144" height="84" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="168" y="270" fill="#f8fafc" font-size="20" font-weight="700">原始行情<tspan x="168" dy="26" fill="#cbd5e1" font-size="18">最小样本</tspan></text>
+    <rect x="348" y="236" width="158" height="84" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="427" y="270" fill="#f8fafc" font-size="20" font-weight="700">清洗规则<tspan x="427" dy="26" fill="#cbd5e1" font-size="18">缺失 / 异常</tspan></text>
+    <rect x="614" y="236" width="158" height="84" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="693" y="270" fill="#f8fafc" font-size="20" font-weight="700">交易日归属<tspan x="693" dy="26" fill="#cbd5e1" font-size="18">跨夜语义</tspan></text>
+    <rect x="880" y="236" width="180" height="84" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="970" y="270" fill="#f8fafc" font-size="20" font-weight="700">周期聚合<tspan x="970" dy="26" fill="#cbd5e1" font-size="18">OHLCV 规则</tspan></text>
+    <rect x="880" y="396" width="180" height="84" rx="18" fill="#1e293b" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="970" y="430" fill="#f8fafc" font-size="20" font-weight="700">fixture<tspan x="970" dy="26" fill="#cbd5e1" font-size="18">可复现快照</tspan></text>
+    <rect x="614" y="396" width="158" height="84" rx="18" fill="#1e293b" stroke="#a7f3d0" stroke-width="2"/>
+    <text x="693" y="430" fill="#f8fafc" font-size="20" font-weight="700">断言<tspan x="693" dy="26" fill="#cbd5e1" font-size="18">业务假设</tspan></text>
+    <rect x="332" y="396" width="174" height="84" rx="18" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="419" y="430" fill="#f8fafc" font-size="20" font-weight="700">回归记录<tspan x="419" dy="26" fill="#cbd5e1" font-size="18">缺陷不复发</tspan></text>
+  </g>
+  <text x="308" y="606" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="18">原则：不能说明来源和变换链路的 fixture，不能作为长期回归样本。</text>
+</svg>

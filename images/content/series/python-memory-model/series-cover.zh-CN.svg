@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <title>Python Runtime 到 AI 工程化系列封面</title>
+  <desc>展示 Python 从运行时内存、GC、GIL/nogil、Bindings、FastAPI 到大模型生态的工程演进链路。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="48%" stop-color="#0f1b2d"/>
+      <stop offset="100%" stop-color="#162032"/>
+    </linearGradient>
+    <linearGradient id="runtimeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6c177"/>
+      <stop offset="100%" stop-color="#e66b4a"/>
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#74d2f7"/>
+      <stop offset="100%" stop-color="#4e7df3"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ce7b2"/>
+      <stop offset="100%" stop-color="#27c7c5"/>
+    </linearGradient>
+    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f6c177"/>
+      <stop offset="48%" stop-color="#74d2f7"/>
+      <stop offset="100%" stop-color="#7ce7b2"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#d7f7ff"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="675" rx="30" fill="url(#grid)"/>
+  <circle cx="1040" cy="130" r="210" fill="#22d3ee" opacity="0.10" filter="url(#softGlow)"/>
+  <circle cx="190" cy="570" r="190" fill="#f59e0b" opacity="0.10" filter="url(#softGlow)"/>
+
+  <text x="72" y="86" fill="#f8fafc" font-size="34" font-weight="800">Python Runtime → AI Engineering</text>
+  <text x="74" y="123" fill="#a8c7d8" font-size="17">从 CPython 底层机制到大模型应用生产化的完整认知链路</text>
+
+  <g opacity="0.92">
+    <rect x="72" y="162" width="242" height="52" rx="26" fill="#101b2c" stroke="#f6c177" stroke-opacity="0.45"/>
+    <text x="193" y="195" text-anchor="middle" fill="#f6c177" font-size="18" font-weight="700">CPython Runtime</text>
+    <rect x="886" y="162" width="242" height="52" rx="26" fill="#101b2c" stroke="#7ce7b2" stroke-opacity="0.45"/>
+    <text x="1007" y="195" text-anchor="middle" fill="#7ce7b2" font-size="18" font-weight="700">AI Engineering</text>
+  </g>
+
+  <line x1="132" y1="344" x2="1068" y2="344" stroke="url(#spineGrad)" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="132" y1="344" x2="1068" y2="344" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="8 12"/>
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="262" width="144" height="164" rx="24" fill="#172235" stroke="#f6c177" stroke-opacity="0.55"/>
+    <circle cx="150" cy="286" r="18" fill="url(#runtimeGrad)"/>
+    <text x="150" y="335" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="800">Memory</text>
+    <text x="150" y="360" text-anchor="middle" fill="#f6c177" font-size="14" font-weight="700">Arena / Pool</text>
+    <text x="150" y="380" text-anchor="middle" fill="#f6c177" font-size="14" font-weight="700">Block</text>
+    <text x="150" y="405" text-anchor="middle" fill="#9fb1c6" font-size="13">对象分配与内存池</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="254" y="262" width="144" height="164" rx="24" fill="#172235" stroke="#f6c177" stroke-opacity="0.55"/>
+    <circle cx="326" cy="286" r="18" fill="url(#runtimeGrad)"/>
+    <text x="326" y="335" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="800">GC</text>
+    <text x="326" y="360" text-anchor="middle" fill="#f6c177" font-size="14" font-weight="700">引用计数</text>
+    <text x="326" y="380" text-anchor="middle" fill="#f6c177" font-size="14" font-weight="700">分代 GC</text>
+    <text x="326" y="405" text-anchor="middle" fill="#9fb1c6" font-size="13">回收机制与误区</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="430" y="262" width="144" height="164" rx="24" fill="#172235" stroke="#74d2f7" stroke-opacity="0.55"/>
+    <circle cx="502" cy="286" r="18" fill="url(#bridgeGrad)"/>
+    <text x="502" y="333" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="800">GIL / nogil</text>
+    <text x="502" y="360" text-anchor="middle" fill="#74d2f7" font-size="14" font-weight="700">PEP 703</text>
+    <text x="502" y="380" text-anchor="middle" fill="#74d2f7" font-size="14" font-weight="700">BRC</text>
+    <text x="502" y="405" text-anchor="middle" fill="#9fb1c6" font-size="13">并发瓶颈与破局</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="606" y="262" width="144" height="164" rx="24" fill="#172235" stroke="#74d2f7" stroke-opacity="0.55"/>
+    <circle cx="678" cy="286" r="18" fill="url(#bridgeGrad)"/>
+    <text x="678" y="335" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="800">Bindings</text>
+    <text x="678" y="360" text-anchor="middle" fill="#74d2f7" font-size="14" font-weight="700">Cython</text>
+    <text x="678" y="380" text-anchor="middle" fill="#74d2f7" font-size="14" font-weight="700">pybind11</text>
+    <text x="678" y="405" text-anchor="middle" fill="#9fb1c6" font-size="13">连接 C/C++/CUDA</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="782" y="262" width="144" height="164" rx="24" fill="#172235" stroke="#7ce7b2" stroke-opacity="0.55"/>
+    <circle cx="854" cy="286" r="18" fill="url(#aiGrad)"/>
+    <text x="854" y="335" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="800">FastAPI</text>
+    <text x="854" y="360" text-anchor="middle" fill="#7ce7b2" font-size="14" font-weight="700">Typed Async</text>
+    <text x="854" y="380" text-anchor="middle" fill="#7ce7b2" font-size="14" font-weight="700">API</text>
+    <text x="854" y="405" text-anchor="middle" fill="#9fb1c6" font-size="13">大模型服务入口</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="958" y="262" width="164" height="164" rx="24" fill="#172235" stroke="#7ce7b2" stroke-opacity="0.55"/>
+    <circle cx="1040" cy="286" r="18" fill="url(#aiGrad)"/>
+    <text x="1040" y="333" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="800">LLM 生态</text>
+    <text x="1040" y="360" text-anchor="middle" fill="#7ce7b2" font-size="14" font-weight="700">RAG / Agent</text>
+    <text x="1040" y="380" text-anchor="middle" fill="#7ce7b2" font-size="14" font-weight="700">LangChain</text>
+    <text x="1040" y="405" text-anchor="middle" fill="#9fb1c6" font-size="13">应用、评测与治理</text>
+  </g>
+
+  <g opacity="0.94">
+    <rect x="84" y="480" width="316" height="82" rx="22" fill="#0b1424" stroke="#f6c177" stroke-opacity="0.32"/>
+    <text x="108" y="512" fill="#f6c177" font-size="15" font-weight="800">底层问题</text>
+    <text x="108" y="540" fill="#d3dfeb" font-size="14">定位内存与并发问题的根因</text>
+
+    <rect x="442" y="480" width="316" height="82" rx="22" fill="#0b1424" stroke="#74d2f7" stroke-opacity="0.32"/>
+    <text x="466" y="512" fill="#74d2f7" font-size="15" font-weight="800">工程桥接</text>
+    <text x="466" y="540" fill="#d3dfeb" font-size="14">连接高性能库、类型系统与异步 API</text>
+
+    <rect x="800" y="480" width="316" height="82" rx="22" fill="#0b1424" stroke="#7ce7b2" stroke-opacity="0.32"/>
+    <text x="824" y="512" fill="#7ce7b2" font-size="15" font-weight="800">AI 生产化</text>
+    <text x="824" y="540" fill="#d3dfeb" font-size="14">把模型调用做成可评测的稳定系统</text>
+  </g>
+
+  <text x="74" y="620" fill="#6d8197" font-size="13">Python Memory Model Deep Dive · 7-part series</text>
+  <text x="1128" y="620" text-anchor="end" fill="#6d8197" font-size="13">Runtime mechanics / AI systems / developer judgment</text>
+</svg>

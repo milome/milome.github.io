@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-011" data-visual-pattern="flowchart 风格">
+  <title id="title">timeit workflow for micro-benchmark validation</title>
+  <desc id="desc">A flowchart showing how to use timeit for micro-benchmarking: isolate a small code path, fix setup and input, choose number and repeat, read minimum and variance, and promote only stable findings to benchmark validation.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="48" width="1168" height="624" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">timeit usage flow / Micro-Benchmark Flow</text>
+  <text x="640" y="137" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="middle"><tspan x="640" y="137">timeit is suitable for relatively small pieces of</tspan><tspan x="640" dy="17.5">pure computation; it validates local implementation</tspan><tspan x="640" dy="17.5">choices and is not a substitute for end-to-end</tspan><tspan x="640" dy="17.5">performance acceptance.</tspan></text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial">
+    <rect x="88" y="198" width="188" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="99.52" y="234.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="99.52" dy="0">1. Isolate fragments</tspan></text>
+    <text x="99.52" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="99.52" dy="0">Only test small functions</tspan></text>
+    <text x="99.52" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="99.52" dy="0">Avoid I/O and UI</tspan></text>
+
+    <rect x="318" y="198" width="188" height="96" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="346" y="232" fill="#f8fafc" font-size="21" font-weight="700">2. Fixed setup</text>
+    <text x="346" y="262" fill="#cbd5e1" font-size="18">same input</text>
+    <text x="346" y="286" fill="#cbd5e1" font-size="18">Same initialization</text>
+
+    <rect x="548" y="198" width="188" height="96" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="576" y="232" fill="#f8fafc" font-size="21" font-weight="700">3. Setting times</text>
+    <text x="576" y="262" fill="#cbd5e1" font-size="18">number</text>
+    <text x="576" y="286" fill="#cbd5e1" font-size="18">repeat</text>
+
+    <rect x="778" y="198" width="188" height="96" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="789.52" y="234.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="789.52" dy="0">4. Read distribution</tspan></text>
+    <text x="789.52" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="789.52" dy="0">min / median</tspan></text>
+    <text x="789.52" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="789.52" dy="0">Fluctuation range</tspan></text>
+
+    <rect x="1008" y="198" width="182" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="1019.52" y="234.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="1019.52" dy="0">5. Promote check</tspan></text>
+    <text x="1019.52" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="1019.52" dy="0">end-to-end benchmark</tspan></text>
+    <text x="1019.52" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="1019.52" dy="0">correctness assertion</tspan></text>
+
+    <path d="M276 246 H308" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M506 246 H538" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M736 246 H768" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M966 246 H998" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Arial">
+    <text x="96" y="360" fill="#f8fafc" font-size="24" font-weight="700">How to avoid misreading results / Guardrails for Reading Results</text>
+
+    <rect x="96" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="112" y="443.68" fill="#bfdbfe" font-size="18" font-weight="700" text-anchor="start"><tspan x="112" dy="0">Just look at the average</tspan></text>
+    <text x="112" y="460.56" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="112" dy="0">Easily misled by jitter</tspan></text>
+    <text x="112" y="476.48" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="112" dy="0">At least watch min</tspan></text>
+    <text x="112" y="492.4" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="112" dy="0">and repeat distribution</tspan></text>
+
+    <rect x="384" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="511" y="434.98" fill="#a7f3d0" font-size="18" font-weight="700" text-anchor="middle"><tspan x="511" dy="0">setup inconsistent</tspan></text>
+    <text x="511" y="456.86" fill="#e2e8f0" font-size="17" text-anchor="middle"><tspan x="511" dy="0">Initialization cost measured</tspan></text>
+    <text x="511" y="478.58" fill="#cbd5e1" font-size="17" text-anchor="middle"><tspan x="511" dy="0">Prepare the data</tspan></text>
+    <text x="511" y="500.3" fill="#cbd5e1" font-size="17" text-anchor="middle"><tspan x="511" dy="0">move into setup</tspan></text>
+
+    <rect x="672" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="688" y="436.72" fill="#fde68a" font-size="18" font-weight="700" text-anchor="start"><tspan x="688" dy="0">Clip too small</tspan></text>
+    <text x="688" y="453.6" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="688" dy="0">Interpreter overhead accounts for a high</tspan><tspan x="688" dy="14.16">proportion</tspan></text>
+    <text x="688" y="483.44" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="688" dy="0">increase number</tspan></text>
+    <text x="688" y="499.36" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="688" dy="0">or expand the sample</tspan></text>
+
+    <rect x="960" y="394" width="224" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="976" y="435.46" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="start"><tspan x="976" dy="0">Partially fast</tspan></text>
+    <text x="976" y="451.86" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="976" dy="0">It does not mean that the link</tspan><tspan x="976" dy="14.16">becomes faster</tspan></text>
+    <text x="976" y="481.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="976" dy="0">must return</tspan></text>
+    <text x="976" y="497.62" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="976" dy="0">End-to-end verification</tspan></text>
+  </g>
+
+  <rect x="118" y="584" width="1044" height="52" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="146" y="612" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="start"><tspan x="146" y="612">Boundary principle: timeit proves local fragment</tspan><tspan x="146" dy="16.52">differences; the real disk link still depends on P50,</tspan><tspan x="146" dy="16.52">P95, maximum value, memory and correctness assertion.</tspan></text>
+</svg>

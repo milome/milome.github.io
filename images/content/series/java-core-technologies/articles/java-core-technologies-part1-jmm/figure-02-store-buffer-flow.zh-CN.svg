@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320">
+  <title>Store Buffer 与缓存层次结构</title>
+  <desc>Store Buffer 与缓存层次结构 static diagram for Java Memory Model Part 1.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="320" fill="#f8f6f3"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#1f2937">Store Buffer 与缓存层次结构</text>
+
+  <!-- Store Buffer -->
+  <rect x="50" y="80" width="160" height="100" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="130" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e40af">Store Buffer</text>
+  <text x="130" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#3b82f6">FIFO队列</text>
+  <text x="130" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280">临时存储写操作</text>
+
+  <!-- L1 Cache -->
+  <rect x="270" y="80" width="160" height="100" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#166534">L1 Cache</text>
+  <text x="350" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#16a34a">32KB / 64B line</text>
+  <text x="350" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280">核心私有缓存</text>
+
+  <!-- Main Memory -->
+  <rect x="490" y="80" width="160" height="100" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2" filter="url(#shadow)"/>
+  <text x="570" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#9d174d">Main Memory</text>
+  <text x="570" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#db2777">DRAM</text>
+  <text x="570" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280">系统主内存</text>
+
+  <!-- Arrow: Store Buffer -> L1 Cache -->
+  <line x1="210" y1="130" x2="270" y2="130" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="240" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">异步刷新</text>
+
+  <!-- Arrow: L1 Cache -> Main Memory -->
+  <line x1="430" y1="130" x2="490" y2="130" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">缓存行回写</text>
+
+  <!-- Arrow: Store Buffer -> L1 Cache (feedback) -->
+  <path d="M 130 180 Q 130 220 270 180" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="180" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#ef4444">直接读取最新值</text>
+
+  <!-- Problem Box -->
+  <rect x="200" y="240" width="300" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="350" y="265" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#92400e">⚠️ 内存可见性问题</text>
+  <text x="350" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#b45309">其他核心可能读取到旧值，需要内存屏障保证一致性</text>
+</svg>

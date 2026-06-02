@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-002" data-visual-pattern="before-after comparison 风格">
+  <title>Comparison before and after decoupling the data layer and UI layer</title>
+  <desc>Contrast that with ChartWidget, which directly owns data semantics and the boundary changes of consuming data through DataService.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Data semantics migrated from UI</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Refactoring before and after: who interprets the data</tspan><tspan x="600" dy="17.5">and who only presents it.</tspan></text>
+
+  <rect x="86" y="202" width="466" height="470" rx="24" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+  <text x="124" y="246" fill="#fde68a" font-size="25" font-weight="700">Before refactoring: ChartWidget</text>
+  <text x="124" y="278" fill="#fde68a" font-size="25" font-weight="700">Directly own data semantics</text>
+  <rect x="142" y="322" width="354" height="90" rx="16" fill="#111827" stroke="#f59e0b" stroke-width="2"/>
+  <text x="156.4" y="381.16" fill="#f8fafc" font-size="12" text-anchor="start"><tspan x="156.4" dy="0">ChartWidget</tspan></text>
+  <text x="156.4" y="364.92" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="156.4" dy="0">SQL / Transformation / Indicator Input / Drawing</tspan></text>
+  <rect x="142" y="478" width="354" height="74" rx="16" fill="#111827" stroke="#475569" stroke-width="2"/>
+  <text x="174" y="524" fill="#e2e8f0" font-size="22">SQLite / CSV / API</text>
+  <line x1="319" y1="420" x2="319" y2="468" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+  <text x="136" y="590" fill="#94a3b8" font-size="19"><tspan x="136" dy="0">Tests must go through the GUI; Data source</tspan><tspan x="136" dy="23.18">replacement will affect the interface</tspan><tspan x="136" dy="23.18">code.</tspan></text>
+
+  <rect x="648" y="202" width="466" height="470" rx="24" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+  <text x="686" y="246" fill="#bfdbfe" font-size="25" font-weight="700">After refactoring: DataService</text>
+  <text x="686" y="278" fill="#bfdbfe" font-size="25" font-weight="700">form semantic boundaries</text>
+  <rect x="704" y="314" width="354" height="70" rx="16" fill="#111827" stroke="#60a5fa" stroke-width="2"/>
+  <text x="812" y="359" fill="#f8fafc" font-size="24">ChartWidget</text>
+  <rect x="704" y="424" width="354" height="82" rx="16" fill="#111827" stroke="#10b981" stroke-width="2"/>
+  <text x="820" y="474" fill="#a7f3d0" font-size="24">DataService</text>
+  <rect x="704" y="548" width="354" height="58" rx="16" fill="#111827" stroke="#475569" stroke-width="2"/>
+  <text x="788" y="585" fill="#e2e8f0" font-size="21">SQLite / CSV / API</text>
+  <line x1="881" y1="392" x2="881" y2="414" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <line x1="881" y1="514" x2="881" y2="540" stroke="#10b981" stroke-width="5" stroke-linecap="round"/>
+  <text x="698" y="630" fill="#94a3b8" font-size="19">
+    <tspan x="698" dy="0">Test Replace DataService;</tspan>
+    <tspan x="698" dy="28">The UI only consumes arranged K lines.</tspan>
+  </text>
+</svg>

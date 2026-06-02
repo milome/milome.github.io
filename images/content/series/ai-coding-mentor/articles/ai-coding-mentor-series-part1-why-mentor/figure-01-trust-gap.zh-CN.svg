@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI 编程助手的信任缺口</title>
+  <desc id="desc">展示 AI 输出从看起来正确到值得信任之间存在任务契约、边界用例、评估证据和反馈回路四个缺口。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI 编程助手的信任缺口</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">代码看起来专业，只说明它具备表面可信度；工程可信度需要 Mentor 系统补齐证据</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="78" y="142" width="232" height="276" rx="20" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="194" y="180" text-anchor="middle" font-size="18" font-weight="700" fill="#bfdbfe">看起来正确</text>
+    <text x="194" y="207" text-anchor="middle" font-size="13" fill="#cbd5e1">AI 输出的表面信号</text>
+    <rect x="112" y="238" width="164" height="38" rx="11" fill="#0f172a" stroke="#334155"/>
+    <text x="194" y="262" text-anchor="middle" font-size="13" fill="#e2e8f0">代码可以运行</text>
+    <rect x="112" y="292" width="164" height="38" rx="11" fill="#0f172a" stroke="#334155"/>
+    <text x="194" y="316" text-anchor="middle" font-size="13" fill="#e2e8f0">结构和命名清楚</text>
+    <rect x="112" y="346" width="164" height="38" rx="11" fill="#0f172a" stroke="#334155"/>
+    <text x="194" y="370" text-anchor="middle" font-size="13" fill="#e2e8f0">解释足够自信</text>
+
+    <rect x="334" y="142" width="232" height="276" rx="20" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="180" text-anchor="middle" font-size="18" font-weight="700" fill="#fde68a">信任缺口</text>
+    <text x="450" y="207" text-anchor="middle" font-size="13" fill="#cbd5e1">真正风险藏在隐性条件里</text>
+    <circle cx="450" cy="266" r="28" fill="#111827" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="272" text-anchor="middle" font-size="22" font-weight="700" fill="#f59e0b">?</text>
+    <text x="450" y="326" text-anchor="middle" font-size="13" fill="#e2e8f0">边界条件是否覆盖</text>
+    <text x="450" y="352" text-anchor="middle" font-size="13" fill="#e2e8f0">并发与状态是否安全</text>
+    <text x="450" y="378" text-anchor="middle" font-size="13" fill="#e2e8f0">是否破坏既有约束</text>
+
+    <rect x="590" y="142" width="232" height="276" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="706" y="180" text-anchor="middle" font-size="18" font-weight="700" fill="#a7f3d0">值得信任</text>
+    <text x="706" y="207" text-anchor="middle" font-size="13" fill="#cbd5e1">Mentor 提供工程证据</text>
+    <rect x="624" y="230" width="164" height="34" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="706" y="252" text-anchor="middle" font-size="12" fill="#e2e8f0">任务契约</text>
+    <rect x="624" y="278" width="164" height="34" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="706" y="300" text-anchor="middle" font-size="12" fill="#e2e8f0">边界用例</text>
+    <rect x="624" y="326" width="164" height="34" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="706" y="348" text-anchor="middle" font-size="12" fill="#e2e8f0">评估证据</text>
+    <rect x="624" y="374" width="164" height="34" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="706" y="396" text-anchor="middle" font-size="12" fill="#e2e8f0">反馈回路</text>
+  </g>
+
+  <line x1="310" y1="280" x2="326" y2="280" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="566" y1="280" x2="582" y2="280" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="468" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">核心判断：AI 的输出先进入候选状态，只有通过契约、用例、证据和反馈后，才进入可信状态。</text>
+  <text x="450" y="500" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 1. 信任不是由模型自信程度决定，而是由工程验证链条决定。</text>
+</svg>

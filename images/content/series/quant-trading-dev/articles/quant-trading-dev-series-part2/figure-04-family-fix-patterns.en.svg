@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="decision tree 风格">
+  <title id="title">Python risk family fix decision patterns</title>
+  <desc id="desc">A decision tree that maps Python risk families to import rules, type contracts, lifecycle boundaries and event boundaries.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Family Fix Pattern Decision</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">First determine the risk group, and</tspan><tspan x="640" dy="17.5">then precipitate single-point fixes</tspan><tspan x="640" dy="17.5">into rules, tests, and review items</tspan></text>
+  <g font-family="Arial">
+    <rect x="486" y="206" width="308" height="82" rx="22" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="524" y="247.12" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="524" dy="0">What type of risk does this</tspan><tspan x="524" dy="18.88">trap fall into?</tspan></text>
+    <rect x="118" y="410" width="224" height="106" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="390" y="410" width="224" height="106" rx="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="662" y="410" width="224" height="106" rx="22" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="934" y="410" width="224" height="106" rx="22" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <text x="154" y="454" fill="#f8fafc" font-size="21" font-weight="700">Import rules</text>
+    <text x="154" y="486" fill="#94a3b8" font-size="18">scope/lint</text>
+    <text x="426" y="454" fill="#f8fafc" font-size="21" font-weight="700">type contract</text>
+    <text x="426" y="486" fill="#94a3b8" font-size="18">guard / assert</text>
+    <text x="698" y="454" fill="#f8fafc" font-size="21" font-weight="700">life cycle</text>
+    <text x="698" y="486" fill="#94a3b8" font-size="18">cache / teardown</text>
+    <text x="970" y="454" fill="#f8fafc" font-size="21" font-weight="700">event boundary</text>
+    <text x="970" y="486" fill="#94a3b8" font-size="18">thread / signal</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M580 288 C420 340 304 354 230 410"/>
+    <path d="M624 288 C574 344 530 354 502 410"/>
+    <path d="M676 288 C724 344 748 354 774 410"/>
+    <path d="M724 288 C890 340 1018 354 1046 410"/>
+  </g>
+  <g font-family="Arial">
+    <rect x="248" y="580" width="784" height="50" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="275.44" y="608" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="275.44" y="608">Output assets: prompt constraints, review checklist,</tspan><tspan x="275.44" dy="16.52">regression tests, and repro cases.</tspan></text>
+  </g>
+</svg>

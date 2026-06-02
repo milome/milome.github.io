@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Canary routing strategy evolution</title>
+  <desc id="desc">Demonstrates the evolution of canary-published routing policies from framework configuration to Mesh CRD to Gateway API HTTPRoute.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Canary routing strategy evolution</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="87.5">Canary routing moves from framework config to</tspan><tspan x="450" dy="17.1">portable platform API</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="96" y="180" width="170" height="104" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="181" y="220.72" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="181" dy="0">Framework</tspan><tspan x="181" dy="18.3">weighted routing</tspan></text>
+    <text x="181" y="256.12" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="181" dy="0">SCG Code Config</tspan></text>
+    <rect x="365" y="180" width="170" height="104" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="450" y="220.72" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="450" dy="0">Grid Strategy</tspan><tspan x="450" dy="17.7">Resources</tspan></text>
+    <text x="450" y="256.12" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="450" dy="0">Mesh CRD Policy</tspan></text>
+    <rect x="634" y="180" width="170" height="104" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="719" y="229.57" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="719" dy="0">Routing API</tspan></text>
+    <text x="719" y="247.27" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="719" dy="0">Gateway API HTTPRoute</tspan></text>
+    <rect x="264" y="352" width="372" height="70" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="417.9" text-anchor="middle" font-size="12" fill="#fde68a"><tspan x="450" y="417.9">Outcome</tspan></text>
+    <text x="450" y="372.9" text-anchor="middle" font-size="12.5" fill="#cbd5e1" font-weight="700"><tspan x="450" y="372.9">The more standardized the policy</tspan><tspan x="450" dy="14.5">expression, the lower the cost of</tspan><tspan x="450" dy="14.5">cross-team migration and auditing.</tspan></text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="266" y1="232" x2="355" y2="232"/>
+      <line x1="535" y1="232" x2="624" y2="232"/>
+    </g>
+  </g>
+</svg>

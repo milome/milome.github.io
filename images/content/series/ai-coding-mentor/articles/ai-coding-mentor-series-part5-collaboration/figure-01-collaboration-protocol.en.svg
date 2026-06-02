@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Programming Collaboration Agreement</title>
+  <desc id="desc">Demonstrate the differences between the same AI in two collaboration modes, protocol-free and protocol-based, and how goals, context, boundaries, division of labor, feedback, and acceptance form controlled collaboration.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI Programming Collaboration Agreement</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">Model outcomes often differ because</tspan><tspan x="450" dy="17.5">humans clarify task boundaries,</tspan><tspan x="450" dy="17.5">feedback, and acceptance.</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="70" y="158" width="168" height="218" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="154" y="203.87" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="154" y="203.87">No agreement</tspan><tspan x="154" dy="17.7">collaboration</tspan></text>
+    <text x="154" y="237.56" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="154" y="237.56">Task ambiguity</tspan></text>
+    <text x="154" y="253.56" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="154" y="253.56">Missing context</tspan></text>
+    <text x="154" y="269.56" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="154" y="269.56">The boundary is guessed by</tspan><tspan x="154" dy="14.16">the model</tspan></text>
+    <text x="154" y="299.73" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="154" y="299.73">Feedback only expresses</tspan><tspan x="154" dy="14.16">feelings</tspan></text>
+    <text x="154" y="330.39" text-anchor="middle" font-size="12.5" fill="#94a3b8"><tspan x="154" y="330.39">Result: Output is</tspan><tspan x="154" dy="14.75">uncontrollable</tspan></text>
+
+    <rect x="330" y="138" width="240" height="258" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="172" text-anchor="middle" font-size="18" font-weight="700" fill="#f8fafc">mission agreement</text>
+    <rect x="360" y="200" width="80" height="42" rx="10" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="400" y="226" text-anchor="middle" font-size="12" fill="#bfdbfe">Target</text>
+    <rect x="460" y="200" width="80" height="42" rx="10" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="500" y="226" text-anchor="middle" font-size="12" fill="#bfdbfe">context</text>
+    <rect x="360" y="258" width="80" height="42" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="400" y="285.25" text-anchor="middle" font-size="12.5" fill="#bae6fd"><tspan x="400" y="285.25">boundary</tspan></text>
+    <rect x="460" y="258" width="80" height="42" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="500" y="277.08" text-anchor="middle" font-size="12" fill="#bae6fd"><tspan x="500" dy="0">Division of</tspan><tspan x="500" dy="14.16">labor</tspan></text>
+    <rect x="360" y="316" width="80" height="42" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="400" y="342" text-anchor="middle" font-size="12" fill="#a7f3d0">feedback</text>
+    <rect x="460" y="316" width="80" height="42" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="500" y="342" text-anchor="middle" font-size="12" fill="#a7f3d0">acceptance</text>
+
+    <rect x="662" y="158" width="168" height="218" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="746" y="218.03" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="746" y="218.03">Cooperation with</tspan><tspan x="746" dy="17.7">agreement</tspan></text>
+    <text x="746" y="251.73" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="746" y="251.73">Clarify the goal first</tspan></text>
+    <text x="746" y="267.73" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="746" y="267.73">Regeneration plan</tspan></text>
+    <text x="746" y="283.73" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="746" y="283.73">censorship by boundaries</tspan></text>
+    <text x="746" y="299.73" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="746" y="299.73">Feedback with evidence</tspan></text>
+    <text x="746" y="316.23" text-anchor="middle" font-size="12.5" fill="#94a3b8"><tspan x="746" y="316.23">Result: The output is</tspan><tspan x="746" dy="14.75">verifiable</tspan></text>
+  </g>
+
+  <path d="M238 267 L326 267" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M570 267 L658 267" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="450" y="450" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#cbd5e1"><tspan x="450" y="441.4">Collaborative quality comes from agreement, not</tspan><tspan x="450" dy="17.1">from longer prompt words.</tspan></text>
+
+</svg>

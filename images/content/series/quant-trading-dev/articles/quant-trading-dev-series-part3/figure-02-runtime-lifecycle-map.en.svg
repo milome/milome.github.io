@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-002" data-visual-pattern="state diagram 风格">
+  <title id="title">Runtime lifecycle state map</title>
+  <desc id="desc">A state diagram for quant trading runtime lifecycle from startup to subscription, running, degraded mode, recovery and shutdown.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Runtime Lifecycle</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">Model resource creation, subscription,</tspan><tspan x="640" dy="17.5">demotion, recovery, and shutdown as</tspan><tspan x="640" dy="17.5">explicit states</tspan></text>
+  <g font-family="Arial">
+    <rect x="118" y="278" width="150" height="86" rx="20" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="324" y="278" width="150" height="86" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="530" y="278" width="150" height="86" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="736" y="278" width="150" height="86" rx="20" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="942" y="278" width="150" height="86" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="530" y="470" width="150" height="86" rx="20" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <text x="152" y="328" fill="#f8fafc" font-size="20" font-weight="700">start up</text>
+    <text x="350" y="328" fill="#f8fafc" font-size="20" font-weight="700">subscription</text>
+    <text x="556" y="328" fill="#f8fafc" font-size="20" font-weight="700">run</text>
+    <text x="762" y="328" fill="#f8fafc" font-size="20" font-weight="700">Downgrade</text>
+    <text x="968" y="328" fill="#f8fafc" font-size="20" font-weight="700">recover</text>
+    <text x="556" y="520" fill="#f8fafc" font-size="20" font-weight="700">closure</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M268 321 H324"/>
+    <path d="M474 321 H530"/>
+    <path d="M680 321 H736"/>
+    <path d="M886 321 H942"/>
+    <path d="M1017 364 C990 454 742 512 680 512"/>
+    <path d="M605 364 V470"/>
+  </g>
+  <g font-family="Arial">
+    <rect x="188" y="586" width="904" height="64" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="216" y="614" fill="#cbd5e1" font-size="15" text-anchor="start"><tspan x="216" y="614">Each state must have entry conditions, exit conditions,</tspan><tspan x="216" dy="17.4">cleanup responsibilities, and testable exception paths.</tspan></text>
+  </g>
+</svg>

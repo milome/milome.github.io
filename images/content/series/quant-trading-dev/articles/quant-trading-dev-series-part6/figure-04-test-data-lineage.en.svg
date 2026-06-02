@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="flowchart 风格">
+  <title id="title">Test data lineage diagram</title>
+  <desc id="desc">Track the complete path of test data from raw quotes to cleaning, trading day attribution, aggregation, fixtures, assertions and regression records.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">Test data lineage</text>
+  <text x="640" y="132" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="132">Data sources, cleaning rules,</tspan><tspan x="640" dy="17.5">transaction day attribution, and</tspan><tspan x="640" dy="17.5">assertion purposes must be traceable when tests fail.</tspan></text>
+  <g fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M240 278 H348"/>
+    <path d="M506 278 H614"/>
+    <path d="M772 278 H880"/>
+    <path d="M970 326 V396"/>
+    <path d="M880 438 H772"/>
+    <path d="M614 438 H506"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="96" y="236" width="144" height="84" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="168" y="270" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="168" dy="0">original quotes</tspan><tspan x="168" dy="14.16">minimum sample</tspan></text>
+    <rect x="348" y="236" width="158" height="84" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="427" y="270" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="427" dy="0">Cleaning rules</tspan><tspan x="427" dy="14.16">missing/abnormal</tspan></text>
+    <rect x="614" y="236" width="158" height="84" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="693" y="270" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="693" dy="0">Trading day vesting</tspan><tspan x="693" dy="12.98">Overnight</tspan><tspan x="693" dy="12.98">semantics</tspan></text>
+    <rect x="880" y="236" width="180" height="84" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="970" y="270" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="970" dy="0">periodic aggregation</tspan><tspan x="970" dy="14.16">OHLCV rules</tspan></text>
+    <rect x="880" y="396" width="180" height="84" rx="18" fill="#1e293b" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="970" y="430" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="970" dy="0">fixture Reproducible</tspan><tspan x="970" dy="14.16">snapshots</tspan></text>
+    <rect x="614" y="396" width="158" height="84" rx="18" fill="#1e293b" stroke="#a7f3d0" stroke-width="2"/>
+    <text x="693" y="430" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="693" dy="0">assertion business</tspan><tspan x="693" dy="12.98">assumptions</tspan></text>
+    <rect x="332" y="396" width="174" height="84" rx="18" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="419" y="430" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="419" dy="0">regression record</tspan><tspan x="419" dy="14.16">Defects do not recur</tspan></text>
+  </g>
+  <text x="640" y="610" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="18" text-anchor="middle"><tspan x="640" dy="0">Principle: Fixtures that cannot explain the source and transformation links cannot be used as long-term regression samples.</tspan></text>
+</svg>

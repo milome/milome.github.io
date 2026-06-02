@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="matrix / heatmap 风格">
+  <title id="title">Defect Oriented Testing Pyramid</title>
+  <desc id="desc">The test levels are organized according to the types of quantitative trading defects, and the risk interception boundaries of pure functions, time semantics, event collaboration, backtest real-time consistency and CI Gate are displayed.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">Defect Oriented Testing Pyramid</text>
+  <text x="640" y="132" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="132">Infer the test hierarchy from real</tspan><tspan x="640" dy="17.5">pitfalls rather than the number of use</tspan><tspan x="640" dy="17.5">cases from a coverage template.</tspan></text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <path d="M640 176 L782 278 L498 278 Z" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M498 294 L782 294 L910 396 L370 396 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M370 414 L910 414 L1038 516 L242 516 Z" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <path d="M242 534 L1038 534 L1152 616 L128 616 Z" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="640" y="232" fill="#f8fafc" font-size="20" font-weight="700">CI Gate<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">Block merge</tspan></text>
+    <text x="640" y="346" fill="#f8fafc" font-size="20" font-weight="700">Backtest/simulation disk<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">Verify that business semantics are consistent</tspan></text>
+    <text x="640" y="466" fill="#f8fafc" font-size="20" font-weight="700">Event collaboration/test avatars<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">Isolate external dependencies</tspan></text>
+    <text x="640" y="580" fill="#f8fafc" font-size="20" font-weight="700">Pure functions / time semantics<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">First interception indicators and boundary errors</tspan></text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18">
+    <rect x="94" y="208" width="210" height="56" rx="16" fill="#334155" stroke="#64748b"/>
+    <text x="199" y="243.56" fill="#e2e8f0" font-size="18" text-anchor="middle"><tspan x="199" dy="0">The defect is more real</tspan></text>
+    <rect x="976" y="536" width="184" height="58" rx="16" fill="#334155" stroke="#64748b"/>
+    <text x="1004" y="572" fill="#e2e8f0" font-size="12"><tspan x="1004" dy="0">The faster the feedback</tspan></text>
+  </g>
+  <path d="M308 236 C398 236 418 578 520 582" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M980 566 C900 540 880 304 760 250" fill="none" stroke="#10b981" stroke-width="3" marker-end="url(#arrow)"/>
+</svg>

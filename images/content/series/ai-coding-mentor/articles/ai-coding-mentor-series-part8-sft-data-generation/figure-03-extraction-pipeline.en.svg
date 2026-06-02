@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Four stages of SFT candidate sample extraction</title>
+  <desc id="desc">Shows how scoring records undergo candidate construction, quality gating, desensitization, and bucketing to form exportable SFT samples.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Four stages of SFT candidate sample extraction</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="85.5">Pipeline focuses on &quot;trainability&quot;, not &quot;keeping</tspan><tspan x="450" dy="17.1">records as long as they exist&quot;</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="72" y="160" width="148" height="228" rx="16" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="146" y="194" text-anchor="middle" font-size="15" font-weight="700" fill="#f8fafc">enter</text>
+    <text x="146" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">Scoring Records</text>
+    <text x="146" y="246" text-anchor="middle" font-size="12" fill="#94a3b8">run_id · diff</text>
+    <text x="146" y="264" text-anchor="middle" font-size="12" fill="#94a3b8">audit · test</text>
+
+    <rect x="248" y="136" width="148" height="252" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="322" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">Stage 1</text>
+    <text x="322" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Candidate Builder</text>
+    <text x="322" y="222" text-anchor="middle" font-size="12" fill="#94a3b8">instruction extraction</text>
+    <text x="322" y="240" text-anchor="middle" font-size="12" fill="#94a3b8">Code pair generation</text>
+    <text x="322" y="258" text-anchor="middle" font-size="12" fill="#94a3b8">messages build</text>
+    <text x="322" y="276" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="322" dy="0">Sample ID and</tspan><tspan x="322" dy="14.64">lineage</tspan></text>
+
+    <rect x="424" y="136" width="148" height="252" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="498" y="196.93" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="498" dy="0">Stage 2</tspan></text>
+    <text x="498" y="214.63" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="498" dy="0">Quality Gates</tspan></text>
+    <text x="498" y="231.79" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="498" dy="0">Hard Gating: Source</tspan><tspan x="498" dy="14.16">Complete,</tspan></text>
+    <text x="498" y="263.11" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="498" dy="0">Score</tspan><tspan x="498" dy="14.16">threshold,veto</tspan></text>
+    <text x="498" y="294.43" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="498" dy="0">Soft gating: number</tspan><tspan x="498" dy="14.16">of iterations,</tspan></text>
+    <text x="498" y="325.75" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="498" dy="0">token and structural</tspan><tspan x="498" dy="14.16">quality</tspan></text>
+
+    <rect x="600" y="136" width="148" height="252" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="674" y="211.09" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="674" dy="0">Stage 3</tspan></text>
+    <text x="674" y="228.79" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="674" dy="0">Redaction</tspan></text>
+    <text x="674" y="245.95" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="674" dy="0">Email/key</tspan><tspan x="674" dy="14.16">desensitization</tspan></text>
+    <text x="674" y="277.27" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="674" dy="0">High risk sample</tspan><tspan x="674" dy="14.16">blocking</tspan></text>
+    <text x="674" y="308.59" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="674" dy="0">Stage 4: Split</tspan></text>
+    <text x="674" y="325.75" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="674" dy="0">train/val/test</tspan></text>
+
+    <rect x="776" y="160" width="92" height="228" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="822" y="194" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">output</text>
+    <text x="822" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">Canonical</text>
+    <text x="822" y="238" text-anchor="middle" font-size="12" fill="#cbd5e1">SFT</text>
+    <text x="822" y="256" text-anchor="middle" font-size="12" fill="#cbd5e1">Sample</text>
+    <text x="822" y="282" text-anchor="middle" font-size="12" fill="#94a3b8">Exportable</text>
+  </g>
+
+  <line x1="220" y1="274" x2="248" y2="274" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="396" y1="274" x2="424" y2="274" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="572" y1="274" x2="600" y2="274" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="748" y1="274" x2="776" y2="274" stroke="#64748b" stroke-width="2.5"/>
+
+  <rect x="78" y="422" width="744" height="70" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="104.04" y="450" text-anchor="start" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#cbd5e1"><tspan x="104.04" y="450">Gating meaning: accepted for training, downgraded for</tspan><tspan x="104.04" dy="16.52">review, rejected to enter the discard zone or only for</tspan><tspan x="104.04" dy="16.52">governance auditing.</tspan></text>
+
+</svg>

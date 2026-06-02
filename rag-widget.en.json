@@ -1,0 +1,43 @@
+{
+  "locale": "en",
+  "title": "Ask Hualin",
+  "subtitle": "Answers from Hualin's personal knowledge hub",
+  "placeholder": "Ask anything; I will answer with the knowledge hub",
+  "buttonLabel": "Ask Hualin",
+  "send": "Send",
+  "close": "Close",
+  "thinking": "Thinking...",
+  "requestFailed": "Request failed. Please try again later.",
+  "noAnswer": "I could not find enough evidence in Hualin's personal knowledge hub to answer this.",
+  "sourcesTitle": "Sources",
+  "networkErrorCode": "network_or_cors_error",
+  "networkDiagnostic": "Your current network may be unable to reach the AI service. Try another network and retry.",
+  "quickQuestions": [
+    "Summarize this page",
+    "Tell me about Hualin's background and focus.",
+    "What technical topics does this site cover?",
+    "Which posts discuss AI engineering?",
+    "How does AI-TDD govern AI output?",
+    "How should RAG handle retrieval, citations, and evaluation?",
+    "Where should I start with the quant trading series?",
+    "What does the Python memory model series cover?",
+    "How should I read the Java core technologies series?",
+    "Which posts cover cloud native and microservices governance?",
+    "How can I collaborate with Hualin?"
+  ],
+  "answerKeywords": [
+    "RAG",
+    "AI-TDD",
+    "retrieval",
+    "citations",
+    "evaluation",
+    "AI engineering",
+    "Cloudflare",
+    "Qwen",
+    "Python",
+    "Java",
+    "quant trading"
+  ],
+  "answerFormatContract": "Use Markdown consistently: headings, lists, **key terms**, inline code, and [source-N] citations.",
+  "footer": "Powered by Qwen, built with Cloudflare."
+}

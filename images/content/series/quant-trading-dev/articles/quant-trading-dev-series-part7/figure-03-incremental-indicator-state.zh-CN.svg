@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-003" data-visual-pattern="state diagram 风格">
+  <title>IncrementalMA 增量指标状态迁移</title>
+  <desc>展示增量指标从初始化、预热、稳定更新到缺口恢复和异常重建的状态变化。</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">增量指标状态机</text>
+  <text x="86" y="150" fill="#cbd5e1" font-size="22">新 K 线到来时，只更新窗口中真正变化的状态。</text>
+
+  <g font-size="23" font-weight="700">
+    <rect x="112" y="250" width="176" height="80" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="154" y="300" fill="#bfdbfe">初始化</text>
+    <rect x="380" y="250" width="176" height="80" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="422" y="300" fill="#bae6fd">预热窗口</text>
+    <rect x="648" y="250" width="176" height="80" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="690" y="300" fill="#a7f3d0">稳定更新</text>
+    <rect x="514" y="464" width="176" height="80" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="556" y="514" fill="#fde68a">缺口恢复</text>
+    <rect x="782" y="464" width="176" height="80" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="824" y="514" fill="#fde68a">异常重建</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="288" y1="290" x2="380" y2="290"/>
+    <line x1="556" y1="290" x2="648" y2="290"/>
+    <path d="M736 330 C736 392 660 416 602 464"/>
+    <line x1="690" y1="504" x2="782" y2="504"/>
+    <path d="M514 520 C364 524 206 440 200 330"/>
+  </g>
+  <g fill="#64748b">
+    <polygon points="374,290 358,280 358,300"/>
+    <polygon points="642,290 626,280 626,300"/>
+    <polygon points="604,460 614,444 622,462"/>
+    <polygon points="776,504 760,494 760,514"/>
+    <polygon points="200,336 190,352 210,352"/>
+  </g>
+
+  <text x="312" y="272" fill="#cbd5e1" font-size="18">历史 bars</text>
+  <text x="584" y="272" fill="#cbd5e1" font-size="18">窗口已满</text>
+  <text x="682" y="414" fill="#cbd5e1" font-size="18">断点 / 重连</text>
+  <rect x="150" y="610" width="900" height="58" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="184" y="648" fill="#f8fafc" font-size="21">验证点：同一输入下，增量结果必须与 Pandas 全量重算保持一致。</text>
+</svg>

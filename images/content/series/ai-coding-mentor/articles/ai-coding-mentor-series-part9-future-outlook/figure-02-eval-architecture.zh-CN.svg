@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">组织级AI编程评估体系四层架构</title>
+  <desc id="desc">展示任务层、过程层、结果层和治理层如何形成可回流的组织级评估系统。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">组织级 AI 编程评估体系四层架构</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">评估要能回流交付，必须同时覆盖任务定义、过程证据、结果指标与治理边界</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="104" y="128" width="692" height="72" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="450" y="156" text-anchor="middle" font-size="16" font-weight="700" fill="#bfdbfe">Task Layer · 任务层</text>
+    <text x="450" y="178" text-anchor="middle" font-size="12" fill="#cbd5e1">任务契约、验收标准、风险分级、非目标声明</text>
+
+    <rect x="104" y="220" width="692" height="72" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="450" y="248" text-anchor="middle" font-size="16" font-weight="700" fill="#a7f3d0">Process Layer · 过程层</text>
+    <text x="450" y="270" text-anchor="middle" font-size="12" fill="#cbd5e1">上下文检索、计划、工具调用、失败修复与验证轨迹</text>
+
+    <rect x="104" y="312" width="692" height="72" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="340" text-anchor="middle" font-size="16" font-weight="700" fill="#fde68a">Outcome Layer · 结果层</text>
+    <text x="450" y="362" text-anchor="middle" font-size="12" fill="#cbd5e1">返工率、缺陷逃逸、交付周期、review负担、上线稳定性</text>
+
+    <rect x="104" y="404" width="692" height="72" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="450" y="432" text-anchor="middle" font-size="16" font-weight="700" fill="#bae6fd">Governance Layer · 治理层</text>
+    <text x="450" y="454" text-anchor="middle" font-size="12" fill="#cbd5e1">train/eval隔离、脱敏阻断、样本路由、版本与生命周期管理</text>
+  </g>
+
+  <line x1="450" y1="200" x2="450" y2="220" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="292" x2="450" y2="312" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="384" x2="450" y2="404" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <path d="M 796 440 C 840 440, 840 164, 796 164" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <text x="844" y="304" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" fill="#94a3b8" transform="rotate(90 844 304)">闭环回流</text>
+
+  <text x="450" y="512" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 2. 四层架构的重点是可回流：评估结果必须能反向影响任务定义、流程规则和样本治理。</text>
+</svg>

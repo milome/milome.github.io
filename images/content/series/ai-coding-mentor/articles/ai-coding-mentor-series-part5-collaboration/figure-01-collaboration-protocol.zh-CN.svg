@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI 编程协作协议</title>
+  <desc id="desc">展示同一个 AI 在无协议和有协议两种协作方式下的差异，以及目标、上下文、边界、分工、反馈和验收如何形成可控协作。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI 编程协作协议</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">同一个模型的差异，常常来自人类是否把任务边界、反馈和验收说清楚</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="70" y="158" width="168" height="218" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="154" y="194" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">无协议协作</text>
+    <text x="154" y="224" text-anchor="middle" font-size="12" fill="#cbd5e1">任务模糊</text>
+    <text x="154" y="249" text-anchor="middle" font-size="12" fill="#cbd5e1">上下文缺失</text>
+    <text x="154" y="274" text-anchor="middle" font-size="12" fill="#cbd5e1">边界由模型猜</text>
+    <text x="154" y="299" text-anchor="middle" font-size="12" fill="#cbd5e1">反馈只表达感受</text>
+    <text x="154" y="334" text-anchor="middle" font-size="12" fill="#94a3b8">结果：输出不可控</text>
+
+    <rect x="330" y="138" width="240" height="258" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="172" text-anchor="middle" font-size="18" font-weight="700" fill="#f8fafc">任务协议</text>
+    <rect x="360" y="200" width="80" height="42" rx="10" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="400" y="226" text-anchor="middle" font-size="12" fill="#bfdbfe">目标</text>
+    <rect x="460" y="200" width="80" height="42" rx="10" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="500" y="226" text-anchor="middle" font-size="12" fill="#bfdbfe">上下文</text>
+    <rect x="360" y="258" width="80" height="42" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="400" y="284" text-anchor="middle" font-size="12" fill="#bae6fd">边界</text>
+    <rect x="460" y="258" width="80" height="42" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="500" y="284" text-anchor="middle" font-size="12" fill="#bae6fd">分工</text>
+    <rect x="360" y="316" width="80" height="42" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="400" y="342" text-anchor="middle" font-size="12" fill="#a7f3d0">反馈</text>
+    <rect x="460" y="316" width="80" height="42" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="500" y="342" text-anchor="middle" font-size="12" fill="#a7f3d0">验收</text>
+
+    <rect x="662" y="158" width="168" height="218" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="746" y="194" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0">有协议协作</text>
+    <text x="746" y="224" text-anchor="middle" font-size="12" fill="#cbd5e1">先澄清目标</text>
+    <text x="746" y="249" text-anchor="middle" font-size="12" fill="#cbd5e1">再生成方案</text>
+    <text x="746" y="274" text-anchor="middle" font-size="12" fill="#cbd5e1">按边界审查</text>
+    <text x="746" y="299" text-anchor="middle" font-size="12" fill="#cbd5e1">用证据反馈</text>
+    <text x="746" y="334" text-anchor="middle" font-size="12" fill="#94a3b8">结果：输出可验证</text>
+  </g>
+
+  <path d="M238 267 L326 267" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M570 267 L658 267" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="450" y="450" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">协作质量来自协议，而不是来自更长的提示词。</text>
+  <text x="450" y="492" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 1. 任务协议把模型可能自行猜测的部分提前固定，让人类保持目标、边界和验收控制权。</text>
+</svg>

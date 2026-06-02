@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-007" data-visual-pattern="decision tree 风格">
+  <title>重构进入决策树</title>
+  <desc>根据真实问题、证据、测试保护、回滚方案和团队容量判断是否进入重构。</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">重构进入决策树</text>
+  <text x="86" y="150" fill="#cbd5e1" font-size="22">把“想改”变成证据驱动的判断。</text>
+
+  <g font-size="22" font-weight="700">
+    <rect x="456" y="206" width="288" height="76" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="506" y="254" fill="#bfdbfe">真实问题已复现？</text>
+    <rect x="168" y="356" width="250" height="76" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="218" y="404" fill="#fde68a">先补证据</text>
+    <rect x="476" y="356" width="250" height="76" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="526" y="404" fill="#bae6fd">测试保护足够？</text>
+    <rect x="784" y="356" width="250" height="76" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="824" y="404" fill="#a7f3d0">回滚路径清楚？</text>
+    <rect x="476" y="520" width="250" height="76" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="526" y="568" fill="#fde68a">先补测试</text>
+    <rect x="784" y="520" width="250" height="76" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="850" y="568" fill="#a7f3d0">进入重构</text>
+  </g>
+  <g stroke="#64748b" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M540 282 L294 356"/>
+    <path d="M600 282 L600 356"/>
+    <path d="M680 282 L910 356"/>
+    <path d="M600 432 L600 520"/>
+    <path d="M910 432 L910 520"/>
+  </g>
+  <g fill="#94a3b8" font-size="18">
+    <text x="378" y="334">否</text>
+    <text x="616" y="334">是</text>
+    <text x="820" y="334">是</text>
+    <text x="618" y="486">否</text>
+    <text x="928" y="486">是</text>
+  </g>
+  <rect x="170" y="632" width="860" height="48" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="202" y="664" fill="#94a3b8" font-size="19">团队容量、发布窗口和 review 能力不足时，即使技术判断成立，也应该缩小切片。</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-002" data-visual-pattern="matrix / heatmap 风格">
+  <title id="title">Bottleneck diagnosis funnel</title>
+  <desc id="desc">A funnel from user symptom to measured bottlenecks and chosen actions.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="58" y="54" width="1164" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">瓶颈诊断漏斗 / Diagnosis Funnel</text>
+  <g font-family="Arial" font-size="20" font-weight="700">
+    <path d="M240 180 H1040 L920 284 H360 Z" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M360 312 H920 L820 416 H460 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M460 444 H820 L748 548 H532 Z" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="504" y="242" fill="#f8fafc">用户症状：切换图表卡顿</text>
+    <text x="510" y="374" fill="#f8fafc">测量阶段：查询 / 转换 / 指标 / 绘制</text>
+    <text x="552" y="506" fill="#f8fafc">真实瓶颈：重复查询与重算</text>
+  </g>
+  <rect x="392" y="596" width="496" height="44" rx="16" fill="#1e293b" stroke="#475569"/>
+  <text x="424" y="624" fill="#cbd5e1" font-family="Arial" font-size="18">输出：窗口化查询 + 增量指标 + 虚拟化渲染</text>
+</svg>

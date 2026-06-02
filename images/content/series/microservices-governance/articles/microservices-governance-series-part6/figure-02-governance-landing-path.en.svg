@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise-level governance implementation path</title>
+  <desc id="desc">Demonstrates the stage path of enterprise-level microservice governance from observation first, entrance management, east-west governance to full-stack resilience.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Enterprise-level governance implementation path</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="87.5">A pragmatic landing path from observability to</tspan><tspan x="450" dy="17.1">full-stack resilience</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="78" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="158" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">Observation first</text>
+    <text x="158" y="237" text-anchor="middle" font-size="12" fill="#e2e8f0">Visibility baseline</text>
+    <text x="158" y="257" text-anchor="middle" font-size="12" fill="#94a3b8">logs / metrics / traces</text>
+    <rect x="278" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="358" y="212.14" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="358" dy="0">Entrance</tspan><tspan x="358" dy="17.7">management</tspan></text>
+    <text x="358" y="247.54" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="358" dy="0">Gateway controls</tspan></text>
+    <text x="358" y="264.7" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="358" dy="0">auth / routing / canary</tspan></text>
+    <rect x="478" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="558" y="212.14" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="558" dy="0">East-West</tspan><tspan x="558" dy="17.7">governance</tspan></text>
+    <text x="558" y="247.54" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="558" dy="0">Service-to-service policy</tspan></text>
+    <text x="558" y="264.7" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="558" dy="0">discovery / LB / mTLS</tspan></text>
+    <rect x="678" y="180" width="160" height="104" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="758" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">Full stack resilience</text>
+    <text x="758" y="237" text-anchor="middle" font-size="12" fill="#e2e8f0">Failure-domain controls</text>
+    <text x="758" y="257" text-anchor="middle" font-size="12" fill="#94a3b8">chaos / DR / rollout</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="238" y1="232" x2="268" y2="232"/>
+      <line x1="438" y1="232" x2="468" y2="232"/>
+      <line x1="638" y1="232" x2="668" y2="232"/>
+    </g>
+    <rect x="206" y="358" width="488" height="72" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="438.64" text-anchor="middle" font-size="12" fill="#fde68a"><tspan x="450" y="438.64">Landing Principle</tspan></text>
+    <text x="450" y="379.14" text-anchor="middle" font-size="12.5" fill="#cbd5e1" font-weight="700"><tspan x="450" y="379.14">Make the system visible first, then add</tspan><tspan x="450" dy="14.5">ingress, east-west, and resilience</tspan><tspan x="450" dy="14.5">management layer by layer; don’t make a</tspan><tspan x="450" dy="14.5">one-time big bang transformation.</tspan></text>
+  </g>
+</svg>

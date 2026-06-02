@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-005" data-visual-pattern="flowchart 风格">
+  <title>虚拟化渲染路径</title>
+  <desc>从用户拖拽缩放到 viewport、buffer、offscreen cache、texture reuse 和屏幕绘制的渲染链路。</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">VirtualizedCandleRenderer 路径</text>
+  <text x="86" y="150" fill="#cbd5e1" font-size="22">用户看到的只是一段窗口，系统也只应该为这段窗口付出绘制成本。</text>
+
+  <g font-size="21" font-weight="700">
+    <rect x="76" y="246" width="180" height="86" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="116" y="298" fill="#bfdbfe">drag / zoom</text>
+    <rect x="294" y="246" width="180" height="86" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="336" y="298" fill="#bae6fd">viewport</text>
+    <rect x="512" y="246" width="180" height="86" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="570" y="298" fill="#a7f3d0">buffer</text>
+    <rect x="730" y="246" width="206" height="86" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="758" y="298" fill="#fde68a">offscreen cache</text>
+    <rect x="974" y="246" width="150" height="86" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="1008" y="285" fill="#a7f3d0">texture</text>
+    <text x="1012" y="312" fill="#a7f3d0">reuse</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="256" y1="289" x2="294" y2="289"/>
+    <line x1="474" y1="289" x2="512" y2="289"/>
+    <line x1="692" y1="289" x2="730" y2="289"/>
+    <line x1="936" y1="289" x2="974" y2="289"/>
+  </g>
+  <g fill="#64748b">
+    <polygon points="288,289 272,279 272,299"/>
+    <polygon points="506,289 490,279 490,299"/>
+    <polygon points="724,289 708,279 708,299"/>
+    <polygon points="968,289 952,279 952,299"/>
+  </g>
+
+  <rect x="248" y="428" width="704" height="74" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="286" y="460" fill="#cbd5e1" font-size="20">buffer 不直接生成纹理；它先限定可见窗口外的预取范围，</text>
+  <text x="286" y="490" fill="#cbd5e1" font-size="20">再由 offscreen cache 判断是否复用已有纹理资源。</text>
+
+  <rect x="170" y="602" width="860" height="58" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="202" y="640" fill="#f8fafc" font-size="21">验证：帧率、拖拽延迟、缩放响应和实时行情刷新必须同时达标。</text>
+</svg>

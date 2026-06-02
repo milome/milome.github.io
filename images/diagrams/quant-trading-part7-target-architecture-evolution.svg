@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Target architecture evolution</title>
+  <desc id="desc">Evolution from script to layered architecture.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">目标架构演进 / Target Architecture</text>
+  <g fill="#1e293b" stroke="#475569" stroke-width="2" font-family="Arial">
+    <rect x="106" y="250" width="190" height="120" rx="22"/>
+    <rect x="346" y="250" width="190" height="120" rx="22"/>
+    <rect x="586" y="250" width="190" height="120" rx="22"/>
+    <rect x="826" y="250" width="190" height="120" rx="22"/>
+    <rect x="1066" y="250" width="120" height="120" rx="22"/>
+    <text x="136" y="302" fill="#f8fafc" font-size="22" font-weight="700">脚本</text>
+    <text x="136" y="336" fill="#94a3b8" font-size="18">单文件</text>
+    <text x="376" y="302" fill="#f8fafc" font-size="22" font-weight="700">数据层</text>
+    <text x="376" y="336" fill="#94a3b8" font-size="18">事件归属</text>
+    <text x="616" y="302" fill="#f8fafc" font-size="22" font-weight="700">策略层</text>
+    <text x="616" y="336" fill="#94a3b8" font-size="18">信号计算</text>
+    <text x="856" y="302" fill="#f8fafc" font-size="22" font-weight="700">执行层</text>
+    <text x="856" y="336" fill="#94a3b8" font-size="18">网关适配</text>
+    <text x="1078" y="302" fill="#f8fafc" font-size="22" font-weight="700">监控</text>
+    <text x="1078" y="336" fill="#94a3b8" font-size="18">可见性</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M296 310 H346"/>
+    <path d="M536 310 H586"/>
+    <path d="M776 310 H826"/>
+    <path d="M1016 310 H1066"/>
+  </g>
+</svg>

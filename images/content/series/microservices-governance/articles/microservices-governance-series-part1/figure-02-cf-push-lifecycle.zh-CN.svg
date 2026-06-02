@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">cf push 的完整生命周期</title>
+  <desc id="desc">展示开发者执行 cf push 后，Cloud Foundry 如何完成上传、构建、调度、启动、健康检查、路由注册与接收流量。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#64748b"/>
+    </marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">cf push 的完整生命周期</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">From source upload to routed runtime traffic</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" filter="url(#softShadow)">
+    <rect x="70" y="140" width="145" height="92" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="142" y="174" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">开发者执行</text>
+    <text x="142" y="196" text-anchor="middle" font-size="12" fill="#e2e8f0">cf push CLI</text>
+    <text x="142" y="215" text-anchor="middle" font-size="11" fill="#94a3b8">manifest + source</text>
+
+    <rect x="268" y="140" width="145" height="92" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="340" y="174" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">上传包</text>
+    <text x="340" y="196" text-anchor="middle" font-size="12" fill="#e2e8f0">Upload Package</text>
+    <text x="340" y="215" text-anchor="middle" font-size="11" fill="#94a3b8">Cloud Controller</text>
+
+    <rect x="466" y="140" width="145" height="92" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="538" y="174" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">构建阶段</text>
+    <text x="538" y="196" text-anchor="middle" font-size="12" fill="#e2e8f0">Staging</text>
+    <text x="538" y="215" text-anchor="middle" font-size="11" fill="#94a3b8">Buildpack to Droplet</text>
+
+    <rect x="664" y="140" width="145" height="92" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="736" y="174" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">调度运行</text>
+    <text x="736" y="196" text-anchor="middle" font-size="12" fill="#e2e8f0">Diego / Garden</text>
+    <text x="736" y="215" text-anchor="middle" font-size="11" fill="#94a3b8">cell placement</text>
+
+    <rect x="664" y="296" width="145" height="92" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="736" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">启动检查</text>
+    <text x="736" y="352" text-anchor="middle" font-size="12" fill="#e2e8f0">Start and Health</text>
+    <text x="736" y="371" text-anchor="middle" font-size="11" fill="#94a3b8">readiness gate</text>
+
+    <rect x="466" y="296" width="145" height="92" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="538" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">注册路由</text>
+    <text x="538" y="352" text-anchor="middle" font-size="12" fill="#e2e8f0">Register Route</text>
+    <text x="538" y="371" text-anchor="middle" font-size="11" fill="#94a3b8">Gorouter table</text>
+
+    <rect x="268" y="296" width="145" height="92" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="340" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a">治理约束</text>
+    <text x="340" y="352" text-anchor="middle" font-size="12" fill="#e2e8f0">Platform Contract</text>
+    <text x="340" y="371" text-anchor="middle" font-size="11" fill="#94a3b8">no Dockerfile by default</text>
+
+    <rect x="70" y="296" width="145" height="92" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="142" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">接收流量</text>
+    <text x="142" y="352" text-anchor="middle" font-size="12" fill="#e2e8f0">Serve Traffic</text>
+    <text x="142" y="371" text-anchor="middle" font-size="11" fill="#94a3b8">HTTPS to app</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+    <line x1="215" y1="186" x2="258" y2="186"/>
+    <line x1="413" y1="186" x2="456" y2="186"/>
+    <line x1="611" y1="186" x2="654" y2="186"/>
+    <path d="M 736 232 V 286"/>
+    <line x1="664" y1="342" x2="621" y2="342"/>
+    <line x1="466" y1="342" x2="423" y2="342"/>
+    <line x1="268" y1="342" x2="225" y2="342"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="450" y="428" text-anchor="middle" font-size="13" font-weight="700" fill="#f8fafc">核心阅读结论 / Key Reading Point</text>
+    <text x="450" y="452" text-anchor="middle" font-size="12" fill="#cbd5e1">平台接管构建、运行时、健康检查与路由；应用团队只提交代码与启动契约。</text>
+    <text x="450" y="472" text-anchor="middle" font-size="11" fill="#94a3b8">The platform owns build, runtime, health and routing; the app team owns source and start contract.</text>
+  </g>
+</svg>
