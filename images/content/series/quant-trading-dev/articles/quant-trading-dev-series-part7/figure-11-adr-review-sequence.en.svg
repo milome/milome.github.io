@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-011" data-visual-pattern="sequence diagram 风格">
+  <title>ADR Decision Review Sequence</title>
+  <desc>The ADR life cycle from problem raising, candidate comparison, decision recording, verification evidence to review triggering.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">ADR Decision Review Sequence</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Write the architecture choice into a</tspan><tspan x="600" dy="17.5">chain of evidence that can be reviewed</tspan><tspan x="600" dy="17.5">in the future.</tspan></text>
+
+  <g font-size="22" font-weight="700" text-anchor="middle">
+    <text x="190" y="232" fill="#bfdbfe">question</text>
+    <text x="395" y="232" fill="#bae6fd">plan</text>
+    <text x="600" y="232" fill="#a7f3d0">decision making</text>
+    <text x="805" y="232" fill="#fde68a">verify</text>
+    <text x="1010" y="232" fill="#cbd5e1">review</text>
+  </g>
+  <g stroke="#334155" stroke-width="3">
+    <line x1="190" y1="258" x2="190" y2="552"/>
+    <line x1="395" y1="258" x2="395" y2="552"/>
+    <line x1="600" y1="258" x2="600" y2="552"/>
+    <line x1="805" y1="258" x2="805" y2="552"/>
+    <line x1="1010" y1="258" x2="1010" y2="552"/>
+  </g>
+  <g stroke="#64748b" stroke-width="4" stroke-linecap="round">
+    <line x1="190" y1="306" x2="395" y2="306"/>
+    <line x1="395" y1="374" x2="600" y2="374"/>
+    <line x1="600" y1="442" x2="805" y2="442"/>
+    <line x1="805" y1="510" x2="1010" y2="510"/>
+  </g>
+  <g fill="#64748b">
+    <polygon points="389,306 373,296 373,316"/>
+    <polygon points="594,374 578,364 578,384"/>
+    <polygon points="799,442 783,432 783,452"/>
+    <polygon points="1004,510 988,500 988,520"/>
+  </g>
+  <g font-size="19" fill="#e2e8f0">
+    <text x="222" y="294">Performance bottleneck</text>
+    <text x="430" y="362">Compare alternatives</text>
+    <text x="636" y="430">Document consequences</text>
+    <text x="842" y="498">benchmark / regression</text>
+  </g>
+  <path d="M1010 552 C950 622 690 622 600 552" fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="600,552 619,557 609,569" fill="#64748b"/>
+  <text x="790" y="628" text-anchor="middle" fill="#94a3b8" font-size="18"><tspan x="790" dy="0">Review returns to the decision point</tspan><tspan x="790" dy="21.6">when conditions change</tspan></text>
+  <rect x="150" y="606" width="350" height="54" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="325" y="638.04" fill="#f8fafc" font-size="14" text-anchor="middle"><tspan x="325" y="629.5">ADR is not an archive of conclusions,</tspan><tspan x="325" dy="17.1">but verifiable context.</tspan></text>
+</svg>

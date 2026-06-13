@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" width="940" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">扩展账户体系安全鉴权链路</title>
+  <desc id="desc">展示 AppRouter、OAuth2 OIDC 身份服务、JWT 与下游微服务在身份传播与授权控制中的责任。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="940" height="600" fill="#0f172a"/>
+  <rect x="30" y="30" width="880" height="540" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="470" y="66" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">扩展账户体系安全鉴权链路</text>
+  <text x="470" y="92" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">AppRouter → OAuth2/OIDC Identity Service → JWT Claims → Service Authorization</text>
+
+  <g filter="url(#shadow)" font-family="Segoe UI, Arial, sans-serif">
+    <rect x="84" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="172" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">入口层</text>
+    <text x="172" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">AppRouter</text>
+    <text x="172" y="244" text-anchor="middle" font-size="11" fill="#e2e8f0">识别扩展账户上下文</text>
+    <text x="172" y="262" text-anchor="middle" font-size="11" fill="#94a3b8">Resolve Account Context</text>
+
+    <rect x="292" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="380" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">身份层</text>
+    <text x="380" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">OAuth2/OIDC 身份服务</text>
+    <text x="380" y="244" text-anchor="middle" font-size="11" fill="#e2e8f0">CF 常见实现为 UAA</text>
+    <text x="380" y="262" text-anchor="middle" font-size="11" fill="#94a3b8">Identity Zone + IdP Delegation</text>
+
+    <rect x="500" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="588" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">令牌层</text>
+    <text x="588" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">JWT Claims</text>
+    <text x="588" y="244" text-anchor="middle" font-size="11" fill="#e2e8f0">account / user / scopes</text>
+    <text x="588" y="262" text-anchor="middle" font-size="11" fill="#94a3b8">Signed Access Token</text>
+
+    <rect x="708" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="796" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">服务层</text>
+    <text x="796" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">Microservices</text>
+    <text x="796" y="244" text-anchor="middle" font-size="11" fill="#e2e8f0">scope 校验 + 数据访问控制</text>
+    <text x="796" y="262" text-anchor="middle" font-size="11" fill="#94a3b8">AuthZ + Data Guardrails</text>
+  </g>
+
+  <line x1="260" y1="223" x2="292" y2="223" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="468" y1="223" x2="500" y2="223" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="676" y1="223" x2="708" y2="223" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="84" y="324" width="800" height="98" rx="12" fill="#0f172a" stroke="#334155"/>
+    <text x="114" y="352" font-size="13" font-weight="700" fill="#fde68a">风险点 / Risk Points</text>
+    <text x="114" y="376" font-size="12" fill="#cbd5e1">1) 账户识别漂移：域名、Header、异步任务上下文不一致</text>
+    <text x="114" y="398" font-size="12" fill="#cbd5e1">2) 权限放大：默认 scope 过宽或服务端“先放行后校验”</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="84" y="438" width="800" height="98" rx="12" fill="#0f172a" stroke="#334155"/>
+    <text x="114" y="466" font-size="13" font-weight="700" fill="#a7f3d0">治理控制 / Controls</text>
+    <text x="114" y="490" font-size="12" fill="#cbd5e1">A) 上下文标准化传递（同步与异步一致）</text>
+    <text x="114" y="512" font-size="12" fill="#cbd5e1">B) 最小权限 + 审计日志 + 关键路径强校验</text>
+  </g>
+
+  <text x="470" y="552" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#64748b">Figure 4. 安全治理核心是“身份稳定传播 + 最小权限消费 + 全链路审计”。</text>
+</svg>

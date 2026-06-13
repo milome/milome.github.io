@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">案例到数据资产的统一闭环</title>
+  <desc id="desc">展示真实任务、AI输出、人类Mentor反馈、结构化信号、数据路由和下一轮改进之间的闭环关系。</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#10b981"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">案例到数据资产的统一闭环</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">四个案例共享同一条工程路径：真实任务产生反馈，反馈经过路由变成下一轮改进资产</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="80" y="150" width="170" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="165" y="181" text-anchor="middle" font-size="16" font-weight="700" fill="#bfdbfe">真实任务</text>
+    <text x="165" y="204" text-anchor="middle" font-size="12" fill="#cbd5e1">PR · 文档 · 教学 · 评估</text>
+
+    <rect x="365" y="120" width="170" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="450" y="151" text-anchor="middle" font-size="16" font-weight="700" fill="#bfdbfe">AI 输出</text>
+    <text x="450" y="174" text-anchor="middle" font-size="12" fill="#cbd5e1">计划 · 代码 · 审查 · 引导</text>
+
+    <rect x="650" y="150" width="170" height="78" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="735" y="181" text-anchor="middle" font-size="16" font-weight="700" fill="#fde68a">Mentor 反馈</text>
+    <text x="735" y="204" text-anchor="middle" font-size="12" fill="#cbd5e1">错误类型 · 根因 · 原则</text>
+
+    <rect x="650" y="334" width="170" height="78" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="735" y="365" text-anchor="middle" font-size="16" font-weight="700" fill="#a7f3d0">结构化信号</text>
+    <text x="735" y="388" text-anchor="middle" font-size="12" fill="#cbd5e1">rubric · 标签 · 验证证据</text>
+
+    <rect x="365" y="364" width="170" height="78" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="450" y="395" text-anchor="middle" font-size="16" font-weight="700" fill="#a7f3d0">数据路由</text>
+    <text x="450" y="418" text-anchor="middle" font-size="12" fill="#cbd5e1">Eval · SFT · 知识库 · 丢弃</text>
+
+    <rect x="80" y="334" width="170" height="78" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="165" y="365" text-anchor="middle" font-size="16" font-weight="700" fill="#bae6fd">下一轮改进</text>
+    <text x="165" y="388" text-anchor="middle" font-size="12" fill="#cbd5e1">模型 · Prompt · 工具链</text>
+  </g>
+
+  <path d="M250 188 C292 160, 322 158, 361 158" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <path d="M535 158 C585 158, 612 168, 646 187" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <path d="M735 228 C760 270, 760 304, 735 330" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <path d="M650 373 C603 397, 577 403, 539 403" fill="none" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <path d="M365 403 C318 403, 288 396, 254 376" fill="none" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <path d="M165 334 C122 277, 126 238, 162 229" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow-blue)"/>
+
+  <circle cx="450" cy="280" r="68" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="450" y="268" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">统一闭环</text>
+  <text x="450" y="292" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1">案例不是终点</text>
+  <text x="450" y="312" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1">而是数据入口</text>
+
+  <text x="450" y="492" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 3. 模型选型、反馈协议、代码审查和编程教育最终都应回到同一条反馈与数据闭环。</text>
+</svg>

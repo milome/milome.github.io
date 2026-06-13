@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="matrix / heatmap 风格">
+  <title id="title">缺陷导向测试金字塔</title>
+  <desc id="desc">按量化交易缺陷类型组织测试层级，展示纯函数、时间语义、事件协作、回测实盘一致性和 CI Gate 的风险拦截边界。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">缺陷导向测试金字塔</text>
+  <text x="92" y="140" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">从真实 pitfalls 反推测试层级，而不是从覆盖率模板反推用例数量。</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <path d="M640 176 L782 278 L498 278 Z" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M498 294 L782 294 L910 396 L370 396 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M370 414 L910 414 L1038 516 L242 516 Z" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <path d="M242 534 L1038 534 L1152 616 L128 616 Z" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="640" y="232" fill="#f8fafc" font-size="20" font-weight="700">CI Gate<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">阻断合并</tspan></text>
+    <text x="640" y="346" fill="#f8fafc" font-size="20" font-weight="700">回测 / 模拟盘<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">验证业务语义一致</tspan></text>
+    <text x="640" y="466" fill="#f8fafc" font-size="20" font-weight="700">事件协作 / 测试替身<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">隔离外部依赖</tspan></text>
+    <text x="640" y="580" fill="#f8fafc" font-size="20" font-weight="700">纯函数 / 时间语义<tspan x="640" dy="26" fill="#cbd5e1" font-size="18">最先拦截指标与边界错误</tspan></text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18">
+    <rect x="94" y="208" width="210" height="56" rx="16" fill="#334155" stroke="#64748b"/>
+    <text x="120" y="243" fill="#e2e8f0">缺陷越真实</text>
+    <rect x="976" y="536" width="184" height="58" rx="16" fill="#334155" stroke="#64748b"/>
+    <text x="1004" y="572" fill="#e2e8f0">反馈越快</text>
+  </g>
+  <path d="M308 236 C398 236 418 578 520 582" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M980 566 C900 540 880 304 760 250" fill="none" stroke="#10b981" stroke-width="3" marker-end="url(#arrow)"/>
+</svg>

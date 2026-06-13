@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Risks of AI Programming Assessment-Governance Closed Loop</title>
+  <desc id="desc">Displays five types of risks and corresponding governance actions: indicator illusion, data pollution, rule expiration, responsibility drift, and out-of-control noise.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Risk-governance closed loop of AI programming assessment</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">Future failures more often result from</tspan><tspan x="450" dy="17.5">system deformation rather than</tspan><tspan x="450" dy="17.5">single-point degradation of the model</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <circle cx="450" cy="292" r="88" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="#f8fafc">governance center</text>
+    <text x="450" y="306" text-anchor="middle" font-size="12" fill="#cbd5e1">Gating · Routing · Lifecycle</text>
+
+    <rect x="110" y="150" width="190" height="88" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="205" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">indicator illusion</text>
+    <text x="205" y="201.36" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="205" dy="0">The score rises, but</tspan><tspan x="205" dy="14.64">the delivery does not.</tspan></text>
+
+    <rect x="600" y="150" width="190" height="88" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="695" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">data pollution</text>
+    <text x="695" y="202" text-anchor="middle" font-size="12" fill="#94a3b8">train / eval mixed</text>
+
+    <rect x="110" y="356" width="190" height="88" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="205" y="386" text-anchor="middle" font-size="14" font-weight="700" fill="#fde68a">Rule expired</text>
+    <text x="205" y="407.36" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="205" dy="0">Old samples solidify</tspan><tspan x="205" dy="14.64">old constraints</tspan></text>
+
+    <rect x="600" y="356" width="190" height="88" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="695" y="390.08" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd"><tspan x="695" dy="0">responsibility drift</tspan></text>
+    <text x="695" y="407.6" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="695" dy="0">By default, the AI will</tspan><tspan x="695" dy="14.16">finish the job first</tspan></text>
+
+    <rect x="355" y="438" width="190" height="70" rx="14" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="450" y="466" text-anchor="middle" font-size="14" font-weight="700" fill="#e2e8f0">Noise out of control</text>
+    <text x="450" y="486" text-anchor="middle" font-size="12" fill="#94a3b8">review collapse of trust</text>
+  </g>
+
+  <line x1="300" y1="194" x2="362" y2="252" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="194" x2="538" y2="252" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="300" y1="400" x2="362" y2="334" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="400" x2="538" y2="334" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <line x1="450" y1="438" x2="450" y2="380" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+
+</svg>

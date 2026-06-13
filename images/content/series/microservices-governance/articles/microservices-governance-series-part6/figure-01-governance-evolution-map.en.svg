@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise-level microservice governance evolution map</title>
+  <desc id="desc">It displays the three stages of framework governance, platform governance, and governance as code, as well as the five main governance lines of observability, traffic, elasticity, release, and security.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="496" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Enterprise-level microservice governance evolution map</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="87.5">Enterprise microservices governance evolves by</tspan><tspan x="450" dy="17.1">phase and capability track</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="82" y="132" width="210" height="72" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="187" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">Framework governance</text>
+    <text x="187" y="182" text-anchor="middle" font-size="12" fill="#e2e8f0">Library-level controls</text>
+    <rect x="345" y="132" width="210" height="72" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="450" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">Platform governance</text>
+    <text x="450" y="182" text-anchor="middle" font-size="12" fill="#e2e8f0">Runtime platform controls</text>
+    <rect x="608" y="132" width="210" height="72" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="713" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">Governance as code</text>
+    <text x="713" y="182" text-anchor="middle" font-size="12" fill="#e2e8f0">Policy encoded in repos</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="292" y1="168" x2="335" y2="168"/>
+      <line x1="555" y1="168" x2="598" y2="168"/>
+    </g>
+    <g font-size="12">
+      <rect x="90" y="258" width="720" height="44" rx="12" fill="#1e293b" stroke="#334155"/>
+      <text x="125" y="286" fill="#bfdbfe" font-weight="700">Observability</text><text x="240" y="286" fill="#e2e8f0">Dashboard → OTel → ODG</text><text x="630" y="286" fill="#94a3b8">Observability</text>
+      <rect x="90" y="312" width="720" height="44" rx="12" fill="#1e293b" stroke="#334155"/>
+      <text x="125" y="340" fill="#bfdbfe" font-weight="700">Traffic management</text><text x="240" y="340" fill="#e2e8f0">Router → Gateway API → Ambient</text><text x="630" y="340" fill="#94a3b8">Traffic</text>
+      <rect x="90" y="366" width="720" height="44" rx="12" fill="#1e293b" stroke="#334155"/>
+      <text x="125" y="394" fill="#bfdbfe" font-weight="700">Elastic fault tolerance</text><text x="240" y="394" fill="#e2e8f0">Hystrix → Resilience4j → Adaptive</text><text x="630" y="394" fill="#94a3b8">Resilience</text>
+      <rect x="90" y="420" width="720" height="44" rx="12" fill="#1e293b" stroke="#334155"/>
+      <text x="125" y="448" fill="#bfdbfe" font-weight="700">Release governance</text><text x="240" y="448" fill="#e2e8f0">CAB → GitOps → Progressive Delivery</text><text x="630" y="448" fill="#94a3b8">Release</text>
+      <rect x="90" y="474" width="720" height="44" rx="12" fill="#1e293b" stroke="#334155"/>
+      <text x="125" y="502" fill="#bfdbfe" font-weight="700">security governance</text><text x="240" y="502" fill="#e2e8f0">Perimeter → Zero Trust → Supply Chain</text><text x="630" y="502" fill="#94a3b8">Security</text>
+    </g>
+  </g>
+</svg>

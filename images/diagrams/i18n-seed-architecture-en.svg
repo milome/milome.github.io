@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">English bilingual i18n architecture seed diagram</title>
+  <desc id="desc">A localized static SVG showing route, content, UI, search and evidence boundaries for the English site path.</desc>
+  <rect width="960" height="420" rx="28" fill="#0f172a"/>
+  <rect x="40" y="44" width="880" height="332" rx="24" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="70" y="86" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="26" font-weight="700">English i18n Boundary</text>
+  <text x="70" y="118" fill="#94a3b8" font-family="Arial, sans-serif" font-size="15">Static diagram metadata, visible labels and route references follow the page locale.</text>
+  <g fill="#1e293b" stroke="#38bdf8" stroke-width="2">
+    <rect x="70" y="165" width="150" height="84" rx="16"/>
+    <rect x="285" y="165" width="150" height="84" rx="16"/>
+    <rect x="500" y="165" width="150" height="84" rx="16"/>
+    <rect x="715" y="165" width="150" height="84" rx="16"/>
+  </g>
+  <g fill="#e0f2fe" font-family="Arial, sans-serif" font-size="16" font-weight="700">
+    <text x="106" y="201">Route</text>
+    <text x="100" y="225">/en prefix</text>
+    <text x="318" y="201">Content</text>
+    <text x="314" y="225">English only</text>
+    <text x="548" y="201">UI</text>
+    <text x="528" y="225">Dictionary</text>
+    <text x="753" y="201">Evidence</text>
+    <text x="743" y="225">DOM + audit</text>
+  </g>
+  <g stroke="#67e8f9" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M225 207 H278"/>
+    <path d="M270 199 L282 207 L270 215"/>
+    <path d="M440 207 H493"/>
+    <path d="M485 199 L497 207 L485 215"/>
+    <path d="M655 207 H708"/>
+    <path d="M700 199 L712 207 L700 215"/>
+  </g>
+  <rect x="70" y="292" width="795" height="48" rx="14" fill="#082f49" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="92" y="322" fill="#bae6fd" font-family="Arial, sans-serif" font-size="15">Acceptance gate: manifest metadata + SVG title/desc/text + browser caption/alt assertions.</text>
+</svg>

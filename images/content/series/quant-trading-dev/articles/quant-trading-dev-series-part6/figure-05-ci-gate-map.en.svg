@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-005" data-visual-pattern="decision tree 风格">
+  <title id="title">CI Gate Decision Chart</title>
+  <desc id="desc">Show how a commit passes through quick unit testing, integration testing, boundary time, attribute testing, and coverage thresholds before ultimately deciding to block or merge.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">CI Gate Decision Chart</text>
+  <text x="640" y="132" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="132">The goal of CI is to put different</tspan><tspan x="640" dy="17.5">risks into appropriate gates, rather</tspan><tspan x="640" dy="17.5">than cram all tests into one stage.</tspan></text>
+  <g fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M250 330 H350"/>
+    <path d="M510 330 H610"/>
+    <path d="M770 330 H870"/>
+    <path d="M960 372 V456"/>
+    <path d="M872 500 H740"/>
+    <path d="M520 500 H394"/>
+    <path d="M640 372 V430"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="110" y="288" width="140" height="84" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="180" y="326" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="180" dy="0">submit Code</tspan><tspan x="180" dy="18.88">changes</tspan></text>
+    <rect x="350" y="288" width="160" height="84" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="430" y="322" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="430" dy="0">Quick single test</tspan><tspan x="430" dy="12.98">Second level</tspan><tspan x="430" dy="12.98">feedback</tspan></text>
+    <rect x="610" y="288" width="160" height="84" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="690" y="322" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="690" dy="0">Integration testing</tspan><tspan x="690" dy="12.98">Module</tspan><tspan x="690" dy="12.98">collaboration</tspan></text>
+    <rect x="870" y="288" width="180" height="84" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="960" y="325" fill="#f8fafc" font-size="15" font-weight="700"><tspan x="960" dy="0">Boundaries/Prope</tspan><tspan x="960" dy="17.7">rties Fixed seed</tspan></text>
+    <rect x="872" y="456" width="176" height="88" rx="18" fill="#1e293b" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="960" y="508.4" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle"><tspan x="960" dy="0">core threshold</tspan></text>
+    <rect x="520" y="456" width="220" height="88" rx="18" fill="#1e293b" stroke="#a7f3d0" stroke-width="2"/>
+    <text x="630" y="492" fill="#f8fafc" font-size="14" font-weight="700"><tspan x="630" dy="0">Access control judgment</tspan><tspan x="630" dy="16.52">Failure to block merge</tspan></text>
+    <rect x="214" y="456" width="180" height="88" rx="18" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="304" y="496" fill="#f8fafc" font-size="18" font-weight="700"><tspan x="304" dy="0">merge Evidence</tspan><tspan x="304" dy="21.24">is reviewable</tspan></text>
+  </g>
+  <text x="640" y="606" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="16"><tspan x="640" dy="0">Failed tests should locate the risk layer;</tspan><tspan x="640" dy="19.2">passing results should explain which defects</tspan><tspan x="640" dy="19.2">were intercepted.</tspan></text>
+</svg>

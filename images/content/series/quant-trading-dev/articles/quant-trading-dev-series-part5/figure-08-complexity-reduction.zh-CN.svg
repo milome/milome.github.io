@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="flowchart 风格">
+  <title id="title">复杂度削减路径</title>
+  <desc id="desc">展示性能优化应先减少重复工作，再进入增量计算、局部渲染和并行加速。</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="86" y="108" fill="#f8fafc" font-family="Arial" font-size="36" font-weight="700">复杂度削减路径</text>
+  <text x="86" y="150" fill="#94a3b8" font-family="Arial" font-size="23">先减少重复工作，再考虑并行和底层加速。</text>
+
+  <g font-family="Arial">
+    <rect x="96" y="238" width="222" height="138" rx="24" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="136" y="294" fill="#f8fafc" font-size="27" font-weight="700">1 去重复</text>
+    <text x="136" y="332" fill="#bfdbfe" font-size="22">窗口化查询</text>
+    <text x="136" y="362" fill="#94a3b8" font-size="20">少查全量数据</text>
+
+    <rect x="370" y="238" width="222" height="138" rx="24" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="410" y="294" fill="#f8fafc" font-size="27" font-weight="700">2 增量计算</text>
+    <text x="410" y="332" fill="#bae6fd" font-size="22">指标状态复用</text>
+    <text x="410" y="362" fill="#94a3b8" font-size="20">只更新变化部分</text>
+
+    <rect x="644" y="238" width="222" height="138" rx="24" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="684" y="294" fill="#f8fafc" font-size="27" font-weight="700">3 局部渲染</text>
+    <text x="684" y="332" fill="#a7f3d0" font-size="22">可见窗口</text>
+    <text x="684" y="362" fill="#94a3b8" font-size="20">只画屏幕所需</text>
+
+    <rect x="918" y="238" width="186" height="138" rx="24" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="952" y="294" fill="#f8fafc" font-size="27" font-weight="700">4 并行</text>
+    <text x="952" y="332" fill="#fde68a" font-size="22">最后使用</text>
+    <text x="952" y="362" fill="#94a3b8" font-size="20">避免放大浪费</text>
+  </g>
+
+  <g stroke="#60a5fa" stroke-width="5" fill="none" stroke-linecap="round">
+    <line x1="318" y1="307" x2="370" y2="307"/>
+    <line x1="592" y1="307" x2="644" y2="307"/>
+    <line x1="866" y1="307" x2="918" y2="307"/>
+  </g>
+  <g fill="#60a5fa">
+    <polygon points="364,307 348,297 348,317"/>
+    <polygon points="638,307 622,297 622,317"/>
+    <polygon points="912,307 896,297 896,317"/>
+  </g>
+
+  <rect x="150" y="492" width="900" height="110" rx="24" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="190" y="535" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="700">判断标准</text>
+  <text x="190" y="572" fill="#cbd5e1" font-family="Arial" font-size="22">如果可以删除重复工作，就不要先引入线程、进程或共享内存。</text>
+</svg>

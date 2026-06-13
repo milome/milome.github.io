@@ -1,0 +1,43 @@
+{
+  "locale": "zh-CN",
+  "title": "Ask Hualin",
+  "subtitle": "基于Hualin的个人知识库回答",
+  "placeholder": "输入你的问题，我会结合知识库回答",
+  "buttonLabel": "Ask Hualin",
+  "send": "发送",
+  "close": "关闭",
+  "thinking": "正在思考...",
+  "requestFailed": "请求失败，请稍后再试。",
+  "noAnswer": "未从 Hualin 的个人知识库找到充分依据回答这个问题。",
+  "sourcesTitle": "来源",
+  "networkErrorCode": "network_or_cors_error",
+  "networkDiagnostic": "当前网络可能无法连接 AI 服务，请切换网络后重试。",
+  "quickQuestions": [
+    "总结当前页面",
+    "介绍一下 Hualin 的背景和主要方向？",
+    "这个网站主要覆盖哪些技术主题？",
+    "有哪些关于 AI 工程化的文章？",
+    "AI-TDD 如何约束 AI 生成？",
+    "RAG 系统应该如何做召回、引用和评估？",
+    "量化交易系列适合从哪篇开始读？",
+    "Python 内存模型系列讲了哪些核心问题？",
+    "Java 核心技术系列适合怎么读？",
+    "有哪些云原生和微服务治理相关文章？",
+    "如何跟 Hualin 合作？"
+  ],
+  "answerKeywords": [
+    "RAG",
+    "AI-TDD",
+    "AI 工程化",
+    "召回",
+    "引用",
+    "评估",
+    "量化交易",
+    "Python",
+    "Java",
+    "Cloudflare",
+    "Qwen"
+  ],
+  "answerFormatContract": "请使用 Markdown 输出：标题、列表、**关键术语**、inline code，并使用 [source-N] 标注引用。",
+  "footer": "Powered by Qwen, built with Cloudflare."
+}

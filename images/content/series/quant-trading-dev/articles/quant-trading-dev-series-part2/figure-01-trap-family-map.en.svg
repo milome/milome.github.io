@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="matrix / heatmap 风格">
+  <title id="title">Trap family map for Python quant trading risks</title>
+  <desc id="desc">A matrix grouping Python pitfalls into syntax, type, state, concurrency and GUI lifecycle risk families for quant trading systems.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Trap Family Map</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">First locate by risk group, then go</tspan><tspan x="640" dy="17.5">back to Trap 1-50 to check the</tspan><tspan x="640" dy="17.5">specific triggering scenarios and anti-regression rules.</tspan></text>
+  <g font-family="Arial">
+    <rect x="102" y="214" width="214" height="128" rx="22" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="336" y="214" width="214" height="128" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="570" y="214" width="214" height="128" rx="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="804" y="214" width="214" height="128" rx="22" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="1038" y="214" width="140" height="128" rx="22" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <text x="130" y="260" fill="#f8fafc" font-size="21" font-weight="700">Syntax/Scope</text>
+    <text x="130" y="292" fill="#94a3b8" font-size="18">Trap 1-10</text>
+    <text x="364" y="260" fill="#f8fafc" font-size="21" font-weight="700">Type/Contract</text>
+    <text x="364" y="292" fill="#94a3b8" font-size="18">Trap 11-18</text>
+    <text x="677" y="275.38" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle"><tspan x="677" dy="0">Concurrency/State</tspan></text>
+    <text x="677" y="298.74" fill="#94a3b8" font-size="18" text-anchor="middle"><tspan x="677" dy="0">Trap 19-28</tspan></text>
+    <text x="832" y="260" fill="#f8fafc" font-size="21" font-weight="700">data/time</text>
+    <text x="832" y="292" fill="#94a3b8" font-size="18">Trap 29-40</text>
+    <text x="1068" y="260" fill="#f8fafc" font-size="21" font-weight="700">GUI</text>
+    <text x="1068" y="292" fill="#94a3b8" font-size="18">Trap 41-50</text>
+  </g>
+  <g font-family="Arial">
+    <rect x="102" y="420" width="1076" height="74" rx="22" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="130" y="448" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="130" y="448">Reading path: Locate risk groups -&gt; Check specific</tspan><tspan x="130" dy="16.52">Trap -&gt; Extract prompt word constraints, review</tspan><tspan x="130" dy="16.52">checklist and regression testing</tspan></text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M316 278 H336"/>
+    <path d="M550 278 H570"/>
+    <path d="M784 278 H804"/>
+    <path d="M1018 278 H1038"/>
+  </g>
+</svg>

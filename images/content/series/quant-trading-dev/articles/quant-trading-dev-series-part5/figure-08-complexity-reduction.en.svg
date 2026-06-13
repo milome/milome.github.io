@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="flowchart 风格">
+  <title id="title">Complexity reduction path</title>
+  <desc id="desc">Display performance optimization should first reduce duplication of work, and then enter incremental calculation, local rendering and parallel acceleration.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="86" y="108" fill="#f8fafc" font-family="Arial" font-size="36" font-weight="700">Complexity reduction path</text>
+  <text x="600" y="138" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="600" y="138">Reduce duplication of work first, then consider</tspan><tspan x="600" dy="17.5">parallelism and underlying acceleration.</tspan></text>
+
+  <g font-family="Arial">
+    <rect x="96" y="238" width="222" height="138" rx="24" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="136" y="294" fill="#f8fafc" font-size="27" font-weight="700">1 to repeat</text>
+    <text x="136" y="332" fill="#bfdbfe" font-size="22">Windowed query</text>
+    <text x="136" y="362" fill="#94a3b8" font-size="20">Check less full data</text>
+
+    <rect x="370" y="238" width="222" height="138" rx="24" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="386" y="297.38" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="386" dy="0">2 Incremental calculation</tspan></text>
+    <text x="386" y="313.78" fill="#bae6fd" font-size="12" text-anchor="start"><tspan x="386" dy="0">Indicator status reuse</tspan></text>
+    <text x="386" y="329.7" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="386" dy="0">Only update the changed parts</tspan></text>
+
+    <rect x="644" y="238" width="222" height="138" rx="24" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="660" y="290.42" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="660" dy="0">3 Partial rendering</tspan></text>
+    <text x="660" y="336.66" fill="#a7f3d0" font-size="12" text-anchor="start"><tspan x="660" dy="0">Visible window</tspan></text>
+    <text x="660" y="306.82" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="660" dy="0">Draw only what is needed for the</tspan><tspan x="660" dy="14.16">screen</tspan></text>
+
+    <rect x="918" y="238" width="186" height="138" rx="24" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="934.56" y="295.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="934.56" dy="0">4 parallel</tspan></text>
+    <text x="934.56" y="330.85" fill="#fde68a" font-size="12" text-anchor="start"><tspan x="934.56" dy="0">last used</tspan></text>
+    <text x="934.56" y="313.69" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="934.56" dy="0">Avoid amplification waste</tspan></text>
+  </g>
+
+  <g stroke="#60a5fa" stroke-width="5" fill="none" stroke-linecap="round">
+    <line x1="318" y1="307" x2="370" y2="307"/>
+    <line x1="592" y1="307" x2="644" y2="307"/>
+    <line x1="866" y1="307" x2="918" y2="307"/>
+  </g>
+  <g fill="#60a5fa">
+    <polygon points="364,307 348,297 348,317"/>
+    <polygon points="638,307 622,297 622,317"/>
+    <polygon points="912,307 896,297 896,317"/>
+  </g>
+
+  <rect x="150" y="492" width="900" height="110" rx="24" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="178" y="524.8" fill="#f8fafc" font-family="Arial" font-size="13" font-weight="700" text-anchor="start"><tspan x="178" y="524.8">Judgment criteria</tspan></text>
+  <text x="178" y="545.8" fill="#cbd5e1" font-family="Arial" font-size="14" text-anchor="start"><tspan x="178" y="545.8">Remove duplicate work before adding threads,</tspan><tspan x="178" dy="16.52">processes, or shared memory.</tspan></text>
+</svg>

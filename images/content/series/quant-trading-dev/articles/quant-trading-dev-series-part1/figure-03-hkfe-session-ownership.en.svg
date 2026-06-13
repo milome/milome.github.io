@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="state diagram 风格">
+  <title id="title">HKFE session ownership model</title>
+  <desc id="desc">A timeline diagram showing how physical time maps to trading day ownership.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="52" y="54" width="1176" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="112" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">Trading session ownership / Session Ownership</text>
+  <text x="640" y="141" fill="#94a3b8" font-size="14" font-family="Arial" text-anchor="middle"><tspan x="640" y="141">First map physical time to trading day</tspan><tspan x="640" dy="17.5">semantics, and then enter K-line and</tspan><tspan x="640" dy="17.5">indicator calculations.</tspan></text>
+  <line x1="128" y1="270" x2="1138" y2="270" stroke="#64748b" stroke-width="4"/>
+  <g font-family="Arial">
+    <rect x="128" y="214" width="226" height="112" rx="20" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="158" y="258" fill="#f8fafc" font-size="21" font-weight="700">Day</text>
+    <text x="158" y="290" fill="#cbd5e1" font-size="18">09:15 - 16:30</text>
+    <rect x="392" y="214" width="226" height="112" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="422" y="258" fill="#f8fafc" font-size="21" font-weight="700">Night</text>
+    <text x="422" y="290" fill="#cbd5e1" font-size="18">17:15 - 03:00</text>
+    <rect x="656" y="214" width="226" height="112" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="686" y="252" fill="#f8fafc" font-size="20" font-weight="700">Trading day</text>
+    <text x="686" y="282" fill="#94a3b8" font-size="15"><tspan x="686" dy="0">Business date, not</tspan><tspan x="686" dy="17.7">natural calendar day</tspan></text>
+    <rect x="920" y="214" width="218" height="112" rx="20" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="936" y="261.38" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="936" dy="0">Exceptions</tspan></text>
+    <text x="936" y="277.78" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="936" dy="0">Holidays, half-day market, forced</tspan><tspan x="936" dy="14.16">liquidation</tspan></text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M354 270 H392"/>
+    <path d="M618 270 H656"/>
+    <path d="M882 270 H920"/>
+  </g>
+  <rect x="128" y="430" width="1010" height="112" rx="24" fill="#1e293b" stroke="#475569"/>
+  <text x="156" y="464.16" fill="#f8fafc" font-size="14" font-family="Arial" text-anchor="start"><tspan x="156" y="464.16">Strategy output is a stable event: trading day,</tspan><tspan x="156" dy="16.24">session stage, and forced closing point</tspan></text>
+  <text x="156" y="501.4" fill="#94a3b8" font-size="14" font-family="Arial" text-anchor="start"><tspan x="156" y="501.4">Stable Event = timestamp + trading_day + session_phase</tspan><tspan x="156" dy="16.52">+ force_close_at</tspan></text>
+</svg>

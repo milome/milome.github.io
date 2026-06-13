@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">断路器状态机</title>
+  <desc id="desc">展示 Closed、Open、Half-Open 与 Fallback 之间的状态转换。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">断路器状态机</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Circuit breaker state machine and fallback behavior</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="94" y="180" width="160" height="96" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="174" y="215" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">关闭态</text>
+    <text x="174" y="238" text-anchor="middle" font-size="12" fill="#e2e8f0">Closed Pass Through</text>
+    <rect x="370" y="180" width="160" height="96" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="215" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a">打开态</text>
+    <text x="450" y="238" text-anchor="middle" font-size="12" fill="#e2e8f0">Open Fast Fail</text>
+    <rect x="646" y="180" width="160" height="96" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="726" y="215" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">半开态</text>
+    <text x="726" y="238" text-anchor="middle" font-size="12" fill="#e2e8f0">Half-Open Probe</text>
+    <rect x="346" y="350" width="208" height="72" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="380" text-anchor="middle" font-size="14" font-weight="700" fill="#fde68a">降级响应</text>
+    <text x="450" y="402" text-anchor="middle" font-size="12" fill="#e2e8f0">Fallback Response</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="254" y1="228" x2="360" y2="228"/>
+      <line x1="530" y1="228" x2="636" y2="228"/>
+      <path d="M 705 276 C 650 330 304 330 206 278"/>
+      <path d="M 450 276 V 340"/>
+    </g>
+    <text x="307" y="210" font-size="11" fill="#94a3b8">错误率超阈值 / Error Threshold</text>
+    <text x="548" y="210" font-size="11" fill="#94a3b8">冷却后探测 / Cooldown Probe</text>
+    <text x="430" y="318" text-anchor="middle" font-size="11" fill="#94a3b8">失败快返，保护下游 / Fast fail protects dependency</text>
+  </g>
+</svg>

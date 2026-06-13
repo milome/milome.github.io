@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500">
+  <title>happens-before 关系性质</title>
+  <desc>happens-before 关系性质 static diagram for Java Memory Model Part 1.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="750" height="500" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="375" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#0f172a">happens-before 关系性质</text>
+
+  <!-- Property 1: Transitivity -->
+  <rect x="40" y="55" width="330" height="110" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <text x="205" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0f172a">性质1：传递性</text>
+  <text x="205" y="105" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">若 A ≺ₕᵦ B 且 B ≺ₕᵦ C</text>
+  <text x="205" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">则 A ≺ₕᵦ C</text>
+  <text x="205" y="150" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#475569">偏序关系的必要属性</text>
+
+  <!-- Property 2: Antisymmetric -->
+  <rect x="380" y="55" width="330" height="110" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="545" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0f172a">性质2：反对称性</text>
+  <text x="545" y="105" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">若 A ≤ₕᵦ B 且 B ≤ₕᵦ A</text>
+  <text x="545" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">则不能表示两个互相先于对方的不同动作</text>
+  <text x="545" y="150" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#475569">规范层面按偏序处理</text>
+
+  <!-- Property 3: Acyclic edge reading -->
+  <rect x="40" y="180" width="330" height="110" rx="8" fill="#a7f3d0" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="205" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0f172a">性质3：无环先行边</text>
+  <text x="205" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">若 A ≺ₕᵦ B</text>
+  <text x="205" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">不能再推出 B ≺ₕᵦ A</text>
+  <text x="205" y="275" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#475569">不同动作之间不可形成循环先行</text>
+
+  <!-- Property 4: Closure -->
+  <rect x="380" y="180" width="330" height="110" rx="8" fill="#bae6fd" stroke="#38bdf8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="545" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0f172a">性质4：闭包</text>
+  <text x="545" y="230" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="10" fill="#334155">
+    <tspan>≺</tspan><tspan baseline-shift="sub" font-size="7">hb</tspan><tspan> = (≺</tspan><tspan baseline-shift="sub" font-size="7">po</tspan><tspan> ∪ ≺</tspan><tspan baseline-shift="sub" font-size="7">sw</tspan><tspan>)</tspan><tspan baseline-shift="super" font-size="7">+</tspan>
+  </text>
+  <text x="545" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#334155">hb = (程序顺序 ∪ 同步-with关系)⁺</text>
+  <text x="545" y="275" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#475569">可传递</text>
+
+  <!-- Relationship Box -->
+  <rect x="40" y="310" width="670" height="165" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="375" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0f172a">happens-before 关系层次</text>
+
+  <!-- Visual hierarchy -->
+  <rect x="60" y="360" width="180" height="80" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="150" y="385" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#334155">程序顺序 (PO)</text>
+  <text x="150" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Program Order</text>
+  <text x="150" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">同一线程内指令顺序</text>
+
+  <rect x="280" y="360" width="180" height="80" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="370" y="385" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#334155">同步-with关系 (SW)</text>
+  <text x="370" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Synchronizes-With</text>
+  <text x="370" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">由同步动作规则建立的边</text>
+
+  <rect x="500" y="360" width="180" height="80" rx="6" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="590" y="385" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a">happens-before (HB)</text>
+  <text x="590" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#334155">闭包生成结果</text>
+  <text x="590" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">程序顺序与同步边反复连接</text>
+
+  <!-- Arrows -->
+  <line x1="240" y1="400" x2="280" y2="400" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="400" x2="500" y2="400" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Formula -->
+  <text x="260" y="460" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569" font-style="italic">PO ⊆ HB</text>
+  <text x="480" y="460" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569" font-style="italic">SW ⊆ HB</text>
+</svg>

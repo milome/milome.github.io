@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">三层筛选与质量门控</title>
+  <desc id="desc">展示候选样本经过硬门控、质量评估与多样性控制后的保留路径。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">三层筛选与质量门控</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">不是“保留越多越好”，而是“保留可训练且可复现的样本”</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="76" y="156" width="170" height="244" rx="16" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="161" y="190" text-anchor="middle" font-size="17" font-weight="700" fill="#f8fafc">原始候选</text>
+    <text x="161" y="216" text-anchor="middle" font-size="12" fill="#cbd5e1">100%</text>
+    <text x="161" y="242" text-anchor="middle" font-size="12" fill="#94a3b8">来源：交付轨迹</text>
+    <text x="161" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">含噪音与敏感风险</text>
+
+    <rect x="280" y="136" width="170" height="284" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="365" y="170" text-anchor="middle" font-size="17" font-weight="700" fill="#bfdbfe">Layer 1</text>
+    <text x="365" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Hard Gates</text>
+    <text x="365" y="220" text-anchor="middle" font-size="12" fill="#94a3b8">完整性 / score floor</text>
+    <text x="365" y="238" text-anchor="middle" font-size="12" fill="#94a3b8">veto / redaction blocked</text>
+    <text x="365" y="266" text-anchor="middle" font-size="12" fill="#fde68a">淘汰约 30-40%</text>
+
+    <rect x="484" y="136" width="170" height="284" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="569" y="170" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0">Layer 2</text>
+    <text x="569" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Quality Review</text>
+    <text x="569" y="220" text-anchor="middle" font-size="12" fill="#94a3b8">迭代次数 / token /</text>
+    <text x="569" y="238" text-anchor="middle" font-size="12" fill="#94a3b8">code pair / message 结构</text>
+    <text x="569" y="266" text-anchor="middle" font-size="12" fill="#fde68a">accepted / downgraded</text>
+
+    <rect x="688" y="136" width="136" height="284" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="756" y="170" text-anchor="middle" font-size="17" font-weight="700" fill="#bae6fd">Layer 3</text>
+    <text x="756" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Diversity Split</text>
+    <text x="756" y="220" text-anchor="middle" font-size="12" fill="#94a3b8">去重 / 分类平衡</text>
+    <text x="756" y="238" text-anchor="middle" font-size="12" fill="#94a3b8">train / val / test</text>
+    <text x="756" y="266" text-anchor="middle" font-size="12" fill="#fde68a">最终约 50%</text>
+  </g>
+
+  <line x1="246" y1="278" x2="280" y2="278" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="278" x2="484" y2="278" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="654" y1="278" x2="688" y2="278" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="102" y="434" width="696" height="66" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="458" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">治理结论：拒绝样本同样有价值，它们定义了团队“哪些协作过程不能被训练”。</text>
+  <text x="450" y="480" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 4. 三层筛选把数据质量和多样性放在同一条管线上，避免“高分但偏科”的训练集。</text>
+</svg>

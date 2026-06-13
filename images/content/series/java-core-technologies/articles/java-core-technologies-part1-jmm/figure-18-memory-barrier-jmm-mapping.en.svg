@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <title>Mapping memory barriers to JMM semantics</title>
+  <desc>Mapping memory barriers to JMM semantics static diagram for Java Memory Model Part 1.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#f8f6f3"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#1f2937">Mapping memory barriers to JMM semantics</text>
+
+  <!-- Volatile Read -->
+  <rect x="50" y="50" width="700" height="90" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="70" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e40af">volatile read：</text>
+  <rect x="70" y="85" width="660" height="45" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="90" y="108" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">Load1; LoadLoad; Load2; LoadStore</text>
+  <text x="90" y="123" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">ARM: dmb ishld; ldr; dmb ish  |  x86: mov (no explicit fence)</text>
+
+  <!-- Volatile Write -->
+  <rect x="50" y="155" width="700" height="90" rx="6" fill="#fce7f3" stroke="#db2777" stroke-width="2" filter="url(#shadow)"/>
+  <text x="70" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#be185d">volatile write：</text>
+  <rect x="70" y="190" width="660" height="45" rx="4" fill="#ffffff" stroke="#fbcfe8" stroke-width="1"/>
+  <text x="90" y="213" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">Store1; StoreStore; Store2; StoreLoad</text>
+  <text x="90" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">ARM: dmb ishst; str; dmb ish  |  x86: mov; lock addl</text>
+
+  <!-- Monitor Enter -->
+  <rect x="50" y="260" width="340" height="90" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="70" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#166534">Monitor Enter (lock):</text>
+  <rect x="70" y="295" width="300" height="45" rx="4" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="90" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">LoadLoad + LoadStore</text>
+  <text x="90" y="333" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">ARM: dmb ishld  |  x86: lock cmpxchg</text>
+
+  <!-- Monitor Exit -->
+  <rect x="410" y="260" width="340" height="90" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="430" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#92400e">Monitor Exit (unlock):</text>
+  <rect x="430" y="295" width="300" height="45" rx="4" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+  <text x="450" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">StoreStore + StoreLoad</text>
+  <text x="450" y="333" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">ARM: dmb ish  |  x86: lock addl</text>
+
+  <!-- Legend -->
+  <rect x="50" y="370" width="700" height="90" rx="6" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <text x="70" y="395" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#374151">Barrier type notes:</text>
+  <text x="90" y="418" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4b5563">LoadLoad: earlier loads complete before later loads</text>
+  <text x="350" y="418" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4b5563">StoreStore: earlier stores complete before later stores</text>
+  <text x="90" y="438" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4b5563">LoadStore: earlier loads complete before later stores</text>
+  <text x="350" y="438" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4b5563">StoreLoad: earlier stores are visible before later loads</text>
+</svg>

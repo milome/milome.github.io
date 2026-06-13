@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI 编程基准测试能力地图</title>
+  <desc id="desc">展示 HumanEval、APPS、CodeContests、SWE-bench、LiveCodeBench 和 Aider 等基准分别覆盖函数生成、竞赛推理、真实仓库、时间切片和代码编辑能力。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI 编程基准测试能力地图</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">不同基准不是同一个分数体系，而是把 AI 放进不同任务环境里观察能力边界</text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect x="72" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="150" y="188" text-anchor="middle" font-size="17" font-weight="700" fill="#bfdbfe">函数级</text>
+    <text x="150" y="216" text-anchor="middle" font-size="12" fill="#cbd5e1">HumanEval</text>
+    <text x="150" y="239" text-anchor="middle" font-size="12" fill="#94a3b8">明确契约</text>
+    <text x="150" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">自动测试</text>
+
+    <rect x="260" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="338" y="188" text-anchor="middle" font-size="17" font-weight="700" fill="#bae6fd">竞赛级</text>
+    <text x="338" y="216" text-anchor="middle" font-size="12" fill="#cbd5e1">APPS / CodeContests</text>
+    <text x="338" y="239" text-anchor="middle" font-size="12" fill="#94a3b8">复杂推理</text>
+    <text x="338" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">边界输入</text>
+
+    <rect x="448" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="526" y="188" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0">仓库级</text>
+    <text x="526" y="216" text-anchor="middle" font-size="12" fill="#cbd5e1">SWE-bench</text>
+    <text x="526" y="239" text-anchor="middle" font-size="12" fill="#94a3b8">真实 issue</text>
+    <text x="526" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">补丁验证</text>
+
+    <rect x="636" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="714" y="188" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">持续级</text>
+    <text x="714" y="216" text-anchor="middle" font-size="12" fill="#cbd5e1">LiveCodeBench</text>
+    <text x="714" y="239" text-anchor="middle" font-size="12" fill="#94a3b8">时间切片</text>
+    <text x="714" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">污染控制</text>
+
+    <rect x="354" y="338" width="192" height="112" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#f8fafc">编辑能力</text>
+    <text x="450" y="402" text-anchor="middle" font-size="12" fill="#cbd5e1">Aider Leaderboards</text>
+    <text x="450" y="425" text-anchor="middle" font-size="12" fill="#94a3b8">局部修改 · 多语言 · diff 成本</text>
+  </g>
+
+  <line x1="228" y1="216" x2="252" y2="216" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="416" y1="216" x2="440" y2="216" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="604" y1="216" x2="628" y2="216" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M450 286 L450 330" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="318" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">能力不是单轴排名，而是任务环境不断接近真实工程</text>
+  <text x="450" y="492" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 1. 公开基准提供外部参照，不能直接替代团队自己的私有 eval。</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="waterfall / benchmark chart 风格">
+  <title id="title">Latency budget waterfall</title>
+  <desc id="desc">Waterfall bars showing latency budget from database query to chart rendering.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Latency Budget Waterfall / Latency Budget</text>
+  <text x="96" y="148" fill="#94a3b8" font-family="Arial" font-size="18">Break down the 3-second chart lag into measurable stages</text>
+  <line x1="130" y1="560" x2="1120" y2="560" stroke="#64748b" stroke-width="3"/>
+  <g font-family="Arial" font-size="18">
+    <rect x="160" y="250" width="130" height="310" rx="14" fill="#60a5fa"/>
+    <rect x="330" y="330" width="130" height="230" rx="14" fill="#38bdf8"/>
+    <rect x="500" y="390" width="130" height="170" rx="14" fill="#10b981"/>
+    <rect x="670" y="448" width="130" height="112" rx="14" fill="#f59e0b"/>
+    <rect x="840" y="506" width="130" height="54" rx="14" fill="#bfdbfe"/>
+    <text x="172" y="238" fill="#f8fafc" font-weight="700">1200ms</text>
+    <text x="342" y="318" fill="#f8fafc" font-weight="700">850ms</text>
+    <text x="512" y="378" fill="#f8fafc" font-weight="700">520ms</text>
+    <text x="682" y="436" fill="#f8fafc" font-weight="700">310ms</text>
+    <text x="852" y="494" fill="#f8fafc" font-weight="700">120ms</text>
+    <text x="154" y="608" fill="#cbd5e1">Query</text>
+    <text x="324" y="608" fill="#cbd5e1">Convert</text>
+    <text x="494" y="608" fill="#cbd5e1">index</text>
+    <text x="664" y="608" fill="#cbd5e1">object</text>
+    <text x="834" y="608" fill="#cbd5e1">draw</text>
+  </g>
+  <rect x="980" y="250" width="112" height="310" rx="16" fill="#1e293b" stroke="#475569"/>
+  <text x="993.44" y="395.49" fill="#f8fafc" font-family="Arial" font-size="15" font-weight="700" text-anchor="start"><tspan x="993.44" dy="0">3s</tspan></text>
+  <text x="993.44" y="413.19" fill="#94a3b8" font-family="Arial" font-size="12" text-anchor="start"><tspan x="993.44" dy="0">User</tspan><tspan x="993.44" dy="14.16">perception</tspan></text>
+</svg>

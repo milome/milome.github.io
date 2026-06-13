@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Coding Mentor Data Closed Loop Maturity Roadmap</title>
+  <desc id="desc">Demonstrates the four-level maturity route from personal habits, team norms, platform closed loop to model and tool chain optimization.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI Coding Mentor Data Closed Loop Maturity Roadmap</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">First make collaboration reproducible,</tspan><tspan x="450" dy="17.5">then make data routable, and finally</tspan><tspan x="450" dy="17.5">talk about model optimization.</tspan></text>
+
+  <line x1="128" y1="280" x2="772" y2="280" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+  <path d="M128 280 L772 280" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <circle cx="170" cy="280" r="19" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <rect x="80" y="150" width="180" height="100" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="170" y="178" text-anchor="middle" font-size="12" font-weight="700" fill="#bfdbfe"><tspan x="170" dy="0">1. Personal habits</tspan></text>
+    <text x="170" y="219.84" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="170" dy="0">Document the scope of AI</tspan><tspan x="170" dy="14.16">involvement</tspan></text>
+    <text x="170" y="193.92" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="170" dy="0">Reason for retention failure</tspan><tspan x="170" dy="14.16">and correction</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <circle cx="356" cy="280" r="19" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <rect x="266" y="312" width="180" height="100" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="356" y="354.25" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0"><tspan x="356" y="354.25">2. Team norms</tspan></text>
+    <text x="356" y="370.25" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="356" y="370.25">Unified PR template</tspan></text>
+    <text x="356" y="386.75" text-anchor="middle" font-size="12.5" fill="#cbd5e1"><tspan x="356" y="386.75">precipitation review tag</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <circle cx="542" cy="280" r="19" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <rect x="452" y="150" width="180" height="100" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="542" y="188.99" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="542" dy="0">3. Platform loop</tspan></text>
+    <text x="542" y="206.69" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="542" dy="0">Trace Store · Gate Control</tspan></text>
+    <text x="542" y="223.85" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="542" dy="0">Eval Runner · Data Routing</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <circle cx="728" cy="280" r="19" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="638" y="312" width="180" height="100" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="728" y="343.91" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="728" dy="0">4. Model tuning</tspan></text>
+    <text x="728" y="361.61" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="728" dy="0">Private Eval return</tspan></text>
+    <text x="728" y="378.77" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="728" dy="0">SFT/RFT and tool chain</tspan><tspan x="728" dy="14.16">iteration</tspan></text>
+  </g>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#94a3b8">
+    <text x="170" y="292" text-anchor="middle">Can be reviewed</text>
+    <text x="356" y="292" text-anchor="middle">Comparable</text>
+    <text x="542" y="292" text-anchor="middle">routable</text>
+    <text x="728" y="292" text-anchor="middle">Can be improved</text>
+  </g>
+
+
+</svg>

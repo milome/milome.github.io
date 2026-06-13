@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="swimlane 风格">
+  <title id="title">Human AI quality gates swimlane</title>
+  <desc id="desc">Swimlane diagram separating AI candidate output, human semantic signoff and CI evidence gates.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#10b981"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="56" y="52" width="1168" height="616" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="92" y="112" fill="#f8fafc" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">Human-AI quality gates</text>
+  <text x="640" y="144" fill="#cbd5e1" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="144">AI proposes candidates; people sign</tspan><tspan x="640" dy="17.5">off business semantics, architecture</tspan><tspan x="640" dy="17.5">cost, and release risk.</tspan></text>
+
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="96" y="214" width="1088" height="104" rx="20" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="96" y="334" width="1088" height="104" rx="20" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="96" y="454" width="1088" height="104" rx="20" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+    <text x="164" y="274" fill="#f8fafc" font-size="21" font-weight="700">AI candidate</text>
+    <text x="164" y="394" fill="#f8fafc" font-size="21" font-weight="700">Manual signature</text>
+    <text x="164" y="514" fill="#f8fafc" font-size="21" font-weight="700">CI evidence</text>
+
+    <rect x="332" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="552" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="772" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="992" y="238" width="152" height="56" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="408" y="263.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="408" dy="0">draft</tspan><tspan x="408" dy="18.88">specification</tspan></text>
+    <text x="628" y="263.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="628" dy="0">Candidate</tspan><tspan x="628" dy="18.88">implementation</tspan></text>
+    <text x="848" y="273.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="848" dy="0">test draft</tspan></text>
+    <text x="1068" y="263.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="1068" dy="0">First draft of</tspan><tspan x="1068" dy="18.88">document</tspan></text>
+
+    <rect x="332" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="552" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="772" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="992" y="358" width="152" height="56" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="408" y="383.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="408" dy="0">Semantic</tspan><tspan x="408" dy="18.88">confirmation</tspan></text>
+    <text x="628" y="383.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="628" dy="0">Architectural</tspan><tspan x="628" dy="18.88">trade-offs</tspan></text>
+    <text x="848" y="393.5" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="700"><tspan x="848" y="393.5">Risk acceptance</tspan></text>
+    <text x="1068" y="383.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="1068" dy="0">Merge</tspan><tspan x="1068" dy="18.88">approval</tspan></text>
+
+    <rect x="332" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="552" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="772" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="992" y="478" width="152" height="56" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="408" y="513.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="408" dy="0">type checking</tspan></text>
+    <text x="628" y="513.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="628" dy="0">Unit testing</tspan></text>
+    <text x="848" y="513.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="848" dy="0">benchmark</tspan></text>
+    <text x="1068" y="503.44" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700"><tspan x="1068" dy="0">Acceptance</tspan><tspan x="1068" dy="18.88">record</tspan></text>
+
+    <g fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+      <path d="M408 294 V352"/>
+      <path d="M628 294 V352"/>
+      <path d="M848 294 V352"/>
+      <path d="M1068 294 V352"/>
+      <path d="M408 414 V472"/>
+      <path d="M628 414 V472"/>
+      <path d="M848 414 V472"/>
+      <path d="M1068 414 V472"/>
+    </g>
+
+    <text x="640" y="621.6" text-anchor="middle" fill="#fde68a" font-size="20"><tspan x="640" dy="0">AI is responsible for proposing candidates; humans are responsible for judging whether candidates can</tspan><tspan x="640" dy="24.4">enter the real trading system.</tspan></text>
+  </g>
+</svg>

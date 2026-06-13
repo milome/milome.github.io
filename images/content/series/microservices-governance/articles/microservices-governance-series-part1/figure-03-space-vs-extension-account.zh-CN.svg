@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Space 与扩展账户体系的治理边界</title>
+  <desc id="desc">对比 Cloud Foundry Space 作为设计时隔离单元与扩展账户体系作为运行时隔离单元的职责边界。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="66" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#f8fafc">Space 与企业级 CF 平台扩展账户体系的治理边界</text>
+  <text x="450" y="92" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Design-time Isolation vs Runtime Isolation</text>
+
+  <g filter="url(#shadow)" font-family="Segoe UI, Arial, sans-serif">
+    <rect x="78" y="126" width="350" height="330" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="253" y="158" text-anchor="middle" font-size="18" font-weight="700" fill="#bfdbfe">Space（设计时隔离）</text>
+    <text x="253" y="180" text-anchor="middle" font-size="12" fill="#cbd5e1">Build / Deploy / Release</text>
+
+    <rect x="104" y="204" width="298" height="56" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="253" y="228" text-anchor="middle" font-size="12" fill="#e2e8f0">环境分层：dev / test / prod</text>
+    <text x="253" y="246" text-anchor="middle" font-size="11" fill="#94a3b8">Delivery Pipeline Segmentation</text>
+
+    <rect x="104" y="276" width="298" height="56" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="253" y="300" text-anchor="middle" font-size="12" fill="#e2e8f0">版本与发布节奏管理</text>
+    <text x="253" y="318" text-anchor="middle" font-size="11" fill="#94a3b8">Version and Release Cadence</text>
+
+    <rect x="104" y="348" width="298" height="82" rx="10" fill="#111827" stroke="#475569"/>
+    <text x="253" y="372" text-anchor="middle" font-size="12" fill="#fde68a">不负责 / Not for</text>
+    <text x="253" y="394" text-anchor="middle" font-size="12" fill="#cbd5e1">运行时数据与身份隔离</text>
+    <text x="253" y="412" text-anchor="middle" font-size="11" fill="#94a3b8">Runtime Data and Identity Isolation</text>
+
+    <rect x="472" y="126" width="350" height="330" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="647" y="158" text-anchor="middle" font-size="18" font-weight="700" fill="#a7f3d0">扩展账户体系（运行时隔离）</text>
+    <text x="647" y="180" text-anchor="middle" font-size="12" fill="#cbd5e1">Data / Identity / Authorization</text>
+
+    <rect x="498" y="204" width="298" height="56" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="647" y="228" text-anchor="middle" font-size="12" fill="#e2e8f0">账户上下文数据访问边界</text>
+    <text x="647" y="246" text-anchor="middle" font-size="11" fill="#94a3b8">Extension-account Data Boundary</text>
+
+    <rect x="498" y="276" width="298" height="56" rx="10" fill="#0f172a" stroke="#334155"/>
+    <text x="647" y="300" text-anchor="middle" font-size="12" fill="#e2e8f0">身份与权限范围边界</text>
+    <text x="647" y="318" text-anchor="middle" font-size="11" fill="#94a3b8">Identity and Scope Boundary</text>
+
+    <rect x="498" y="348" width="298" height="82" rx="10" fill="#111827" stroke="#475569"/>
+    <text x="647" y="372" text-anchor="middle" font-size="12" fill="#bae6fd">可跨多个 Space 消费应用</text>
+    <text x="647" y="394" text-anchor="middle" font-size="12" fill="#cbd5e1">Consume apps across spaces</text>
+    <text x="647" y="412" text-anchor="middle" font-size="11" fill="#94a3b8">Runtime boundary is independent from one space</text>
+  </g>
+
+  <text x="450" y="494" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#64748b">Figure 2. Space 管交付流程，扩展账户体系管运行时边界；两者并行，不可互替。</text>
+</svg>

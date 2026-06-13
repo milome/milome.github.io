@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-001" data-visual-pattern="timeline 风格">
+  <title>Five reconstructions of the causal timeline</title>
+  <desc>A continuous evolution from data boundaries, computational state, graph boundaries, rendering costs, to execution domain isolation.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Five reconstructions of the causal timeline</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Each refactoring inherits the out-of-control</tspan><tspan x="600" dy="17.5">signals exposed in the previous stage and</tspan><tspan x="600" dy="17.5">leaves verifiable boundaries for the next</tspan><tspan x="600" dy="17.5">stage.</tspan></text>
+
+  <line x1="164" y1="276" x2="1036" y2="276" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <g font-size="20" font-weight="700">
+    <circle cx="164" cy="276" r="22" fill="#1e293b" stroke="#60a5fa" stroke-width="4"/>
+    <circle cx="382" cy="276" r="22" fill="#1e293b" stroke="#10b981" stroke-width="4"/>
+    <circle cx="600" cy="276" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="4"/>
+    <circle cx="818" cy="276" r="22" fill="#1e293b" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="1036" cy="276" r="22" fill="#1e293b" stroke="#60a5fa" stroke-width="4"/>
+  </g>
+
+  <g font-size="21">
+    <rect x="82" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="100" y="399.33" fill="#bfdbfe" font-weight="700" font-size="15" text-anchor="start"><tspan x="100" dy="0">1 data boundaries</tspan></text>
+    <text x="100" y="417.03" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="100" dy="0">UI exit</tspan></text>
+    <text x="100" y="434.19" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="100" dy="0">Data semantics</tspan></text>
+    <text x="100" y="451.35" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="100" dy="0">The test entrance</tspan><tspan x="100" dy="14.16">appears</tspan></text>
+
+    <rect x="300" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="318" y="397.56" fill="#a7f3d0" font-weight="700" font-size="15" text-anchor="start"><tspan x="318" dy="0">2 Calculation</tspan><tspan x="318" dy="17.7">status</tspan></text>
+    <text x="318" y="432.96" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="318" dy="0">Full recalculation</tspan></text>
+    <text x="318" y="450.12" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="318" dy="0">Change to increment</tspan></text>
+    <text x="318" y="467.28" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="318" dy="0">wasteful convergence</tspan></text>
+
+    <rect x="518" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="536" y="392.25" fill="#bae6fd" font-weight="700" font-size="15" text-anchor="start"><tspan x="536" dy="0">3 Chart borders</tspan></text>
+    <text x="536" y="409.95" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="536" dy="0">God Object</tspan></text>
+    <text x="536" y="427.11" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="536" dy="0">Split into</tspan><tspan x="536" dy="14.16">responsibilitie s</tspan></text>
+    <text x="536" y="458.43" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="536" dy="0">Interactively</tspan><tspan x="536" dy="14.16">maintainable</tspan></text>
+
+    <rect x="736" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="754" y="406.41" fill="#fde68a" font-weight="700" font-size="15" text-anchor="start"><tspan x="754" dy="0">4 Rendering costs</tspan></text>
+    <text x="754" y="424.11" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="754" dy="0">only handle</tspan></text>
+    <text x="754" y="441.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="754" dy="0">Visible window</tspan></text>
+    <text x="754" y="458.43" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="754" dy="0">Drag and zoom stable</tspan></text>
+
+    <rect x="954" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="972" y="390.48" fill="#bfdbfe" font-weight="700" font-size="15" text-anchor="start"><tspan x="972" dy="0">5 Perform</tspan><tspan x="972" dy="17.7">isolation</tspan></text>
+    <text x="972" y="425.88" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="972" dy="0">multi-process</tspan></text>
+    <text x="972" y="443.04" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="972" dy="0">failure domain</tspan></text>
+    <text x="972" y="460.2" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="972" dy="0">UI doesn’t get bogged</tspan><tspan x="972" dy="14.16">down</tspan></text>
+  </g>
+
+  <rect x="138" y="574" width="924" height="70" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="166" y="602" fill="#f8fafc" font-size="14" text-anchor="start"><tspan x="166" y="602">Key point to read: Don’t just look at how the</tspan><tspan x="166" dy="16.52">directory gets cleaner, look at whether each step</tspan><tspan x="166" dy="16.52">reduces errors, delays, or collaboration costs.</tspan></text>
+</svg>

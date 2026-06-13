@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">The main line of traffic management technology evolution</title>
+  <desc id="desc">Shows the main line of evolution of traffic management from application layer gateways to standard ingress resources to the grid and data plane.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">The main line of traffic management technology evolution</text>
+  <text x="450" y="93.6" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="85">Traffic governance moves from framework code to</tspan><tspan x="450" dy="17.1">platform APIs and data plane</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="88" y="174" width="176" height="104" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="176" y="206.14" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="176" dy="0">application layer</tspan><tspan x="176" dy="17.7">gateway</tspan></text>
+    <text x="176" y="241.54" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="176" dy="0">Application Gateway</tspan></text>
+    <text x="176" y="258.7" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="176" dy="0">2015-2018</tspan></text>
+    <rect x="362" y="174" width="176" height="104" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="450" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">Standard entry API</text>
+    <text x="450" y="234" text-anchor="middle" font-size="12" fill="#e2e8f0">Ingress to Gateway API</text>
+    <text x="450" y="255" text-anchor="middle" font-size="12" fill="#94a3b8">2019-2026</text>
+    <rect x="636" y="174" width="176" height="104" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="724" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">Grid and data plane</text>
+    <text x="724" y="234" text-anchor="middle" font-size="12" fill="#e2e8f0">Mesh / Ambient / eBPF</text>
+    <text x="724" y="255" text-anchor="middle" font-size="12" fill="#94a3b8">2021-2026</text>
+    <rect x="234" y="350" width="432" height="84" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="374" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">Architecture judgment</text>
+    <text x="450" y="399" text-anchor="middle" font-size="14" fill="#cbd5e1"><tspan x="450" y="399">Traffic strategies move from business code</tspan><tspan x="450" dy="16.52">to platform resources and data.</tspan></text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="264" y1="226" x2="352" y2="226"/>
+      <line x1="538" y1="226" x2="626" y2="226"/>
+    </g>
+  </g>
+</svg>

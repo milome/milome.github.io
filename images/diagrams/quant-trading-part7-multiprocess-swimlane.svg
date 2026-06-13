@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" data-figure-id="FIG-006" data-visual-pattern="swimlane 风格">
+  <title>多进程协作泳道</title>
+  <desc>UI、行情接入、计算进程、共享内存和日志链路在量化交易系统中的协作方式。</desc>
+  <rect width="900" height="620" rx="28" fill="#0f172a"/>
+  <text x="48" y="68" fill="#f8fafc" font-size="34" font-weight="700">多进程失败域隔离</text>
+  <text x="48" y="108" fill="#cbd5e1" font-size="24">UI 不与 CPU 密集计算竞争同一个事件循环</text>
+  <g font-size="22">
+    <rect x="60" y="154" width="780" height="72" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="60" y="226" width="780" height="72" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="60" y="298" width="780" height="72" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="60" y="370" width="780" height="72" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="60" y="442" width="780" height="72" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <text x="88" y="199" fill="#bfdbfe" font-weight="700">UI Process</text>
+    <text x="88" y="271" fill="#bae6fd" font-weight="700">Market Ingest</text>
+    <text x="88" y="343" fill="#a7f3d0" font-weight="700">Compute Worker</text>
+    <text x="88" y="415" fill="#fde68a" font-weight="700">shared_memory</text>
+    <text x="88" y="487" fill="#cbd5e1" font-weight="700">Log / Trace</text>
+  </g>
+  <g font-size="21" fill="#e2e8f0">
+    <text x="285" y="199">订阅刷新信号</text>
+    <text x="496" y="199">渲染最新快照</text>
+    <text x="285" y="271">写入行情批次</text>
+    <text x="496" y="271">标记序列号</text>
+    <text x="285" y="343">读取快照并计算</text>
+    <text x="496" y="343">发布指标结果</text>
+    <text x="285" y="415">生命周期管理</text>
+    <text x="496" y="415">异常时重建</text>
+    <text x="285" y="487">关联 pid / trace_id</text>
+    <text x="496" y="487">定位失败域</text>
+  </g>
+  <g stroke="#64748b" stroke-width="4" stroke-linecap="round">
+    <line x1="250" y1="262" x2="250" y2="405"/>
+    <line x1="460" y1="405" x2="460" y2="334"/>
+    <line x1="670" y1="334" x2="670" y2="190"/>
+    <line x1="250" y1="478" x2="740" y2="478"/>
+  </g>
+  <text x="88" y="560" fill="#94a3b8" font-size="21">关键边界：子进程失败必须能降级、重启、关联日志，而不是拖垮主界面。</text>
+</svg>

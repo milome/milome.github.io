@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Refactor decision tree</title>
+  <desc id="desc">Decision tree for when to refactor the quant trading system.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">重构决策树 / Refactor Decision Tree</text>
+  <rect x="518" y="160" width="244" height="84" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+  <text x="554" y="212" fill="#f8fafc" font-family="Arial" font-size="22" font-weight="700">症状出现了吗？</text>
+  <rect x="160" y="336" width="244" height="84" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="518" y="336" width="244" height="84" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <rect x="876" y="336" width="244" height="84" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="198" y="388" fill="#f8fafc" font-family="Arial" font-size="20" font-weight="700">重复逻辑</text>
+  <text x="556" y="388" fill="#f8fafc" font-family="Arial" font-size="20" font-weight="700">状态不一致</text>
+  <text x="914" y="388" fill="#f8fafc" font-family="Arial" font-size="20" font-weight="700">阻碍测试</text>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M640 244 V336"/>
+    <path d="M640 244 C520 276 420 300 282 336"/>
+    <path d="M640 244 V336"/>
+    <path d="M640 244 C760 276 860 300 998 336"/>
+  </g>
+</svg>

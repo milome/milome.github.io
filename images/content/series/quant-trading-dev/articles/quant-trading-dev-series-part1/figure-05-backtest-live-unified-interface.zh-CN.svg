@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-005" data-visual-pattern="容器边界图">
+  <title id="title">Backtest and live unified interface</title>
+  <desc id="desc">A diagram showing backtest and live adapters feeding the same strategy event interface.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="58" y="54" width="1164" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">回测与实盘统一接口 / Unified Strategy Interface</text>
+  <text x="96" y="148" fill="#94a3b8" font-family="Arial" font-size="18">差异留在适配器，策略只面对统一事件协议</text>
+  <g fill="#1e293b" stroke="#475569" stroke-width="2">
+    <rect x="118" y="230" width="250" height="126" rx="24"/>
+    <rect x="118" y="422" width="250" height="126" rx="24"/>
+    <rect x="496" y="294" width="288" height="154" rx="28"/>
+    <rect x="910" y="230" width="250" height="126" rx="24"/>
+    <rect x="910" y="422" width="250" height="126" rx="24"/>
+  </g>
+  <g font-family="Arial" fill="#f8fafc">
+    <text x="154" y="282" font-size="23" font-weight="700">历史事件流</text>
+    <text x="154" y="316" fill="#94a3b8" font-size="18">Backtest Adapter</text>
+    <text x="154" y="474" font-size="23" font-weight="700">实盘事件流</text>
+    <text x="154" y="508" fill="#94a3b8" font-size="18">Live Adapter</text>
+    <text x="544" y="350" font-size="25" font-weight="700">UnifiedStrategy</text>
+    <text x="544" y="386" fill="#94a3b8" font-size="18">on_market_event(event)</text>
+    <text x="946" y="282" font-size="23" font-weight="700">模拟撮合</text>
+    <text x="946" y="316" fill="#94a3b8" font-size="18">Simulated Broker</text>
+    <text x="946" y="474" font-size="23" font-weight="700">真实委托</text>
+    <text x="946" y="508" fill="#94a3b8" font-size="18">Gateway Execution</text>
+  </g>
+  <g stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M368 294 C424 294 432 346 496 346" stroke="#60a5fa"/>
+    <path d="M368 486 C424 486 432 394 496 394" stroke="#38bdf8"/>
+    <path d="M784 346 C838 346 850 294 910 294" stroke="#10b981"/>
+    <path d="M784 394 C838 394 850 486 910 486" stroke="#f59e0b"/>
+  </g>
+  <rect x="418" y="552" width="444" height="54" rx="18" fill="#1e293b" stroke="#334155"/>
+  <text x="454" y="586" fill="#cbd5e1" font-family="Arial" font-size="18">测试、回测、实盘复盘围绕同一事件协议建立证据。</text>
+</svg>

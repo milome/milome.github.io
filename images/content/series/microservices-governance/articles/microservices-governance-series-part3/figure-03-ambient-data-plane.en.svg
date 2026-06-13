@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ambient Mesh data plane layering</title>
+  <desc id="desc">Show the responsibilities of Gateway API, ztunnel, service, Waypoint and eBPF fast path in Ambient data plane.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Ambient Mesh data plane layering</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="87.5">Gateway, ztunnel, waypoint and kernel fast path</tspan><tspan x="450" dy="17.1">responsibilities</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="88" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="163" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">external request</text>
+    <text x="163" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">External Client</text>
+    <rect x="288" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="363" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">Standard entrance</text>
+    <text x="363" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">Gateway API</text>
+    <rect x="488" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="563" y="195.9" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0"><tspan x="563" dy="0">Four layers of data</tspan><tspan x="563" dy="16.52">plane</tspan></text>
+    <text x="563" y="229.94" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="563" dy="0">ztunnel L4 Plane</tspan></text>
+    <rect x="688" y="166" width="150" height="82" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="763" y="199" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">business services</text>
+    <text x="763" y="221" text-anchor="middle" font-size="12" fill="#e2e8f0">Application Services</text>
+    <rect x="394" y="318" width="150" height="72" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="469" y="351.52" text-anchor="middle" font-size="12" font-weight="700" fill="#bae6fd"><tspan x="469" dy="0">L7 on demand</tspan></text>
+    <text x="469" y="366.68" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="469" dy="0">Waypoint Policy</tspan></text>
+    <rect x="594" y="318" width="150" height="72" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="669" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">Kernel acceleration</text>
+    <text x="669" y="370" text-anchor="middle" font-size="12" fill="#e2e8f0">eBPF Fast Path</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="238" y1="207" x2="278" y2="207"/>
+      <line x1="438" y1="207" x2="478" y2="207"/>
+      <line x1="638" y1="207" x2="678" y2="207"/>
+      <path d="M 563 248 C 552 288 514 304 485 314"/>
+      <path d="M 669 318 C 660 284 628 260 582 248"/>
+    </g>
+    <text x="450" y="451.86" text-anchor="middle" font-size="14" fill="#94a3b8"><tspan x="450" y="443.3">The default path keeps L4 simple;</tspan><tspan x="450" dy="17.1">only enter Waypoint if HTTP/gRPC policies are required.</tspan></text>
+  </g>
+</svg>

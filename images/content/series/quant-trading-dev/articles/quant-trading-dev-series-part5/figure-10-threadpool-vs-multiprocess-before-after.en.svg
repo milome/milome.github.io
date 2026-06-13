@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-labelledby="title desc" data-figure-id="FIG-005" data-visual-pattern="before-after comparison">
+  <title id="title">Thread pool vs multi-process architecture comparison</title>
+  <desc id="desc">Compare thread-pool single-process execution with a multi-process architecture across GIL contention, CPU parallelism, shared memory, isolation, and benchmark outcome.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="700" rx="26" fill="#0f172a"/>
+  <rect x="28" y="28" width="844" height="644" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Thread pool vs multi-process architecture comparison</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="85.5">Use processes for CPU-bound indicator calculation;</tspan><tspan x="450" dy="17.1">keep threads for I/O-bound work.</tspan></text>
+
+  <rect x="64" y="126" width="350" height="210" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="239" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#fde68a">Before: thread pool</text>
+  <text x="239" y="196" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">One process, shared interpreter lock</text>
+  <text x="239" y="224" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fde68a">CPU workers queue behind the GIL.</text>
+  <text x="239" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fde68a">Shared data needs locks.</text>
+  <text x="239" y="276" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fde68a">A crash affects the whole process.</text>
+  <text x="239" y="306" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">Benchmark: 2500ms</text>
+
+  <rect x="486" y="126" width="350" height="210" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="661" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#a7f3d0">After: multi-process</text>
+  <text x="661" y="196" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">Separate workers, real CPU parallelism</text>
+  <text x="661" y="224" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a7f3d0">Each worker owns a core.</text>
+  <text x="661" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a7f3d0">Zero-copy shared memory carries data.</text>
+  <text x="661" y="276" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a7f3d0">Failures are isolated and restartable.</text>
+  <text x="661" y="306" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">Benchmark: 400ms</text>
+
+  <path d="M424 230 L476 230" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="450" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94a3b8">split</text>
+
+  <rect x="64" y="372" width="772" height="190" rx="16" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+  <text x="450" y="406" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Decision summary</text>
+
+  <rect x="92" y="430" width="176" height="34" rx="8" fill="#334155"/>
+  <text x="180" y="452" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">Dimension</text>
+  <rect x="284" y="430" width="238" height="34" rx="8" fill="#1e293b"/>
+  <text x="403" y="452" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fde68a" font-weight="700">Thread pool</text>
+  <rect x="538" y="430" width="270" height="34" rx="8" fill="#1e293b"/>
+  <text x="673" y="452" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a7f3d0" font-weight="700">Multi-process</text>
+
+  <text x="180" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1" font-weight="700">CPU-bound work</text>
+  <text x="403" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fde68a">Blocked by GIL</text>
+  <text x="673" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a7f3d0">Parallel across cores</text>
+
+  <text x="180" y="528" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1" font-weight="700">Data sharing</text>
+  <text x="403" y="528" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fde68a">Lock-protected memory</text>
+  <text x="673" y="528" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a7f3d0">Shared-memory buffer</text>
+
+  <text x="180" y="560" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1" font-weight="700">Failure domain</text>
+  <text x="403" y="560" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fde68a">Single-process blast radius</text>
+  <text x="673" y="560" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a7f3d0">Worker restart boundary</text>
+
+  <rect x="120" y="596" width="660" height="42" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="143.1" y="624" text-anchor="start" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#bae6fd"><tspan x="143.1" y="624">Result: multi-process reduced 1M-row MA calculation</tspan><tspan x="143.1" dy="16.52">from 2500ms to 400ms.</tspan></text>
+</svg>

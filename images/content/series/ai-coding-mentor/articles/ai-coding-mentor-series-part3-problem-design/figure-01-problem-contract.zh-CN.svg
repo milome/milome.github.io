@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">可评估编程题目的任务契约</title>
+  <desc id="desc">展示从模糊需求到任务目标、接口契约、数据约束、行为约束、示例契约和验收契约的转换关系。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">可评估编程题目的任务契约</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">好题不是更长的描述，而是把隐式假设变成可复现的评分边界</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="62" y="214" width="156" height="104" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="140" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">模糊需求</text>
+    <text x="140" y="276" text-anchor="middle" font-size="12" fill="#cbd5e1">写一个排序函数</text>
+    <text x="140" y="298" text-anchor="middle" font-size="12" fill="#cbd5e1">规则由模型猜测</text>
+
+    <rect x="292" y="122" width="138" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="361" y="153" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">任务目标</text>
+    <text x="361" y="177" text-anchor="middle" font-size="12" fill="#cbd5e1">场景和优先级</text>
+
+    <rect x="472" y="122" width="138" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="541" y="153" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">接口契约</text>
+    <text x="541" y="177" text-anchor="middle" font-size="12" fill="#cbd5e1">参数和返回值</text>
+
+    <rect x="652" y="122" width="138" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="721" y="153" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">数据约束</text>
+    <text x="721" y="177" text-anchor="middle" font-size="12" fill="#cbd5e1">规模和取值范围</text>
+
+    <rect x="292" y="316" width="138" height="78" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="361" y="347" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">行为约束</text>
+    <text x="361" y="371" text-anchor="middle" font-size="12" fill="#cbd5e1">边界和异常策略</text>
+
+    <rect x="472" y="316" width="138" height="78" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="541" y="347" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">示例契约</text>
+    <text x="541" y="371" text-anchor="middle" font-size="12" fill="#cbd5e1">题意校准</text>
+
+    <rect x="652" y="316" width="138" height="78" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="721" y="347" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">验收契约</text>
+    <text x="721" y="371" text-anchor="middle" font-size="12" fill="#cbd5e1">测试和 rubric</text>
+
+    <rect x="392" y="226" width="216" height="84" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="500" y="259" text-anchor="middle" font-size="17" font-weight="700" fill="#f8fafc">可复现评分边界</text>
+    <text x="500" y="285" text-anchor="middle" font-size="12" fill="#cbd5e1">不同模型在同一契约下比较</text>
+  </g>
+
+  <path d="M218 266 C252 238, 262 190, 288 164" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M218 266 C274 254, 318 250, 388 258" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M430 161 L468 161" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M610 161 L648 161" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M721 200 C722 248, 722 276, 721 312" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M652 355 L614 355" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M472 355 L434 355" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M392 274 C358 292, 352 304, 358 312" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M608 274 C652 286, 682 302, 704 313" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="492" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 1. 题面要把模型可能自行补全的隐式假设，转化为可以测试、复盘和比较的任务契约。</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-002" data-visual-pattern="swimlane 风格">
+  <title id="title">AI 辅助 TDD 人机分工泳道图</title>
+  <desc id="desc">展示人、AI Agent 和 CI Gate 在 RED、GREEN、REFACTOR 三个阶段中的职责分工。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="54" y="48" width="1172" height="624" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="92" y="104" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">AI 辅助 TDD 分工</text>
+  <text x="92" y="140" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">AI 提升候选生成速度，人保留缺陷定义、业务语义和验收签收权。</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="94" y="178" width="1092" height="104" rx="20" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="94" y="320" width="1092" height="104" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="94" y="462" width="1092" height="104" rx="20" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="130" y="238" fill="#f8fafc" font-size="22" font-weight="700">人</text>
+    <text x="130" y="380" fill="#f8fafc" font-size="22" font-weight="700">AI</text>
+    <text x="130" y="522" fill="#f8fafc" font-size="22" font-weight="700">CI</text>
+    <text x="300" y="216" fill="#bfdbfe" font-size="18" font-weight="700">RED<tspan x="300" dy="28" fill="#e2e8f0">定义缺陷与边界</tspan></text>
+    <text x="592" y="216" fill="#bfdbfe" font-size="18" font-weight="700">GREEN<tspan x="592" dy="28" fill="#e2e8f0">审查候选实现</tspan></text>
+    <text x="884" y="216" fill="#bfdbfe" font-size="18" font-weight="700">REFACTOR<tspan x="884" dy="28" fill="#e2e8f0">签收语义未变</tspan></text>
+    <text x="300" y="358" fill="#a7f3d0" font-size="18" font-weight="700">扩展用例<tspan x="300" dy="28" fill="#e2e8f0">生成边界样本</tspan></text>
+    <text x="592" y="358" fill="#a7f3d0" font-size="18" font-weight="700">生成代码<tspan x="592" dy="28" fill="#e2e8f0">给出最小实现</tspan></text>
+    <text x="884" y="358" fill="#a7f3d0" font-size="18" font-weight="700">建议重构<tspan x="884" dy="28" fill="#e2e8f0">解释变化风险</tspan></text>
+    <text x="300" y="500" fill="#fde68a" font-size="18" font-weight="700">失败可复现<tspan x="300" dy="28" fill="#e2e8f0">证明测试有效</tspan></text>
+    <text x="592" y="500" fill="#fde68a" font-size="18" font-weight="700">测试持续绿<tspan x="592" dy="28" fill="#e2e8f0">阻断回归</tspan></text>
+    <text x="884" y="500" fill="#fde68a" font-size="18" font-weight="700">证据可审查<tspan x="884" dy="28" fill="#e2e8f0">进入合并门禁</tspan></text>
+  </g>
+  <g fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M412 596 H540"/>
+    <path d="M704 596 H832"/>
+  </g>
+  <text x="386" y="638" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="18">判断标准：AI 只能扩大候选空间，不能降低断言强度。</text>
+</svg>

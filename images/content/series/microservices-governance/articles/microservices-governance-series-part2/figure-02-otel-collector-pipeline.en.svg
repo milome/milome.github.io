@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">OTel Collector Unified Collection Pipeline</title>
+  <desc id="desc">Demonstrates the unified collection process of business services entering the observation backend through the receiver, processor, and exporter.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">OTel Collector Unified Collection Pipeline</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="87.5">Receiver, processor and exporter as the platform</tspan><tspan x="450" dy="17.1">telemetry contract</tspan></text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="82" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="151" y="205.68" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="151" dy="0">business</tspan><tspan x="151" dy="17.7">services</tspan></text>
+    <text x="151" y="239.48" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="151" dy="0">Instrumented</tspan><tspan x="151" dy="14.16">Services</tspan></text>
+    <rect x="272" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="341" y="221.34" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="341" dy="0">receiver</tspan></text>
+    <text x="341" y="237.74" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="341" dy="0">OTLP Receiver</tspan></text>
+    <rect x="462" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="531" y="221.34" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="531" dy="0">processor</tspan></text>
+    <text x="531" y="237.74" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="531" dy="0">Batch / Sampling</tspan></text>
+    <rect x="652" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="721" y="221.34" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="721" dy="0">exporter</tspan></text>
+    <text x="721" y="237.74" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="721" dy="0">Exporter Routing</tspan></text>
+    <rect x="284" y="342" width="332" height="82" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="450" y="381.34" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="450" dy="0">Observation backend</tspan></text>
+    <text x="450" y="397.74" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="450" dy="0">Metrics / Logs / Traces Backends</tspan></text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="220" y1="223" x2="262" y2="223"/>
+      <line x1="410" y1="223" x2="452" y2="223"/>
+      <line x1="600" y1="223" x2="642" y2="223"/>
+      <path d="M 721 272 C 721 328 616 344 616 374"/>
+    </g>
+    <text x="450" y="461.86" text-anchor="middle" font-size="14" fill="#94a3b8"><tspan x="450" y="436.2">The value of Collector is not &quot;one more component&quot;,</tspan><tspan x="450" dy="17.1">but turning telemetry collection into a</tspan><tspan x="450" dy="17.1">manageable, auditable,</tspan><tspan x="450" dy="17.1">and portable platform contract.</tspan></text>
+  </g>
+</svg>

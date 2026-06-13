@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 720" width="1080" height="720">
+  <title>Python Developer Capability Building Roadmap</title>
+  <desc>Shows the three-stage capability building path for Python developers from beginner to expert.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "SimHei", sans-serif; }
+  </style>
+  <defs>
+    <marker id="arrow-claude" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#5a5a5a"/>
+    </marker>
+    <filter id="shadow-soft">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#00000008"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="720" fill="#f8f6f3"/>
+
+  <!-- Stage A: Novice (0-1 year) -->
+  <rect x="70" y="310" width="160" height="100" rx="12" ry="12" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2.5" filter="url(#shadow-soft)"/>
+  <text x="150" y="350" text-anchor="middle" fill="#4a4a4a" font-size="18" font-weight="600">Stage A: Novice</text>
+  <text x="150" y="378" text-anchor="middle" fill="#6a6a6a" font-size="14">(0-1 year)</text>
+
+  <!-- Arrow: Stage A -> System Thinking -->
+  <line x1="230" y1="360" x2="290" y2="360" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arrow-claude)"/>
+
+  <!-- Bridge: System Thinking -->
+  <rect x="310" y="310" width="140" height="100" rx="12" ry="12" fill="#d4c9b8" stroke="#4a4a4a" stroke-width="2.5" filter="url(#shadow-soft)"/>
+  <text x="380" y="350" text-anchor="middle" fill="#3a3a3a" font-size="16" font-weight="600">System Thinking</text>
+  <text x="380" y="375" text-anchor="middle" fill="#6a6a6a" font-size="13">System Thinking</text>
+
+  <!-- Arrow: System Thinking -> Stage B -->
+  <line x1="450" y1="360" x2="470" y2="360" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arrow-claude)"/>
+
+  <!-- Stage B: Experienced (1-3 years) -->
+  <rect x="490" y="310" width="160" height="100" rx="12" ry="12" fill="#d4c9b8" stroke="#4a4a4a" stroke-width="2.5" filter="url(#shadow-soft)"/>
+  <text x="570" y="342" text-anchor="middle" fill="#3a3a3a" font-size="17" font-weight="600">Stage B</text>
+  <text x="570" y="364" text-anchor="middle" fill="#3a3a3a" font-size="17" font-weight="600">Experienced</text>
+  <text x="570" y="389" text-anchor="middle" fill="#6a6a6a" font-size="14">(1-3 years)</text>
+
+  <!-- Arrow: Stage B -> Underlying Mechanisms -->
+  <line x1="650" y1="360" x2="670" y2="360" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arrow-claude)"/>
+
+  <!-- Bridge: Underlying Mechanisms -->
+  <rect x="690" y="310" width="140" height="100" rx="12" ry="12" fill="#b8a890" stroke="#4a4a4a" stroke-width="2.5" filter="url(#shadow-soft)"/>
+  <text x="760" y="342" text-anchor="middle" fill="#2a2a2a" font-size="15" font-weight="600">Underlying</text>
+  <text x="760" y="362" text-anchor="middle" fill="#2a2a2a" font-size="15" font-weight="600">Mechanisms</text>
+  <text x="760" y="386" text-anchor="middle" fill="#6a6a6a" font-size="12">Runtime internals</text>
+
+  <!-- Arrow: Underlying Mechanisms -> Stage C -->
+  <line x1="830" y1="360" x2="850" y2="360" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arrow-claude)"/>
+
+  <!-- Stage C: Senior (3-5 years+) -->
+  <rect x="870" y="310" width="160" height="100" rx="12" ry="12" fill="#b8a890" stroke="#4a4a4a" stroke-width="2.5" filter="url(#shadow-soft)"/>
+  <text x="950" y="350" text-anchor="middle" fill="#2a2a2a" font-size="18" font-weight="600">Stage C: Senior</text>
+  <text x="950" y="378" text-anchor="middle" fill="#5a5a5a" font-size="14">(3-5 years+)</text>
+
+  <!-- Final: Technical Judgment -->
+  <rect x="850" y="520" width="140" height="100" rx="12" ry="12" fill="#9a8a70" stroke="#4a4a4a" stroke-width="2.5" filter="url(#shadow-soft)"/>
+  <text x="920" y="552" text-anchor="middle" fill="#1a1a1a" font-size="15" font-weight="600">Technical</text>
+  <text x="920" y="572" text-anchor="middle" fill="#1a1a1a" font-size="15" font-weight="600">Judgment</text>
+  <text x="920" y="596" text-anchor="middle" fill="#5a5a5a" font-size="12">Decision quality</text>
+
+  <!-- Arrow: Stage C -> Technical Judgment -->
+  <line x1="950" y1="410" x2="920" y2="520" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arrow-claude)"/>
+</svg>

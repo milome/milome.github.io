@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <title>乱序执行流水线</title>
+  <desc>乱序执行流水线 static diagram for Java Memory Model Part 1.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f6f3"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">乱序执行流水线</text>
+
+  <!-- Program Order -->
+  <text x="100" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#4b5563">程序顺序:</text>
+  <rect x="50" y="95" width="80" height="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="90" y="120" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">A</text>
+
+  <rect x="140" y="95" width="80" height="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="180" y="120" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">B</text>
+
+  <rect x="230" y="95" width="80" height="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="270" y="120" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">C</text>
+
+  <rect x="320" y="95" width="80" height="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="360" y="120" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">D</text>
+
+  <!-- Arrow showing order -->
+  <line x1="130" y1="115" x2="140" y2="115" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="115" x2="230" y2="115" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="310" y1="115" x2="320" y2="115" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Actual Execution -->
+  <text x="100" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">实际执行:</text>
+
+  <rect x="50" y="200" width="80" height="50" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="90" y="225" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#166534">A</text>
+  <text x="90" y="242" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#15803d">Cycle 1</text>
+
+  <rect x="140" y="200" width="80" height="50" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="180" y="225" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#166534">C</text>
+  <text x="180" y="242" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#15803d">Cycle 2</text>
+
+  <rect x="230" y="200" width="80" height="50" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="270" y="225" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#166534">B</text>
+  <text x="270" y="242" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#15803d">Cycle 3</text>
+
+  <rect x="320" y="200" width="80" height="50" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="5" filter="url(#shadow)"/>
+  <text x="360" y="225" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#166534">D</text>
+  <text x="360" y="242" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#15803d">Cycle 4</text>
+
+  <!-- Arrow showing actual order -->
+  <line x1="130" y1="225" x2="140" y2="225" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="225" x2="230" y2="225" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="310" y1="225" x2="320" y2="225" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Reordering arrow -->
+  <path d="M 180 150 Q 180 175 180 200" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"/>
+  <text x="210" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#dc2626">重排序</text>
+
+  <!-- Explanation box -->
+  <rect x="450" y="80" width="330" height="280" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" rx="10" filter="url(#shadow)"/>
+  <text x="615" y="110" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#92400e">乱序执行原因</text>
+
+  <text x="470" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78350f">• B需要等待缓存未命中</text>
+  <text x="470" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78350f">• C的操作数已经就绪</text>
+  <text x="470" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78350f">• 处理器先执行C以获得</text>
+  <text x="485" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78350f">更好的流水线利用率</text>
+
+  <text x="470" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#92400e">关键约束:</text>
+  <text x="470" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#78350f">单线程内结果与程序顺序一致</text>
+  <text x="470" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#78350f">(数据依赖性保持不变)</text>
+  <text x="470" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#78350f">A→C→B→D 输出等价于 A→B→C→D</text>
+  <text x="470" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#78350f">仅当B和C无数据依赖时允许</text>
+</svg>

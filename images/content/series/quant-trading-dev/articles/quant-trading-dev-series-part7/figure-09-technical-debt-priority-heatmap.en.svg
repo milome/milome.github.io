@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-009" data-visual-pattern="matrix / heatmap 风格">
+  <title>Technical Debt Priority Heat Map</title>
+  <desc>Quantify the repayment sequence of trading system technical debt by impact and remediation cost assessment.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Technical Debt Priority Heat Map</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Impact area × repair cost determines</tspan><tspan x="600" dy="17.5">the order of repayment, rather than</tspan><tspan x="600" dy="17.5">scheduling by sound level.</tspan></text>
+
+  <text x="112" y="226" fill="#94a3b8" font-size="20">Influence area</text>
+  <text x="112" y="628.32" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="112" dy="0">Repair cost</tspan></text>
+  <g font-size="20" font-weight="700">
+    <rect x="226" y="214" width="244" height="112" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="290" y="262" fill="#a7f3d0" font-size="14"><tspan x="290" dy="0">Fast priority repayment</tspan></text>
+    <text x="292" y="282.04" fill="#e2e8f0" font-size="18"><tspan x="292" dy="0">Data semantics/test</tspan><tspan x="292" dy="21.96">entry</tspan></text>
+    <rect x="470" y="214" width="244" height="112" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="483.44" y="267.57" fill="#fde68a" font-size="15" text-anchor="start"><tspan x="483.44" dy="0">Repay in stages</tspan></text>
+    <text x="487.92" y="285.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="487.92" dy="0">Execution domain/complex</tspan><tspan x="487.92" dy="14.64">interface</tspan></text>
+    <rect x="714" y="214" width="244" height="112" fill="#111827" stroke="#f59e0b" stroke-width="3"/>
+    <text x="772" y="262" fill="#fde68a">ADR review debt</text>
+    <text x="774" y="284" fill="#e2e8f0" font-size="16"><tspan x="774" dy="0">Strategic</tspan><tspan x="774" dy="19.2">architecture</tspan><tspan x="774" dy="19.2">direction</tspan></text>
+
+    <rect x="226" y="326" width="244" height="112" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="292" y="374" fill="#a7f3d0" font-size="14"><tspan x="292" dy="0">Closed for the week</tspan></text>
+    <text x="292" y="394.04" fill="#e2e8f0" font-size="18"><tspan x="292" dy="0">Duplicate SQL /</tspan><tspan x="292" dy="21.96">small interface</tspan></text>
+    <rect x="470" y="326" width="244" height="112" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="534" y="374" fill="#bfdbfe" font-size="14"><tspan x="534" dy="0">monthly governance</tspan></text>
+    <text x="534" y="394.04" fill="#e2e8f0" font-size="18"><tspan x="534" dy="0">Renderer</tspan><tspan x="534" dy="21.96">splitting/caching</tspan></text>
+    <rect x="714" y="326" width="244" height="112" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="778" y="374" fill="#cbd5e1">keep an eye on</text>
+    <text x="778" y="394.04" fill="#94a3b8" font-size="18"><tspan x="778" dy="0">Avoid</tspan><tspan x="778" dy="21.96">over-engineering</tspan></text>
+
+    <rect x="226" y="438" width="244" height="112" fill="#111827" stroke="#475569" stroke-width="2"/>
+    <text x="294" y="498" fill="#94a3b8">Just record</text>
+    <rect x="470" y="438" width="244" height="112" fill="#111827" stroke="#475569" stroke-width="2"/>
+    <text x="538" y="498" fill="#94a3b8" font-size="14"><tspan x="538" dy="0">drain into observation</tspan><tspan x="538" dy="17.08">pool</tspan></text>
+    <rect x="714" y="438" width="244" height="112" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <text x="782" y="498" fill="#94a3b8">Not entering yet</text>
+  </g>
+  <rect x="166" y="608" width="780" height="76" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="193.3" y="636" fill="#f8fafc" font-size="14" text-anchor="start"><tspan x="193.3" y="636">Prioritize debt that affects real-time safety, data</tspan><tspan x="193.3" dy="16.52">correctness, or backtest consistency, and can be</tspan><tspan x="193.3" dy="16.52">verified in stages.</tspan></text>
+</svg>

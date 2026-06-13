@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-005" data-visual-pattern="容器边界图">
+  <title id="title">Backtest and live unified interface</title>
+  <desc id="desc">A diagram showing backtest and live adapters feeding the same strategy event interface.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="58" y="54" width="1164" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Unified Strategy Interface for backtesting and live trading</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">The difference remains in the adapter, the policy only</tspan><tspan x="640" dy="17.5">faces the unified event protocol</tspan></text>
+  <g fill="#1e293b" stroke="#475569" stroke-width="2">
+    <rect x="118" y="230" width="250" height="126" rx="24"/>
+    <rect x="118" y="422" width="250" height="126" rx="24"/>
+    <rect x="496" y="294" width="288" height="154" rx="28"/>
+    <rect x="910" y="230" width="250" height="126" rx="24"/>
+    <rect x="910" y="422" width="250" height="126" rx="24"/>
+  </g>
+  <g font-family="Arial" fill="#f8fafc">
+    <text x="134" y="292.6" font-size="18" font-weight="700" text-anchor="start"><tspan x="134" dy="0">historical event stream</tspan></text>
+    <text x="134" y="309.48" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="134" dy="0">Backtest Adapter</tspan></text>
+    <text x="134" y="484.6" font-size="18" font-weight="700" text-anchor="start"><tspan x="134" dy="0">Real offer event flow</tspan></text>
+    <text x="134" y="501.48" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="134" dy="0">Live Adapter</tspan></text>
+    <text x="544" y="350" font-size="25" font-weight="700">UnifiedStrategy</text>
+    <text x="544" y="386" fill="#94a3b8" font-size="18">on_market_event(event)</text>
+    <text x="926" y="292.6" font-size="18" font-weight="700" text-anchor="start"><tspan x="926" dy="0">Simulated matching</tspan></text>
+    <text x="926" y="309.48" fill="#94a3b8" font-size="12" text-anchor="start"><tspan x="926" dy="0">Simulated Broker</tspan></text>
+    <text x="1035" y="481.12" font-size="18" font-weight="700" text-anchor="middle"><tspan x="1035" dy="0">real commission</tspan></text>
+    <text x="1035" y="504" fill="#94a3b8" font-size="18" text-anchor="middle"><tspan x="1035" dy="0">Gateway Execution</tspan></text>
+  </g>
+  <g stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M368 294 C424 294 432 346 496 346" stroke="#60a5fa"/>
+    <path d="M368 486 C424 486 432 394 496 394" stroke="#38bdf8"/>
+    <path d="M784 346 C838 346 850 294 910 294" stroke="#10b981"/>
+    <path d="M784 394 C838 394 850 486 910 486" stroke="#f59e0b"/>
+  </g>
+  <rect x="418" y="552" width="444" height="54" rx="18" fill="#1e293b" stroke="#334155"/>
+  <text x="640" y="577.08" fill="#cbd5e1" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="568.5">Testing, backtesting, and actual review build</tspan><tspan x="640" dy="17.1">evidence around the same event protocol.</tspan></text>
+</svg>

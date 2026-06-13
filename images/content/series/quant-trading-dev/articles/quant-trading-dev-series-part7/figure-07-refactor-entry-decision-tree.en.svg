@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-007" data-visual-pattern="decision tree 风格">
+  <title>Refactoring into the decision tree</title>
+  <desc>Determine whether to enter refactoring based on real problems, evidence, test protection, rollback plans and team capacity.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Refactoring into the decision tree</text>
+  <text x="86" y="150" fill="#cbd5e1" font-size="22">Turn “wanting to change” into an evidence-driven judgment.</text>
+
+  <g font-size="22" font-weight="700">
+    <rect x="456" y="206" width="288" height="76" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="506" y="244.66" fill="#bfdbfe" font-size="13"><tspan x="506" dy="0">Has the real problem been</tspan><tspan x="506" dy="15.34">reproduced?</tspan></text>
+    <rect x="168" y="356" width="250" height="76" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="218" y="404" fill="#fde68a" font-size="14"><tspan x="218" dy="0">Supplement evidence first</tspan></text>
+    <rect x="476" y="356" width="250" height="76" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="526" y="404" fill="#bae6fd" font-size="13"><tspan x="526" dy="0">Is test protection adequate?</tspan></text>
+    <rect x="784" y="356" width="250" height="76" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="824" y="404" fill="#a7f3d0" font-size="14"><tspan x="824" dy="0">Is the rollback path clear?</tspan></text>
+    <rect x="476" y="520" width="250" height="76" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="526" y="568" fill="#fde68a">Test first</text>
+    <rect x="784" y="520" width="250" height="76" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="850" y="568" fill="#a7f3d0">Enter refactoring</text>
+  </g>
+  <g stroke="#64748b" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M540 282 L294 356"/>
+    <path d="M600 282 L600 356"/>
+    <path d="M680 282 L910 356"/>
+    <path d="M600 432 L600 520"/>
+    <path d="M910 432 L910 520"/>
+  </g>
+  <g fill="#94a3b8" font-size="18">
+    <text x="378" y="334">no</text>
+    <text x="616" y="334">yes</text>
+    <text x="820" y="334">yes</text>
+    <text x="618" y="486">no</text>
+    <text x="928" y="486">yes</text>
+  </g>
+  <rect x="170" y="632" width="860" height="48" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="198" y="660" fill="#94a3b8" font-size="14" text-anchor="start"><tspan x="198" y="660">When capacity or release windows are tight, reduce</tspan><tspan x="198" dy="16.52">slices even if refactoring is valid.</tspan></text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-001" data-visual-pattern="timeline 风格">
+  <title>五次重构因果时间线</title>
+  <desc>从数据边界、计算状态、图表边界、渲染成本到执行域隔离的连续演进。</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">五次重构因果时间线</text>
+  <text x="86" y="150" fill="#cbd5e1" font-size="22">每一次重构都承接上一阶段暴露出的失控信号，并留下下一阶段可验证的边界。</text>
+
+  <line x1="164" y1="276" x2="1036" y2="276" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <g font-size="20" font-weight="700">
+    <circle cx="164" cy="276" r="22" fill="#1e293b" stroke="#60a5fa" stroke-width="4"/>
+    <circle cx="382" cy="276" r="22" fill="#1e293b" stroke="#10b981" stroke-width="4"/>
+    <circle cx="600" cy="276" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="4"/>
+    <circle cx="818" cy="276" r="22" fill="#1e293b" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="1036" cy="276" r="22" fill="#1e293b" stroke="#60a5fa" stroke-width="4"/>
+  </g>
+
+  <g font-size="21">
+    <rect x="82" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="112" y="378" fill="#bfdbfe" font-weight="700">1 数据边界</text>
+    <text x="106" y="420" fill="#e2e8f0">UI 退出</text>
+    <text x="106" y="452" fill="#e2e8f0">数据语义</text>
+    <text x="106" y="492" fill="#94a3b8" font-size="18">测试入口出现</text>
+
+    <rect x="300" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="328" y="378" fill="#a7f3d0" font-weight="700">2 计算状态</text>
+    <text x="324" y="420" fill="#e2e8f0">全量重算</text>
+    <text x="324" y="452" fill="#e2e8f0">改为增量</text>
+    <text x="324" y="492" fill="#94a3b8" font-size="18">浪费收敛</text>
+
+    <rect x="518" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="546" y="378" fill="#bae6fd" font-weight="700">3 图表边界</text>
+    <text x="542" y="420" fill="#e2e8f0">God Object</text>
+    <text x="542" y="452" fill="#e2e8f0">拆成职责</text>
+    <text x="542" y="492" fill="#94a3b8" font-size="18">交互可维护</text>
+
+    <rect x="736" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="764" y="378" fill="#fde68a" font-weight="700">4 渲染成本</text>
+    <text x="760" y="420" fill="#e2e8f0">只处理</text>
+    <text x="760" y="452" fill="#e2e8f0">可见窗口</text>
+    <text x="760" y="492" fill="#94a3b8" font-size="18">拖拽缩放稳定</text>
+
+    <rect x="954" y="334" width="164" height="184" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="982" y="378" fill="#bfdbfe" font-weight="700">5 执行隔离</text>
+    <text x="978" y="420" fill="#e2e8f0">多进程</text>
+    <text x="978" y="452" fill="#e2e8f0">失败域</text>
+    <text x="978" y="492" fill="#94a3b8" font-size="18">UI 不被拖垮</text>
+  </g>
+
+  <rect x="138" y="574" width="924" height="70" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="174" y="618" fill="#f8fafc" font-size="22">阅读重点：不要只看目录如何变干净，要看每一步是否减少了错误、延迟或协作成本。</text>
+</svg>

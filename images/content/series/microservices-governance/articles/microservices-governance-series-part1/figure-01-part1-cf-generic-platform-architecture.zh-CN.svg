@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">通用企业级 Cloud Foundry 平台运行架构</title>
+  <desc id="desc">展示外部客户端经由平台入口、应用入口、身份服务进入 Cloud Foundry 运行时，并按扩展账户体系访问数据生态的通用分层架构。</desc>
+  <defs>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .font { font-family: "Segoe UI", Arial, sans-serif; }
+      .title { font-size: 23px; font-weight: 700; fill: #f8fafc; }
+      .subtitle { font-size: 13px; fill: #94a3b8; }
+      .h2 { font-size: 16px; font-weight: 700; }
+      .txt { font-size: 12px; fill: #e2e8f0; }
+      .muted { font-size: 11px; fill: #94a3b8; }
+      .caption { font-size: 12px; fill: #64748b; }
+      .panel { fill: #111827; stroke: #334155; stroke-width: 1.5; }
+      .module { fill: #1e293b; stroke: #334155; stroke-width: 1.5; }
+      .entry { fill: #1e293b; stroke: #60a5fa; stroke-width: 2; }
+      .runtime { fill: #1e293b; stroke: #10b981; stroke-width: 2; }
+      .identity { fill: #0f172a; stroke: #f59e0b; stroke-width: 2; }
+      .feedback { fill: #0f172a; stroke: #38bdf8; stroke-width: 2; }
+      .line { fill: none; stroke: #64748b; stroke-width: 2; marker-end: url(#arrow); }
+      .weakline { fill: none; stroke: #475569; stroke-width: 1.5; stroke-dasharray: 6 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" class="panel"/>
+
+  <text x="450" y="66" text-anchor="middle" class="font title">通用企业级 Cloud Foundry 平台运行架构</text>
+  <text x="450" y="92" text-anchor="middle" class="font subtitle">Entry Routing / Identity / Runtime / Extension-account Data Boundary</text>
+
+  <g filter="url(#shadow)" class="font">
+    <rect x="72" y="142" width="160" height="116" rx="16" class="entry"/>
+    <text x="152" y="174" text-anchor="middle" class="h2" fill="#bfdbfe">外部客户端</text>
+    <text x="152" y="198" text-anchor="middle" class="txt">Web / Mobile / Device</text>
+    <text x="152" y="220" text-anchor="middle" class="muted">HTTPS + OAuth2/OIDC</text>
+
+    <rect x="286" y="122" width="542" height="346" rx="20" class="panel"/>
+    <text x="310" y="154" class="h2" fill="#f8fafc">Cloud Foundry Platform Boundary</text>
+    <text x="310" y="176" class="muted">平台接管路由、调度、运行时和可观测入口</text>
+
+    <rect x="316" y="204" width="482" height="54" rx="12" class="entry"/>
+    <text x="557" y="228" text-anchor="middle" class="h2" fill="#bfdbfe">CF Gorouter</text>
+    <text x="557" y="246" text-anchor="middle" class="muted">平台路由、TLS 终止、负载均衡</text>
+
+    <rect x="316" y="286" width="282" height="74" rx="12" class="feedback"/>
+    <text x="457" y="316" text-anchor="middle" class="h2" fill="#bae6fd">Application Router</text>
+    <text x="457" y="338" text-anchor="middle" class="txt">识别扩展账户上下文并转发</text>
+
+    <rect x="626" y="286" width="172" height="74" rx="12" class="identity"/>
+    <text x="712" y="313" text-anchor="middle" class="h2" fill="#fde68a">身份服务</text>
+    <text x="712" y="335" text-anchor="middle" class="txt">OAuth2/OIDC</text>
+    <text x="712" y="352" text-anchor="middle" class="muted">JWT + Scopes</text>
+
+    <rect x="316" y="392" width="482" height="54" rx="12" class="runtime"/>
+    <text x="557" y="416" text-anchor="middle" class="h2" fill="#a7f3d0">Runtime Cells / Workloads</text>
+    <text x="557" y="434" text-anchor="middle" class="muted">Service A / Service B / Async Jobs / Policy Checks</text>
+  </g>
+
+  <g class="font">
+    <rect x="120" y="314" width="112" height="54" rx="12" class="module"/>
+    <text x="176" y="337" text-anchor="middle" class="txt">审计与观测</text>
+    <text x="176" y="355" text-anchor="middle" class="muted">Telemetry</text>
+
+    <rect x="286" y="490" width="542" height="22" rx="11" fill="#111827" stroke="#475569" stroke-width="1.2"/>
+    <text x="557" y="505" text-anchor="middle" class="caption">数据生态按扩展账户体系隔离：Relational DB / Object Storage / Event Bus</text>
+  </g>
+
+  <path d="M232 200 L316 230" class="line"/>
+  <path d="M557 258 L557 286" class="line"/>
+  <path d="M598 323 L626 323" class="weakline"/>
+  <path d="M457 360 L457 392" class="line"/>
+  <path d="M712 360 L600 392" class="weakline"/>
+  <path d="M557 446 L557 490" class="line"/>
+  <path d="M316 420 L232 344" class="weakline"/>
+
+  <text x="450" y="542" text-anchor="middle" class="font caption">Figure 1. 平台负责入口与运行时抽象，应用入口负责账户上下文，身份服务负责令牌与权限边界。</text>
+</svg>

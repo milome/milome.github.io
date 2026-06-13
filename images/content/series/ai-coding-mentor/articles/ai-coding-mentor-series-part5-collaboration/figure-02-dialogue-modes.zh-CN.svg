@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">三种对话模式的风险控制</title>
+  <desc id="desc">展示引导式、协作式和对抗式对话分别用于澄清、交付和验证，并共同服务于人类 Mentor 的对话控制。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">三种对话模式的风险控制</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">模式不是聊天技巧，而是决定什么时候澄清、什么时候交付、什么时候压测</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="76" y="156" width="210" height="186" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="181" y="191" text-anchor="middle" font-size="18" font-weight="700" fill="#bfdbfe">引导式</text>
+    <text x="181" y="219" text-anchor="middle" font-size="12" fill="#cbd5e1">用于澄清和学习</text>
+    <line x1="112" y1="242" x2="250" y2="242" stroke="#334155" stroke-width="1"/>
+    <text x="181" y="272" text-anchor="middle" font-size="13" fill="#e2e8f0">暴露假设</text>
+    <text x="181" y="300" text-anchor="middle" font-size="13" fill="#e2e8f0">补齐约束</text>
+    <text x="181" y="326" text-anchor="middle" font-size="12" fill="#94a3b8">风险：过早实现</text>
+
+    <rect x="345" y="156" width="210" height="186" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="450" y="191" text-anchor="middle" font-size="18" font-weight="700" fill="#bae6fd">协作式</text>
+    <text x="450" y="219" text-anchor="middle" font-size="12" fill="#cbd5e1">用于交付和集成</text>
+    <line x1="381" y1="242" x2="519" y2="242" stroke="#334155" stroke-width="1"/>
+    <text x="450" y="272" text-anchor="middle" font-size="13" fill="#e2e8f0">分工推进</text>
+    <text x="450" y="300" text-anchor="middle" font-size="13" fill="#e2e8f0">阶段验收</text>
+    <text x="450" y="326" text-anchor="middle" font-size="12" fill="#94a3b8">风险：范围发散</text>
+
+    <rect x="614" y="156" width="210" height="186" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="719" y="191" text-anchor="middle" font-size="18" font-weight="700" fill="#fde68a">对抗式</text>
+    <text x="719" y="219" text-anchor="middle" font-size="12" fill="#cbd5e1">用于验证和压测</text>
+    <line x1="650" y1="242" x2="788" y2="242" stroke="#334155" stroke-width="1"/>
+    <text x="719" y="272" text-anchor="middle" font-size="13" fill="#e2e8f0">极端输入</text>
+    <text x="719" y="300" text-anchor="middle" font-size="13" fill="#e2e8f0">反例和边界</text>
+    <text x="719" y="326" text-anchor="middle" font-size="12" fill="#94a3b8">风险：无目标争论</text>
+
+    <rect x="285" y="398" width="330" height="58" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="423" text-anchor="middle" font-size="16" font-weight="700" fill="#f8fafc">Mentor 对话控制</text>
+    <text x="450" y="446" text-anchor="middle" font-size="12" fill="#cbd5e1">按任务阶段切换模式，避免过早实现、范围发散和无证据争论</text>
+  </g>
+
+  <path d="M181 342 C230 390, 260 410, 281 420" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M450 342 L450 394" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M719 342 C670 390, 640 410, 619 420" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="506" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 2. 三种模式分别控制需求不清、交付发散和边界遗漏，真实任务中需要按阶段切换。</text>
+</svg>

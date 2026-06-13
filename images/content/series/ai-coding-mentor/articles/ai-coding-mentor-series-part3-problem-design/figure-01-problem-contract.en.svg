@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Task contracts for evaluable programming problems</title>
+  <desc id="desc">Demonstrate the transformation relationship from fuzzy requirements to task goals, interface contracts, data constraints, behavioral constraints, example contracts and acceptance contracts.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Task contracts for evaluable programming problems</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">Good questions turn implicit assumptions into</tspan><tspan x="450" dy="17.5">reproducible scoring boundaries</tspan></text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="62" y="214" width="156" height="104" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="140" y="248.8" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="140" dy="0">Fuzzy task</tspan></text>
+    <text x="140" y="266" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="140" dy="0">Sort function</tspan></text>
+    <text x="140" y="282.56" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="140" dy="0">Rules guessed</tspan></text>
+
+    <rect x="292" y="122" width="138" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="361" y="152.38" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="361" dy="0">objectives</tspan></text>
+    <text x="361" y="168.78" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="361" dy="0">Scenarios and</tspan><tspan x="361" dy="14.16">priorities</tspan></text>
+
+    <rect x="472" y="122" width="138" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="541" y="159.34" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="541" dy="0">interface</tspan></text>
+    <text x="541" y="175.74" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="541" dy="0">Params / returns</tspan></text>
+
+    <rect x="652" y="122" width="138" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="721" y="159.34" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="721" dy="0">data constraints</tspan></text>
+    <text x="721" y="175.74" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="721" dy="0">Size and value range</tspan></text>
+
+    <rect x="292" y="316" width="138" height="78" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="361" y="338.92" text-anchor="middle" font-size="13.5" font-weight="700" fill="#bae6fd"><tspan x="361" y="338.92">behavioral</tspan><tspan x="361" dy="15.66">constraints</tspan></text>
+    <text x="361" y="370.58" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="361" y="370.58">Boundary and Exception</tspan><tspan x="361" dy="14">Strategies</tspan></text>
+
+    <rect x="472" y="316" width="138" height="78" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="541" y="346.38" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="541" dy="0">Sample contract</tspan></text>
+    <text x="541" y="362.78" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="541" dy="0">Calibration of</tspan><tspan x="541" dy="14.16">question meaning</tspan></text>
+
+    <rect x="652" y="316" width="138" height="78" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="721" y="343.9" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0"><tspan x="721" dy="0">acceptance</tspan><tspan x="721" dy="16.52">contract</tspan></text>
+    <text x="721" y="377.94" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="721" dy="0">tests and rubrics</tspan></text>
+
+    <rect x="392" y="226" width="216" height="84" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="500" y="258.75" text-anchor="middle" font-size="13" font-weight="700" fill="#f8fafc"><tspan x="500" dy="0">Reproducible scoring</tspan></text>
+    <text x="500" y="274.91" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="500" dy="0">Compare different models under the</tspan><tspan x="500" dy="14.16">same contract</tspan></text>
+  </g>
+
+  <path d="M218 266 C252 238, 262 190, 288 164" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M218 266 C274 254, 318 250, 388 258" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M430 161 L468 161" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M610 161 L648 161" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M721 200 C722 248, 722 276, 721 312" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M652 355 L614 355" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M472 355 L434 355" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M392 274 C358 292, 352 304, 358 312" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M608 274 C652 286, 682 302, 704 313" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+
+</svg>

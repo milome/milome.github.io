@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hlluan.com/sitemap-index.xml

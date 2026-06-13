@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">OTel Collector 统一采集 Pipeline</title>
+  <desc id="desc">展示业务服务经由接收器、处理器、导出器进入观测后端的统一采集流程。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">OTel Collector 统一采集 Pipeline</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Receiver, processor and exporter as the platform telemetry contract</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="82" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="151" y="211" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">业务服务</text>
+    <text x="151" y="234" text-anchor="middle" font-size="12" fill="#e2e8f0">Instrumented Services</text>
+    <rect x="272" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="341" y="211" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">接收器</text>
+    <text x="341" y="234" text-anchor="middle" font-size="12" fill="#e2e8f0">OTLP Receiver</text>
+    <rect x="462" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="531" y="211" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">处理器</text>
+    <text x="531" y="234" text-anchor="middle" font-size="12" fill="#e2e8f0">Batch / Sampling</text>
+    <rect x="652" y="174" width="138" height="98" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="721" y="211" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">导出器</text>
+    <text x="721" y="234" text-anchor="middle" font-size="12" fill="#e2e8f0">Exporter Routing</text>
+    <rect x="284" y="342" width="332" height="82" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="450" y="374" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">观测后端</text>
+    <text x="450" y="398" text-anchor="middle" font-size="12" fill="#e2e8f0">Metrics / Logs / Traces Backends</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="220" y1="223" x2="262" y2="223"/>
+      <line x1="410" y1="223" x2="452" y2="223"/>
+      <line x1="600" y1="223" x2="642" y2="223"/>
+      <path d="M 721 272 C 721 328 616 344 616 374"/>
+    </g>
+    <text x="450" y="464" text-anchor="middle" font-size="12" fill="#94a3b8">Collector 的价值不是“多一个组件”，而是把遥测采集变成可治理、可审计、可迁移的平台契约。</text>
+  </g>
+</svg>

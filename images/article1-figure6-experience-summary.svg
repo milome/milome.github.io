@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#F8F6F1"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#1A2B4A">
+    AI辅助设计的经验总结
+  </text>
+
+  <!-- AI Value Section -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="350" height="180" fill="#FFFFFF" stroke="#C4786A" stroke-width="2" rx="8"/>
+    <text x="175" y="30" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="bold" fill="#C4786A">AI的价值</text>
+
+    <g transform="translate(20, 50)">
+      <rect x="0" y="0" width="310" height="28" fill="#FFF5F3" rx="3"/>
+      <text x="10" y="19" font-family="Georgia" font-size="11" fill="#1A2B4A">穷举能力</text>
+      <text x="200" y="19" font-family="Georgia" font-size="11" fill="#6B7B8C">系统性列出边界情况</text>
+
+      <rect x="0" y="32" width="310" height="28" fill="#FFF5F3" rx="3"/>
+      <text x="10" y="51" font-family="Georgia" font-size="11" fill="#1A2B4A">模式识别</text>
+      <text x="200" y="51" font-family="Georgia" font-size="11" fill="#6B7B8C">从需求抽象通用模式</text>
+
+      <rect x="0" y="64" width="310" height="28" fill="#FFF5F3" rx="3"/>
+      <text x="10" y="83" font-family="Georgia" font-size="11" fill="#1A2B4A">快速原型</text>
+      <text x="200" y="83" font-family="Georgia" font-size="11" fill="#6B7B8C">生成可运行代码框架</text>
+
+      <rect x="0" y="96" width="310" height="28" fill="#FFF5F3" rx="3"/>
+      <text x="10" y="115" font-family="Georgia" font-size="11" fill="#1A2B4A">知识整合</text>
+      <text x="200" y="115" font-family="Georgia" font-size="11" fill="#6B7B8C">融合时区+金融+Python</text>
+    </g>
+  </g>
+
+  <!-- Human Value Section -->
+  <g transform="translate(400, 80)">
+    <rect x="0" y="0" width="350" height="180" fill="#FFFFFF" stroke="#2A4A7A" stroke-width="2" rx="8"/>
+    <text x="175" y="30" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="bold" fill="#2A4A7A">人类的关键决策</text>
+
+    <g transform="translate(20, 50)">
+      <rect x="0" y="0" width="310" height="28" fill="#F0F4F8" rx="3"/>
+      <text x="10" y="19" font-family="Georgia" font-size="11" fill="#1A2B4A">业务规则确认</text>
+      <text x="200" y="19" font-family="Georgia" font-size="11" fill="#6B7B8C">"周一Rollback"是业务规则</text>
+
+      <rect x="0" y="32" width="310" height="28" fill="#F0F4F8" rx="3"/>
+      <text x="10" y="51" font-family="Georgia" font-size="11" fill="#1A2B4A">性能与可读性权衡</text>
+      <text x="200" y="51" font-family="Georgia" font-size="11" fill="#6B7B8C">选择清晰而非过度优化</text>
+
+      <rect x="0" y="64" width="310" height="28" fill="#F0F4F8" rx="3"/>
+      <text x="10" y="83" font-family="Georgia" font-size="11" fill="#1A2B4A">异常处理策略</text>
+      <text x="200" y="83" font-family="Georgia" font-size="11" fill="#6B7B8C">返回None而非抛出异常</text>
+
+      <rect x="0" y="96" width="310" height="28" fill="#F0F4F8" rx="3"/>
+      <text x="10" y="115" font-family="Georgia" font-size="11" fill="#1A2B4A">代码审查</text>
+      <text x="200" y="115" font-family="Georgia" font-size="11" fill="#6B7B8C">确保符合团队规范</text>
+    </g>
+  </g>
+
+  <!-- Efficiency Comparison -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="700" height="140" fill="#FFFFFF" stroke="#E8E4DC" stroke-width="1" rx="8"/>
+    <text x="350" y="30" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="bold" fill="#1A2B4A">效率提升对比</text>
+
+    <!-- Table header -->
+    <line x1="50" y1="45" x2="650" y2="45" stroke="#E8E4DC" stroke-width="1"/>
+    <text x="150" y="60" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="bold" fill="#1A2B4A">任务</text>
+    <text x="320" y="60" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="bold" fill="#1A2B4A">人工</text>
+    <text x="460" y="60" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="bold" fill="#1A2B4A">AI辅助</text>
+    <text x="580" y="60" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="bold" fill="#C4786A">提升</text>
+
+    <!-- Row 1 -->
+    <line x1="50" y1="70" x2="650" y2="70" stroke="#F0F0F0" stroke-width="1"/>
+    <text x="150" y="83" text-anchor="middle" font-family="Georgia" font-size="10" fill="#1A2B4A">边界枚举</text>
+    <text x="320" y="83" text-anchor="middle" font-family="Georgia" font-size="10" fill="#6B7B8C">2小时</text>
+    <text x="460" y="83" text-anchor="middle" font-family="Georgia" font-size="10" fill="#5A8A6E">5分钟</text>
+    <text x="580" y="83" text-anchor="middle" font-family="Georgia" font-size="10" fill="#C4786A" font-weight="bold">24x</text>
+
+    <!-- Row 2 -->
+    <line x1="50" y1="93" x2="650" y2="93" stroke="#F0F0F0" stroke-width="1"/>
+    <text x="150" y="106" text-anchor="middle" font-family="Georgia" font-size="10" fill="#1A2B4A">测试生成</text>
+    <text x="320" y="106" text-anchor="middle" font-family="Georgia" font-size="10" fill="#6B7B8C">1小时</text>
+    <text x="460" y="106" text-anchor="middle" font-family="Georgia" font-size="10" fill="#5A8A6E">3分钟</text>
+    <text x="580" y="106" text-anchor="middle" font-family="Georgia" font-size="10" fill="#C4786A" font-weight="bold">20x</text>
+
+    <!-- Row 3 -->
+    <line x1="50" y1="116" x2="650" y2="116" stroke="#F0F0F0" stroke-width="1"/>
+    <text x="150" y="129" text-anchor="middle" font-family="Georgia" font-size="10" fill="#1A2B4A">代码审查</text>
+    <text x="320" y="129" text-anchor="middle" font-family="Georgia" font-size="10" fill="#6B7B8C">30分钟</text>
+    <text x="460" y="129" text-anchor="middle" font-family="Georgia" font-size="10" fill="#5A8A6E">2分钟</text>
+    <text x="580" y="129" text-anchor="middle" font-family="Georgia" font-size="10" fill="#C4786A" font-weight="bold">15x</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="state diagram 风格">
+  <title id="title">Async network failure state machine</title>
+  <desc id="desc">A state machine for async network failure handling from connected to timeout, retry, degraded mode, recovered and closed states.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">异步网络失败状态机 / Network Failure States</text>
+  <text x="96" y="148" fill="#94a3b8" font-family="Arial" font-size="18">超时、重试、降级和恢复必须是显式状态，而不是散落日志</text>
+  <g font-family="Arial">
+    <rect x="110" y="292" width="154" height="86" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="322" y="292" width="154" height="86" rx="20" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="534" y="292" width="154" height="86" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="746" y="292" width="154" height="86" rx="20" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="958" y="292" width="154" height="86" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="534" y="486" width="154" height="76" rx="20" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <text x="140" y="342" fill="#f8fafc" font-size="20" font-weight="700">Connected</text>
+    <text x="358" y="342" fill="#f8fafc" font-size="20" font-weight="700">Timeout</text>
+    <text x="580" y="342" fill="#f8fafc" font-size="20" font-weight="700">Retry</text>
+    <text x="778" y="342" fill="#f8fafc" font-size="20" font-weight="700">Degraded</text>
+    <text x="994" y="342" fill="#f8fafc" font-size="20" font-weight="700">Recovered</text>
+    <text x="578" y="532" fill="#f8fafc" font-size="20" font-weight="700">Closed</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M264 335 H322"/>
+    <path d="M476 335 H534"/>
+    <path d="M688 335 H746"/>
+    <path d="M900 335 H958"/>
+    <path d="M1035 378 C986 462 752 526 688 526"/>
+    <path d="M611 378 V486"/>
+  </g>
+  <g font-family="Arial">
+    <rect x="144" y="598" width="992" height="42" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="174" y="626" fill="#cbd5e1" font-size="18">测试重点：重试上限、降级条件、恢复确认、关闭清理和孤立任务检测。</text>
+  </g>
+</svg>

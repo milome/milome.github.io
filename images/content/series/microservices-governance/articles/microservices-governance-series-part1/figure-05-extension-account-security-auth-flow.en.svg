@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" width="940" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Expanded account system security authentication link</title>
+  <desc id="desc">Demonstrate the responsibilities of AppRouter, OAuth2 OIDC Identity Service, JWT and downstream microservices in identity propagation and authorization control.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="940" height="600" fill="#0f172a"/>
+  <rect x="30" y="30" width="880" height="540" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="470" y="66" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Account security auth flow</text>
+  <text x="470" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8"><tspan x="470" y="81.5">AppRouter → Identity → JWT Claims</tspan><tspan x="470" dy="17.1">→ Service Authorization</tspan></text>
+
+  <g filter="url(#shadow)" font-family="Segoe UI, Arial, sans-serif">
+    <rect x="84" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="172" y="196.33" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="172" dy="0">entrance level</tspan></text>
+    <text x="172" y="214.03" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="172" dy="0">AppRouter</tspan></text>
+    <text x="172" y="231.19" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="172" dy="0">Identify extended account</tspan><tspan x="172" dy="14.16">context</tspan></text>
+    <text x="172" y="262.51" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="172" dy="0">Resolve Account Context</tspan></text>
+
+    <rect x="292" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="380" y="193" text-anchor="middle" font-size="13" font-weight="700" fill="#a7f3d0"><tspan x="380" dy="0">Identity layer</tspan></text>
+    <text x="380" y="216" text-anchor="middle" font-size="12" fill="#e2e8f0" font-weight="700"><tspan x="380" dy="0">CF UAA / OAuth2</tspan></text>
+    <text x="380" y="239" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="380" dy="0">OIDC identity service</tspan></text>
+    <text x="380" y="262" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="380" dy="0">Identity Zone + IdP</tspan></text>
+
+    <rect x="500" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="588" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">token layer</text>
+    <text x="588" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">JWT Claims</text>
+    <text x="588" y="244" text-anchor="middle" font-size="12" fill="#e2e8f0">account / user / scopes</text>
+    <text x="588" y="262" text-anchor="middle" font-size="12" fill="#94a3b8">Signed Access Token</text>
+
+    <rect x="708" y="166" width="176" height="114" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="796" y="196.33" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="796" dy="0">service layer</tspan></text>
+    <text x="796" y="214.03" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="796" dy="0">Microservices</tspan></text>
+    <text x="796" y="231.19" text-anchor="middle" font-size="12" fill="#e2e8f0"><tspan x="796" dy="0">scope verification + data</tspan><tspan x="796" dy="14.16">access control</tspan></text>
+    <text x="796" y="262.51" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="796" dy="0">AuthZ + Data Guardrails</tspan></text>
+  </g>
+
+  <line x1="260" y1="223" x2="292" y2="223" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="468" y1="223" x2="500" y2="223" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="676" y1="223" x2="708" y2="223" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="84" y="324" width="800" height="98" rx="12" fill="#0f172a" stroke="#334155"/>
+    <text x="112" y="354.64" font-size="13" font-weight="700" fill="#fde68a" text-anchor="start"><tspan x="112" y="354.64">Risk Points</tspan></text>
+    <text x="112" y="375.64" font-size="14" fill="#cbd5e1" text-anchor="start"><tspan x="112" y="375.64">1) Account drift: domain/header mismatch</tspan></text>
+    <text x="112" y="413.16" font-size="14" fill="#cbd5e1" text-anchor="start"><tspan x="112" y="413.16">2) Permission amplification: broad defaults</tspan></text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="84" y="438" width="800" height="98" rx="12" fill="#0f172a" stroke="#334155"/>
+    <text x="112" y="468.64" font-size="13" font-weight="700" fill="#a7f3d0" text-anchor="start"><tspan x="112" y="468.64">Governance Controls / Controls</tspan></text>
+    <text x="112" y="489.64" font-size="14" fill="#cbd5e1" text-anchor="start"><tspan x="112" y="489.64">A) Standardize sync/async context</tspan></text>
+    <text x="112" y="527.16" font-size="14" fill="#cbd5e1" text-anchor="start"><tspan x="112" y="527.16">B) Least privilege + audit + checks</tspan></text>
+  </g>
+
+
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">可观测上下文桥接</title>
+  <desc id="desc">展示分散采集的日志、指标、链路如何通过 Trace Context 和 OpenTelemetry Collector 变成可用于治理决策的统一信号。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">可观测上下文桥接</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Observability context bridge from fragmented signals to governance decisions</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="78" y="170" width="155" height="104" rx="14" fill="#111827" stroke="#475569" stroke-width="1.5"/>
+    <text x="156" y="208" text-anchor="middle" font-size="15" font-weight="700" fill="#cbd5e1">分散信号</text>
+    <text x="156" y="231" text-anchor="middle" font-size="12" fill="#e2e8f0">Fragmented Signals</text>
+    <text x="156" y="252" text-anchor="middle" font-size="11" fill="#94a3b8">logs / metrics / traces</text>
+    <rect x="278" y="170" width="155" height="104" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="356" y="208" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">上下文传播</text>
+    <text x="356" y="231" text-anchor="middle" font-size="12" fill="#e2e8f0">Trace Context</text>
+    <text x="356" y="252" text-anchor="middle" font-size="11" fill="#94a3b8">request identity</text>
+    <rect x="478" y="170" width="155" height="104" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="556" y="208" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">统一管道</text>
+    <text x="556" y="231" text-anchor="middle" font-size="12" fill="#e2e8f0">OTel Collector</text>
+    <text x="556" y="252" text-anchor="middle" font-size="11" fill="#94a3b8">normalize and route</text>
+    <rect x="678" y="170" width="155" height="104" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="756" y="208" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">治理决策</text>
+    <text x="756" y="231" text-anchor="middle" font-size="12" fill="#e2e8f0">Governance Decision</text>
+    <text x="756" y="252" text-anchor="middle" font-size="11" fill="#94a3b8">SLO / route / rollback</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="233" y1="222" x2="268" y2="222"/>
+      <line x1="433" y1="222" x2="468" y2="222"/>
+      <line x1="633" y1="222" x2="668" y2="222"/>
+    </g>
+    <rect x="164" y="340" width="572" height="72" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="450" y="372" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">关键约束 / Key Constraint</text>
+    <text x="450" y="396" text-anchor="middle" font-size="12" fill="#cbd5e1">没有稳定上下文，更多数据只会制造更多噪声；治理必须先有可关联信号。</text>
+  </g>
+</svg>

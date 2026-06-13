@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-002" data-visual-pattern="sequence diagram 风格">
+  <title id="title">requirement to implementation sequence</title>
+  <desc id="desc">Sequence style diagram mapping a trading calendar requirement to interface, fixture, tests and acceptance evidence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="56" y="52" width="1168" height="616" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="92" y="112" fill="#f8fafc" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">Requirement-to-implementation trace</text>
+  <text x="640" y="144" fill="#cbd5e1" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="144">Every trading-calendar rule must land</tspan><tspan x="640" dy="17.5">in an interface, fixture, test, and</tspan><tspan x="640" dy="17.5">acceptance record.</tspan></text>
+
+  <g stroke="#475569" stroke-width="2" stroke-dasharray="8 8">
+    <line x1="168" y1="238" x2="168" y2="548"/>
+    <line x1="342" y1="238" x2="342" y2="548"/>
+    <line x1="516" y1="238" x2="516" y2="548"/>
+    <line x1="690" y1="238" x2="690" y2="548"/>
+    <line x1="864" y1="238" x2="864" y2="548"/>
+    <line x1="1038" y1="238" x2="1038" y2="548"/>
+  </g>
+
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="92" y="190" width="152" height="54" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="266" y="190" width="152" height="54" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="440" y="190" width="152" height="54" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="614" y="190" width="152" height="54" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="788" y="190" width="152" height="54" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="962" y="190" width="152" height="54" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <text x="168" y="223" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700"><tspan x="168" dy="0">business constraints</tspan></text>
+    <text x="342" y="224" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="700">Specification</text>
+    <text x="516" y="224" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="700">interface</text>
+    <text x="690" y="224" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="700">Fixture</text>
+    <text x="864" y="224" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="700">test</text>
+    <text x="1038" y="224" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="700">evidence</text>
+
+    <g fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+      <path d="M180 300 H318"/>
+      <path d="M354 352 H492"/>
+      <path d="M528 404 H666"/>
+      <path d="M702 456 H840"/>
+      <path d="M876 508 H1014"/>
+    </g>
+
+    <text x="249" y="288" text-anchor="middle" fill="#cbd5e1" font-size="18">T+1 vesting</text>
+    <text x="423" y="340" text-anchor="middle" fill="#cbd5e1" font-size="18">US / FR / SC</text>
+    <text x="597" y="392" text-anchor="middle" fill="#cbd5e1" font-size="18">get_trading_day</text>
+    <text x="771" y="444" text-anchor="middle" fill="#cbd5e1" font-size="18">Friday 23:30</text>
+    <text x="945" y="496" text-anchor="middle" fill="#cbd5e1" font-size="18">pytest + benchmark</text>
+
+    <rect x="226" y="586" width="828" height="52" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="254" y="610" text-anchor="start" fill="#bae6fd" font-size="14"><tspan x="254" y="610">Without fixtures and acceptance evidence,</tspan><tspan x="254" dy="16.52">the real trading path cannot be entered.</tspan></text>
+  </g>
+</svg>

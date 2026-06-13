@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-009" data-visual-pattern="matrix / heatmap 风格">
+  <title>技术债务优先级热图</title>
+  <desc>按影响面和修复成本评估量化交易系统技术债务的偿还顺序。</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">技术债务优先级热图</text>
+  <text x="86" y="150" fill="#cbd5e1" font-size="22">影响面 × 修复成本决定偿还顺序，而不是按声音大小排期。</text>
+
+  <text x="112" y="226" fill="#94a3b8" font-size="20">影响面</text>
+  <text x="870" y="638" fill="#94a3b8" font-size="20">修复成本</text>
+  <g font-size="20" font-weight="700">
+    <rect x="226" y="214" width="244" height="112" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="290" y="262" fill="#a7f3d0">快速优先偿还</text>
+    <text x="292" y="294" fill="#e2e8f0" font-size="18">数据语义 / 测试入口</text>
+    <rect x="470" y="214" width="244" height="112" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="532" y="262" fill="#fde68a">拆成阶段偿还</text>
+    <text x="532" y="294" fill="#e2e8f0" font-size="18">执行域 / 复杂接口</text>
+    <rect x="714" y="214" width="244" height="112" fill="#111827" stroke="#f59e0b" stroke-width="3"/>
+    <text x="772" y="262" fill="#fde68a">ADR 复审债务</text>
+    <text x="774" y="294" fill="#e2e8f0" font-size="18">战略折中 / 架构方向</text>
+
+    <rect x="226" y="326" width="244" height="112" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="292" y="374" fill="#a7f3d0">当周关闭</text>
+    <text x="292" y="406" fill="#e2e8f0" font-size="18">重复 SQL / 小接口</text>
+    <rect x="470" y="326" width="244" height="112" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="534" y="374" fill="#bfdbfe">月度治理</text>
+    <text x="534" y="406" fill="#e2e8f0" font-size="18">渲染器拆分 / 缓存</text>
+    <rect x="714" y="326" width="244" height="112" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="778" y="374" fill="#cbd5e1">保持观察</text>
+    <text x="778" y="406" fill="#94a3b8" font-size="18">避免过度工程化</text>
+
+    <rect x="226" y="438" width="244" height="112" fill="#111827" stroke="#475569" stroke-width="2"/>
+    <text x="294" y="498" fill="#94a3b8">记录即可</text>
+    <rect x="470" y="438" width="244" height="112" fill="#111827" stroke="#475569" stroke-width="2"/>
+    <text x="538" y="498" fill="#94a3b8">排入观察池</text>
+    <rect x="714" y="438" width="244" height="112" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <text x="782" y="498" fill="#94a3b8">暂不进入</text>
+  </g>
+  <rect x="166" y="608" width="780" height="52" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="196" y="642" fill="#f8fafc" font-size="20">优先级最高的债务通常是：影响实盘安全、数据正确性或回测一致性，同时能被分阶段验证。</text>
+</svg>

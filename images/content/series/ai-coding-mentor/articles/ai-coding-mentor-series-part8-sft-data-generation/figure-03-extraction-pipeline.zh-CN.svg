@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">SFT 候选样本提取四阶段</title>
+  <desc id="desc">展示评分记录如何经过候选构建、质量门控、脱敏和分桶后形成可导出的SFT样本。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">SFT 候选样本提取四阶段</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">Pipeline 关注的是“可训练性”，不是“有记录就保留”</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="72" y="160" width="148" height="228" rx="16" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="146" y="194" text-anchor="middle" font-size="15" font-weight="700" fill="#f8fafc">输入</text>
+    <text x="146" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">Scoring Records</text>
+    <text x="146" y="246" text-anchor="middle" font-size="12" fill="#94a3b8">run_id · diff</text>
+    <text x="146" y="264" text-anchor="middle" font-size="12" fill="#94a3b8">audit · test</text>
+
+    <rect x="248" y="136" width="148" height="252" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="322" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">Stage 1</text>
+    <text x="322" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Candidate Builder</text>
+    <text x="322" y="222" text-anchor="middle" font-size="12" fill="#94a3b8">指令抽取</text>
+    <text x="322" y="240" text-anchor="middle" font-size="12" fill="#94a3b8">代码对生成</text>
+    <text x="322" y="258" text-anchor="middle" font-size="12" fill="#94a3b8">messages 构建</text>
+    <text x="322" y="276" text-anchor="middle" font-size="12" fill="#94a3b8">样本ID与血缘</text>
+
+    <rect x="424" y="136" width="148" height="252" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="498" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">Stage 2</text>
+    <text x="498" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Quality Gates</text>
+    <text x="498" y="222" text-anchor="middle" font-size="12" fill="#94a3b8">硬门控：来源完整、</text>
+    <text x="498" y="240" text-anchor="middle" font-size="12" fill="#94a3b8">分数阈值、veto</text>
+    <text x="498" y="258" text-anchor="middle" font-size="12" fill="#94a3b8">软门控：迭代次数、</text>
+    <text x="498" y="276" text-anchor="middle" font-size="12" fill="#94a3b8">token 与结构质量</text>
+
+    <rect x="600" y="136" width="148" height="252" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="674" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a">Stage 3</text>
+    <text x="674" y="194" text-anchor="middle" font-size="12" fill="#cbd5e1">Redaction</text>
+    <text x="674" y="222" text-anchor="middle" font-size="12" fill="#94a3b8">邮箱/密钥脱敏</text>
+    <text x="674" y="240" text-anchor="middle" font-size="12" fill="#94a3b8">高风险样本阻断</text>
+    <text x="674" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">Stage 4: Split</text>
+    <text x="674" y="284" text-anchor="middle" font-size="12" fill="#94a3b8">train/val/test</text>
+
+    <rect x="776" y="160" width="92" height="228" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="822" y="194" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">输出</text>
+    <text x="822" y="220" text-anchor="middle" font-size="12" fill="#cbd5e1">Canonical</text>
+    <text x="822" y="238" text-anchor="middle" font-size="12" fill="#cbd5e1">SFT</text>
+    <text x="822" y="256" text-anchor="middle" font-size="12" fill="#cbd5e1">Sample</text>
+    <text x="822" y="282" text-anchor="middle" font-size="12" fill="#94a3b8">可导出</text>
+  </g>
+
+  <line x1="220" y1="274" x2="248" y2="274" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="396" y1="274" x2="424" y2="274" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="572" y1="274" x2="600" y2="274" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="748" y1="274" x2="776" y2="274" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="78" y="422" width="744" height="70" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="448" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">门控含义：accepted 用于训练，downgraded 待复核，rejected 进入丢弃区或仅用于治理审计。</text>
+  <text x="450" y="470" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 3. 四阶段管道把“工程记录”转成“训练资产”，核心是质量与治理而非格式转换。</text>
+</svg>

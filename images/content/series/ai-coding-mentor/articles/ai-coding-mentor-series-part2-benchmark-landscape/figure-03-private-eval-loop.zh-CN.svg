@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">从公开基准到私有 eval 的落地闭环</title>
+  <desc id="desc">展示团队如何从公开基准提取设计原则，再用真实任务样本、验收标准、运行验证、失败诊断和治理路由构建私有评估闭环。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">从公开基准到私有 eval 的落地闭环</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">公开基准提供设计原则，团队私有 eval 才决定 AI 是否能进入真实交付</text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect x="86" y="214" width="154" height="92" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="163" y="246" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe">公开基准</text>
+    <text x="163" y="272" text-anchor="middle" font-size="12" fill="#cbd5e1">任务范式 · 指标</text>
+
+    <rect x="286" y="130" width="154" height="92" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="363" y="162" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">真实任务抽样</text>
+    <text x="363" y="188" text-anchor="middle" font-size="12" fill="#cbd5e1">bug · 测试 · review</text>
+
+    <rect x="286" y="334" width="154" height="92" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="363" y="366" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a">验收标准</text>
+    <text x="363" y="392" text-anchor="middle" font-size="12" fill="#cbd5e1">rubric · 禁止事项</text>
+
+    <rect x="500" y="130" width="154" height="92" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="577" y="162" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">运行验证</text>
+    <text x="577" y="188" text-anchor="middle" font-size="12" fill="#cbd5e1">测试 · diff · 回归</text>
+
+    <rect x="500" y="334" width="154" height="92" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="577" y="366" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">失败诊断</text>
+    <text x="577" y="392" text-anchor="middle" font-size="12" fill="#cbd5e1">错误类型 · 证据</text>
+
+    <rect x="700" y="214" width="154" height="92" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="777" y="246" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">治理路由</text>
+    <text x="777" y="272" text-anchor="middle" font-size="12" fill="#cbd5e1">使用策略 · 数据资产</text>
+  </g>
+
+  <path d="M240 260 C256 230, 266 198, 282 178" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M240 260 C258 296, 268 354, 282 378" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M440 176 L492 176" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M440 380 L492 380" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M654 176 C694 184, 718 210, 738 238" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M654 380 C696 370, 724 318, 740 286" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M777 306 C745 470, 206 470, 166 310" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow)"/>
+
+  <text x="450" y="474" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">闭环目标：让公开评估原则进入团队任务、验证、反馈和治理，而不是停在榜单截图。</text>
+  <text x="450" y="504" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 3. 私有 eval 的最小闭环由真实样本、验收标准、运行验证、失败诊断和治理路由组成。</text>
+</svg>

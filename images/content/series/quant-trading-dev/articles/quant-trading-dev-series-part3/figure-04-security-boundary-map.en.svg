@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-004" data-visual-pattern="容器边界图">
+  <title id="title">Security boundary map for quant trading terminal</title>
+  <desc id="desc">A container boundary diagram showing trust boundaries for plugins, configuration, logs, dynamic API access and serialized cache files.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Security Boundary Map</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">Plugins, configurations, logs, dynamic</tspan><tspan x="640" dy="17.5">APIs, and cache files must first pass</tspan><tspan x="640" dy="17.5">through the trust boundary</tspan></text>
+  <g font-family="Arial">
+    <rect x="116" y="236" width="246" height="310" rx="28" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <rect x="478" y="216" width="324" height="350" rx="30" fill="#111827" stroke="#60a5fa" stroke-width="3"/>
+    <rect x="918" y="236" width="246" height="310" rx="28" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <text x="152" y="282" fill="#f8fafc" font-size="21" font-weight="700">external input</text>
+    <text x="152" y="326" fill="#94a3b8" font-size="18">Plug-in code</text>
+    <text x="152" y="358" fill="#94a3b8" font-size="18">Configuration file</text>
+    <text x="152" y="390" fill="#94a3b8" font-size="18">user input</text>
+    <text x="152" y="422" fill="#94a3b8" font-size="18">Cache files</text>
+    <text x="640" y="343.04" fill="#f8fafc" font-size="22" font-weight="700" text-anchor="middle"><tspan x="640" dy="0">trust boundary</tspan></text>
+    <text x="640" y="366.56" fill="#cbd5e1" font-size="18" text-anchor="middle"><tspan x="640" dy="0">Whitelist/signature verification</tspan></text>
+    <text x="640" y="389.44" fill="#cbd5e1" font-size="18" text-anchor="middle"><tspan x="640" dy="0">Safe parsing/disable eval</tspan></text>
+    <text x="640" y="412.32" fill="#cbd5e1" font-size="18" text-anchor="middle"><tspan x="640" dy="0">Structured log/desensitization</tspan></text>
+    <text x="640" y="435.2" fill="#cbd5e1" font-size="18" text-anchor="middle"><tspan x="640" dy="0">API exposure list</tspan></text>
+    <text x="640" y="458.08" fill="#cbd5e1" font-size="18" text-anchor="middle"><tspan x="640" dy="0">Serialized signature verification</tspan></text>
+    <text x="954" y="282" fill="#f8fafc" font-size="21" font-weight="700">internal capabilities</text>
+    <text x="954" y="326" fill="#94a3b8" font-size="18">Market authority</text>
+    <text x="954" y="358" fill="#94a3b8" font-size="18">Order interface</text>
+    <text x="954" y="390" fill="#94a3b8" font-size="18">local file</text>
+    <text x="954" y="422" fill="#94a3b8" font-size="18">Run log</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M362 390 H478"/>
+    <path d="M802 390 H918"/>
+  </g>
+  <g font-family="Arial">
+    <rect x="176" y="596" width="928" height="42" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="204" y="624" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="204" y="624">Principle: Any data coming from outside the boundary</tspan><tspan x="204" dy="16.52">cannot go directly into transaction capabilities,</tspan><tspan x="204" dy="16.52">logs, or local resources.</tspan></text>
+  </g>
+</svg>

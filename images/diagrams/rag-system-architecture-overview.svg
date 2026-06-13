@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">RAG 系统架构与增量索引闭环</title>
+  <desc id="desc">展示个人知识库页面、边缘 RAG Worker、Vectorize、D1 FTS5、KV、模型服务，以及导出、dry-run、ingest、verify 的增量索引闭环。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5a2b"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#f8f6f3"/>
+
+  <text x="480" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1c1917">RAG 架构边界与增量索引闭环</text>
+  <text x="480" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#78716c">公开入口、三存储分层、模型调用与发布前索引同步的最小骨架</text>
+
+  <rect x="50" y="110" width="180" height="88" rx="12" fill="#fafaf9" stroke="#2563eb" stroke-width="2"/>
+  <text x="140" y="144" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1e40af">个人知识库页面</text>
+  <text x="140" y="167" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">GitHub Pages</text>
+  <text x="140" y="186" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">Widget / 当前页上下文</text>
+
+  <rect x="305" y="98" width="240" height="120" rx="14" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="425" y="134" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#6b21a8">RAG Worker</text>
+  <text x="425" y="159" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#44403c">边缘入口、意图识别、混合检索</text>
+  <text x="425" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#44403c">引用拼装、回答生成、故障降级</text>
+  <text x="425" y="199" font-family="system-ui, -apple-system, sans-serif" font-size="10" text-anchor="middle" fill="#78716c">chat / ingest / stats / manifest</text>
+
+  <rect x="620" y="72" width="280" height="74" rx="12" fill="#fafaf9" stroke="#16a34a" stroke-width="2"/>
+  <text x="760" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#166534">Vectorize</text>
+  <text x="760" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">语义召回</text>
+
+  <rect x="620" y="165" width="280" height="74" rx="12" fill="#fafaf9" stroke="#1e40af" stroke-width="2"/>
+  <text x="760" y="196" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1e40af">D1 FTS5</text>
+  <text x="760" y="217" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">manifest、keyword、latest stats</text>
+
+  <rect x="620" y="258" width="135" height="74" rx="12" fill="#fafaf9" stroke="#dc2626" stroke-width="2"/>
+  <text x="687.5" y="289" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#991b1b">KV</text>
+  <text x="687.5" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">限流 / 预算 / 熔断</text>
+
+  <rect x="765" y="258" width="135" height="74" rx="12" fill="#fafaf9" stroke="#ea580c" stroke-width="2"/>
+  <text x="832.5" y="289" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#92400e">模型服务</text>
+  <text x="832.5" y="306" font-family="system-ui, -apple-system, sans-serif" font-size="10" text-anchor="middle" fill="#6b7280">embed / rerank</text>
+  <text x="832.5" y="321" font-family="system-ui, -apple-system, sans-serif" font-size="10" text-anchor="middle" fill="#6b7280">answer</text>
+
+  <line x1="230" y1="154" x2="305" y2="154" stroke="#8b5a2b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="545" y1="120" x2="620" y2="109" stroke="#8b5a2b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="545" y1="161" x2="620" y2="189" stroke="#8b5a2b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="492" y1="218" x2="650" y2="258" stroke="#8b5a2b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <polyline points="425,218 425,366 832.5,366 832.5,332" fill="none" stroke="#8b5a2b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="125" y="378" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#44403c">增量索引闭环</text>
+  <text x="125" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#78716c">只从公开 dist 导出</text>
+
+  <rect x="40" y="420" width="132" height="74" rx="12" fill="#fafaf9" stroke="#8b5a2b" stroke-width="2"/>
+  <text x="106" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#92400e">1. 导出 corpus</text>
+  <text x="106" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">dist HTML</text>
+
+  <rect x="194" y="420" width="132" height="74" rx="12" fill="#fafaf9" stroke="#d97706" stroke-width="2"/>
+  <text x="260" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#92400e">2. 本地 dry-run</text>
+  <text x="260" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">diff 与预估成本</text>
+
+  <rect x="348" y="420" width="132" height="74" rx="12" fill="#fafaf9" stroke="#2563eb" stroke-width="2"/>
+  <text x="414" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1e40af">3. Worker 校验</text>
+  <text x="414" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">authoritative hash</text>
+
+  <rect x="502" y="420" width="132" height="74" rx="12" fill="#fafaf9" stroke="#16a34a" stroke-width="2"/>
+  <text x="568" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#166534">4. 增量 ingest</text>
+  <text x="568" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">Vectorize + D1</text>
+
+  <rect x="656" y="420" width="132" height="74" rx="12" fill="#fafaf9" stroke="#7c3aed" stroke-width="2"/>
+  <text x="722" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#6b21a8">5. verify</text>
+  <text x="722" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">manifest / stats / eval</text>
+
+  <line x1="172" y1="457" x2="194" y2="457" stroke="#8b5a2b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="326" y1="457" x2="348" y2="457" stroke="#8b5a2b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="457" x2="502" y2="457" stroke="#8b5a2b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="634" y1="457" x2="656" y2="457" stroke="#8b5a2b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="810" y="420" width="110" height="74" rx="12" fill="#fafaf9" stroke="#dc2626" stroke-width="2"/>
+  <text x="865" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#991b1b">公开启用</text>
+  <text x="865" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="9" text-anchor="middle" fill="#6b7280">RAG_CHAT_ENABLED</text>
+
+  <line x1="788" y1="457" x2="810" y2="457" stroke="#8b5a2b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="480" y="548" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#78716c">关键边界：公开入口先过安全闸门；管理状态由 D1 负责；写入前应经过双层 dry-run。</text>
+</svg>

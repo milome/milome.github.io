@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" data-figure-id="FIG-008" data-visual-pattern="flowchart 风格">
+  <title>Strangler Fig small step migration path</title>
+  <desc>Shows how data service refactoring starts from interface extraction, parallelization of new and old implementations, and gradual migration to removal of old implementations.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0f172a"/>
+  <rect x="48" y="46" width="1104" height="668" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="86" y="108" fill="#f8fafc" font-size="34" font-weight="700">Strangler Fig small step migration path</text>
+  <text x="600" y="139.09" fill="#cbd5e1" font-size="14" text-anchor="middle"><tspan x="600" y="139.09">Avoid one-time rewriting: let the new and old</tspan><tspan x="600" dy="17.5">implementations be implemented in parallel,</tspan><tspan x="600" dy="17.5">and gradually close them through verification.</tspan></text>
+
+  <g font-size="22" font-weight="700">
+    <rect x="112" y="246" width="214" height="108" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+    <text x="154" y="286" fill="#bfdbfe" font-size="14"><tspan x="154" dy="0">1 Extraction interface</tspan></text>
+    <text x="158" y="318" fill="#e2e8f0" font-size="18">DataService</text>
+    <text x="174" y="342" fill="#e2e8f0" font-size="18">contract</text>
+    <rect x="384" y="246" width="214" height="108" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <text x="426" y="292" fill="#bae6fd" font-size="14"><tspan x="426" dy="0">2 Parallel old and new</tspan></text>
+    <text x="428" y="326" fill="#e2e8f0" font-size="19">Adapter + flag</text>
+    <rect x="656" y="246" width="214" height="108" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+    <text x="668.96" y="297.57" fill="#a7f3d0" font-size="15" text-anchor="start"><tspan x="668.96" dy="0">3 Gradual migration</tspan></text>
+    <text x="668.96" y="315.27" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="668.96" dy="0">Switch by component</tspan></text>
+    <rect x="928" y="246" width="214" height="108" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="970" y="292" fill="#fde68a" font-size="14"><tspan x="970" dy="0">4 Remove the old link</tspan></text>
+    <text x="984" y="326" fill="#e2e8f0" font-size="19">Delete legacy</text>
+  </g>
+  <g stroke="#64748b" stroke-width="5" stroke-linecap="round">
+    <line x1="326" y1="300" x2="384" y2="300"/>
+    <line x1="598" y1="300" x2="656" y2="300"/>
+    <line x1="870" y1="300" x2="928" y2="300"/>
+  </g>
+  <g fill="#64748b">
+    <polygon points="378,300 362,290 362,310"/>
+    <polygon points="650,300 634,290 634,310"/>
+    <polygon points="922,300 906,290 906,310"/>
+  </g>
+
+  <rect x="172" y="448" width="856" height="188" rx="22" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="200" y="483" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="start"><tspan x="200" y="483">Keep the exit at every step</tspan></text>
+  <text x="200" y="506" fill="#cbd5e1" font-size="16" text-anchor="start"><tspan x="200" y="506">Feature alignment, benchmarks, regression tests, and rollback</tspan><tspan x="200" dy="18.56">switches must coexist so migration does not become a gamble.</tspan></text>
+  <text x="200" y="548.56" fill="#94a3b8" font-size="17" text-anchor="start"><tspan x="200" y="548.56">Applicable scenarios: high-risk boundary replacement such as</tspan><tspan x="200" dy="19.72">data services, chart renderers, indicator calculation</tspan><tspan x="200" dy="19.72">interfaces, etc.</tspan></text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-008" data-visual-pattern="flowchart 风格">
+  <title id="title">line_profiler workflow for line-level bottleneck diagnosis</title>
+  <desc id="desc">A flowchart showing how to pick a hot function from cProfile, add profile annotation, run kernprof, read line-level metrics, and choose an optimization action.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="48" width="1168" height="624" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">line_profiler diagnosis flow</text>
+  <text x="640" y="137" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="middle"><tspan x="640" y="137">Use line_profiler after cProfile to locate</tspan><tspan x="640" dy="17.5">slow loops, calls, allocations, or branches.</tspan></text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial">
+    <rect x="92" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="103.04" y="234.72" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="103.04" dy="0">1. Select candidate</tspan><tspan x="103.04" dy="17.7">functions</tspan></text>
+    <text x="103.04" y="270.12" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="103.04" dy="0">from cProfile</tspan></text>
+
+    <rect x="338" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="349.04" y="227.91" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="349.04" dy="0">2. Mark the boundaries</tspan></text>
+    <text x="349.04" y="276.93" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="349.04" dy="0">@profile</tspan></text>
+    <text x="349.04" y="245.61" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="349.04" dy="0">Includes only the objective</tspan><tspan x="349.04" dy="14.16">function</tspan></text>
+
+    <rect x="584" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="595.04" y="243.57" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="595.04" dy="0">3. Run kernprof</tspan></text>
+    <text x="595.04" y="261.27" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="595.04" dy="0">Fixed inputs and scenarios</tspan></text>
+
+    <rect x="830" y="200" width="200" height="92" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="841.04" y="234.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="841.04" dy="0">4. Read row-level data</tspan></text>
+    <text x="841.04" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="841.04" dy="0">Time / Per Hit</tspan></text>
+    <text x="841.04" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="841.04" dy="0">% Time</tspan></text>
+
+    <path d="M292 246 H328" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M538 246 H574" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M784 246 H820" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Arial">
+    <text x="96" y="360" fill="#f8fafc" font-size="24" font-weight="700">Map row results to actions</text>
+
+    <rect x="96" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="112" y="433.72" fill="#bfdbfe" font-size="15" font-weight="700" text-anchor="start"><tspan x="112" dy="0">Loop lines dominate</tspan></text>
+    <text x="112" y="467.52" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="112" dy="0">Check for duplicate scans</tspan></text>
+    <text x="112" y="483.44" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="112" dy="0">Vectorization/Numba</tspan></text>
+    <text x="112" y="499.36" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="112" dy="0">or sliding window</tspan></text>
+
+    <rect x="384" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="400" y="433.72" fill="#a7f3d0" font-size="15" font-weight="700" text-anchor="start"><tspan x="400" dy="0">The function call line is the</tspan><tspan x="400" dy="17.7">slowest</tspan></text>
+    <text x="400" y="467.52" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="400" dy="0">Drill down into called functions</tspan></text>
+    <text x="400" y="483.44" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="400" dy="0">Batch call/caching</tspan></text>
+    <text x="400" y="499.36" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="400" dy="0">Reduce border crossings</tspan></text>
+
+    <rect x="672" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="688" y="442.42" fill="#fde68a" font-size="15" font-weight="700" text-anchor="start"><tspan x="688" dy="0">Allocation grows</tspan></text>
+    <text x="688" y="458.82" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="688" dy="0">Object or array is created repeatedly</tspan></text>
+    <text x="688" y="474.74" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="688" dy="0">Pre-allocation/reuse</tspan></text>
+    <text x="688" y="490.66" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="688" dy="0">Reduce GC pressure</tspan></text>
+
+    <rect x="960" y="394" width="224" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="976" y="428.5" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="start"><tspan x="976" dy="0">Branch-heavy code</tspan></text>
+    <text x="976" y="444.9" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="976" dy="0">The state machine or conditions are</tspan><tspan x="976" dy="14.16">complex</tspan></text>
+    <text x="976" y="474.74" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="976" dy="0">Decomposition status/precalculat</tspan><tspan x="976" dy="14.16">ion</tspan></text>
+    <text x="976" y="504.58" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="976" dy="0">Keep regression testing</tspan></text>
+  </g>
+
+  <rect x="118" y="584" width="1044" height="52" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="146" y="612" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="start"><tspan x="146" y="612">Boundary: use line_profiler on small hotspots;</tspan><tspan x="146" dy="16.52">instrumentation overhead is not latency.</tspan></text>
+</svg>

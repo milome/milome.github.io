@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Programming Benchmark Capability Map</title>
+  <desc id="desc">Demonstrating benchmarks such as HumanEval, APPS, CodeContests, SWE-bench, LiveCodeBench and Aider covering function generation, competition reasoning, real warehouse, time slicing and code editing capabilities respectively.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI Programming Benchmark Capability Map</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="85.5">Benchmarks expose different task environments</tspan><tspan x="450" dy="17.1">and capability boundaries.</tspan></text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect x="72" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="150" y="188" text-anchor="middle" font-size="17" font-weight="700" fill="#bfdbfe">function level</text>
+    <text x="150" y="216" text-anchor="middle" font-size="12" fill="#cbd5e1">HumanEval</text>
+    <text x="150" y="239" text-anchor="middle" font-size="12" fill="#94a3b8">clear contract</text>
+    <text x="150" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">Automated testing</text>
+
+    <rect x="260" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="338" y="200.25" text-anchor="middle" font-size="17" font-weight="700" fill="#bae6fd"><tspan x="338" y="200.25">Competition level</tspan></text>
+    <text x="338" y="216.25" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="338" y="216.25">APPS / CodeContests</tspan></text>
+    <text x="338" y="232.25" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="338" y="232.25">complex reasoning</tspan></text>
+    <text x="338" y="248.75" text-anchor="middle" font-size="12.5" fill="#94a3b8"><tspan x="338" y="248.75">Boundary input</tspan></text>
+
+    <rect x="448" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="526" y="199.26" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0"><tspan x="526" dy="0">warehouse level</tspan></text>
+    <text x="526" y="215.98" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="526" dy="0">SWE-bench</tspan></text>
+    <text x="526" y="231.9" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="526" dy="0">real issue</tspan></text>
+    <text x="526" y="247.82" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="526" dy="0">Patch verification</tspan></text>
+
+    <rect x="636" y="154" width="156" height="124" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="714" y="199.26" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a"><tspan x="714" dy="0">continuous level</tspan></text>
+    <text x="714" y="215.98" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="714" dy="0">LiveCodeBench</tspan></text>
+    <text x="714" y="231.9" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="714" dy="0">time slice</tspan></text>
+    <text x="714" y="247.82" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="714" dy="0">pollution control</tspan></text>
+
+    <rect x="354" y="338" width="192" height="112" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="375.91" text-anchor="middle" font-size="15" font-weight="700" fill="#f8fafc"><tspan x="450" dy="0">Editing capabilities</tspan></text>
+    <text x="450" y="424.93" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="450" dy="0">Aider Leaderboards</tspan></text>
+    <text x="450" y="393.61" text-anchor="middle" font-size="12" fill="#94a3b8"><tspan x="450" dy="0">Local modification ·</tspan><tspan x="450" dy="14.16">Multi-language · diff cost</tspan></text>
+  </g>
+
+  <line x1="228" y1="216" x2="252" y2="216" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="416" y1="216" x2="440" y2="216" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="604" y1="216" x2="628" y2="216" stroke="#64748b" stroke-width="2.5"/>
+  <path d="M450 286 L450 330" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="450" y="318" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#cbd5e1"><tspan x="450" y="309.4">Capability is multi-axis and depends on</tspan><tspan x="450" dy="17.1">engineering context.</tspan></text>
+
+</svg>

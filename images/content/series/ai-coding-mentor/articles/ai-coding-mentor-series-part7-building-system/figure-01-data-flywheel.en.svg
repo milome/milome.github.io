@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Coding Mentor Data Flywheel</title>
+  <desc id="desc">Demonstrate the closed loop from business requirements, AI-assisted delivery, Mentor feedback, structured trajectory, data routing, training evaluation to the next round of delivery strategy adjustment.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#10b981"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">AI Coding Mentor Data Flywheel</text>
+  <text x="450" y="96" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="96">Delivery creates signals; evaluation</tspan><tspan x="450" dy="17.5">improves the next round.</tspan></text>
+
+  <g filter="url(#shadow)">
+    <rect x="84" y="150" width="176" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="172" y="172.77" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#bfdbfe"><tspan x="172" dy="0">Business</tspan><tspan x="172" dy="15.34">Requirements/Spec</tspan></text>
+    <text x="172" y="202.71" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1"><tspan x="172" dy="0">Goals · Constraints ·</tspan><tspan x="172" dy="12.81">Acceptance Criteria</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="362" y="120" width="176" height="78" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="450" y="158" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#bfdbfe"><tspan x="450" y="158">AI-assisted delivery</tspan></text>
+    <text x="450" y="174" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1"><tspan x="450" y="174">Plan · Code · Tool Call</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="640" y="150" width="176" height="78" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="728" y="181" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#fde68a">Mentor Feedback</text>
+    <text x="728" y="193.02" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1"><tspan x="728" dy="0">Error type · Root cause</tspan><tspan x="728" dy="12.98">· Correction strategy</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="640" y="332" width="176" height="78" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="728" y="368.16" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#a7f3d0"><tspan x="728" dy="0">structured trajectory</tspan></text>
+    <text x="728" y="385.68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1"><tspan x="728" dy="0">Trace · Diff · Test · Review</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="362" y="362" width="176" height="78" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="450" y="393" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#a7f3d0">Data routing</text>
+    <text x="450" y="405.02" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1"><tspan x="450" dy="0">Eval · SFT · Preferences ·</tspan><tspan x="450" dy="12.98">Knowledge Hub</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="84" y="332" width="176" height="78" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="172" y="361.08" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#bae6fd"><tspan x="172" dy="0">training eval</tspan></text>
+    <text x="172" y="378.6" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#cbd5e1"><tspan x="172" dy="0">Private Eval · Prompt ·</tspan><tspan x="172" dy="14.16">SFT/RFT</tspan></text>
+  </g>
+
+  <path d="M260 184 C300 160, 322 158, 358 158" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <path d="M538 158 C588 158, 610 166, 636 184" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <path d="M728 228 C752 264, 752 296, 728 328" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <path d="M640 371 C594 395, 574 401, 542 401" fill="none" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <path d="M362 401 C318 401, 296 394, 264 374" fill="none" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <path d="M172 332 C126 278, 128 242, 168 229" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow-blue)"/>
+
+  <circle cx="450" cy="280" r="78" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="450" y="266" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">core judgment</text>
+  <text x="450" y="292" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">Delivery is not the end</text>
+  <text x="450" y="314" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">It’s the data production site</text>
+
+
+</svg>

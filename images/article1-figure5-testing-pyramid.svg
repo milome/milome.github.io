@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="700" height="500" fill="#F8F6F1"/>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#1A2B4A">
+    测试金字塔
+  </text>
+
+  <!-- Pyramid structure -->
+  <g transform="translate(100, 80)">
+    <!-- Bottom layer: E2E Tests -->
+    <polygon points="50,300 450,300 400,220 100,220" fill="#2A4A7A" opacity="0.9"/>
+    <text x="250" y="275" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="bold" fill="#FFFFFF">端到端测试 (E2E)</text>
+    <text x="250" y="295" text-anchor="middle" font-family="Georgia" font-size="11" fill="#E8E4DC">test_strategy_can_find_bar()</text>
+
+    <!-- Middle layer: Integration Tests -->
+    <polygon points="100,220 400,220 360,150 140,150" fill="#5A7A9A" opacity="0.9"/>
+    <text x="250" y="195" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="bold" fill="#FFFFFF">集成测试</text>
+    <text x="250" y="212" text-anchor="middle" font-family="Georgia" font-size="11" fill="#E8E4DC">test_monday_rollback_datetime_end()</text>
+
+    <!-- Top layer: Unit Tests -->
+    <polygon points="140,150 360,150 320,80 180,80" fill="#6B8A7A" opacity="0.9"/>
+    <text x="250" y="125" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="bold" fill="#FFFFFF">单元测试</text>
+    <text x="250" y="142" text-anchor="middle" font-family="Georgia" font-size="11" fill="#E8E4DC">test_normal_day_session()</text>
+
+    <!-- Numbers -->
+    <text x="480" y="260" font-family="Georgia" font-size="14" fill="#C4786A" font-weight="bold">5 个</text>
+    <text x="420" y="185" font-family="Georgia" font-size="14" fill="#C4786A" font-weight="bold">8 个</text>
+    <text x="360" y="115" font-family="Georgia" font-size="14" fill="#C4786A" font-weight="bold">15 个</text>
+  </g>
+
+  <!-- Test case details -->
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="600" height="80" fill="#FFFFFF" stroke="#E8E4DC" stroke-width="1" rx="8"/>
+
+    <!-- Unit test examples -->
+    <g transform="translate(20, 20)">
+      <circle cx="6" cy="6" r="5" fill="#6B8A7A"/>
+      <text x="15" y="10" font-family="monospace" font-size="9" fill="#1A2B4A">test_normal_day_session()</text>
+
+      <circle cx="6" cy="25" r="5" fill="#6B8A7A"/>
+      <text x="15" y="29" font-family="monospace" font-size="9" fill="#1A2B4A">test_night_session_before_midnight()</text>
+
+      <circle cx="6" cy="44" r="5" fill="#6B8A7A"/>
+      <text x="15" y="48" font-family="monospace" font-size="9" fill="#1A2B4A">test_cross_session_period()</text>
+    </g>
+
+    <!-- Integration test examples -->
+    <g transform="translate="220" y="20">
+      <circle cx="6" cy="6" r="5" fill="#5A7A9A"/>
+      <text x="15" y="10" font-family="monospace" font-size="9" fill="#1A2B4A">test_monday_rollback()</text>
+
+      <circle cx="6" cy="25" r="5" fill="#5A7A9A"/>
+      <text x="15" y="29" font-family="monospace" font-size="9" fill="#1A2B4A">test_holiday_force_close()</text>
+    </g>
+
+    <!-- E2E test examples -->
+    <g transform="translate(420, 20)">
+      <circle cx="6" cy="6" r="5" fill="#2A4A7A"/>
+      <text x="15" y="10" font-family="monospace" font-size="9" fill="#1A2B4A">test_strategy_can_find_bar()</text>
+
+      <circle cx="6" cy="25" r="5" fill="#2A4A7A"/>
+      <text x="15" y="29" font-family="monospace" font-size="9" fill="#1A2B4A">test_non_monday_normal()</text>
+    </g>
+  </g>
+
+  <!-- Key metrics -->
+  <g transform="translate(520, 120)">
+    <rect x="0" y="0" width="150" height="120" fill="#FFFFFF" stroke="#C4786A" stroke-width="1" rx="5" opacity="0.9"/>
+    <text x="75" y="25" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="bold" fill="#C4786A">测试覆盖</text>
+
+    <text x="75" y="50" text-anchor="middle" font-family="Georgia" font-size="10" fill="#1A2B4A">正常时段</text>
+    <text x="75" y="65" text-anchor="middle" font-family="Georgia" font-size="10" fill="#5A8A6E">✓ 100%</text>
+
+    <text x="75" y="85" text-anchor="middle" font-family="Georgia" font-size="10" fill="#1A2B4A">边界情况</text>
+    <text x="75" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#5A8A6E">✓ 95%</text>
+  </g>
+</svg>

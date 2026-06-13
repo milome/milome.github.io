@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="swimlane 风格">
+  <title id="title">BMAD artifact handoff swimlane</title>
+  <desc id="desc">Swimlane diagram showing artifacts passed between Architect, Implementer, Reviewer, Tester and Documenter.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="56" y="52" width="1168" height="616" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="92" y="112" fill="#f8fafc" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">BMAD 工件交接：多角色不是多段闲聊</text>
+  <text x="92" y="152" fill="#cbd5e1" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="20">每个角色必须交付可追踪工件，下游角色基于工件继续验证。</text>
+
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="92" y="202" width="1096" height="76" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="286" width="1096" height="76" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="370" width="1096" height="76" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="454" width="1096" height="76" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="538" width="1096" height="76" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+    <text x="156" y="248" fill="#f8fafc" font-size="20" font-weight="700">Architect</text>
+    <text x="156" y="332" fill="#f8fafc" font-size="20" font-weight="700">Implementer</text>
+    <text x="156" y="416" fill="#f8fafc" font-size="20" font-weight="700">Reviewer</text>
+    <text x="156" y="500" fill="#f8fafc" font-size="20" font-weight="700">Tester</text>
+    <text x="156" y="584" fill="#f8fafc" font-size="20" font-weight="700">Documenter</text>
+
+    <rect x="352" y="218" width="210" height="44" rx="15" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="504" y="302" width="210" height="44" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="656" y="386" width="210" height="44" rx="15" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="808" y="470" width="210" height="44" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="960" y="554" width="174" height="44" rx="15" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+
+    <text x="457" y="247" text-anchor="middle" fill="#f8fafc" font-size="18">接口与算法边界</text>
+    <text x="609" y="331" text-anchor="middle" fill="#f8fafc" font-size="18">受约束实现</text>
+    <text x="761" y="415" text-anchor="middle" fill="#f8fafc" font-size="18">问题与修复建议</text>
+    <text x="913" y="499" text-anchor="middle" fill="#f8fafc" font-size="18">边界测试证据</text>
+    <text x="1047" y="583" text-anchor="middle" fill="#f8fafc" font-size="18">维护说明</text>
+
+    <g fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+      <path d="M562 240 C618 242 536 302 504 316"/>
+      <path d="M714 324 C770 326 688 386 656 400"/>
+      <path d="M866 408 C922 410 840 470 808 484"/>
+      <path d="M1018 492 C1074 494 992 554 960 568"/>
+    </g>
+
+    <text x="640" y="652" text-anchor="middle" fill="#a7f3d0" font-size="20">交接物必须能被测试、复查和文档化；没有工件就没有闭环。</text>
+  </g>
+</svg>

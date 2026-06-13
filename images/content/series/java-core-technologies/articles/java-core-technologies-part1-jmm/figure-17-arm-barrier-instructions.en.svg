@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 420">
+  <title>ARM barrier instructions</title>
+  <desc>ARM barrier instructions static diagram for Java Memory Model Part 1.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="750" height="420" fill="#f8f6f3"/>
+
+  <!-- Title -->
+  <text x="375" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#1f2937">ARM barrier instructions</text>
+
+  <!-- DMB Box -->
+  <rect x="50" y="50" width="650" height="100" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="80" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e40af">DMB (Data Memory Barrier)</text>
+  <rect x="70" y="85" width="610" height="55" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="90" y="108" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">DMB ISH: inner-shareable domain barrier</text>
+  <text x="320" y="108" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">DMB ISHST: StoreStore barrier (stores only)</text>
+  <text x="90" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">DMB ISHLD: LoadLoad barrier (loads only)</text>
+  <text x="320" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#dc2626" font-weight="600">DMB SY: system-wide barrier (strongest)</text>
+
+  <!-- DSB Box -->
+  <rect x="50" y="170" width="650" height="80" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="80" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#166534">DSB (Data Synchronization Barrier)</text>
+  <rect x="70" y="205" width="610" height="35" rx="4" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="90" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">stricter than DMB; waits for memory accesses to complete</text>
+
+  <!-- ISB Box -->
+  <rect x="50" y="270" width="650" height="80" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="80" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#92400e">ISB (Instruction Synchronization Barrier)</text>
+  <rect x="70" y="305" width="610" height="35" rx="4" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+  <text x="90" y="328" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">flushes instruction pipeline before later instructions execute</text>
+
+  <!-- Note -->
+  <text x="375" y="380" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">used for context switches, mapping changes, and dynamic code updates</text>
+</svg>

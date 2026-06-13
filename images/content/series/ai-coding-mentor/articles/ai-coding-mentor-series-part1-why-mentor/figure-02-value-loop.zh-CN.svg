@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Coding Mentor 的价值闭环</title>
+  <desc id="desc">展示 Coding Mentor 如何通过判断力、协作分工、工程能力和安全边界形成持续改进闭环。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Coding Mentor 的价值闭环</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">价值不来自一次更好的回答，而来自人类判断被持续结构化、验证和复用</text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <path d="M 450 150 C 585 150 690 230 690 280 C 690 330 585 410 450 410 C 315 410 210 330 210 280 C 210 230 315 150 450 150" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="10 10"/>
+
+    <g filter="url(#shadow)">
+      <rect x="325" y="122" width="250" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+      <text x="450" y="158" text-anchor="middle" font-size="17" font-weight="700" fill="#bfdbfe">建立判断力</text>
+      <text x="450" y="186" text-anchor="middle" font-size="12" fill="#cbd5e1">识别能力边界、错误模式和风险信号</text>
+
+      <rect x="608" y="232" width="220" height="96" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+      <text x="718" y="268" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0">优化协作分工</text>
+      <text x="718" y="296" text-anchor="middle" font-size="12" fill="#cbd5e1">按风险决定 AI 起草、执行或退出</text>
+
+      <rect x="325" y="342" width="250" height="96" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+      <text x="450" y="378" text-anchor="middle" font-size="17" font-weight="700" fill="#bae6fd">反向提升工程能力</text>
+      <text x="450" y="406" text-anchor="middle" font-size="12" fill="#cbd5e1">把隐性经验写成 rubric 和反馈协议</text>
+
+      <rect x="72" y="232" width="220" height="96" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+      <text x="182" y="268" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">建立安全边界</text>
+      <text x="182" y="296" text-anchor="middle" font-size="12" fill="#cbd5e1">用测试、review 和治理阻断高风险输出</text>
+    </g>
+
+    <line x1="566" y1="180" x2="624" y2="238" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="664" y1="330" x2="565" y2="376" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="334" y1="390" x2="276" y2="326" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="236" y1="230" x2="335" y2="184" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <circle cx="450" cy="280" r="76" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <text x="450" y="267" text-anchor="middle" font-size="17" font-weight="700" fill="#f8fafc">可信协作</text>
+    <text x="450" y="294" text-anchor="middle" font-size="13" fill="#cbd5e1">判断 · 反馈 · 证据</text>
+    <text x="450" y="316" text-anchor="middle" font-size="13" fill="#cbd5e1">持续进入闭环</text>
+  </g>
+
+  <text x="450" y="492" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 2. Mentor 视角把一次 AI 使用升级为持续积累的工程能力。</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">弹性治理能力下沉</title>
+  <desc id="desc">展示弹性治理能力从应用层策略逐步下沉到网格层、内核数据面与平台自愈，同时通过验证闭环校准阈值。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/></marker></defs>
+  <rect width="900" height="520" fill="#0f172a"/>
+  <rect x="34" y="32" width="832" height="456" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">弹性治理能力下沉</text>
+  <text x="450" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#94a3b8">Resilience capabilities move down while feedback moves back up</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="140" y="142" width="620" height="58" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="450" y="166" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">应用层策略 / Library Resilience</text>
+    <text x="450" y="185" text-anchor="middle" font-size="11" fill="#94a3b8">timeout, retry, circuit breaker</text>
+    <rect x="140" y="220" width="620" height="58" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="450" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#bfdbfe">网格层策略 / Mesh Policy</text>
+    <text x="450" y="263" text-anchor="middle" font-size="11" fill="#94a3b8">outlier detection, mTLS, traffic split</text>
+    <rect x="140" y="298" width="620" height="58" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="450" y="322" text-anchor="middle" font-size="14" font-weight="700" fill="#bae6fd">内核数据面 / eBPF Data Plane</text>
+    <text x="450" y="341" text-anchor="middle" font-size="11" fill="#94a3b8">low-overhead signal and fast path</text>
+    <rect x="140" y="376" width="620" height="58" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="450" y="400" text-anchor="middle" font-size="14" font-weight="700" fill="#a7f3d0">平台自愈 / Scheduling Recovery</text>
+    <text x="450" y="419" text-anchor="middle" font-size="11" fill="#94a3b8">restart, autoscale, failover, rollback</text>
+    <g stroke="#64748b" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+      <line x1="450" y1="200" x2="450" y2="212"/>
+      <line x1="450" y1="278" x2="450" y2="290"/>
+      <line x1="450" y1="356" x2="450" y2="368"/>
+      <path d="M 780 406 C 830 332 830 224 764 172"/>
+    </g>
+    <text x="807" y="290" text-anchor="middle" font-size="11" fill="#94a3b8">验证反馈<br/>Feedback</text>
+  </g>
+</svg>

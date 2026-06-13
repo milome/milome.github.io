@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-001" data-visual-pattern="timeline 风格">
+  <title id="title">Seven part reading map</title>
+  <desc id="desc">A seven-part reading map ordered from Part1 to Part7.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="54" y="50" width="1172" height="620" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="94" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">七篇路线 / Seven-part Reading Map</text>
+  <text x="94" y="144" fill="#94a3b8" font-size="18" font-family="Arial">按 Part1 -> Part2 -> Part3 -> Part4 -> Part5 -> Part6 -> Part7 建立完整阅读顺序</text>
+  <g font-family="Arial">
+    <rect x="72" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="234" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="396" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="558" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="720" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="882" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="1044" y="232" width="130" height="104" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="108" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part1</text>
+    <text x="91" y="302" fill="#94a3b8" font-size="17">架构入口</text>
+    <text x="270" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part2</text>
+    <text x="253" y="302" fill="#94a3b8" font-size="17">风险参考上</text>
+    <text x="432" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part3</text>
+    <text x="415" y="302" fill="#94a3b8" font-size="17">风险参考下</text>
+    <text x="594" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part4</text>
+    <text x="585" y="302" fill="#94a3b8" font-size="17">测试防线</text>
+    <text x="756" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part5</text>
+    <text x="747" y="302" fill="#94a3b8" font-size="17">性能优化</text>
+    <text x="918" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part6</text>
+    <text x="909" y="302" fill="#94a3b8" font-size="17">架构演进</text>
+    <text x="1080" y="272" fill="#f8fafc" font-size="21" font-weight="700">Part7</text>
+    <text x="1071" y="302" fill="#94a3b8" font-size="17">AI 工程化</text>
+  </g>
+  <g stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M202 284 H234"/>
+    <path d="M364 284 H396"/>
+    <path d="M526 284 H558"/>
+    <path d="M688 284 H720"/>
+    <path d="M850 284 H882"/>
+    <path d="M1012 284 H1044"/>
+  </g>
+  <rect x="108" y="430" width="958" height="104" rx="22" fill="#1e293b" stroke="#334155"/>
+  <text x="140" y="472" fill="#f8fafc" font-family="Arial" font-size="20" font-weight="700">阅读策略</text>
+  <text x="140" y="506" fill="#cbd5e1" font-family="Arial" font-size="18">先按完整顺序建立全局心智模型；遇到具体工程问题时，再回查 Part2/Part3 的风险参考。</text>
+  <rect x="108" y="594" width="958" height="42" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="132" y="622" fill="#cbd5e1" font-family="Arial" font-size="18">顺序约束：Part4 测试防线在性能优化之前，Part7 AI 工程化作为能力增强层收尾。</text>
+</svg>

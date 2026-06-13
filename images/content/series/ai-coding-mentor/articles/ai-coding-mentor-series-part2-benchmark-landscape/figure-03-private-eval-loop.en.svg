@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">From public benchmark to private eval implementation closed loop</title>
+  <desc id="desc">Demonstrate how teams extract design principles from public benchmarks and then build a private evaluation loop using real task samples, acceptance criteria, operational verification, failure diagnosis, and governance routing.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="74" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Public benchmark to private eval loop</text>
+  <text x="450" y="104" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8"><tspan x="450" y="95.5">Public references supply principles;</tspan><tspan x="450" dy="17.1">private eval decides production readiness.</tspan></text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect x="86" y="214" width="154" height="92" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="163" y="251.38" text-anchor="middle" font-size="15" font-weight="700" fill="#bfdbfe"><tspan x="163" dy="0">public benchmark</tspan></text>
+    <text x="163" y="267.78" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="163" dy="0">Task Paradigm ·</tspan><tspan x="163" dy="14.16">Indicators</tspan></text>
+
+    <rect x="286" y="130" width="154" height="92" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="363" y="173.57" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd"><tspan x="363" dy="0">Task sampling</tspan></text>
+    <text x="363" y="191.27" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="363" dy="0">bug · test · review</tspan></text>
+
+    <rect x="286" y="334" width="154" height="92" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="363" y="361.64" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a"><tspan x="363" dy="0">Acceptance</tspan><tspan x="363" dy="17.7">criteria</tspan></text>
+    <text x="363" y="397.04" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="363" dy="0">rubric · Prohibited</tspan><tspan x="363" dy="14.16">matters</tspan></text>
+
+    <rect x="500" y="130" width="154" height="92" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="577" y="162" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0">Run verification</text>
+    <text x="577" y="188" text-anchor="middle" font-size="12" fill="#cbd5e1">test · diff · regression</text>
+
+    <rect x="500" y="334" width="154" height="92" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="577" y="366" text-anchor="middle" font-size="15" font-weight="700" fill="#bae6fd">Failure diagnosis</text>
+    <text x="577" y="392" text-anchor="middle" font-size="12" fill="#cbd5e1">Error Type·Evidence</text>
+
+    <rect x="700" y="214" width="154" height="92" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="777" y="250.49" text-anchor="middle" font-size="15" font-weight="700" fill="#a7f3d0"><tspan x="777" dy="0">Routing</tspan></text>
+    <text x="777" y="268.19" text-anchor="middle" font-size="12" fill="#cbd5e1"><tspan x="777" dy="0">Usage strategy · Data</tspan><tspan x="777" dy="14.16">assets</tspan></text>
+  </g>
+
+  <path d="M240 260 C256 230, 266 198, 282 178" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M240 260 C258 296, 268 354, 282 378" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M440 176 L492 176" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M440 380 L492 380" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M654 176 C694 184, 718 210, 738 210" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M654 380 C696 370, 724 318, 740 310" fill="none" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M777 306 C745 470, 206 470, 166 310" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow)"/>
+
+  <text x="450" y="474" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#cbd5e1"><tspan x="450" y="456.9">Closed loop: convert public eval principles into</tspan><tspan x="450" dy="17.1">team tasks, checks, feedback,</tspan><tspan x="450" dy="17.1">and governance.</tspan></text>
+
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Technical debt heatmap roadmap</title>
+  <desc id="desc">Heatmap and roadmap for technical debt priorities.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">技术债务热图 / Debt Roadmap</text>
+  <g>
+    <rect x="170" y="180" width="220" height="120" rx="20" fill="#60a5fa"/>
+    <rect x="410" y="180" width="220" height="120" rx="20" fill="#38bdf8"/>
+    <rect x="650" y="180" width="220" height="120" rx="20" fill="#10b981"/>
+    <rect x="890" y="180" width="220" height="120" rx="20" fill="#f59e0b"/>
+    <rect x="170" y="340" width="220" height="120" rx="20" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <rect x="410" y="340" width="220" height="120" rx="20" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <rect x="650" y="340" width="220" height="120" rx="20" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <rect x="890" y="340" width="220" height="120" rx="20" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  </g>
+  <g font-family="Arial" text-anchor="middle">
+    <text x="280" y="250" fill="#f8fafc" font-size="20" font-weight="700">时间语义</text>
+    <text x="520" y="250" fill="#f8fafc" font-size="20" font-weight="700">UI 耦合</text>
+    <text x="760" y="250" fill="#f8fafc" font-size="20" font-weight="700">重复重算</text>
+    <text x="1000" y="250" fill="#f8fafc" font-size="20" font-weight="700">协议稳定性</text>
+    <text x="280" y="408" fill="#cbd5e1" font-size="18">优先</text>
+    <text x="520" y="408" fill="#cbd5e1" font-size="18">第二优先</text>
+    <text x="760" y="408" fill="#cbd5e1" font-size="18">第三优先</text>
+    <text x="1000" y="408" fill="#cbd5e1" font-size="18">持续治理</text>
+  </g>
+  <text x="140" y="556" fill="#94a3b8" font-family="Arial" font-size="18">路线图：先修影响面最大且修复成本可控的债务。</text>
+</svg>

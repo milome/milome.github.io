@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-010" data-visual-pattern="flowchart 风格">
+  <title id="title">py-spy workflow for production-safe sampling diagnosis</title>
+  <desc id="desc">A flowchart showing how to use py-spy to attach to a running process, observe top stacks, record a flame graph, interpret wide stacks, and return to benchmark validation.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="48" width="1168" height="624" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="108" fill="#f8fafc" font-size="32" font-family="Arial" font-weight="700">py-spy production sampling flow</text>
+  <text x="640" y="137" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="middle"><tspan x="640" y="137">When restart is risky, sample the stack,</tspan><tspan x="640" dy="17.5">then verify with benchmarks.</tspan></text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial">
+    <rect x="92" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="107.36" y="236.38" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="107.36" dy="0">1. Confirmation process</tspan></text>
+    <text x="107.36" y="252.78" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="107.36" dy="0">Running PID</tspan></text>
+    <text x="107.36" y="268.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="107.36" dy="0">No code modification</tspan></text>
+
+    <rect x="328" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="339.52" y="234.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="339.52" dy="0">2. Look at top first</tspan></text>
+    <text x="339.52" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="339.52" dy="0">Observe hotspot stack</tspan></text>
+    <text x="339.52" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="339.52" dy="0">Confirm whether it is stable</tspan></text>
+
+    <rect x="564" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="575.52" y="234.99" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="575.52" dy="0">3. Record flame graph</tspan></text>
+    <text x="575.52" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="575.52" dy="0">record -o svg</tspan></text>
+    <text x="575.52" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="575.52" dy="0">Cover typical windows</tspan></text>
+
+    <rect x="800" y="198" width="196" height="96" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="811.52" y="226.14" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="811.52" dy="0">4. Interpret stack</tspan></text>
+    <text x="811.52" y="252.69" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="811.52" dy="0">Width = sample share</tspan></text>
+    <text x="811.52" y="269.85" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="811.52" dy="0">Treat it as a clue</tspan></text>
+
+    <rect x="1036" y="198" width="154" height="96" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="1047.52" y="226.14" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="start"><tspan x="1047.52" dy="0">5. Return to</tspan><tspan x="1047.52" dy="17.7">verification</tspan></text>
+    <text x="1047.52" y="261.54" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="1047.52" dy="0">Reproducible use cases</tspan></text>
+    <text x="1047.52" y="278.7" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="1047.52" dy="0">benchmark</tspan></text>
+
+    <path d="M288 246 H318" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M524 246 H554" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M760 246 H790" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M996 246 H1026" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g font-family="Arial">
+    <text x="96" y="360" fill="#f8fafc" font-size="24" font-weight="700">Reading flame graphs</text>
+
+    <rect x="96" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="112" y="433.72" fill="#bfdbfe" font-size="15" font-weight="700" text-anchor="start"><tspan x="112" dy="0">Wide stack focuses on</tspan><tspan x="112" dy="17.7">calculations</tspan></text>
+    <text x="112" y="467.52" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="112" dy="0">CPU hotspots clear</tspan></text>
+    <text x="112" y="483.44" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="112" dy="0">Consider Algorithms / Numba</tspan></text>
+    <text x="112" y="499.36" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="112" dy="0">or multiple processes</tspan></text>
+
+    <rect x="384" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="400" y="442.42" fill="#a7f3d0" font-size="15" font-weight="700" text-anchor="start"><tspan x="400" dy="0">Wide stack focuses on I/O</tspan></text>
+    <text x="400" y="458.82" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="400" dy="0">wait or query bounds</tspan></text>
+    <text x="400" y="474.74" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="400" dy="0">Batch query/caching</tspan></text>
+    <text x="400" y="490.66" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="400" dy="0">or asynchronous</tspan></text>
+
+    <rect x="672" y="394" width="254" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="688" y="442.42" fill="#fde68a" font-size="15" font-weight="700" text-anchor="start"><tspan x="688" dy="0">Hot spots drift over time</tspan></text>
+    <text x="688" y="458.82" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="688" dy="0">Unstable load</tspan></text>
+    <text x="688" y="474.74" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="688" dy="0">Extend sampling window</tspan></text>
+    <text x="688" y="490.66" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="688" dy="0">Split scenario retest</tspan></text>
+
+    <rect x="960" y="394" width="224" height="132" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="975.84" y="431.56" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="start"><tspan x="975.84" dy="0">Stack width but no</tspan><tspan x="975.84" dy="17.7">recurrence</tspan></text>
+    <text x="975.84" y="466.96" fill="#e2e8f0" font-size="12" text-anchor="start"><tspan x="975.84" dy="0">Can only be used as a clue</tspan></text>
+    <text x="975.84" y="484.12" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="975.84" dy="0">Add minimal repro</tspan></text>
+    <text x="975.84" y="501.28" fill="#cbd5e1" font-size="12" text-anchor="start"><tspan x="975.84" dy="0">Make more changes</tspan></text>
+  </g>
+
+  <rect x="118" y="584" width="1044" height="52" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="146" y="612" fill="#cbd5e1" font-size="14" font-family="Arial" text-anchor="start"><tspan x="146" y="612">Boundary: py-spy gives direction; optimization</tspan><tspan x="146" dy="16.52">must still pass reproducible benchmarks.</tspan></text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">从工程交付到SFT样本导出的总流程</title>
+  <desc id="desc">展示开发交付、评估打分、样本提取和多格式导出的四段式SFT数据流水线。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="900" height="560" fill="#0f172a"/>
+  <rect x="32" y="32" width="836" height="496" rx="22" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">从工程交付到 SFT 样本导出的总流程</text>
+  <text x="450" y="94" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#94a3b8">先治理交付轨迹，再进入样本加工与训练导出</text>
+
+  <g filter="url(#shadow)" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="72" y="168" width="180" height="176" rx="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="162" y="202" text-anchor="middle" font-size="17" font-weight="700" fill="#bfdbfe">工程交付</text>
+    <text x="162" y="226" text-anchor="middle" font-size="12" fill="#cbd5e1">Specify / Plan</text>
+    <text x="162" y="246" text-anchor="middle" font-size="12" fill="#cbd5e1">Implement / Audit</text>
+    <text x="162" y="274" text-anchor="middle" font-size="12" fill="#94a3b8">输入：任务契约、diff、</text>
+    <text x="162" y="292" text-anchor="middle" font-size="12" fill="#94a3b8">测试与复盘证据</text>
+
+    <rect x="280" y="168" width="180" height="176" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="370" y="202" text-anchor="middle" font-size="17" font-weight="700" fill="#a7f3d0">评估打分</text>
+    <text x="370" y="226" text-anchor="middle" font-size="12" fill="#cbd5e1">Parse / Score / Coach</text>
+    <text x="370" y="254" text-anchor="middle" font-size="12" fill="#94a3b8">输出：错误类型、</text>
+    <text x="370" y="272" text-anchor="middle" font-size="12" fill="#94a3b8">Mentor反馈与质量分</text>
+
+    <rect x="488" y="168" width="180" height="176" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="578" y="202" text-anchor="middle" font-size="17" font-weight="700" fill="#fde68a">样本提取</text>
+    <text x="578" y="226" text-anchor="middle" font-size="12" fill="#cbd5e1">Candidate Builder</text>
+    <text x="578" y="246" text-anchor="middle" font-size="12" fill="#cbd5e1">Quality / Redaction / Split</text>
+    <text x="578" y="274" text-anchor="middle" font-size="12" fill="#94a3b8">输出：Canonical</text>
+    <text x="578" y="292" text-anchor="middle" font-size="12" fill="#94a3b8">SFT Sample</text>
+
+    <rect x="696" y="168" width="132" height="176" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="762" y="202" text-anchor="middle" font-size="17" font-weight="700" fill="#bae6fd">导出训练</text>
+    <text x="762" y="226" text-anchor="middle" font-size="12" fill="#cbd5e1">OpenAI Chat</text>
+    <text x="762" y="246" text-anchor="middle" font-size="12" fill="#cbd5e1">HF Conversational</text>
+    <text x="762" y="266" text-anchor="middle" font-size="12" fill="#cbd5e1">HF Tool Calling</text>
+    <text x="762" y="292" text-anchor="middle" font-size="12" fill="#94a3b8">版本化数据集</text>
+  </g>
+
+  <line x1="252" y1="256" x2="280" y2="256" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="460" y1="256" x2="488" y2="256" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="668" y1="256" x2="696" y2="256" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="92" y="388" width="716" height="92" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="420" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#cbd5e1">关键原则：先做数据治理（契约、证据、门控），再做训练规模化（导出、微调、回归）。</text>
+  <text x="450" y="444" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#64748b">Figure 1. 这条流程对应 Part7 与 Part8 的分工边界：Part7 定义原料与路由，Part8 定义样本加工与导出。</text>
+</svg>

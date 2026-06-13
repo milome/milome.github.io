@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="swimlane 风格">
+  <title id="title">BMAD artifact handoff swimlane</title>
+  <desc id="desc">Swimlane diagram showing artifacts passed between Architect, Implementer, Reviewer, Tester and Documenter.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" rx="34" fill="#0f172a"/>
+  <rect x="56" y="52" width="1168" height="616" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="92" y="112" fill="#f8fafc" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">BMAD artifact handover: multiple roles are not multiple chats</text>
+  <text x="640" y="144" fill="#cbd5e1" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle"><tspan x="640" y="144">Each role must deliver traceable</tspan><tspan x="640" dy="17.5">artifacts against which downstream</tspan><tspan x="640" dy="17.5">roles continue to validate.</tspan></text>
+
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="92" y="202" width="1096" height="76" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="286" width="1096" height="76" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="370" width="1096" height="76" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="454" width="1096" height="76" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <rect x="92" y="538" width="1096" height="76" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+    <text x="156" y="248" fill="#f8fafc" font-size="20" font-weight="700">Architect</text>
+    <text x="156" y="332" fill="#f8fafc" font-size="20" font-weight="700">Implementer</text>
+    <text x="156" y="416" fill="#f8fafc" font-size="20" font-weight="700">Reviewer</text>
+    <text x="156" y="500" fill="#f8fafc" font-size="20" font-weight="700">Tester</text>
+    <text x="156" y="584" fill="#f8fafc" font-size="20" font-weight="700">Documenter</text>
+
+    <rect x="352" y="218" width="210" height="44" rx="15" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="504" y="302" width="210" height="44" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="656" y="386" width="210" height="44" rx="15" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="808" y="470" width="210" height="44" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="960" y="554" width="174" height="44" rx="15" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+
+    <text x="457" y="241.54" text-anchor="middle" fill="#f8fafc" font-size="12"><tspan x="457" dy="0">Interface and algorithm</tspan><tspan x="457" dy="13.42">boundaries</tspan></text>
+    <text x="609" y="335" text-anchor="middle" fill="#f8fafc" font-size="12"><tspan x="609" dy="0">constrained implementation</tspan></text>
+    <text x="761" y="419" text-anchor="middle" fill="#f8fafc" font-size="12"><tspan x="761" dy="0">Issues and fix suggestions</tspan></text>
+    <text x="913" y="498.25" text-anchor="middle" fill="#f8fafc" font-size="12.5"><tspan x="913" y="498.25">Boundary testing evidence</tspan></text>
+    <text x="1047" y="587" text-anchor="middle" fill="#f8fafc" font-size="12"><tspan x="1047" dy="0">Maintenance instructions</tspan></text>
+
+    <g fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+      <path d="M562 240 C618 242 536 302 504 316"/>
+      <path d="M714 324 C770 326 688 386 656 400"/>
+      <path d="M866 408 C922 410 840 470 808 484"/>
+      <path d="M1018 492 C1074 494 992 554 960 568"/>
+    </g>
+
+    <text x="640" y="652" text-anchor="middle" fill="#a7f3d0" font-size="20">Handoffs must be tested, reviewed, and documented; without artifacts, there is no closed loop.</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" data-figure-id="FIG-003" data-visual-pattern="matrix / heatmap 风格">
+  <title id="title">Risk hotspot matrix for Python runtime failures</title>
+  <desc id="desc">A heatmap matrix highlighting shared state, callback order, exception propagation and type drift risks in quant trading systems.</desc>
+  <rect width="1280" height="720" rx="36" fill="#0f172a"/>
+  <rect x="56" y="54" width="1168" height="612" rx="30" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="96" y="112" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Risk hotspot matrix / Runtime Risk Hotspots</text>
+  <text x="640" y="141" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle"><tspan x="640" y="141">Use impact surface and recurrence</tspan><tspan x="640" dy="17.5">difficulty to determine which Python</tspan><tspan x="640" dy="17.5">risks are most likely to enter real-time accidents</tspan></text>
+  <g font-family="Arial">
+    <text x="138" y="242" fill="#94a3b8" font-size="18">High impact</text>
+    <text x="138" y="520" fill="#94a3b8" font-size="18">Low impact</text>
+    <text x="300" y="570" fill="#94a3b8" font-size="18">Easy to reproduce</text>
+    <text x="860" y="570" fill="#94a3b8" font-size="18">Difficult to reproduce</text>
+    <line x1="240" y1="530" x2="1038" y2="530" stroke="#475569" stroke-width="3"/>
+    <line x1="240" y1="210" x2="240" y2="530" stroke="#475569" stroke-width="3"/>
+    <rect x="282" y="210" width="220" height="130" rx="22" fill="#38bdf8"/>
+    <rect x="530" y="210" width="220" height="130" rx="22" fill="#f59e0b"/>
+    <rect x="778" y="210" width="220" height="130" rx="22" fill="#f59e0b" stroke="#fde68a" stroke-width="2"/>
+    <rect x="282" y="372" width="220" height="130" rx="22" fill="#60a5fa"/>
+    <rect x="530" y="372" width="220" height="130" rx="22" fill="#10b981"/>
+    <rect x="778" y="372" width="220" height="130" rx="22" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <text x="320" y="260" fill="#0f172a" font-size="21" font-weight="700">callback sequence</text>
+    <text x="320" y="292" fill="#0f172a" font-size="18">Confusion</text>
+    <text x="568" y="260" fill="#0f172a" font-size="21" font-weight="700">State sharing</text>
+    <text x="568" y="292" fill="#0f172a" font-size="18">Cross-thread pollution</text>
+    <text x="793.6" y="272.57" fill="#0f172a" font-size="15" font-weight="700" text-anchor="start"><tspan x="793.6" dy="0">Anomaly propagation</tspan></text>
+    <text x="793.6" y="290.27" fill="#0f172a" font-size="12" text-anchor="start"><tspan x="793.6" dy="0">Distortion after swallowing</tspan></text>
+    <text x="320" y="422" fill="#0f172a" font-size="21" font-weight="700">type drift</text>
+    <text x="320" y="454" fill="#0f172a" font-size="18">boundary assertion</text>
+    <text x="568" y="422" fill="#0f172a" font-size="21" font-weight="700">Resource leak</text>
+    <text x="568" y="454" fill="#0f172a" font-size="18">long run</text>
+    <text x="816" y="422" fill="#cbd5e1" font-size="21" font-weight="700">local grammar</text>
+    <text x="816" y="454" fill="#94a3b8" font-size="18">lower priority</text>
+  </g>
+  <g font-family="Arial">
+    <rect x="168" y="604" width="944" height="44" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="196" y="632" fill="#cbd5e1" font-size="14" text-anchor="start"><tspan x="196" y="632">Processing sequence: first add state boundaries and</tspan><tspan x="196" dy="16.52">exception records, then add callback timing tests, and</tspan><tspan x="196" dy="16.52">finally deal with local syntax cleanup.</tspan></text>
+  </g>
+</svg>
